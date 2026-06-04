@@ -1,0 +1,9 @@
+[
+  {
+    "site": "hsr-guide",
+    "topic": "新手开局必练角色推荐",
+    "slug": "182323",
+    "path": "/Users/chenjiyan/Desktop/hermes测试/international/hsr-guide/articles/hsr-guide-182323.html",
+    "prompt": "写一篇游戏攻略文章，主题：新手开局必练角色推荐。\n\n要求：\n- 标题含关键词\"新手开局必练角色推荐\"，不超过20字\n- 正文 800-1500 字，纯中文\n- 内容必须具体：含角色名、关卡名、操作步骤、数值范围（如 Lv.1-10、概率 50-100%）\n- 结构：h2 分段标题，每段 150-250 字\n- 语气：实战玩家视角，不说「本文将」「综上所述」\n- 格式：输出纯 HTML（只输出 <article>...</article> 内内容，含 h2/p/ul/li/strong 标签）\n- 绝对禁止：编造假数据表格、编造不存在的角色/关卡名"
+  }
+]
