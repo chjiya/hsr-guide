@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>【崩壊スターレイル】羅刹（Luocha）完全攻略ガイド｜最強ビルド・遺物・光円錐・おすすめ編成</title>
+<meta name="description" content="崩壊スターレイルの星5虚数・豊穣キャラ「羅刹」の完全攻略。スキル解析、おすすめ遺物・光円錐・オーナメント、理想パーティ編成、よくある質問まで徹底解説。">
+<base href="/hsr-guide-ja/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "【崩壊スターレイル】羅刹（Luocha）完全攻略ガイド｜最強ビルド・遺物・光円錐・おすすめ編成",
+  "description": "崩壊スターレイルの星5虚数・豊穣キャラ「羅刹」の完全攻略。スキル解析、おすすめ遺物・光円錐・オーナメント、理想パーティ編成まで徹底解説。",
+  "author": {
+    "@type": "Person",
+    "name": "花叔"
+  },
+  "datePublished": "2024-06-28",
+  "dateModified": "2026-06-07",
+  "image": "https://example.com/images/luocha-guide.jpg",
+  "articleSection": "キャラクター攻略",
+  "inLanguage": "ja",
+  "about": {
+    "@type": "Thing",
+    "name": "羅刹",
+    "description": "崩壊スターレイルの星5虚数属性・豊穣の運命を歩むヒーラーキャラクター"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://example.com/hsr-guide-ja/luocha-guide"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "羅刹の速度はいくつが最適ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "最低でも速度120を目標にしましょう。老いぬ者の仙舟（オーナメント）のセット効果を発動させるためです。ただし、羅刹の速度が高すぎると結界の持続時間が短くなるデメリットもあります。理想は速度120〜134の範囲で調整することです。134にすると1ラウンド目に2回行動できるため、SP供給と結界展開の効率が向上します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "遺物の胴体は治癒量と攻撃力%のどちらが良いですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "基本的には治癒量メインが推奨です。羅刹の回復量は攻撃力に依存しますが、治癒量%は最終回復量に直接乗算されるため、治癒量メインの方が回復効率が高くなります。ただし、サブステータスで十分な攻撃力%を確保できる場合や、サブアタッカーとしても運用したい場合は攻撃力%も選択肢に入ります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "羅刹は何凸がおすすめですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "無凸でも十分に強力ですが、凸を進めるなら1凸が最もコスパに優れています。結界展開中に味方全体の攻撃力+20%はシンプルに強力です。2凸もおすすめで、HP50%以上の味方にバリアを付与できるようになり耐久面が大幅に向上します。理想は6凸ですが、無理に狙う必要はありません。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "羅刹の光円錐「棺のこだま」がない場合、何を使えばいいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "星5モチーフ光円錐「棺のこだま」がない場合は、以下の代替候補があります。（1）星5「時節は居らず」：治癒量増加と追加ダメージ付与（2）星4「同じ気持ち」：治癒量増加＋戦闘スキル発動時に味方全体のEP回復（3）星4「今が丁度」：治癒量と効果抵抗の両方を高められる（4）星3「物穣」：どうしてもない場合の妥協案。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "羅刹と他のヒーラー（白露・ナターシャ）の違いは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "羅刹の最大の特徴は、結界による味方攻撃時の自動回復です。SPを消費せずに継続的な回復ができるため、SP効率が圧倒的に優れています。また、必殺技で敵全体のバフ解除が可能で、高難易度コンテンツで非常に役立ちます。白露は全体回復と復活を持ち、ナターシャは単体回復とデバフ解除に特化していますが、羅刹は回復力・SP効率・バフ解除のバランスに優れています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "羅刹の結界はどうやって発動させますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "羅刹の天賦「生命の輪廻」により、「白花の刻」を2層獲得すると自動で結界が発動します（2ターン継続）。戦闘スキルまたは必殺技を使用するたびに「白花の刻」を1層獲得します。また、秘技「愚者の悲哀」を戦闘前に使用すると、次の戦闘開始時に天賦が即時発動し、開幕から結界を展開できます。"
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --bg: #1a1a2e;
+    --card: #16213e;
+    --accent: #e2b04a;
+    --text: #e0e0e0;
+    --sub: #a0a0b0;
+    --border: #2a2a4a;
+    --highlight: #0f3460;
+    --green: #4caf84;
+    --red: #e0556a;
+    --blue: #5b9bd5;
+    --purple: #b39ddb;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', Meiryo, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+    padding: 20px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 1.8em;
+    color: var(--accent);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 1.4em;
+    color: var(--accent);
+    margin: 36px 0 16px;
+    padding: 8px 14px;
+    border-left: 4px solid var(--accent);
+    background: var(--highlight);
+    border-radius: 0 6px 6px 0;
+  }
+  h3 {
+    font-size: 1.15em;
+    color: #d4b86a;
+    margin: 24px 0 10px;
+  }
+  .char-header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background: var(--card);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 24px;
+    border: 1px solid var(--border);
+  }
+  .char-icon {
+    width: 90px;
+    height: 90px;
+    border-radius: 12px;
+    background: var(--highlight);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2em;
+    flex-shrink: 0;
+  }
+  .char-info { flex: 1; }
+  .char-info .name { font-size: 1.6em; font-weight: bold; color: #fff; }
+  .char-info .tags { margin-top: 6px; display: flex; gap: 8px; flex-wrap: wrap; }
+  .tag {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: bold;
+  }
+  .tag-rarity { background: #b8860b; color: #fff; }
+  .tag-element { background: #f0c040; color: #1a1a2e; }
+  .tag-path { background: #4caf84; color: #fff; }
+  .tag-role { background: #5b9bd5; color: #fff; }
+
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 10px;
+    margin: 16px 0;
+  }
+  .stat-box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+  }
+  .stat-box .label { font-size: 0.8em; color: var(--sub); }
+  .stat-box .value { font-size: 1.2em; font-weight: bold; color: #fff; margin-top: 4px; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 0.9em;
+  }
+  th {
+    background: var(--highlight);
+    color: var(--accent);
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px solid var(--border);
+  }
+  td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+  .star { color: var(--accent); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px;
+    margin: 16px 0;
+  }
+
+  .build-box {
+    background: var(--highlight);
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin: 12px 0;
+  }
+  .build-box .label { color: var(--accent); font-weight: bold; font-size: 0.85em; }
+  .build-box .content { color: #fff; font-weight: bold; margin-top: 4px; }
+
+  .pros-cons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 16px 0;
+  }
+  .pros, .cons {
+    padding: 14px;
+    border-radius: 8px;
+  }
+  .pros { background: rgba(76,175,132,0.1); border: 1px solid rgba(76,175,132,0.3); }
+  .cons { background: rgba(224,85,106,0.1); border: 1px solid rgba(224,85,106,0.3); }
+  .pros h4 { color: var(--green); margin-bottom: 6px; }
+  .cons h4 { color: var(--red); margin-bottom: 6px; }
+  .pros li, .cons li { margin-left: 18px; font-size: 0.9em; }
+
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 12px 0;
+  }
+  .team-slot {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 8px;
+    text-align: center;
+  }
+  .team-slot .role { font-size: 0.75em; color: var(--sub); margin-bottom: 4px; }
+  .team-slot .char { font-weight: bold; color: #fff; font-size: 0.95em; }
+
+  .faq-item {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin: 12px 0;
+    padding: 16px;
+  }
+  .faq-item .q {
+    color: var(--accent);
+    font-weight: bold;
+    font-size: 1.05em;
+    margin-bottom: 8px;
+  }
+  .faq-item .a {
+    color: var(--text);
+    line-height: 1.8;
+  }
+
+  .note {
+    background: rgba(224,176,74,0.08);
+    border-left: 3px solid var(--accent);
+    padding: 10px 14px;
+    margin: 14px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.9em;
+  }
+
+  .skill-box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px;
+    margin: 10px 0;
+  }
+  .skill-box .skill-name { font-weight: bold; color: var(--accent); font-size: 1.05em; }
+  .skill-box .skill-type { font-size: 0.8em; color: var(--sub); margin-left: 8px; }
+  .skill-box .skill-desc { margin-top: 8px; font-size: 0.9em; }
+
+  .priority-5 { color: var(--accent); }
+  .priority-4 { color: #e8c547; }
+  .priority-3 { color: #c0c0c0; }
+  .priority-2 { color: #888; }
+
+  ol, ul { padding-left: 1.5em; }
+  li { margin: 4px 0; }
+
+  @media (max-width: 600px) {
+    .char-header { flex-direction: column; text-align: center; }
+    .team-grid { grid-template-columns: repeat(2, 1fr); }
+    .pros-cons { grid-template-columns: 1fr; }
+    .stat-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+
+<article>
+  <h1>【崩壊スターレイル】羅刹（Luocha）完全攻略ガイド</h1>
+
+  <!-- キャラクター基本情報 -->
+  <div class="char-header">
+    <div class="char-icon">⚰️</div>
+    <div class="char-info">
+      <div class="name">羅刹（らせつ / Luocha）</div>
+      <div class="tags">
+        <span class="tag tag-rarity">★5</span>
+        <span class="tag tag-element">虚数属性</span>
+        <span class="tag tag-path">豊穣（Abundance）</span>
+        <span class="tag tag-role">ヒーラー</span>
+      </div>
+      <div style="margin-top:8px;color:var(--sub);font-size:0.9em;">
+        所属：仙舟「羅浮」｜声優：石田彰｜入手：限定排出（世界を探して）
+      </div>
+    </div>
+  </div>
+
+  <!-- ステータス概要 -->
+  <div class="stat-grid">
+    <div class="stat-box">
+      <div class="label">最大HP</div>
+      <div class="value">1,280</div>
+    </div>
+    <div class="stat-box">
+      <div class="label">攻撃力</div>
+      <div class="value">756</div>
+    </div>
+    <div class="stat-box">
+      <div class="label">防御力</div>
+      <div class="value">363</div>
+    </div>
+    <div class="stat-box">
+      <div class="label">速度</div>
+      <div class="value">101</div>
+    </div>
+  </div>
+
+  <!-- キャラクター評価 -->
+  <div class="pros-cons">
+    <div class="pros">
+      <h4>✅ 長所</h4>
+      <ul>
+        <li>結界によるSP不要の継続全体回復が超強力</li>
+        <li>HP50%以下で自動発動する緊急回復</li>
+        <li>必殺技で敵全体のバフを1つ解除可能</li>
+        <li>軌跡により味方のデバフも解除できる</li>
+        <li>攻撃力参照のため遺物で火力と回復を両立</li>
+      </ul>
+    </div>
+    <div class="cons">
+      <h4>⚠️ 短所</h4>
+      <ul>
+        <li>結界が切れると回復手段が限られる</li>
+        <li>自身の耐久力がやや低い</li>
+        <li>速度が高すぎると結界の持続が短くなる</li>
+        <li>アタッカーとしての火力は期待できない</li>
+      </ul>
+    </div>
+  </div>
+
+  <p>羅刹は、虚数属性・豊穣の運命を歩む星5ヒーラーです。最大の特徴は<strong>天賦による結界展開</strong>。戦闘スキルまたは必殺技を2回使用するだけで、味方が攻撃するたびに自動回復する結界を2ターン張れます。SPを消費せずにチーム全体のHPを維持できるため、SP効率に優れたヒーラーとして、リリース以来トップクラスの評価を受け続けています。</p>
+  <p>また、必殺技は敵全体のバフを1つ解除する効果を持ち、高難易度コンテンツ（混沌の記憶・模擬宇宙など）で絶大な存在感を発揮します。軌跡「滴水蘇生」により戦闘スキル発動時に味方のデバフも1つ解除できるため、攻守両面でパーティを支える万能サポートです。</p>
+  <p>羅刹の回復量は<strong>攻撃力に依存</strong>するため、ビルドは攻撃力重視が基本となります。ただし、耐久面が犠牲になりやすいため、サブステータスでのHP/防御補強や、オーナメント「老いぬ者の仙舟」でのHP確保が重要です。</p>
+
+  <!-- スキル解析 -->
+  <h2>🔍 スキル解析</h2>
+
+  <div class="skill-box">
+    <div class="skill-name">通常攻撃：黒淵の棘 <span class="skill-type">単体攻撃</span></div>
+    <div class="skill-desc">指定した敵単体に羅刹の攻撃力<span style="color:var(--accent);">50%〜100%</span>（Lv1〜Lv6）の虚数属性ダメージを与える。強化優先度：<span class="priority-2">★★☆☆☆</span></div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">回復が主な役割の羅刹にとって通常攻撃の優先度は低め。ただし、SP供給役として通常攻撃を使う機会は多いため、余裕があればLv4程度まで上げておくとよい。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">戦闘スキル：白花の祈望 <span class="skill-type">単体回復 / 自動発動</span></div>
+    <div class="skill-desc">
+      指定した味方単体のHPを羅刹の攻撃力<span style="color:var(--accent);">40%+200〜60%+800</span>（Lv1〜Lv10）回復し、「白花の刻」を1層獲得。<br>
+      <strong>【自動発動】</strong>任意の味方のHPが50%以下になると、SP消費なしで戦闘スキルと同等の回復を自動発動。2ターン後に再発動可能。<br>
+      強化優先度：<span class="priority-4">★★★★☆</span>
+    </div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">羅刹の主要回復ソース。軌跡「滴水蘇生」習得後は、発動時に味方のデバフも1つ解除する。自動発動はSP消費なしなのが非常に優秀。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">必殺技：帰葬の成就 <span class="skill-type">全体攻撃 / バフ解除</span></div>
+    <div class="skill-desc">
+      敵全体のバフを1個解除し、敵全体に羅刹の攻撃力<span style="color:var(--accent);">120%〜200%</span>（Lv1〜Lv10）の虚数属性ダメージを与える。「白花の刻」を1層獲得。<br>
+      強化優先度：<span class="priority-3">★★★☆☆</span>
+    </div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">敵全体のバフ解除は羅刹の代名詞とも言える効果。高難易度になるほど敵のバフが強力になるため、価値が跳ね上がる。ペラの単体バフ解除とは異なり全体なのが強み。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">天賦：生命の輪廻 <span class="skill-type">結界展開 / 自動回復</span></div>
+    <div class="skill-desc">
+      「白花の刻」が2層に達すると全消費して結界を展開（2ターン継続）。結界内で味方が敵を攻撃すると、攻撃者のHPを羅刹の攻撃力<span style="color:var(--accent);">12%+60〜18%+240</span>（Lv1〜Lv10）回復。<br>
+      軌跡「清めし塵の身」習得後は、攻撃者以外の味方全員も回復するようになる（実質全体回復化）。<br>
+      強化優先度：<span class="priority-5">★★★★★</span>
+    </div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">羅刹の根幹を成すスキル。最優先でLv10を目指そう。結界は羅刹が戦闘不能になると解除されるため、耐久面のケアも重要。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">秘技：愚者の悲哀 <span class="skill-type">戦闘前効果</span></div>
+    <div class="skill-desc">秘技を使用後、次の戦闘開始時に天賦（結界）が即時発動する。開幕から結界を展開できるため、高難易度コンテンツで非常に重宝する。</div>
+  </div>
+
+  <h3>軌跡（追加能力）</h3>
+  <table>
+    <tr><th>軌跡名</th><th>解放条件</th><th>効果</th></tr>
+    <tr><td>滴水蘇生</td><td>昇格2</td><td>戦闘スキル発動時、対象の味方のデバフを1つ解除</td></tr>
+    <tr><td>清めし塵の身</td><td>昇格4</td><td>結界内で味方が攻撃時、攻撃者以外の味方もHP回復（全体回復化）</td></tr>
+    <tr><td>幽谷を越え</td><td>昇格6</td><td>行動制限系デバフ（凍結・禁錮など）への抵抗確率+70%</td></tr>
+  </table>
+
+  <div class="note">
+    <strong>💡 スキル強化の優先順位：</strong> 天賦 ＞ 戦闘スキル ＞ 必殺技 ＞ 通常攻撃。軌跡の追加能力はすべて取得必須級。特に「清めし塵の身」で結界が実質全体回復になるため、最優先で解放しよう。
+  </div>
+
+  <!-- 星魂 -->
+  <h3>星魂（エイドロン）</h3>
+  <table>
+    <tr><th>凸数</th><th>名称</th><th>効果</th><th>おすすめ度</th></tr>
+    <tr><td>1凸</td><td>生者の浄化</td><td>結界発動中、味方全体の攻撃力+20%</td><td><span style="color:var(--accent);">★★★★★</span></td></tr>
+    <tr><td>2凸</td><td>純庭の礼賜</td><td>戦闘スキル効果時、対象HP&lt;50%なら治癒量+30%。HP≥50%ならバリア付与（攻撃力18%+240、2T）</td><td><span style="color:var(--accent);">★★★★★</span></td></tr>
+    <tr><td>3凸</td><td>愚者の模索</td><td>戦闘スキルLv+2（最大15）、通常攻撃Lv+1（最大10）</td><td><span style="color:#c0c0c0;">★★★☆☆</span></td></tr>
+    <tr><td>4凸</td><td>荊の審判</td><td>結界存在中、敵を虚弱状態にし、敵の与ダメージ-12%</td><td><span style="color:#e8c547;">★★★★☆</span></td></tr>
+    <tr><td>5凸</td><td>受難の痕</td><td>必殺技Lv+2（最大15）、天賦Lv+2（最大15）</td><td><span style="color:#888;">★★☆☆☆</span></td></tr>
+    <tr><td>6凸</td><td>皆灰燼に帰す</td><td>必殺技発動時、100%の固定確率で敵全体の全耐性-20%（2T）</td><td><span style="color:#e8c547;">★★★★☆</span></td></tr>
+  </table>
+  <p style="font-size:0.9em;color:var(--sub);">無凸でも十分強力。1凸の全体攻撃力+20%バフが最もコスパ優秀。2凸は耐久力が大幅に向上するためおすすめ。6凸の全耐性ダウンは強力だが、無理に狙う必要なし。</p>
+
+  <!-- 遺物推荐 -->
+  <h2>⚔️ おすすめ遺物</h2>
+
+  <h3>遺物セット</h3>
+  <table>
+    <tr><th>セット</th><th>セット効果</th><th>おすすめ度</th><th>解説</th></tr>
+    <tr>
+      <td><strong>流雲無痕の過客</strong> 4セット</td>
+      <td>2セット：治癒量+10%<br>4セット：戦闘開始時、SPを1回復</td>
+      <td><span class="star">★★★★★</span></td>
+      <td>治癒量増加+開幕SPアドバンテージ。最も安定した選択。</td>
+    </tr>
+    <tr>
+      <td><strong>過客2</strong> + <strong>草の穂ガンマン2</strong></td>
+      <td>治癒量+10%／攻撃力+12%</td>
+      <td><span class="star">★★★★☆</span></td>
+      <td>回復量を最大限に伸ばしたい場合の選択肢。</td>
+    </tr>
+    <tr>
+      <td><strong>草の穂ガンマン</strong> 4セット</td>
+      <td>2セット：攻撃力+12%<br>4セット：速度+6%、通常攻撃ダメージ+10%</td>
+      <td><span style="color:#e8c547;">★★★☆☆</span></td>
+      <td>速度120や134を狙う時のみ。回復量は過客4より落ちる。</td>
+    </tr>
+  </table>
+
+  <h3>オーナメント（次元界オーナメント）</h3>
+  <table>
+    <tr><th>セット</th><th>セット効果</th><th>おすすめ度</th></tr>
+    <tr>
+      <td><strong>老いぬ者の仙舟</strong></td>
+      <td>最大HP+12%。速度120以上で味方全体の攻撃力+8%</td>
+      <td><span class="star">★★★★★</span></td>
+    </tr>
+    <tr>
+      <td><strong>宇宙封印ステーション</strong></td>
+      <td>攻撃力+12%。速度120以上でさらに攻撃力+12%（計24%）</td>
+      <td><span style="color:#e8c547;">★★★★☆</span></td>
+    </tr>
+    <tr>
+      <td><strong>折れた竜骨</strong></td>
+      <td>効果抵抗+10%。効果抵抗30%以上で味方全体の会心ダメージ+10%</td>
+      <td><span style="color:#e8c547;">★★★☆☆</span></td>
+    </tr>
+  </table>
+
+  <h3>遺物メインステータス</h3>
+  <table>
+    <tr><th>部位</th><th>メインステータス</th><th>備考</th></tr>
+    <tr><td>頭部</td><td>HP（固定）</td><td>—</td></tr>
+    <tr><td>手部</td><td>攻撃力（固定）</td><td>—</td></tr>
+    <tr><td>胴体</td><td><strong>治癒量</strong> or 攻撃力%</td><td>治癒量が推奨。攻撃力%はサブアタッカー寄りにしたい場合</td></tr>
+    <tr><td>脚部</td><td><strong>速度</strong> or 攻撃力%</td><td>速度120以上を確保できるなら攻撃力%も選択肢</td></tr>
+    <tr><td>次元界オーブ</td><td><strong>攻撃力%</strong></td><td>回復量に直結するため最優先</td></tr>
+    <tr><td>連結縄</td><td><strong>EP回復効率</strong></td><td>必殺技の回転率向上で結界の維持が安定</td></tr>
+  </table>
+
+  <div class="note">
+    <strong>💡 サブステータス優先度：</strong> 攻撃力% ≧ HP% ≧ 防御力% ≧ 効果抵抗 ＞ 速度<br>
+    速度は120以上を目標に調整。攻撃力を盛りつつ、耐久面（HP/防御）もバランスよく補強することが重要。羅刹自身が倒れると結界が解除されるため。
+  </div>
+
+  <!-- 光円錐推荐 -->
+  <h2>💡 おすすめ光円錐</h2>
+
+  <table>
+    <tr><th>光円錐</th><th>レア</th><th>効果概要</th><th>おすすめ度</th></tr>
+    <tr>
+      <td><strong>棺のこだま</strong></td>
+      <td>★5</td>
+      <td>攻撃力+24%。攻撃命中時、EPを3回復（1回の攻撃で最大3回）。速度+12（1T）</td>
+      <td><span class="star">★★★★★</span><br><span style="color:var(--accent);">最適</span></td>
+    </tr>
+    <tr>
+      <td><strong>時節は居らず</strong></td>
+      <td>★5</td>
+      <td>装備キャラの最大HP+18%、治癒量+12%。味方を回復時、回復量の36%を追加ダメージとして記録し、敵に付加ダメージ</td>
+      <td><span style="color:#e8c547;">★★★★☆</span></td>
+    </tr>
+    <tr>
+      <td><strong>同じ気持ち</strong></td>
+      <td>★4</td>
+      <td>治癒量+10%（最大+20%）。戦闘スキル発動時、味方全体のEPを2（最大4）回復</td>
+      <td><span style="color:#e8c547;">★★★★☆</span><br><span style="color:var(--accent);">★4最適</span></td>
+    </tr>
+    <tr>
+      <td><strong>今が丁度</strong></td>
+      <td>★4</td>
+      <td>効果抵抗+16%（最大+32%）。装備キャラの治癒量が効果抵抗の33%（最大45%）分増加</td>
+      <td><span style="color:#e8c547;">★★★☆☆</span></td>
+    </tr>
+    <tr>
+      <td><strong>物穣</strong></td>
+      <td>★3</td>
+      <td>戦闘スキル・必殺技発動時、治癒量+12%（最大+24%）</td>
+      <td><span style="color:#888;">★★☆☆☆</span><br><span style="color:var(--sub);">妥協案</span></td>
+    </tr>
+  </table>
+
+  <div class="build-box">
+    <div class="label">🏆 最適光円錐</div>
+    <div class="content">棺のこだま（★5・モチーフ）</div>
+    <div style="margin-top:6px;font-size:0.9em;">攻撃力大幅アップ＋EP回復＋速度バフの3拍子揃った完璧な光円錐。羅刹の回復は攻撃力依存のため、攻撃力上昇がそのまま回復力向上につながる。</div>
+  </div>
+
+  <div class="build-box">
+    <div class="label">💰 無課金・低予算向け</div>
+    <div class="content">同じ気持ち（★4）</div>
+    <div style="margin-top:6px;font-size:0.9em;">治癒量アップに加え、戦闘スキル発動時の味方全体EP回復が優秀。羅刹のSP効率の良さと相まって、チーム全体の必殺技回転率を底上げできる。</div>
+  </div>
+
+  <!-- 理想編成 -->
+  <h2>🤝 理想編成</h2>
+
+  <h3>編成①：高難易度・課金向け汎用パーティ</h3>
+  <div class="team-grid">
+    <div class="team-slot">
+      <div class="role">🔥 アタッカー</div>
+      <div class="char">ゼーレ / 鏡流</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">量子 / 氷</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🎯 サポート</div>
+      <div class="char">銀狼 / ブローニャ</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">量子 / 風</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🛡️ サブ</div>
+      <div class="char">ヴェルト / 停雲</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">虚数 / 雷</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">💚 ヒーラー</div>
+      <div class="char">羅刹</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">虚数・豊穣</div>
+    </div>
+  </div>
+  <p style="font-size:0.9em;color:var(--sub);">量子+虚数の2属性編成で、銀狼の弱点付与が無駄なく機能。ゼーレの再行動と羅刹の結界回復の相性が抜群。ブローニャでゼーレの行動回数を増やせば、結界回復のトリガーも増加。</p>
+
+  <h3>編成②：低レア・安定型パーティ</h3>
+  <div class="team-grid">
+    <div class="team-slot">
+      <div class="role">🔥 アタッカー</div>
+      <div class="char">丹恒 / 素裳</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">風 / 物理</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🛡️ 範囲火力</div>
+      <div class="char">ヘルタ / セーバル</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">氷 / 雷</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🎯 サポート</div>
+      <div class="char">アスター / 御空</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">炎 / 虚数</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">💚 ヒーラー</div>
+      <div class="char">羅刹</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">虚数・豊穣</div>
+    </div>
+  </div>
+  <p style="font-size:0.9em;color:var(--sub);">星4中心の低予算編成。アスターの速度バフで味方の行動頻度を上げ、羅刹の天賦回復を最大化。タンク不在のため高火力の敵には注意が必要だが、羅刹の結界が切れないよう管理すれば十分安定する。</p>
+
+  <h3>編成③：カウンター特化パーティ</h3>
+  <div class="team-grid">
+    <div class="team-slot">
+      <div class="role">🔥 アタッカー</div>
+      <div class="char">クラーラ</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">物理・壊滅</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🎯 サポート</div>
+      <div class="char">御空 / 停雲</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">虚数 / 雷</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🛡️ サブ火力</div>
+      <div class="char">刃 / ルカ</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">風 / 物理</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">💚 ヒーラー</div>
+      <div class="char">羅刹</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">虚数・豊穣</div>
+    </div>
+  </div>
+  <p style="font-size:0.9em;color:var(--sub);">クラーラのカウンター攻撃は羅刹の結界回復トリガーとして最高効率。敵の攻撃を受けるたびにカウンター→回復のループが成立し、非常に高い耐久力を発揮。御空の攻撃力バフは羅刹の回復量も間接的に底上げする。</p>
+
+  <div class="note">
+    <strong>💡 編成のポイント：</strong> 羅刹と相性が良いのは「行動回数が多いキャラ」と「カウンター持ち」です。ゼーレ（再行動）、クラーラ（カウンター）、高速キャラ全般が該当。また、御空の攻撃力バフは羅刹の回復量を間接的に増加させるため好相性。
+  </div>
+
+  <!-- よくある質問 -->
+  <h2>❓ よくある質問（FAQ）</h2>
+
+  <div class="faq-item">
+    <div class="q">Q. 羅刹の速度はいくつが最適ですか？</div>
+    <div class="a">
+      最低でも<strong>速度120</strong>を目標にしましょう。「老いぬ者の仙舟」（オーナメント）のセット効果「速度120以上で味方全体の攻撃力+8%」を発動させるためです。<br><br>
+      ただし、羅刹の速度が高すぎると、結界の持続が羅刹の行動ターン基準のため<strong>結界の実質的な持続時間が短くなる</strong>デメリットもあります。理想は<strong>速度120〜134</strong>の範囲で調整することです。134にすると1ラウンド目に2回行動できるため、SP供給と結界展開の効率が向上します。速度134は「老いぬ者の仙舟」ではなく「宇宙封印ステーション」を採用する場合の調整目標としても有用です。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 遺物の胴体は治癒量と攻撃力%のどちらが良いですか？</div>
+    <div class="a">
+      基本的には<strong>治癒量メイン</strong>が推奨です。羅刹の回復量は攻撃力に依存しますが、治癒量%は最終回復量に直接乗算されるため、治癒量メインのほうが回復効率は高くなります。<br><br>
+      ただし、サブステータスで十分な攻撃力%を確保できる場合や、羅刹にある程度の火力も期待したい場合は攻撃力%も選択肢に入ります。迷ったら治癒量を選んでおけば間違いありません。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 羅刹は何凸がおすすめですか？</div>
+    <div class="a">
+      無凸でも十分に強力なヒーラーですが、凸を進めるなら<strong>1凸が最もコストパフォーマンスに優れています</strong>。結界展開中に味方全体の攻撃力+20%はシンプルかつ強力なバフで、パーティ全体の火力を底上げします。<br><br>
+      2凸も非常におすすめで、戦闘スキル発動時にHP50%以上の味方へ<strong>バリアを付与</strong>できるようになり、耐久面が大幅に向上。予算に余裕があれば2凸までを目標にするのが理想的です。6凸の敵全体全耐性-20%は非常に強力ですが、無理に狙う必要はありません。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 羅刹の光円錐「棺のこだま」がない場合、何を使えばいいですか？</div>
+    <div class="a">
+      星5モチーフ光円錐「棺のこだま」がない場合は、以下の代替候補から選択してください：
+      <ol style="margin-top:6px;">
+        <li><strong>星5「時節は居らず」</strong>：治癒量増加＋味方攻撃時に回復量に応じた追加ダメージ。羅刹の回復力の高さを活かせる。</li>
+        <li><strong>星4「同じ気持ち」</strong>：治癒量増加＋戦闘スキル発動時に味方全体のEP回復。チーム全体の必殺技回転率向上に貢献。</li>
+        <li><strong>星4「今が丁度」</strong>：効果抵抗＋治癒量増加。効果抵抗を盛ることで行動制限デバフ対策になる。</li>
+        <li><strong>星3「物穣」</strong>：戦闘スキル・必殺技発動時に治癒量アップ。どうしても他にない場合の妥協案。</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 羅刹と他のヒーラー（白露・ナターシャ）の違いは何ですか？</div>
+    <div class="a">
+      羅刹の最大の特徴は、<strong>結界による味方攻撃時のSP不要自動回復</strong>です。他のヒーラーと比較した違いは以下の通りです：
+      <ul style="margin-top:6px;">
+        <li><strong>白露</strong>：必殺技で全体回復＋戦闘不能時の復活（1回）が強み。SP効率では羅刹に劣るが、事故防止性能は高い。</li>
+        <li><strong>ナターシャ</strong>：単体回復＋戦闘スキルでのデバフ解除が可能。星4のため入手・凸が容易。SP消費がやや重い。</li>
+        <li><strong>羅刹</strong>：回復力・SP効率・バフ解除（必殺技で敵全体）のバランスが圧倒的。結界維持が鍵。</li>
+      </ul>
+      羅刹は「攻めながら回復する」スタイルで、アタッカーの行動を止めずに回復できる点が最大の差別化ポイントです。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 羅刹の結界はどうやって発動させますか？また維持のコツは？</div>
+    <div class="a">
+      羅刹の天賦「生命の輪廻」により、<strong>「白花の刻」を2層獲得すると自動で結界が発動</strong>します（2ターン継続）。白花の刻の獲得方法：
+      <ul style="margin-top:6px;">
+        <li>戦闘スキル「白花の祈望」使用 → +1層</li>
+        <li>必殺技「帰葬の成就」使用 → +1層</li>
+        <li>自動発動した戦闘スキル → +1層</li>
+        <li>秘技「愚者の悲哀」使用 → 戦闘開始時に天賦即時発動（開幕結界）</li>
+      </ul>
+      <strong>維持のコツ：</strong> 結界が切れる前に必殺技を温存し、切れたら即座に戦闘スキル→必殺技で2層獲得して再展開するのが理想的なサイクルです。EP回復効率を盛ることで必殺技の回転率を上げ、結界の空白時間を最小化できます。高難易度では秘技を惜しまず使って開幕結界を展開しましょう。
+    </div>
+  </div>
+
+  <!-- まとめ -->
+  <h2>📋 まとめ</h2>
+  <div class="card">
+    <p>羅刹は、攻撃力を参照した高い回復力・SP不要の結界自動回復・敵バフ＆味方デバフの両方への対応力を持つ、<strong>崩壊スターレイルを代表するトップクラスのヒーラー</strong>です。</p>
+    <p style="margin-top:8px;">ビルドの基本方針：</p>
+    <ul style="margin-top:4px;">
+      <li><strong>光円錐</strong>：棺のこだま ＞ 時節は居らず ＞ 同じ気持ち</li>
+      <li><strong>遺物</strong>：過客4セット（or 過客2+ガンマン2）</li>
+      <li><strong>オーナメント</strong>：老いぬ者の仙舟</li>
+      <li><strong>メインステ</strong>：胴体＝治癒量、脚＝速度、オーブ＝攻撃力%、縄＝EP回復効率</li>
+      <li><strong>目標速度</strong>：120以上（仙舟発動条件）</li>
+      <li><strong>スキル優先</strong>：天賦 ＞ 戦闘スキル ＞ 必殺技 ＞ 通常攻撃</li>
+    </ul>
+    <p style="margin-top:12px;">無凸でも十分に活躍できるため、初心者から上級者まで幅広くおすすめできるキャラクターです。ぜひこのガイドを参考に、最強の羅刹を育ててください！</p>
+  </div>
+
+</article>
+
+</body>
+</html>
