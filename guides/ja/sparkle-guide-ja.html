@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X6LMX9VR0Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-X6LMX9VR0Y');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>【崩壊スターレイル】花火（Sparkle）完全攻略ガイド｜最強ビルド・遺物・光円錐・おすすめ編成</title>
+<meta name="description" content="崩壊スターレイルの星5量子・調和キャラ「花火」の完全攻略。強化後の最新評価、スキル解析、おすすめ遺物・光円錐・オーナメント、理想パーティ編成、凸のすすめ、よくある質問まで徹底解説。">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "【崩壊スターレイル】花火（Sparkle）完全攻略ガイド｜最強ビルド・遺物・光円錐・おすすめ編成",
+  "description": "崩壊スターレイルの星5量子・調和キャラ「花火」の完全攻略。強化後の最新評価、スキル解析、おすすめ遺物・光円錐・オーナメント、理想パーティ編成まで徹底解説。",
+  "author": {
+    "@type": "Person",
+    "name": "花叔"
+  },
+  "datePublished": "2026-06-08",
+  "dateModified": "2026-06-08",
+  "articleSection": "キャラクター攻略",
+  "inLanguage": "ja",
+  "about": {
+    "@type": "Thing",
+    "name": "花火",
+    "description": "崩壊スターレイルの星5量子属性・調和の運命を歩むサポートキャラクター"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://example.com/hsr-guide-ja/sparkle-guide"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "花火の速度はいくつが最適ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "花火は高速運用が基本です。理想は速度160（2ラウンドに4回行動）。現実的な目標は速度143（3ラウンドに5回行動）〜146（5ラウンドに8回行動）です。速度が高ければ高いほど戦闘スキルによるアタッカーの行動促進回数が増え、SP供給と全体バフの維持が安定します。速度158以上で「ダンス！ダンス！ダンス！」装備時のウェンワーク編成が機能します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "花火の会心ダメージはどれくらい必要ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "花火の戦闘スキルによる会心ダメージバフ量は、花火自身の会心ダメージに依存します。そのため花火の会心ダメージは「上げられるだけ上げる」のが基本です。理想的には200%以上、究極目標は250%以上です。遺物の胴体は会心ダメージメイン、サブステでも会心ダメージを最優先で盛りましょう。装備やサブステの状況にもよりますが、最低でも180%程度は確保したいところです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "花火は何凸がおすすめですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "無凸でも十分強力ですが、最もおすすめなのは1凸です。1凸で必殺技の「奇怪な謎」の継続時間+1ターン（合計4ターン）かつ攻撃力+40%バフが追加され、バフ維持が格段に楽になります。次点で2凸がおすすめで、天賦1層につき敵の防御力を8%無視できるようになり、パーティ全体の火力が大きく向上します。さらに余裕があれば4凸で必殺技のSP回復+1と最大SPアップも強力です。6凸は戦闘スキルの会心ダメバフが全体化するため圧倒的ですが、無理に狙う必要はありません。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "花火のモチーフ光円錐「人生は遊び」がない場合、何を使えばいいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "モチーフがない場合の代替候補：(1)星5「だが戦争は終わらない」—EP効率UP＋必殺技後のSP1回復＋味方与ダメUP。花火の行動加速と相性抜群。(2)星4「過去と未来」—次に行動する味方の与ダメ大UP。行動順短縮とのシナジーが強力で、プレゼンス交換で完凸しやすいのが魅力。(3)星4「ダンス！ダンス！ダンス！」—必殺技発動時に味方全体の行動順を早める。全体の行動回数を増やせる。(4)星4「惑星との出会い」—量子統一編成を組む場合の選択肢で、全体の量子属性ダメージを底上げ。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "花火とブローニャの違いは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "花火とブローニャはどちらも味方単体の行動促進＋火力バフを持つ調和キャラですが、明確な違いがあります。花火の強みは(1)SP供給能力（最大SP+2＆必殺技でSP6回復）(2)会心ダメージバフ（自身の会心ダメ参照）(3)敵全体の被ダメアップ（天賦）(4)全属性耐性貫通+10%付与。ブローニャの強みは(1)100%行動促進（花火は50%）(2)攻撃力＋会心ダメージの両方をバフ(3)味方全体の攻撃力バフ(4)デバフ解除（軌跡）。SPを大量に消費するアタッカー（飲月・青雀・火花など）とは花火の相性が良く、逆に100%行動促進が欲しい場面や既存のブローニャ編成ではブローニャの方が適しています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "花火の強化内容（Ver.4.0〜）について教えてください",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "花火はVer.4.0以降で大幅な強化を受けました。主な変更点：(1)戦闘スキルの会心ダメバフが2ターン継続に延長（従来1ターンから強化）。(2)必殺技のSP回復量が4→6に増加、さらに溢れたSPが記録可能（最大10まで）。(3)天賦の効果が味方与ダメUPから敵の被ダメUPに変更＋味方全体攻撃力+45%＋全属性耐性貫通+10%の強力な追加効果。(4)味方が3以上のSPを消費すると、次の花火の戦闘スキルがSP消費なしに。(5)戦闘スキルバフ対象者がSPを消費すると花火のEPが回復。これらの強化により、花火のサポート性能は飛躍的に向上しています。"
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --bg: #1a1a2e;
+    --card: #16213e;
+    --accent: #e2b04a;
+    --text: #e0e0e0;
+    --sub: #a0a0b0;
+    --border: #2a2a4a;
+    --highlight: #0f3460;
+    --green: #4caf84;
+    --red: #e0556a;
+    --blue: #5b9bd5;
+    --purple: #b39ddb;
+    --quantum: #7c6dc0;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', Meiryo, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+    padding: 20px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 1.8em;
+    color: var(--accent);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 1.4em;
+    color: var(--accent);
+    margin: 36px 0 16px;
+    padding: 8px 14px;
+    border-left: 4px solid var(--accent);
+    background: var(--highlight);
+    border-radius: 0 6px 6px 0;
+  }
+  h3 {
+    font-size: 1.15em;
+    color: #d4b86a;
+    margin: 24px 0 10px;
+  }
+  .char-header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background: var(--card);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 24px;
+    border: 1px solid var(--border);
+  }
+  .char-icon {
+    width: 90px;
+    height: 90px;
+    border-radius: 12px;
+    background: var(--quantum);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2em;
+    flex-shrink: 0;
+    color: #fff;
+  }
+  .char-info { flex: 1; }
+  .char-info .name { font-size: 1.6em; font-weight: bold; color: #fff; }
+  .char-info .tags { margin-top: 6px; display: flex; gap: 8px; flex-wrap: wrap; }
+  .tag {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: bold;
+  }
+  .tag-rarity { background: #b8860b; color: #fff; }
+  .tag-element { background: var(--quantum); color: #fff; }
+  .tag-path { background: #e2b04a; color: #1a1a2e; }
+  .tag-role { background: #5b9bd5; color: #fff; }
+
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 10px;
+    margin: 16px 0;
+  }
+  .stat-box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+  }
+  .stat-box .label { font-size: 0.8em; color: var(--sub); }
+  .stat-box .value { font-size: 1.2em; font-weight: bold; color: #fff; margin-top: 4px; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 0.9em;
+  }
+  th {
+    background: var(--highlight);
+    color: var(--accent);
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px solid var(--border);
+  }
+  td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+  .star { color: var(--accent); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px;
+    margin: 16px 0;
+  }
+
+  .build-box {
+    background: var(--highlight);
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin: 12px 0;
+  }
+  .build-box .label { color: var(--accent); font-weight: bold; font-size: 0.85em; }
+  .build-box .content { color: #fff; font-weight: bold; margin-top: 4px; }
+
+  .pros-cons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 16px 0;
+  }
+  .pros, .cons {
+    padding: 14px;
+    border-radius: 8px;
+  }
+  .pros { background: rgba(76,175,132,0.1); border: 1px solid rgba(76,175,132,0.3); }
+  .cons { background: rgba(224,85,106,0.1); border: 1px solid rgba(224,85,106,0.3); }
+  .pros h4 { color: var(--green); margin-bottom: 6px; }
+  .cons h4 { color: var(--red); margin-bottom: 6px; }
+  .pros li, .cons li { margin-left: 18px; font-size: 0.9em; }
+
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 12px 0;
+  }
+  .team-slot {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 8px;
+    text-align: center;
+  }
+  .team-slot .role { font-size: 0.75em; color: var(--sub); margin-bottom: 4px; }
+  .team-slot .char { font-weight: bold; color: #fff; font-size: 0.95em; }
+
+  .faq-item {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin: 12px 0;
+    padding: 16px;
+  }
+  .faq-item .q {
+    color: var(--accent);
+    font-weight: bold;
+    font-size: 1.05em;
+    margin-bottom: 8px;
+  }
+  .faq-item .a {
+    color: var(--text);
+    line-height: 1.8;
+  }
+
+  .note {
+    background: rgba(224,176,74,0.08);
+    border-left: 3px solid var(--accent);
+    padding: 10px 14px;
+    margin: 14px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.9em;
+  }
+
+  .skill-box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px;
+    margin: 10px 0;
+  }
+  .skill-box .skill-name { font-weight: bold; color: var(--accent); font-size: 1.05em; }
+  .skill-box .skill-type { font-size: 0.8em; color: var(--sub); margin-left: 8px; }
+  .skill-box .skill-desc { margin-top: 8px; font-size: 0.9em; }
+
+  .priority-5 { color: var(--accent); }
+  .priority-4 { color: #e8c547; }
+  .priority-3 { color: #c0c0c0; }
+  .priority-2 { color: #888; }
+
+  ol, ul { padding-left: 1.5em; }
+  li { margin: 4px 0; }
+
+  .dps-table {
+    font-size: 0.85em;
+  }
+  .dps-table td, .dps-table th { padding: 6px 8px; }
+
+  @media (max-width: 600px) {
+    .char-header { flex-direction: column; text-align: center; }
+    .team-grid { grid-template-columns: repeat(2, 1fr); }
+    .pros-cons { grid-template-columns: 1fr; }
+    .stat-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+
+<article>
+  <h1>【崩壊スターレイル】花火（Sparkle）完全攻略ガイド</h1>
+
+  <!-- キャラクター基本情報 -->
+  <div class="char-header">
+    <div class="char-icon">🎭</div>
+    <div class="char-info">
+      <div class="name">花火（はなび / Sparkle）</div>
+      <div class="tags">
+        <span class="tag tag-rarity">★5</span>
+        <span class="tag tag-element">量子属性</span>
+        <span class="tag tag-path">調和（Harmony）</span>
+        <span class="tag tag-role">サポーター</span>
+      </div>
+      <div style="margin-top:8px;color:var(--sub);font-size:0.9em;">
+        所属：仮面の愚者｜声優：上田麗奈｜入手：限定排出（イベント跳躍「鏡映婆娑」）
+      </div>
+    </div>
+  </div>
+
+  <!-- ステータス概要 -->
+  <div class="stat-grid">
+    <div class="stat-box">
+      <div class="label">最大HP</div>
+      <div class="value">1,397</div>
+    </div>
+    <div class="stat-box">
+      <div class="label">攻撃力</div>
+      <div class="value">523</div>
+    </div>
+    <div class="stat-box">
+      <div class="label">防御力</div>
+      <div class="value">485</div>
+    </div>
+    <div class="stat-box">
+      <div class="label">速度</div>
+      <div class="value">101</div>
+    </div>
+    <div class="stat-box">
+      <div class="label">EP</div>
+      <div class="value">110</div>
+    </div>
+  </div>
+
+  <!-- キャラクター評価 -->
+  <div class="pros-cons">
+    <div class="pros">
+      <h4>✅ 長所</h4>
+      <ul>
+        <li>戦闘スキルで味方単体の会心ダメージ大幅UP＋行動順50%促進</li>
+        <li>必殺技でSP6回復＋溢れたSPを記録・自動補填（強化後）</li>
+        <li>天賦で最大SP+2＆敵全体の被ダメUP最大12%（3層時）</li>
+        <li>追加能力で味方全体攻撃力+45%＋全属性耐性貫通+10%</li>
+        <li>味方が3SP消費で次の戦闘スキルがSP消費なし（強化後）</li>
+        <li>通常攻撃でEP10回復＋バフ対象者のSP消費で花火のEP回復</li>
+        <li>EP110と軽いEPのおかげでEP効率縄だけで3T必殺が安定</li>
+      </ul>
+    </div>
+    <div class="cons">
+      <h4>⚠️ 短所</h4>
+      <ul>
+        <li>行動促進は50%止まり（ブローニャの100%には及ばない）</li>
+        <li>持続ダメージ（DoT）アタッカーとは相性が悪い</li>
+        <li>自身の火力はほぼない（サポート特化で攻撃力が低い）</li>
+        <li>会心ダメージの厳選が必要（遺物のハードルが高い）</li>
+        <li>量子属性・調和のため編成に属性制限が出ることがある</li>
+        <li>高凸やモチーフ光円錐がないと性能を引き出しにくい面も</li>
+      </ul>
+    </div>
+  </div>
+
+  <p>花火は、量子属性・調和の運命を歩む星5サポートキャラクターです。「仮面の愚者」の一員として、ピノコニー編でも重要な役割を果たしました。その性能は<strong>圧倒的なSP供給力と単体バフ力</strong>に特化しており、SPを大量に消費するアタッカー（飲月・青雀・火花・アーチャーなど）との組み合わせで真価を発揮します。</p>
+  <p>Ver.4.0以降の強化により、花火の評価はさらに上昇しました。戦闘スキルの会心ダメバフが2ターン継続になったことでバフの維持が格段に容易になり、必殺技のSP回復量が4から6に増加、さらに溢れたSPは記録されて自動補填されるようになりました。天賦も敵の被ダメUP効果に変更され、味方全体攻撃力+45%と全属性耐性貫通+10%という破格の追加効果が付与されています。現在では最強キャラランキングで<strong>S+評価</strong>（Altema / GameWith / Game8）を獲得する、トップクラスのサポーターです。</p>
+  <p>花火の最大の特徴は、<strong>SP供給と火力バフを両立</strong>できる点にあります。ブローニャと比較されることが多いですが、SPの収支で言えば花火は「SPを増やす」側、ブローニャは「SPを消費する」側という明確な違いがあります。SP消費の激しいアタッカーを活かすなら花火一択と言っても過言ではありません。</p>
+
+  <!-- スキル解析 -->
+  <h2>🔍 スキル解析</h2>
+
+  <div class="skill-box">
+    <div class="skill-name">通常攻撃：独り芝居 <span class="skill-type">単体攻撃</span></div>
+    <div class="skill-desc">指定した敵単体に花火の攻撃力<span style="color:var(--accent);">50%〜110%</span>（Lv1〜Lv7）の量子属性ダメージを与える。削靭値10。<br>強化優先度：<span class="priority-2">★★☆☆☆</span></div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">花火のダメージソースとしての価値は低いが、SP供給のために通常攻撃を使う機会は多い。軌跡「歳時記」で通常攻撃時にEPを10回復するため、SP節約時でもEP管理に貢献。また、戦闘スキルの会心ダメバフ対象者がSPを消費すると花火のEPがさらに1回復するため、EP効率は非常に高い。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">戦闘スキル：夢を泳ぐ魚 <span class="skill-type">単体バフ / 行動促進</span></div>
+    <div class="skill-desc">
+      指定した味方単体の会心ダメージを、花火の会心ダメージ<span style="color:var(--accent);">12%+27%〜26.4%+48.6%</span>（Lv1〜Lv12）分アップする。2ターン継続。その味方の行動順を<span style="color:var(--accent);">50%</span>早める。<br>
+      自身に対してこのスキルを発動した時、行動順を早める効果は発動しない。<br>
+      <strong>【追加効果】</strong>味方キャラが1ターンの行動でSPを3以上消費した場合、花火が次に戦闘スキルを発動する時、SPを消費しない。<br>
+      強化優先度：<span class="priority-5">★★★★★</span>
+    </div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">花火の最優先強化スキル。Lv10時点で花火の会心ダメージ24%+45%分のバフを付与。つまり花火の会心ダメージが200%なら、対象には24%×200%+45%＝93%もの会心ダメバフが乗る計算になる。行動促進50%はブローニャの100%より控えめだが、高速花火なら毎ターンアタッカーに先手を取らせることが可能。強化後は2ターン持続になったため、1回のスキルで2回の攻撃をカバーできるようになった。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">必殺技：一人千役 <span class="skill-type">SP回復 / 全体バフ</span></div>
+    <div class="skill-desc">
+      SPを<span style="color:var(--accent);">6</span>回復する。回復時にSPが上限を超えた場合、超過分のSPを記録し、最大10まで記録できる。味方キャラのターン終了後、SPが上限未満の場合、花火は記録値を消費してSPを回復する（SPが上限になるまで繰り返される）。<br>
+      味方全体に「奇怪な謎」を付与する（3ターン継続）。「奇怪な謎」を持つ味方が触発する花火の天賦による敵のダメージアップ効果は、さらに各層<span style="color:var(--accent);">6%</span>アップする。<br>
+      強化優先度：<span class="priority-4">★★★★☆</span>
+    </div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">強化後、SP回復量が4から6に大幅増加。SPの無駄が発生しないよう溢れ分は記録され、SPが不足したタイミングで自動補填されるため、従来のように溢れを気にして必殺技のタイミングを調整する必要がなくなった。必殺技の回転率はEP110の軽さも相まって、EP効率縄のみで実質3ターン周期が可能。天賦の被ダメUP効果とも連動するため、バフの維持には必殺技の継続的な使用が欠かせない。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">天賦：叙述トリック <span class="skill-type">常時効果 / SP連動</span></div>
+    <div class="skill-desc">
+      花火がフィールド上にいる時、パーティの<span style="color:var(--accent);">最大SP+2</span>（初期SP上限が5→7になる）。<br>
+      味方がSPを1消費するたびに、花火が「幻相」を1層獲得する。「幻相」1層につき敵全体の受けるダメージ+<span style="color:var(--accent);">4%</span>（Lv10時）、2ターン継続。最大3層累積（合計12%）。<br>
+      <strong>【追加能力「夜想曲」】</strong>味方全体の攻撃力+45％。味方キャラが戦闘スキルの会心ダメージアップ効果を持つ時、全属性耐性貫通+10%。<br>
+      強化優先度：<span class="priority-5">★★★★★</span>
+    </div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">花火がフィールドにいるだけでパーティ全体のSP上限が2増加するため、SP管理が格段に楽になる。強化後は天賦の効果が「味方の与ダメUP」から「敵の被ダメUP」に変更され、さらに夜想曲で攻撃力+45%と全属性耐性貫通+10%を味方全体に付与できるようになった。この追加能力だけでサポーターとしての価値が桁違いに上がっている。とくに全属性耐性貫通は貴重で、高難易度の敵に対して安定した火力を発揮できる。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">秘技：信用できない語り手 <span class="skill-type">戦闘前効果</span></div>
+    <div class="skill-desc">秘技を使用した後、味方全体は20秒の「ミスリード」状態になる。敵に発見されなくなり、敵を先制攻撃して戦闘に入る時、SPを3回復し、花火はEPを20回復する。</div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">マップ exploration での利便性が非常に高い秘技。敵に発見されなくなるだけでなく、先制攻撃でSP3回復＋EP20回復という破格の効果を持つ。模擬宇宙や高難易度コンテンツでは開幕からSPアドバンテージを得られるため、積極的に使いたい。</p>
+
+  <h3>軌跡（追加能力）</h3>
+  <table>
+    <tr><th>軌跡名</th><th>解放条件</th><th>効果</th><th>必須度</th></tr>
+    <tr><td>歳時記</td><td>昇格2</td><td>通常攻撃を行う時、EPを10回復する。戦闘スキルの会心ダメージアップ効果を持つ味方キャラがSPを消費する時、花火がさらにEPを1回復する。</td><td><span style="color:var(--accent);">★★★★★</span></td></tr>
+    <tr><td>人造の花</td><td>昇格4</td><td>味方キャラが1ターンの行動でSPを3以上消費した場合、花火が次に戦闘スキルを発動する時、SPを消費しない。</td><td><span style="color:var(--accent);">★★★★★</span></td></tr>
+    <tr><td>夜想曲</td><td>昇格6</td><td>味方全体の攻撃力+45%。味方キャラが戦闘スキルの会心ダメージアップ効果を持つ時、全属性耐性貫通+10%。</td><td><span style="color:var(--accent);">★★★★★</span></td></tr>
+  </table>
+
+  <div class="note">
+    <strong>💡 スキル強化の優先順位：</strong> 戦闘スキル ＞ 天賦 ＞ 必殺技 ＞ 通常攻撃。戦闘スキルと天賦は最優先でLv10を目指そう。必殺技は天賦へのシナジーもあるため最終的にはLv10推奨。軌跡の追加能力は3つとも全て取得必須級。特に夜想曲（味方全体攻撃力+45%＆全属性耐性貫通+10%）は花火のコア性能なので、昇格6になったら即座に解放しよう。
+  </div>
+
+  <!-- 星魂 -->
+  <h2>💎 星魂（エイドロン）</h2>
+  <table>
+    <tr><th>凸数</th><th>名称</th><th>効果</th><th>おすすめ度</th></tr>
+    <tr><td>1凸</td><td>捨て置かれた疑念</td><td>「奇怪な謎」を持つ味方の攻撃力+40%。戦闘開始時または戦闘スキルを発動する時、花火の速度+15%（2ターン継続）</td><td><span style="color:var(--accent);">★★★★★</span></td></tr>
+    <tr><td>2凸</td><td>謂れなき虚構</td><td>天賦の効果1層につき、さらに敵の防御力を8%無視。合計24%防御無視（3層時）</td><td><span style="color:var(--accent);">★★★★★</span></td></tr>
+    <tr><td>3凸</td><td>夢幻泡影</td><td>戦闘スキルLv+2（最大15）、通常攻撃Lv+1（最大10）</td><td><span style="color:#c0c0c0;">★★★☆☆</span></td></tr>
+    <tr><td>4凸</td><td>俗世遊興</td><td>必殺技がさらにSPを1回復（合計7回復）。天賦の最大SPアップ効果がさらに1アップ（最大SP+3→合計8）</td><td><span style="color:#e8c547;">★★★★☆</span></td></tr>
+    <tr><td>5凸</td><td>裏表の真相</td><td>必殺技Lv+2（最大15）、天賦Lv+2（最大15）</td><td><span style="color:#888;">★★☆☆☆</span></td></tr>
+    <tr><td>6凸</td><td>重なる解答</td><td>戦闘スキルの会心ダメージアップ効果がさらに花火の会心ダメージ30%分アップ。戦闘スキル発動時、会心ダメバフが「奇怪な謎」を持つ全味方に有効に。必殺技発動時、会心ダメバフを持つ味方がいれば「奇怪な謎」を持つ味方に拡散</td><td><span style="color:#e8c547;">★★★★★</span></td></tr>
+  </table>
+
+  <h3>凸のすすめ：詳細解説</h3>
+  <p><strong>無凸（0凸）でも運用可能</strong>ですが、サポート性能を最大限引き出すには凸が大きく影響します。</p>
+  <p><strong>1凸が最もコスパ優秀</strong>です。「奇怪な謎」の継続時間+1ターンにより必殺技のバフ切れが起こりにくくなり、さらに攻撃力+40%バフが追加されます。速度+15%効果も馬鹿にならず、高速運用がさらに容易になります。花火を本格的に運用するなら、まずは1凸を目標にしましょう。</p>
+  <p><strong>2凸</strong>は天賦1層につき敵の防御力を10%無視（合計30%）。防御無視は火力バフの中でも特に優れており、ルアン・メェイの凸効果などと組み合わせると驚異的な火力になります。ハイパーキャリー編成では2凸まで進めておきたいところです。</p>
+  <p><strong>4凸</strong>は必殺技のSP回復+1（計7に）＆最大SP+3（合計8）。SP供給能力がさらに飛躍的に向上し、SPを大幅に消費する編成（特に火花・アーチャー）で真価を発揮します。</p>
+  <p><strong>6凸</strong>は戦闘スキルの会心ダメバフが全体化するという破格の効果。6凸さえあれば1人の花火がパーティ全体の会心ダメージを大幅に引き上げるサポート能力を得られます。しかし、そのコストを考えると、無理に狙うよりも1凸止めや2凸止めで他の限定キャラを確保するほうが現実的です。</p>
+
+  <!-- 遺物推荐 -->
+  <h2>⚔️ おすすめ遺物</h2>
+
+  <h3>トンネル遺物（メインセット）</h3>
+  <table>
+    <tr><th>セット</th><th>セット効果</th><th>おすすめ度</th><th>解説</th></tr>
+    <tr>
+      <td><strong>再び苦難の道を歩む司祭</strong> 4セット</td>
+      <td>2セット：速度+6%<br>4セット：味方単体への戦闘スキルまたは必殺技発動時、ターゲットの会心ダメージ+18%（2ターン、最大2層累積）</td>
+      <td><span class="star">★★★★★</span></td>
+      <td>花火に最適の遺物。速度UPに加えて、4セット効果でアタッカーの会心ダメージを最大36%も底上げできる。花火の戦闘スキル連打と完璧にシナジー。</td>
+    </tr>
+    <tr>
+      <td><strong>仮想空間を漫遊するメッセンジャー</strong> 4セット</td>
+      <td>2セット：速度+6%<br>4セット：装備キャラが味方に必殺技を発動した時、味方全体の速度+12%（1ターン継続）</td>
+      <td><span style="color:#e8c547;">★★★★☆</span></td>
+      <td>司祭が揃っていない場合の有力な選択肢。必殺技時の全体速度バフが強力で、味方全体の行動回数を増やせる。</td>
+    </tr>
+    <tr>
+      <td><strong>流雲無痕の過客</strong> 4セット</td>
+      <td>2セット：治癒量+10%<br>4セット：戦闘開始時、SPを1回復</td>
+      <td><span style="color:#c0c0c0;">★★★☆☆</span></td>
+      <td>開幕SP回復が便利。ただし花火の性能をフルに活かすなら司祭のほうが総合的には上。</td>
+    </tr>
+    <tr>
+      <td><strong>司祭2 + メッセンジャー2</strong></td>
+      <td>速度+6%（2倍）＝速度+12%</td>
+      <td><span style="color:#e8c547;">★★★☆☆</span></td>
+      <td>速度特化の暫定構成。速度目標を達成するための妥協案として。最終的には司祭4を目指したい。</td>
+    </tr>
+  </table>
+
+  <h3>次元界オーナメント</h3>
+  <table>
+    <tr><th>セット</th><th>セット効果</th><th>おすすめ度</th><th>解説</th></tr>
+    <tr>
+      <td><strong>海に沈んだルサカ</strong></td>
+      <td>EP回復効率+5%。装備キャラがパーティの1枠目でない場合、1枠目の攻撃力+12%</td>
+      <td><span class="star">★★★★★</span></td>
+      <td>花火の最適オーナメント。EP効率UPで必殺技の回転率向上。ハイパーキャリー編成で1枠目のアタッカーに攻撃力バフも付与できる。</td>
+    </tr>
+    <tr>
+      <td><strong>夢の地ピノコニー</strong></td>
+      <td>EP回復効率+5%。パーティ中、装備キャラと同じ属性（量子）の味方の与ダメージ+10%</td>
+      <td><span style="color:#e8c547;">★★★★☆</span></td>
+      <td>量子統一編成時に優秀。量子属性のアタッカー（青雀・ゼーレ・火花・銀狼など）の火力を底上げ。</td>
+    </tr>
+    <tr>
+      <td><strong>折れた竜骨</strong></td>
+      <td>効果抵抗+10%。効果抵抗30%以上で味方全体の会心ダメージ+10%</td>
+      <td><span style="color:#e8c547;">★★★★☆</span></td>
+      <td>効果抵抗をサブで30%確保できれば、味方全体に会心ダメ+10%バフ。花火のステータスボーナスにも効果抵抗があるため条件達成は比較的容易。</td>
+    </tr>
+    <tr>
+      <td><strong>生命のウェンワーク</strong></td>
+      <td>EP回復効率+5%。装備キャラの速度145以上の場合、攻撃力+8%</td>
+      <td><span style="color:#c0c0c0;">★★★☆☆</span></td>
+      <td>速度145以上を達成できるなら選択肢に入る。ただしルサカやピノコニーの方が総合的な貢献度は高い。</td>
+    </tr>
+  </table>
+
+  <h3>遺物メインステータス</h3>
+  <table>
+    <tr><th>部位</th><th>メインステータス</th><th>備考</th></tr>
+    <tr><td>頭部</td><td>HP（固定）</td><td>—</td></tr>
+    <tr><td>手部</td><td>攻撃力（固定）</td><td>—</td></tr>
+    <tr><td>胴体</td><td><strong>会心ダメージ</strong></td><td>花火の戦闘スキルバフ量に直結するため、固定。他に選択肢なし。</td></tr>
+    <tr><td>脚部</td><td><strong>速度</strong></td><td>高速運用が基本のため速度一択。速度を盛れるだけ盛る。</td></tr>
+    <tr><td>次元界オーブ</td><td><strong>HP%</strong> または 防御力%</td><td>花火の耐久力を上げるため。攻撃力%は意味がないので避ける。</td></tr>
+    <tr><td>連結縄</td><td><strong>EP回復効率</strong></td><td>必殺技の3T回転に必須。EP効率がないと必殺技の間隔が空いてしまう。</td></tr>
+  </table>
+
+  <div class="note">
+    <strong>💡 サブステータス優先度：</strong> 会心ダメージ ＞ 速度 ＞ 効果抵抗 ≧ HP% ≧ 防御力%<br>
+    速度目標は用途によって変わる。（1）速度160（2Rで4回行動、最理想）、（2）速度146（5Rで8回行動）、（3）速度143（3Rで5回行動、実用的目標）、（4）速度134（1Rで2回行動、最低ライン）。会心ダメージは200%以上を目指そう。効果抵抗は折れた竜骨を採用する場合に優先度が上がる。
+  </div>
+
+  <!-- 光円錐推荐 -->
+  <h2>💡 おすすめ光円錐</h2>
+
+  <table>
+    <tr><th>光円錐</th><th>レア</th><th>効果概要</th><th>おすすめ度</th></tr>
+    <tr>
+      <td><strong>人生は遊び</strong></td>
+      <td>★5</td>
+      <td>会心ダメージ+32%。必殺技によるSP消費後、味方全体に「仮面」を付与（4層累積）。1層につき会心率+4%＆会心ダメージ+8%（超越1時）</td>
+      <td><span class="star">★★★★★</span><br><span style="color:var(--accent);">最適（モチーフ）</span></td>
+    </tr>
+    <tr>
+      <td><strong>だが戦争は終わらない</strong></td>
+      <td>★5</td>
+      <td>EP回復効率+8%。戦闘スキルで行動順短縮効果のある味方の与ダメ+30%（2ターン）。必殺技発動時SP1回復</td>
+      <td><span style="color:#e8c547;">★★★★☆</span><br><span style="color:var(--sub);">恒常★5</span></td>
+    </tr>
+    <tr>
+      <td><strong>過去と未来</strong></td>
+      <td>★4</td>
+      <td>戦闘スキル発動時、次に行動する味方の与ダメージ+24%（最大32%、超越5）</td>
+      <td><span style="color:#e8c547;">★★★★☆</span><br><span style="color:var(--accent);">★4最適</span></td>
+    </tr>
+    <tr>
+      <td><strong>ダンス！ダンス！ダンス！</strong></td>
+      <td>★4</td>
+      <td>装備キャラが必殺技を発動した時、味方全体の行動順を16%（最大24%）早める</td>
+      <td><span style="color:#e8c547;">★★★☆☆</span></td>
+    </tr>
+    <tr>
+      <td><strong>惑星との出会い</strong></td>
+      <td>★4</td>
+      <td>戦闘開始時、装備キャラと同じ属性の味方全体の与ダメージ+12%（最大24%）</td>
+      <td><span style="color:#c0c0c0;">★★★☆☆</span><br><span style="color:var(--sub);">量子統一用</span></td>
+    </tr>
+    <tr>
+      <td><strong>彫月裁雲の意</strong></td>
+      <td>★4</td>
+      <td>戦闘開始時、会心率+12%（最大24%）か会心ダメージ+18%（最大36%）のいずれかをランダムでパーティ全体に付与</td>
+      <td><span style="color:#c0c0c0;">★★☆☆☆</span><br><span style="color:var(--sub);">妥協案</span></td>
+    </tr>
+  </table>
+
+  <div class="build-box">
+    <div class="label">🏆 最適光円錐</div>
+    <div class="content">人生は遊び（★5・モチーフ）</div>
+    <div style="margin-top:6px;font-size:0.9em;">花火のモチーフ光円錐。無条件で会心ダメージ+32%が乗るだけでなく、必殺技後にSPを消費するたびに味方全体に「仮面」を付与し、会心率と会心ダメージを継続的にバフできる。花火自身の会心ダメージも上がるため、戦闘スキルのバフ量も間接的に上昇する。完璧なシナジーを持つ光円錐。</div>
+  </div>
+
+  <div class="build-box">
+    <div class="label">💰 無課金・低予算向け</div>
+    <div class="content">過去と未来（★4）</div>
+    <div style="margin-top:6px;font-size:0.9em;">恒常ガチャや交換ショップ「虚影の残光」で入手可能。花火の戦闘スキル→アタッカーへの行動促進との相性が完璧で、次に行動する味方の与ダメージを最大32%も底上げできる。超越5まで重ねやすいのも魅力。プレゼンス交換でも入手可能なため、無課金・微課金にとって最も現実的な選択肢。</div>
+  </div>
+
+  <h3>光円錐選択のポイント</h3>
+  <p>花火の光円錐選びで最も重要なのは<strong>「会心ダメージの補強」</strong>と<strong>「EP効率・SP補助」</strong>の2軸です。モチーフの「人生は遊び」はその両方を満たす理想的な光円錐ですが、恒常の「だが戦争は終わらない」もEP効率とSP回復を両立できる優れた選択肢です。「過去と未来」は無課金の最有力候補で、プレゼンス交換で完凸を狙えるのが最大の利点です。</p>
+
+  <!-- 理想編成 -->
+  <h2>🤝 理想編成</h2>
+
+  <h3>編成①：量子統一パーティ（花火＋青雀＋符玄＋銀狼）</h3>
+  <div class="team-grid">
+    <div class="team-slot">
+      <div class="role">🔥 メインアタッカー</div>
+      <div class="char">青雀 / ゼーレ</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">量子・知恵 / 巡狩</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🎯 SPサポート</div>
+      <div class="char">花火</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">量子・調和</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🔰 デバッファー</div>
+      <div class="char">銀狼</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">量子・虚無</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🛡️ タンク</div>
+      <div class="char">符玄</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">量子・存護</div>
+    </div>
+  </div>
+  <p style="font-size:0.9em;color:var(--sub);">花火を軸にした最もスタンダードな量子染めパーティ。花火のSP供給により青雀は常にSPを消費し続けられ、暗号解読（麻雀）の効率が飛躍的に向上。銀狼の弱点埋め込みで量子弱点を安定して付与でき、符玄の会心率バフと花火の会心ダメバフで青雀の火力が爆発的に増加する。ピノコニーオーナメントの量子与ダメ+10%もフル活用できる。</p>
+
+  <h3>編成②：飲月ハイパーキャリー（花火＋飲月＋停雲＋羅刹）</h3>
+  <div class="team-grid">
+    <div class="team-slot">
+      <div class="role">🔥 メインアタッカー</div>
+      <div class="char">丹恒・飲月</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">虚数・壊滅</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🎯 SP＋バフ</div>
+      <div class="char">花火</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">量子・調和</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">⚡ EP＋攻撃バフ</div>
+      <div class="char">停雲</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">雷・調和</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">💚 ヒーラー</div>
+      <div class="char">羅刹</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">虚数・豊穣</div>
+    </div>
+  </div>
+  <p style="font-size:0.9em;color:var(--sub);">飲月は3段階強化通常攻撃にSPを3消費するため、花火との相性は抜群。花火のSP供給＋行動促進で飲月の強化攻撃を連打できる。停雲のEP供給で飲月の必殺技回転率も向上。羅刹は結界でSP消費なしの回復を提供し、SPを全て飲月に回せる。羅刹を所持していない場合はリンクスやギャラガーでも代用可能。</p>
+
+  <h3>編成③：火花（スパーク）キャリー編成</h3>
+  <div class="team-grid">
+    <div class="team-slot">
+      <div class="role">🔥 メインアタッカー</div>
+      <div class="char">火花</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">雷・愉悦</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🎯 SP＋会心バフ</div>
+      <div class="char">花火</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">量子・調和</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🔄 サブ火力</div>
+      <div class="char">爻光</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">雷・知恵</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🛡️ 耐久</div>
+      <div class="char">丹恒・騰荒</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">虚数・豊穣</div>
+    </div>
+  </div>
+  <p style="font-size:0.9em;color:var(--sub);">火花がSPを消費し尽くして強化通常攻撃を連打する構成。花火がSP供給と会心ダメバフを担当。爻光はスキル効果を維持しつつ通常攻撃でSPを節約。丹恒・騰荒は基本的に通常攻撃のみでSPを供給しつつ、必殺技で回復も担当。花火の全属性耐性貫通+10%は属性を問わず火力に直結するため、属性混成編成でも十分に機能する。</p>
+
+  <h3>編成④：微課金向け青雀軸スターターパーティ</h3>
+  <div class="team-grid">
+    <div class="team-slot">
+      <div class="role">🔥 メインアタッカー</div>
+      <div class="char">青雀</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">量子・知恵（星4）</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🎯 SP＋バフ</div>
+      <div class="char">花火</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">量子・調和</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🎯 デバッファー</div>
+      <div class="char">ペラ</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">氷・虚無（星4）</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">💚 ヒーラー</div>
+      <div class="char">リンクス</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">量子・豊穣（星4）</div>
+    </div>
+  </div>
+  <p style="font-size:0.9em;color:var(--sub);">花火以外を星4キャラで構成した低コスト編成。ペラの全体防御デバフ＋花火の被ダメUPで敵の耐久力を大幅に低下。リンクスは量子属性のヒーラーで、符玄の代用として機能。青雀は花火から供給される潤沢なSPで暗号解読を連発できる。ペラの代わりに停雲や寒鴉を採用しても良い。無課金でも十分に戦える実用的な編成。</p>
+
+  <h3>相性の良いキャラ一覧</h3>
+  <table>
+    <tr><th>キャラ</th><th>属性/運命</th><th>相性の理由</th><th>おすすめ度</th></tr>
+    <tr><td>火花</td><td>雷・愉悦</td><td>SP大量消費アタッカー。花火のSP供給＋会心バフで火力最大化</td><td><span class="star">★★★★★</span></td></tr>
+    <tr><td>青雀</td><td>量子・知恵（星4）</td><td>SP大量消費＋同属性。花火のバフを最大限活用できる</td><td><span class="star">★★★★★</span></td></tr>
+    <tr><td>丹恒・飲月</td><td>虚数・壊滅</td><td>SP3消費の強化攻撃を持つ。花火とのシナジーが極めて高い</td><td><span class="star">★★★★★</span></td></tr>
+    <tr><td>アーチャー</td><td>物理・巡狩</td><td>高SP消費の量子属性アタッカー。花火でSP供給して戦闘スキル連打</td><td><span class="star">★★★★★</span></td></tr>
+    <tr><td>ゼーレ</td><td>量子・巡狩</td><td>再行動とSP消費のバランスが良い。花火のバフで殲滅力向上</td><td><span style="color:#e8c547;">★★★★☆</span></td></tr>
+    <tr><td>ミーシャ</td><td>氷・壊滅（星4）</td><td>SP消費と回復を両立。会心バフも有効活用</td><td><span style="color:#e8c547;">★★★★☆</span></td></tr>
+    <tr><td>符玄</td><td>量子・存護</td><td>量子統一編成のタンク。会心率バフ＋花火の会心ダメバフで強力</td><td><span style="color:#e8c547;">★★★★☆</span></td></tr>
+    <tr><td>銀狼</td><td>量子・虚無</td><td>量子統一編成のデバッファー。弱点埋め込みで編成が安定</td><td><span style="color:#e8c547;">★★★★☆</span></td></tr>
+    <tr><td>爻光</td><td>雷・知恵</td><td>SP節約しながらサブ火力を出せる。花火との編成で輝く</td><td><span style="color:#e8c547;">★★★★☆</span></td></tr>
+    <tr><td>停雲</td><td>雷・調和（星4）</td><td>EP供給＋攻撃バフ。花火とWサポートでアタッカーを徹底支援</td><td><span style="color:#e8c547;">★★★★☆</span></td></tr>
+  </table>
+
+  <div class="note">
+    <strong>💡 編成のポイント：</strong> 花火と最も相性が良いのは「SPを大量に消費するアタッカー」です。飲月（3SP）、青雀（暗号解読連打）、火花（強化攻撃連打）が該当します。花火を入れることで、これらのアタッカーは従来より明らかに高い頻度で強攻撃を打てるようになります。一方、持続ダメージ（DoT）アタッカー（カフカ・ブラックスワンなど）は会心が乗らないため、花火の会心ダメバフを活かせません。花火を編成するなら、会心ビルドのアタッカーを必ず採用しましょう。耐久枠はSPを節約できるキャラ（羅刹・符玄・リンクス・丹恒・騰荒など）がベストです。SPを消費するヒーラーは花火の編成では使いにくいため注意が必要です。
+  </div>
+
+  <!-- よくある質問 -->
+  <h2>❓ よくある質問（FAQ）</h2>
+
+  <div class="faq-item">
+    <div class="q">Q. 花火の速度はいくつが最適ですか？</div>
+    <div class="a">
+      花火は<strong>高速運用が基本</strong>です。理想的な速度目標は以下の通り：
+      <ul style="margin-top:6px;">
+        <li><strong>速度160</strong>：究極目標。2ラウンドに4回行動可能。最高の行動促進頻度を実現。</li>
+        <li><strong>速度158</strong>：「ダンス！ダンス！ダンス！」＋ウェンワーク編成での目標。1ラウンド3回行動可能。</li>
+        <li><strong>速度146</strong>：実用的な目標。5ラウンドに8回行動。</li>
+        <li><strong>速度143</strong>：現実的な最低目標。3ラウンドに5回行動。</li>
+        <li><strong>速度134</strong>：絶対に確保したい最低ライン。1ラウンドに2回行動。</li>
+      </ul>
+      速度が高ければ高いほど、戦闘スキルによるアタッカーの行動促進回数が増え、SP供給と天賦の被ダメUP維持が安定します。花火は速度を盛ることに一切のデメリットがないキャラクターです。遺物のサブステで可能な限り速度を確保しましょう。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 花火の会心ダメージはどれくらい必要ですか？</div>
+    <div class="a">
+      花火の戦闘スキルによる会心ダメージバフ量は<strong>花火自身の会心ダメージに依存</strong>します。計算式は「戦闘スキルLv10時：花火の会心ダメージ×24%＋45%」です。つまり：
+      <ul style="margin-top:6px;">
+        <li>花火の会心ダメ150%の場合：150%×0.24+45%＝81%のバフ</li>
+        <li>花火の会心ダメ200%の場合：200%×0.24+45%＝93%のバフ</li>
+        <li>花火の会心ダメ250%の場合：250%×0.24+45%＝105%のバフ</li>
+        <li>花火の会心ダメ300%の場合：300%×0.24+45%＝117%のバフ</li>
+      </ul>
+      目標は<strong>200%以上</strong>、究極的には<strong>250%以上</strong>を目指しましょう。胴体は会心ダメージメイン固定で、サブステでも会心ダメージを最優先で盛ります。モチーフ光円錐「人生は遊び」があれば32%の会心ダメージが乗るため達成が容易になります。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 花火は何凸がおすすめですか？</div>
+    <div class="a">
+      無凸でも十分に強力ですが、コストパフォーマンスを考慮すると以下のようにおすすめします：
+      <ul style="margin-top:6px;">
+        <li><strong>1凸（最もおすすめ）</strong>：「奇怪な謎」の持続+1ターンでバフ維持が安定。攻撃力+40%バフの追加。速度+15%で高速運用が容易に。</li>
+        <li><strong>2凸（余裕があれば）</strong>：敵の防御力を最大30%無視。防御無視は火力への影響が大きく、高難易度での価値が高い。</li>
+        <li><strong>4凸（課金者向け）</strong>：SP回復+1で計7回復に。最大SP+3でパーティのSP上限が8に。SP供給がさらに安定。</li>
+        <li><strong>6凸（完全体）</strong>：会心ダメバフが全体化。パーティ全体の火力が飛躍的に向上。</li>
+      </ul>
+      多くのプレイヤーにとっては<strong>1凸で止めるのが最も現実的</strong>です。無凸でも問題なく使えますが、1凸のコスパは非常に高いので、花火をメインサポーターとして運用するなら1凸を強くおすすめします。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 花火のモチーフ光円錐「人生は遊び」がない場合、何を使えばいいですか？</div>
+    <div class="a">
+      モチーフ光円錐がない場合の代替候補は以下の通りです：
+      <ol style="margin-top:6px;">
+        <li><strong>星5「だが戦争は終わらない」</strong>：恒常ガチャやスターレイルウォーフで入手可能。EP効率+必殺技後のSP1回復が優秀。花火の戦闘スキルによる行動促進と好相性。</li>
+        <li><strong>星4「過去と未来」</strong>：プレゼンス交換（虚影の残光）や恒常ガチャで入手・完凸可能。戦闘スキル発動後、次に行動する味方の与ダメを最大32%アップ。花火の行動促進と完璧に噛み合う。</li>
+        <li><strong>星4「ダンス！ダンス！ダンス！」</strong>：必殺技発動時に味方全体の行動順を早める。全体の行動回数を増やせる。花火の高速必殺技回転と相性が良い。</li>
+        <li><strong>星4「惑星との出会い」</strong>：量子統一編成で有効。無条件で全体の量子属性ダメージがアップ。青雀・ゼーレ・銀狼・符玄との量子染め編成で輝く。</li>
+        <li><strong>星4「彫月裁雲の意」</strong>：会心率or会心ダメージのランダムバフ。ランダム性がネックだが、会心ダメバフが引ければ強力。</li>
+      </ol>
+      総合的には<strong>「過去と未来」が無課金最強</strong>です。入手性が良く、完凸のハードルも低いため、モチーフがない場合はまずこれを目指しましょう。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 花火とブローニャの違いは何ですか？どちらを使うべき？</div>
+    <div class="a">
+      花火とブローニャはよく比較されますが、以下のように明確な使い分けがあります：
+      <table class="dps-table" style="margin-top:8px;">
+        <tr><th>項目</th><th>花火</th><th>ブローニャ</th></tr>
+        <tr><td>行動促進</td><td>50%</td><td>100%（即時行動）</td></tr>
+        <tr><td>SP収支</td><td>増やす側（最大SP+2、必殺技でSP6回復）</td><td>消費する側（戦闘スキルでSP消費）</td></tr>
+        <tr><td>メインバフ</td><td>会心ダメージ（自身の会心ダメ参照）</td><td>攻撃力＋会心ダメージ</td></tr>
+        <tr><td>全体バフ</td><td>攻撃力+45%、被ダメUP12%、全属性耐性貫通+10%</td><td>攻撃力+55%（必殺技、Lv10時）</td></tr>
+        <tr><td>デバフ解除</td><td>なし</td><td>戦闘スキルで解除可能（軌跡）</td></tr>
+        <tr><td>最適アタッカー</td><td>SP大量消費型（飲月・青雀・火花）</td><td>全アタッカー全般</td></tr>
+        <tr><td>凸の価値</td><td>高い（1凸で大幅強化）</td><td>高い（1凸でSP節約、6凸で全体バフ）</td></tr>
+      </table>
+      <p style="margin-top:8px;"><strong>選び方の指針：</strong>SP消費の激しいアタッカー（飲月・青雀・火花）を使うなら花火一択。それ以外のアタッカー（ゼーレ・鏡流・刃など）ならブローニャでも花火でも好み。100%行動促進が必要ならブローニャ、SPに余裕を持たせたいなら花火。また、花火はデバフ解除ができないため、デバフの多い高難易度ではブローニャに軍配が上がることもあります。両方所持していれば用途によって使い分けるのが理想的です。</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 花火のオーナメントはルサカと竜骨、どちらが良いですか？</div>
+    <div class="a">
+      基本的には<strong>ルサカが最適</strong>です。理由は以下の通り：
+      <ul style="margin-top:6px;">
+        <li><strong>ルサカの強み</strong>：EP回復効率+5%で必殺技の回転率が向上。1枠目のアタッカーに攻撃力+12%も付与できるため、ハイパーキャリー編成での価値が高い。</li>
+        <li><strong>竜骨の強み</strong>：効果抵抗+10%で行動制限デバフ耐性が向上。効果抵抗30%条件を満たせば味方全体の会心ダメージ+10%。花火のステータスボーナスにも効果抵抗強化がある。</li>
+      </ul>
+      ルサカは安定したEP効率と攻撃力バフで総合的な貢献度が高い一方、竜骨は効果抵抗によるデバフ耐性と全体会心ダメバフが魅力です。<strong>「EP効率重視ならルサカ」「耐久重視かつ会心バフが欲しいなら竜骨」</strong>という使い分けがおすすめです。量子统一編成ならピノコニーも強力な選択肢になります。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 花火は遺物の胴体、なぜ会心ダメージ固定なのですか？HP%ではダメですか？</div>
+    <div class="a">
+      花火の戦闘スキル「夢を泳ぐ魚」は<strong>「花火の会心ダメージを参照してアタッカーに会心ダメバフを付与する」</strong>という仕様のため、<strong>胴体は会心ダメージ一択</strong>です。HP%や防御力%を選ぶと戦闘スキルのバフ量が著しく低下し、花火を編成する意味が半減します。
+      <br><br>
+      花火自身の火力はほとんど期待されていないため、耐久面はオーブ（HP%推奨）とサブステータスで補う設計になります。花火は基本後衛で運用するため、HP%オーブ＋サブステでのHP/防御補強で十分に生存できます。どうしても花火が倒れやすいと感じる場合は、サブステでHP%や防御力%を意識的に集めましょう。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 花火は持続ダメージ（DoT）パーティで使えますか？</div>
+    <div class="a">
+      <strong>結論から言うと、DoTパーティでは花火の性能を十分に活かせません。</strong>その理由は以下の通りです：
+      <ol style="margin-top:6px;">
+        <li>DoTダメージは<strong>会心が発生しない</strong>ため、花火の戦闘スキルによる会心ダメージバフが完全に無意味になる。</li>
+        <li>花火の行動促進はアタッカーの手数を増やすために使うが、DoTアタッカー（カフカ・ブラックスワンなど）は元々速度を盛ることが多く、行動促進の恩恵が相対的に小さい。</li>
+        <li>DoTパーティではルアン・メェイやサンデーなどの方が総合的な貢献度が高い。</li>
+      </ol>
+      ただし、<strong>花火のSP供給能力と全体バフ（攻撃力+45%、被ダメUP、全属性耐性貫通）だけ</strong>を目的としてDoTパーティに編成することは可能です。しかし、それならSP節約に優れたヒーラーや耐久キャラを入れたほうが効率的な場合が多いため、DoTパーティでの花火採用はおすすめしません。花火はあくまで<strong>会心型アタッカー向けのサポーター</strong>です。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 花火の強化内容（Ver.4.0〜）を教えてください。強化前と強化後で何が変わりましたか？</div>
+    <div class="a">
+      花火はVer.4.0の調整で大幅な強化を受けました。主な変更点は以下の通りです：
+      <ul style="margin-top:6px;">
+        <li><strong>戦闘スキル</strong>：会心ダメバフの持続が1ターン→<strong>2ターン</strong>に延長。バフ維持が格段に容易になった。</li>
+        <li><strong>必殺技</strong>：SP回復量が4→<strong>6</strong>に増加。溢れたSPを<strong>記録して自動補填</strong>（最大10）できるように。</li>
+        <li><strong>天賦</strong>：効果が「味方の与ダメUP」から「<strong>敵の被ダメUP</strong>」に変更。最大12%（3層時）。</li>
+        <li><strong>追加能力「夜想曲」</strong>：味方全体攻撃力+45％＋全属性耐性貫通+10%が追加（新規）。</li>
+        <li><strong>新追加効果1</strong>：味方が1ターンでSPを3以上消費すると、次の花火の戦闘スキルが<strong>SP消費なし</strong>に。</li>
+        <li><strong>新追加効果2</strong>：戦闘スキルのバフ対象者がSPを消費すると、花火の<strong>EPが回復</strong>する。</li>
+      </ul>
+      これらの強化により、花火は「SP供給＋会心バフ＋行動促進」に加えて「攻撃力+45%＋全属性耐性貫通+10%＋敵被ダメUP」という<strong>攻守両面での強力なサポート能力</strong>を獲得しました。強化前からトップクラスのサポーターでしたが、強化後はさらにその地位を盤石なものにしています。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 花火の連結縄はEP回復効率固定ですか？HP%ではダメ？</div>
+    <div class="a">
+      花火の最大EPは110と比較的軽めですが、<strong>連結縄はEP回復効率が必須</strong>です。理由は以下の通り：
+      <ul style="margin-top:6px;">
+        <li>EP回復効率がない場合、必殺技の必要EP110に対し、花火のスキル＋通常攻撃のEP獲得量では3ターン周期での必殺技発動が不安定。</li>
+        <li>EP回復効率（+19.4%〜+25.4%、★5縄の場合）があれば、戦闘スキル2回＋通常攻撃1回（または被弾など）で確実に3ターン必殺が可能。</li>
+        <li>必殺技の回転率が落ちるとSP供給が滞り、天賦の被ダメUPと「奇怪な謎」の維持も難しくなる。</li>
+      </ul>
+      HP%縄を選ぶと耐久面は上がりますが、花火の<strong>サポート性能の根幹に関わる必殺技の回転率が低下</strong>するため、EP回復効率からの変更は推奨しません。耐久面はオーブのメインステとサブステで確保しましょう。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 花火の秘技はどのような場面で使うべきですか？</div>
+    <div class="a">
+      花火の秘技「信用できない語り手」は以下の場面で積極的に使いましょう：
+      <ul style="margin-top:6px;">
+        <li><strong>高難易度コンテンツ（混沌の記憶・虚構叙事・末日の幻影）の開幕</strong>：先制攻撃でSP3回復＋花火のEP20回復により、初手から戦闘スキル＋必殺技が撃てる状態に。</li>
+        <li><strong>模擬宇宙・階差宇宙のエリート敵戦</strong>：強力なエリート敵に対して開幕からSPアドバンテージを得られる。</li>
+        <li><strong>マップ探索での戦闘回避</strong>：20秒間敵に発見されなくなるため、不要な戦闘を避けて先制攻撃を仕掛けられる。</li>
+      </ul>
+      注意点として、秘技使用後に戦闘に入るとSP3回復＋EP20回復の効果が得られますが、これは<strong>先制攻撃時のみ</strong>有効です。被先制攻撃（敵から攻撃を受けて戦闘開始）の場合、この効果は発動しません。また、秘技の隠密効果は戦闘開始時に解除されるため、秘技中にマップ上のギミックを作動させることは可能です。
+    </div>
+  </div>
+
+  <!-- まとめ -->
+  <h2>📋 まとめ</h2>
+  <div class="card">
+    <p>花火は、<strong>SP供給・会心ダメージバフ・行動促進・全体攻撃力バフ・被ダメUP・全属性耐性貫通</strong>という、サポーターに求められる要素をほぼ全て備えた<strong>崩壊スターレイルを代表する最強クラスのサポーター</strong>です。</p>
+    <p style="margin-top:8px;">ビルドの基本方針：</p>
+    <ul style="margin-top:4px;">
+      <li><strong>光円錐</strong>：人生は遊び ＞ だが戦争は終わらない ＞ 過去と未来</li>
+      <li><strong>遺物</strong>：司祭4セット（速度⇨会心ダメ厳選）</li>
+      <li><strong>オーナメント</strong>：ルサカ（推奨）or ピノコニー（量子統一）or 竜骨（耐久重視）</li>
+      <li><strong>メインステ</strong>：胴体＝会心ダメージ、脚＝速度、オーブ＝HP%、縄＝EP回復効率</li>
+      <li><strong>目標速度</strong>：160（理想）→ 146（実用）→ 134（最低限）</li>
+      <li><strong>目標会心ダメ</strong>：200%以上（理想250%）</li>
+      <li><strong>スキル優先</strong>：戦闘スキル ＞ 天賦 ＞ 必殺技 ＞ 通常攻撃</li>
+    </ul>
+    <p style="margin-top:12px;">無凸でも十分に活躍できますが、1凸まで進めるとバフ維持と攻撃力バフの面で大きな強化が得られます。SPを大量に消費するアタッカーを主力とするなら、花火はパーティに編成するだけで戦闘の質が根本的に変わります。ぜひこのガイドを参考に、最強の花火を育成してください！</p>
+  </div>
+
+</article>
+
+</body>
+</html>
