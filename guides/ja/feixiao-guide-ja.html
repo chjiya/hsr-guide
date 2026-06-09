@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4B26RL1D24"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4B26RL1D24');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>【崩壊スターレイル】飛霄（フェイシャオ）完全攻略ガイド｜最強ビルド・遺物・光円錐・おすすめ編成</title>
+<meta name="description" content="崩壊スターレイルの星5風属性・巡狩キャラ「飛霄（フェイシャオ／Feixiao）」の完全攻略ガイド。遺物3セット比較＋%差、光円錐4選択肢＋%差、理想パーティ4編成＋ローテーション、凸数0-6凸の詳細評価、スキル全数値・ダメージ計算・速度調整まで徹底解説。忘却の庭・末日の幻影・模擬宇宙対応。">
+<meta name="keywords" content="崩壊スターレイル,飛霄,フェイシャオ,Feixiao,攻略,遺物,光円錐,編成,凸,星魂,ビルド,おすすめ,追撃,追加攻撃,FUA">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="【崩壊スターレイル】飛霄（フェイシャオ）完全攻略ガイド｜最強ビルド・遺物・光円錐・おすすめ編成">
+<meta property="og:description" content="崩壊スターレイル飛霄（フェイシャオ）の完全攻略。スキル数値、遺物3セット比較、光円錐ランキング、パーティ編成4選、凸数ごとの火力上昇率を詳細解説。追撃パーティ最強アタッカー！">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="【崩壊スターレイル】飛霄（フェイシャオ）完全攻略ガイド">
+<link rel="canonical" href="https://chjiya.github.io/hsr-guide/guides/ja/feixiao-guide-ja.html">
+<base href="/hsr-guide/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "【崩壊スターレイル】飛霄（フェイシャオ）完全攻略ガイド｜最強ビルド・遺物・光円錐・おすすめ編成",
+  "description": "崩壊スターレイルの星5風属性・巡狩キャラ「飛霄（フェイシャオ）」の完全攻略。スキル解析、おすすめ遺物3セット比較、光円錐4選択肢、理想パーティ4編成、凸数評価、FAQまで徹底解説。",
+  "author": { "@type": "Person", "name": "花叔" },
+  "datePublished": "2026-06-09",
+  "dateModified": "2026-06-09",
+  "articleSection": "キャラクター攻略",
+  "inLanguage": "ja",
+  "about": {
+    "@type": "Thing",
+    "name": "飛霄（フェイシャオ）",
+    "description": "崩壊スターレイルの星5風属性・巡狩の運命を歩む追撃特化アタッカーキャラクター"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://chjiya.github.io/hsr-guide/guides/ja/feixiao-guide-ja.html"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "飛霄の速度はいくつが最適ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "飛霄の速度は134以上を推奨します。ベース速度112に速度靴（+25）で137となり、サブで追加しなくても134達成が可能です。理想は143以上で、ロビンの協奏中に3回行動を狙います。速度サブに余裕があれば160（グラモス条件）も視野ですが、会心率・会心ダメージを優先しましょう。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "飛霄のモチーフ光円錐は必須ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "飛霄のモチーフ光円錐「我が征く巡狩の道」は最適ですが必須ではありません。無課金ならヘルタショップの「星海巡航」（S5）が最有力候補で、モチーフ比で約82%の性能を発揮します。次いで星4の「論剣」（S5）が約75%、「沈黙のみ」（S5）も約72%と健闘します。Dr.レイシオのモチーフ「純粋なる思惟の洗礼」は特におすすめで、モチーフ比約92%と非常に高水準です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "飛霄は何凸がおすすめですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "飛霄は無凸でも最強クラスの追撃アタッカーですが、凸の価値は非常に高いです。E2が最大の節目で、味方の追加攻撃が直接「飛黄」を獲得（ターン毎6回まで）できるようになり、必殺技の回転率が飛躍的に向上します。E1は必殺技の総火力を約25〜30%強化し、E6は全属性耐性貫通20%＋天賦FUAの倍率+140%で完全体となります。予算が限られている場合はE0→E1が最もコスパ良く、さらに余裕があればE2を目指しましょう。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "飛霄の遺物は何がベストですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "飛霄の最適遺物は「風雲を薙ぎ払う勇烈」4セットです。2セットで攻撃力+12%、4セットで追加攻撃発動時に必殺技ダメージ+20%（または必殺技発動時に追加攻撃ダメージ+20%）を獲得できます。飛霄は追加能力で必殺技が追加攻撃扱いになるため、常に両方のバフが有効になります。次点の「灰燼を燃やし尽くす大公」4セットは追加攻撃のhit数でATK+6%ずつ（最大48%）、勇烈比で約5〜7%低下に留まります。オーナメントは「奔狼の都藍王朝」が最適で、追加攻撃ダメージ最大+25%＋会心ダメージ+25%を獲得できます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "飛霄の必殺技「飛黄」システムの仕組みを教えてください",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "飛霄は通常のEPゲージを持たず、代わりに専用チャージ「飛黄（Flying Aureus）」を使用します。味方が2回攻撃するごとに飛黄を1層獲得し、最大12層までストック可能です。6層消費することで必殺技が発動可能になります。飛黄の獲得源は以下の通り：（1）味方の攻撃2回につき+1層、（2）飛霄のターン開始時に+1層、（3）戦闘開始時に軌跡で3層獲得。飛霄以外の味方が攻撃した後には天賦の追加攻撃（110% ATK）が発動し、これにより与ダメージ+60%（2T継続）の自己バフも獲得できます。必殺技発動後は6層を消費しますが、残り層数は維持されるため、連続発動も可能です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "飛霄と相性の良いキャラは誰ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "飛霄と最も相性が良いのはロビン（Robin）です。ロビンの必殺技による全体再行動は飛霄の手数を大幅に増やし、飛黄の獲得速度が飛躍的に向上します。攻撃力＋与ダメージ＋会心ダメージのバフも完璧です。次いでトパーズ（Topaz）が優秀で、CUの追加攻撃で飛黄を供給しつつ、与ダメ50%バフで飛霄の火力を底上げします。耐久枠ではアベンチュリン（Aventurine）が最適で、追撃で飛黄獲得に貢献し、バリアでパーティ全体を守ります。F2P編成では三月なのか（巡狩）がトパーズの代役として優秀で、自身の追加攻撃とSP供給でチームに貢献します。"
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --bg: #1a1a2e;
+    --card: #16213e;
+    --accent: #4fc3f7;
+    --text: #e0e0e0;
+    --sub: #a0a0b0;
+    --border: #2a2a4a;
+    --highlight: #0f3460;
+    --green: #4caf84;
+    --red: #e0556a;
+    --blue: #5b9bd5;
+    --purple: #b39ddb;
+    --wind: #66bb6a;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', Meiryo, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+    padding: 20px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 1.8em;
+    color: var(--accent);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 1.4em;
+    color: var(--accent);
+    margin: 36px 0 16px;
+    padding: 8px 14px;
+    border-left: 4px solid var(--accent);
+    background: var(--highlight);
+    border-radius: 0 6px 6px 0;
+  }
+  h3 {
+    font-size: 1.15em;
+    color: #80d8ff;
+    margin: 24px 0 10px;
+  }
+  h4 {
+    font-size: 1.05em;
+    color: #b0e0ff;
+    margin: 16px 0 8px;
+  }
+  .char-header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background: var(--card);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 24px;
+    border: 1px solid var(--border);
+  }
+  .char-icon {
+    width: 90px;
+    height: 90px;
+    border-radius: 12px;
+    background: var(--wind);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2em;
+    flex-shrink: 0;
+    color: #fff;
+  }
+  .char-info { flex: 1; }
+  .char-info .name { font-size: 1.6em; font-weight: bold; color: #fff; }
+  .char-info .tags { margin-top: 6px; display: flex; gap: 8px; flex-wrap: wrap; }
+  .tag {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: bold;
+  }
+  .tag-rarity { background: #b8860b; color: #fff; }
+  .tag-element { background: var(--wind); color: #fff; }
+  .tag-path { background: var(--accent); color: #1a1a2e; }
+  .tag-role { background: var(--red); color: #fff; }
+
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    margin: 16px 0;
+  }
+  .stat-box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+  }
+  .stat-box .label { font-size: 0.8em; color: var(--sub); }
+  .stat-box .value { font-size: 1.2em; font-weight: bold; color: #fff; margin-top: 4px; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 0.9em;
+  }
+  th {
+    background: var(--highlight);
+    color: var(--accent);
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px solid var(--border);
+  }
+  td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+  .star { color: var(--accent); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px;
+    margin: 16px 0;
+  }
+
+  .build-box {
+    background: var(--highlight);
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin: 12px 0;
+  }
+  .build-box .label { color: var(--accent); font-weight: bold; font-size: 0.85em; }
+  .build-box .content { color: #fff; font-weight: bold; margin-top: 4px; }
+
+  .pros-cons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 16px 0;
+  }
+  .pros, .cons {
+    padding: 14px;
+    border-radius: 8px;
+  }
+  .pros { background: rgba(76,175,132,0.1); border: 1px solid rgba(76,175,132,0.3); }
+  .cons { background: rgba(224,85,106,0.1); border: 1px solid rgba(224,85,106,0.3); }
+  .pros h4 { color: var(--green); margin-bottom: 6px; }
+  .cons h4 { color: var(--red); margin-bottom: 6px; }
+  .pros li, .cons li { margin-left: 18px; font-size: 0.9em; }
+
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 12px 0;
+  }
+  .team-slot {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 8px;
+    text-align: center;
+  }
+  .team-slot .role { font-size: 0.75em; color: var(--sub); margin-bottom: 4px; }
+  .team-slot .char { font-weight: bold; color: #fff; font-size: 0.95em; }
+
+  .faq-item {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin: 12px 0;
+    padding: 16px;
+  }
+  .faq-item .q {
+    color: var(--accent);
+    font-weight: bold;
+    font-size: 1.05em;
+    margin-bottom: 8px;
+  }
+  .faq-item .a {
+    color: var(--text);
+    line-height: 1.8;
+  }
+
+  .note {
+    background: rgba(79,195,247,0.08);
+    border-left: 3px solid var(--accent);
+    padding: 10px 14px;
+    margin: 14px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.9em;
+  }
+
+  .skill-box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px;
+    margin: 10px 0;
+  }
+  .skill-box .skill-name { font-weight: bold; color: var(--accent); font-size: 1.05em; }
+  .skill-box .skill-type { font-size: 0.8em; color: var(--sub); margin-left: 8px; }
+  .skill-box .skill-desc { margin-top: 8px; font-size: 0.9em; }
+
+  .priority-5 { color: var(--accent); }
+  .priority-4 { color: #e8c547; }
+  .priority-3 { color: #c0c0c0; }
+  .priority-2 { color: #888; }
+
+  ol, ul { padding-left: 1.5em; }
+  li { margin: 4px 0; }
+
+  .toc { margin: 16px 0; padding: 14px; background: var(--card); border-radius: 8px; border: 1px solid var(--border); }
+  .toc a { color: var(--accent); text-decoration: none; }
+  .toc a:hover { text-decoration: underline; }
+  .toc li { margin: 4px 0; }
+
+  .dmg-bar {
+    display: flex; height: 20px; border-radius: 10px; overflow: hidden; margin: 8px 0;
+  }
+  .dmg-bar .seg {
+    display: flex; align-items: center; justify-content: center; font-size: 0.65em; color: #fff; font-weight: bold;
+  }
+
+  @media (max-width: 600px) {
+    .char-header { flex-direction: column; text-align: center; }
+    .team-grid { grid-template-columns: repeat(2, 1fr); }
+    .pros-cons { grid-template-columns: 1fr; }
+    .stat-grid { grid-template-columns: repeat(2, 1fr); }
+    body { padding: 12px; }
+  }
+</style>
+</head>
+<body>
+
+<article>
+  <h1>【崩壊スターレイル】飛霄（フェイシャオ）完全攻略ガイド</h1>
+
+  <!-- 目次 -->
+  <div class="toc">
+    <strong>📑 目次</strong>
+    <ol style="margin-top:6px;">
+      <li><a href="#overview">キャラ概要</a></li>
+      <li><a href="#skills">スキル解説（全数値）</a></li>
+      <li><a href="#relics">おすすめ遺物（3セット比較＋%差）</a></li>
+      <li><a href="#lightcones">おすすめ光円錐（4選択肢＋%差）</a></li>
+      <li><a href="#teams">理想編成（4チーム＋装備＋ローテ）</a></li>
+      <li><a href="#eidolons">凸数評価（0〜6凸＋%UP）</a></li>
+      <li><a href="#synergy">相性の良いキャラ</a></li>
+      <li><a href="#faq">よくある質問（FAQ）</a></li>
+      <li><a href="#summary">総評</a></li>
+    </ol>
+  </div>
+
+  <!-- キャラクター基本情報 -->
+  <div class="char-header" id="overview">
+    <div class="char-icon">🌪️</div>
+    <div class="char-info">
+      <div class="name">飛霄（フェイシャオ / Feixiao）</div>
+      <div class="tags">
+        <span class="tag tag-rarity">★5</span>
+        <span class="tag tag-element">風属性</span>
+        <span class="tag tag-path">巡狩（Hunt）</span>
+        <span class="tag tag-role">メインアタッカー</span>
+      </div>
+      <div style="margin-top:8px;color:var(--sub);font-size:0.9em;">
+        所属：仙舟「曜青」・帝弓七天将｜声優：小松未可子｜入手：限定排出（イベント跳躍）｜実装：Ver.2.5（2024年9月）
+      </div>
+    </div>
+  </div>
+
+  <!-- ステータス概要 -->
+  <div class="stat-grid">
+    <div class="stat-box">
+      <div class="label">最大HP</div>
+      <div class="value">1,047</div>
+    </div>
+    <div class="stat-box">
+      <div class="label">攻撃力</div>
+      <div class="value">601</div>
+    </div>
+    <div class="stat-box">
+      <div class="label">防御力</div>
+      <div class="value">388</div>
+    </div>
+    <div class="stat-box">
+      <div class="label">速度</div>
+      <div class="value">112</div>
+    </div>
+    <div class="stat-box">
+      <div class="label">EP</div>
+      <div class="value">0（飛黄）</div>
+    </div>
+  </div>
+
+  <!-- キャラクター評価 -->
+  <div class="pros-cons">
+    <div class="pros">
+      <h4>✅ 長所</h4>
+      <ul>
+        <li>必殺技の総倍率700%（Lv10）と圧倒的な単体火力</li>
+        <li>EP不要の「飛黄」システムで行動回数が増えるほど必殺技が加速</li>
+        <li>天賦の追加攻撃で味方の攻撃に追撃＆与ダメ+60%の自己バフ</li>
+        <li>追加能力で必殺技が追加攻撃扱いになり追撃シナジーが強力</li>
+        <li>弱点属性を無視して靭性を削れる必殺技</li>
+        <li>ベース速度112と巡狩最速級、速度靴で137達成が容易</li>
+        <li>ロビン・トパーズ・アベンチュリンと最強のシナジー</li>
+      </ul>
+    </div>
+    <div class="cons">
+      <h4>⚠️ 短所</h4>
+      <ul>
+        <li>純粋な単体アタッカーで複数敵にはやや火力が分散</li>
+        <li>「飛黄」獲得に味方の手数が必要で編成に制約がある</li>
+        <li>ロビン・アベンチュリンがほぼ必須級（F2Pは代用可能だが火力低下）</li>
+        <li>自己バフは多いが会心率補正が少なく厳選が難しい</li>
+        <li>必殺技中に敵が倒れると残りの攻撃がオーバーキルになる</li>
+        <li>モチーフ光円錐の防御無視54%が非常に強力で差が大きい</li>
+      </ul>
+    </div>
+  </div>
+
+  <p>飛霄（フェイシャオ）は、Ver.2.5「碧空の裁きに呪縛を」で実装された星5風属性・巡狩の運命を歩む<strong>追撃特化メインアタッカー</strong>です。彼女の最大の特徴は、<strong>通常のEPゲージではなく専用チャージ「飛黄（Flying Aureus）」を使用する独自システム</strong>を採用している点にあります。味方が攻撃するたびに飛黄が蓄積され、6層消費することで発動する必殺技「大荒滅破砕」は、敵単体に6連撃＋フィニッシュブローの合計<strong>700%という破格の倍率</strong>を叩き出します。</p>
+  <p>飛霄の真髄は、<strong>追撃（フォローアップアタック/FUA）を軸としたパーティ編成</strong>にあります。追加能力「解形」により必殺技が追加攻撃扱いとなるため、ロビンの全体再行動やトパーズの与ダメバフ、アベンチュリンの追撃バリアと完璧にシナジーします。「FART」と呼ばれる飛霄＋ロビン＋アベンチュリン＋トパーズ/三月なのかの編成は、現在の環境で<strong>最強の単体火力パーティ</strong>の一つとして認知されています。</p>
+  <p>現在の環境評価は<strong>SSランク（GameWith / Game8 / Altema）</strong>を獲得しており、忘却の庭（混沌の記憶）・末日の幻影・模擬宇宙の全ての高難易度コンテンツで第一線級の活躍を見せています。特に0ラウンドクリア（0T）を狙うスピードラン編成では、飛霄の連続必殺技が圧倒的な破壊力を発揮します。</p>
+
+  <!-- スキル解説 -->
+  <h2 id="skills">🔍 スキル解説（全数値）</h2>
+
+  <div class="skill-box">
+    <div class="skill-name">通常攻撃：閃裂 <span class="skill-type">単体攻撃</span></div>
+    <div class="skill-desc">指定した敵単体に飛霄の攻撃力<span style="color:var(--accent);">50%〜100%</span>（Lv1〜Lv6）の風属性ダメージを与える。<br>削靭値：10<br>強化優先度：<span class="priority-2">★☆☆☆☆</span></div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">飛霄の通常攻撃はSP節約時に使う程度。飛霄は基本的に毎ターン戦闘スキルを使用するため、通常攻撃を使う機会は非常に限られる。強化は不要。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">戦闘スキル：斧貫 <span class="skill-type">単体攻撃 / 追加攻撃誘発</span></div>
+    <div class="skill-desc">
+      指定した敵単体に飛霄の攻撃力<span style="color:var(--accent);">100%〜200%</span>（Lv1〜Lv10）の風属性ダメージを与え、その後その敵に天賦による追加攻撃を即座に<strong>1回発動</strong>する。<br>
+      この追加攻撃はターン毎の天賦追加攻撃回数を消費しない（別枠で発動）。<br>
+      削靭値：20<br>
+      強化優先度：<span class="priority-3">★★★☆☆</span>
+    </div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">飛霄の基本行動。SPがある限り毎ターン使用する。戦闘スキル→付随の追加攻撃（110%）→さらに味方の攻撃を受けて天賦の追加攻撃（110%）と、1回の飛霄行動で実質的に420%（200%+110%+110%）ものダメージを叩き出せる。火力面ではスキルそのものより追加攻撃を誘発する点が重要なので、強化優先度は中程度でOK。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">必殺技：大荒滅破砕 <span class="skill-type">単体7HIT / 弱点無視 / 飛黄システム</span></div>
+    <div class="skill-desc">
+      「飛黄」が<strong>6層</strong>以上ある時に発動可能。6層を消費して発動する。<br>
+      指定した敵単体に以下の攻撃を行う：
+      <ul>
+        <li><strong>閃裂刃舞 or 斧貫衝天</strong>を合計<span style="color:var(--accent);">6回</span>発動：各36%〜60% ATK（Lv1〜Lv10）の風ダメージ</li>
+        <li>敵が<strong>弱点撃破状態</strong>→閃裂刃舞を自動選択、ダメージ倍率+15%〜30%</li>
+        <li>敵が<strong>非弱点撃破状態</strong>→斧貫衝天を自動選択、ダメージ倍率+15%〜30%</li>
+        <li>最後に<strong>フィニッシュブロー</strong>：96%〜160%（Lv1〜Lv10）ATKの風ダメージ</li>
+      </ul>
+      <strong>最大総倍率（Lv10）</strong>：6 × (60% + 30%) + 160% = <span style="color:var(--accent); font-weight:bold;">700%</span> ATK<br>
+      必殺技発動中は<strong>弱点属性を無視</strong>して敵の靭性を削る。<br>
+      敵が弱点撃破状態にない時、<strong>弱点撃破効率+100%</strong>。<br>
+      飛黄は最大12層まで累積可能。6層消費して発動するため、連続発動も可能。<br>
+      削靭値：30（大荒滅破砕）+ 5×6（各ヒット）= 合計60<br>
+      強化優先度：<span class="priority-5">★★★★★</span>
+    </div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">飛霄の真骨頂。6発の連撃（各60%+条件ボーナス30%）＋追撃のフィニッシュブロー（160%）で合計700%もの単体火力を叩き出す。条件さえ整えば、1回の必殺技で21万〜35万ダメージ（ビルド依存）を叩き出せる。軌跡でこの必殺技が追加攻撃扱いになるため、追加攻撃関連のバフが全て乗るのが驚異的。最優先でLv10にすること。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">天賦：雷狩 <span class="skill-type">追加攻撃 / 飛黄獲得 / 自己バフ</span></div>
+    <div class="skill-desc">
+      <strong>飛黄システム</strong>：
+      <ul>
+        <li>飛黄が6層に達すると必殺技が発動可能になる</li>
+        <li>飛黄は最大<span style="color:var(--accent);">12層</span>まで累積可能</li>
+        <li>味方が<strong>2回攻撃</strong>を行うたびに飛黄を<strong>1層</strong>獲得</li>
+        <li>飛霄の必殺技での攻撃はカウントされない</li>
+      </ul>
+      <strong>追加攻撃</strong>：
+      <ul>
+        <li>飛霄以外の味方が敵に攻撃を行った後、そのメインターゲットに飛霄が追加攻撃を発動</li>
+        <li>追加攻撃のダメージ：飛霄の攻撃力<span style="color:var(--accent);">55%〜110%</span>（Lv1〜Lv10）の風ダメージ</li>
+        <li>この効果は飛霄のターンが回ってくるたびに<strong>1回まで発動可能</strong>（ターン更新でリセット）</li>
+        <li>全員攻撃やメインターゲットが存在しない場合はランダムな敵単体を攻撃</li>
+      </ul>
+      <strong>追加攻撃発動時の効果</strong>：
+      <ul>
+        <li>自身の与ダメージ+<span style="color:var(--accent);">30%〜60%</span>（Lv1〜Lv10）、2ターン継続</li>
+      </ul>
+      強化優先度：<span class="priority-5">★★★★★</span>
+    </div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">飛霄の全火力の基礎となる最重要スキル。天賦が高いほど追加攻撃のダメージが上がり、与ダメージバフの効果量も増加する。Lv10で追加攻撃110%＋与ダメ+60%は破格の性能。追加攻撃はターンに1回限定だが、戦闘スキル付随の追加攻撃は別枠のため、飛霄自身のターンでは合計2回の追加攻撃が発生する計算になる。必殺技と並んで最優先でLv10を目指そう。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">秘技：嵐身 <span class="skill-type">戦闘前効果 / 移動速度UP</span></div>
+    <div class="skill-desc">
+      秘技を使用後、20秒間継続する「<strong>陥陣</strong>」状態に入る。<br>
+      陥陣状態中は一定範囲内の敵を引き寄せ、移動速度+50%。<br>
+      戦闘に入った後、飛黄を<strong>1層獲得</strong>。<br>
+      各ウェーブ開始時に敵全体に飛霄の攻撃力<strong>200%分</strong>の風属性ダメージ（<span style="color:var(--accent);">必ず会心発生</span>）。<br>
+      引き寄せた敵が1体超過するごとにこのダメージ倍率+100%（上限1000%）。
+    </div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">非常に強力な秘技。雑魚狩りから高難易度まで万能に使える。特に敵を5体以上引き寄せた時の開幕ダメージは600%超えの確定会心と驚異的。また必殺技に必要な飛黄を1層獲得できるため、開幕から必殺技までの時間を短縮できる。高難易度コンテンツでは秘技使用を忘れずに。</p>
+
+  <h3>軌跡（追加能力）</h3>
+  <table>
+    <tr><th>軌跡名</th><th>解放条件</th><th>効果</th><th>必須度</th></tr>
+    <tr><td>通天</td><td>昇格2</td><td>戦闘開始時に飛黄を<strong>3層</strong>獲得。天賦の追加攻撃を発動せずにターンを迎えた場合、飛黄獲得に必要な攻撃回数が1加算される。</td><td><span class="star">★★★★★</span></td></tr>
+    <tr><td>解形</td><td>昇格4</td><td>必殺技を発動して敵にダメージを与える時、<strong>追加攻撃を行うと見なされる</strong>。追加攻撃の<strong>会心ダメージ+36%</strong>。</td><td><span class="star">★★★★★</span></td></tr>
+    <tr><td>神速</td><td>昇格6</td><td>戦闘スキルを発動する時、攻撃力+<strong>48%</strong>、3ターン継続（事実上永続）。</td><td><span class="star">★★★★★</span></td></tr>
+  </table>
+
+  <div class="note">
+    <strong>💡 スキル強化の優先順位：</strong> 必殺技 ＞ 天賦 ＞ 戦闘スキル ＞ 通常攻撃。必殺技と天賦は迷わず最優先でLv10を目指そう。戦闘スキルはLv8〜10推奨、通常攻撃はLv1で放置OK。軌跡の追加能力は3つとも全て取得必須級。特に昇格4の「解形」は必殺技が追加攻撃扱いになることで、追撃関連の全てのバフ・効果が乗るようになる最重要軌跡。昇格6の「神速」も永続攻撃力48%アップと破格の性能。
+  </div>
+
+  <h3>ステータスボーナス合計</h3>
+  <table>
+    <tr><th>ステータス</th><th>ボーナス合計</th></tr>
+    <tr><td>攻撃力%</td><td>+28%（4%+4%+6%+6%+8%）</td></tr>
+    <tr><td>会心率</td><td>+12%（2.7%+4%+5.3%）</td></tr>
+    <tr><td>防御力%</td><td>+12.5%（5%+7.5%）</td></tr>
+  </table>
+
+  <!-- 遺物推荐 -->
+  <h2 id="relics">⚔️ おすすめ遺物（3セット比較＋%差）</h2>
+
+  <h3>トンネル遺物（メインセット）3セット比較</h3>
+  <table>
+    <tr><th>セット</th><th>セット効果</th><th>火力比較</th><th>おすすめ度</th></tr>
+    <tr>
+      <td><strong>風雲を薙ぎ払う勇烈（Valorous）</strong> 4セット</td>
+      <td>2セット：攻撃力+12%<br>4セット：追加攻撃を行った時、装備キャラの必殺技の与ダメージ+20%（1T）。必殺技を行った時、装備キャラの追加攻撃の与ダメージ+20%（1T）。</td>
+      <td><span class="star">100%</span><br><span style="color:var(--accent);">基準値</span></td>
+      <td><span class="star">★★★★★</span><br><span style="color:var(--accent);">最適</span></td>
+    </tr>
+    <tr>
+      <td><strong>灰燼を燃やし尽くす大公（Duke）</strong> 4セット</td>
+      <td>2セット：追加攻撃の与ダメージ+16%<br>4セット：追加攻撃を行う時、与ダメージ+6%（各ヒットで累積、最大8回＝48%）。</td>
+      <td><span style="color:#e8c547;">約93〜95%</span><br><span style="color:var(--sub);">−5〜7%</span></td>
+      <td><span style="color:#e8c547;">★★★★☆</span><br><span style="color:var(--sub);">妥協案</span></td>
+    </tr>
+    <tr>
+      <td><strong>風雲2＋大公2 ハイブリッド</strong></td>
+      <td>風雲2：攻撃力+12%<br>大公2：追加攻撃の与ダメージ+16%</td>
+      <td><span style="color:#c0c0c0;">約95〜97%</span><br><span style="color:var(--sub);">−3〜5%</span></td>
+      <td><span style="color:#e8c547;">★★★★☆</span><br><span style="color:var(--accent);">厳選次第では有効</span></td>
+    </tr>
+  </table>
+
+  <p><strong>セット比較の詳細解説：</strong>勇烈4セットが飛霄の最適解である理由は、追加能力「解形」により必殺技が追加攻撃扱いとなるため、<strong>必殺技発動時に追加攻撃ダメ+20%、追加攻撃発動時に必殺技ダメ+20%</strong>という4セット効果の両方を常にフル活用できる点にあります。飛霄は戦闘スキル→即時追加攻撃→天賦追加攻撃のループで常に追加攻撃を行っているため、実質的に常時20%の必殺技/追加攻撃バフが乗っていると考えて良いでしょう。</p>
+  <p>大公4セットは追加攻撃のヒット数が多いほど効果が高まりますが、飛霄の追加攻撃は1ヒットのみのため最大8スタック（48%）のフル効果を得られるのは主に必殺技の6連撃の場面に限られます。必殺技の6ヒット（各ヒットで6%×6=36%累積）＋天賦追加攻撃（48%フル）という形で、実効的には勇烈4に比べて5〜7%程度の火力低下に留まります。</p>
+  <p>風雲2＋大公2のハイブリッドは、サブステータスの質次第では勇烈4に迫る火力を出せます。特に風雲4の厳選が不十分な場合、高品質なハイブリッド構成の方がむしろ火力が高くなることもあります。</p>
+
+  <h3>次元界オーナメント（プラナー）</h3>
+  <table>
+    <tr><th>セット</th><th>セット効果</th><th>おすすめ度</th><th>解説</th></tr>
+    <tr>
+      <td><strong>奔狼の都藍王朝（Duran）</strong></td>
+      <td>味方が追加攻撃を行うたびに「功績」を1層獲得（最大5層）。1層につき追加攻撃の与ダメージ+5%（最大+25%）。5層到達時、追加攻撃の会心ダメージさらに+25%。</td>
+      <td><span class="star">★★★★★</span></td>
+      <td>飛霄の最適オーナメント。追撃パーティならあっという間に5層到達。追加攻撃ダメ+25%＋会心ダメ+25%の合計補正は破格。飛霄だけでなく、ロビン・トパーズ・アベンチュリンの追加攻撃でも層が貯まるのが強み。</td>
+    </tr>
+    <tr>
+      <td><strong>顕世の出雲と高天の神国（Izumo）</strong></td>
+      <td>攻撃力+12%。装備キャラと同一運命の味方がパーティにいる場合、装備キャラの会心率+12%。</td>
+      <td><span style="color:#e8c547;">★★★★☆</span></td>
+      <td>会心率+12%が非常に貴重。飛霄は軌跡で会心率+12%を得られるが、胴体を会心ダメージメインにしたい場合などに重宝する。トパーズや三月なのか（巡狩）など同じ巡狩キャラと組む場合に条件を満たせる。Duranが無い場合の第2候補。</td>
+    </tr>
+    <tr>
+      <td><strong>自転が止まったサルソット（Salsotto）</strong></td>
+      <td>会心率+8%。会心率が50%以上の場合、必殺技と追加攻撃の与ダメージ+15%。</td>
+      <td><span style="color:#e8c547;">★★★★☆</span></td>
+      <td>会心率+8%の補正があり、飛霄の会心率確保に貢献。必殺技＋追加攻撃の与ダメ+15%は常時発動で信頼性が高い。DuranやIzumoが揃わない場合の安定した選択肢。会心率50%条件も飛霄なら余裕で達成可能。</td>
+    </tr>
+    <tr>
+      <td><strong>奇想天外のバナダイス（Banana）</strong></td>
+      <td>会心ダメージ+16%。味方に召喚物がいる場合、会心ダメージさらに+32%（計+48%）。</td>
+      <td><span style="color:#c0c0c0;">★★★☆☆</span></td>
+      <td>飛霄自身に召喚物は無いため48%のフル効果を得るには召喚キャラ（トパーズのCUなど）と組む必要がある。召喚編成ではDuranと同等以上の火力を出せるが、汎用性では劣る。</td>
+    </tr>
+  </table>
+
+  <h3>遺物メインステータス</h3>
+  <table>
+    <tr><th>部位</th><th>メインステータス</th><th>備考</th></tr>
+    <tr><td>頭部</td><td>HP（固定）</td><td>—</td></tr>
+    <tr><td>手部</td><td>攻撃力（固定）</td><td>—</td></tr>
+    <tr><td>胴体</td><td><strong>会心率 または 会心ダメージ</strong></td><td>会心率70%以上を目標に調整。軌跡12%＋勇烈/サルソット等で足りていれば会心ダメージ胴を選択。足りなければ会心率胴。</td></tr>
+    <tr><td>脚部</td><td><strong>速度 または 攻撃力%</strong></td><td>速度134達成が最優先。ベース速度112＋速度靴（+25）＝137で134達成。サブ速度が充実していて速度靴不要なら攻撃力%靴も検討。</td></tr>
+    <tr><td>次元界オーブ</td><td><strong>風属性ダメージ%</strong></td><td>風ダメージ%一択。攻撃力%オーブは風%に比べて約10〜12%の火力低下。</td></tr>
+    <tr><td>連結縄</td><td><strong>攻撃力%</strong></td><td>飛霄はEPゲージが無いためEP回復効率不要。攻撃力%一択。</td></tr>
+  </table>
+
+  <div class="note">
+    <strong>💡 サブステータス優先度：</strong> 会心率（70%以上目標） ＞ 会心ダメージ ＞ 攻撃力% ＞ 速度（134達成後）<br>
+    飛霄は軌跡で攻撃力+28%と会心率+12%を得られる。胴体会心率（32%）＋軌跡（12%）で44%、サブで26%以上盛って戦闘中70%以上を目指そう。会心率が達成できているなら会心ダメージに全振り。飛霄の追加能力「解形」で追加攻撃の会心ダメージ+36%ものボーナスがあるため、会心ダメージの実効値はステータス以上に高い点に注意。<br>
+    <strong>速度ブレイクポイント：</strong> 速度134（忘却の庭1ラウンド2回行動）、速度143（ロビン協奏中に3回行動を狙うライン）、速度160（鷹4セット+速度編成の上限目標）。飛霄はベース速度112と非常に高いため、速度靴だけで137に達する。134達成は極めて容易で、余裕があれば143を目指そう。<br>
+    <strong>攻撃力目標：</strong> バフなし状態で2,800〜3,200。軌跡の神速（+48%）とロビンバフが乗れば4,000〜5,000超えも可能。
+  </div>
+
+  <!-- 光円錐推荐 -->
+  <h2 id="lightcones">💡 おすすめ光円錐（4選択肢＋%差）</h2>
+
+  <table>
+    <tr><th>光円錐</th><th>レア</th><th>効果概要</th><th>火力比</th><th>おすすめ度</th></tr>
+    <tr>
+      <td><strong>我が征く巡狩の道（I Venture Forth to Hunt）</strong></td>
+      <td>★5</td>
+      <td>会心率+15%（S1）。追加攻撃時「流光」獲得（最大2層）。1層ごとに必殺技ダメージが敵の防御力を<strong>27%無視</strong>（S1、最大54%無視）。ターン終了時に1層解除。</td>
+      <td><span class="star">100%</span></td>
+      <td><span class="star">★★★★★</span><br><span style="color:var(--accent);">最適（モチーフ）</span></td>
+    </tr>
+    <tr>
+      <td><strong>純粋なる思惟の洗礼（Baptism of Pure Thought）</strong></td>
+      <td>★5</td>
+      <td>会心ダメージ+20%。敵のデバフ1つにつき会心ダメージ+8%（最大3層:+24%）。必殺技発動時、与ダメージ+36%、追加攻撃が防御力<strong>24%無視</strong>（2T継続）。</td>
+      <td><span style="color:#e8c547;">約90〜93%</span></td>
+      <td><span style="color:#e8c547;">★★★★★</span><br><span style="color:var(--accent);">★5次点</span></td>
+    </tr>
+    <tr>
+      <td><strong>星海巡航（Cruising in the Stellar Sea）</strong></td>
+      <td>★5</td>
+      <td>S5時：会心率+<strong>16%</strong>。HP50%以下の敵に追加で会心率+16%（計32%）。敵撃破時、攻撃力+40%（2T）。</td>
+      <td><span style="color:#e8c547;">約80〜84%</span></td>
+      <td><span class="star">★★★★★</span><br><span style="color:var(--accent);">無課金最適</span></td>
+    </tr>
+    <tr>
+      <td><strong>論剣（Swordplay）</strong></td>
+      <td>★4</td>
+      <td>S5時：同じ敵に攻撃するたびに与ダメージ+<strong>16%</strong>（最大5層で+80%）。ターゲット変更でリセット。</td>
+      <td><span style="color:#c0c0c0;">約74〜78%</span></td>
+      <td><span style="color:#e8c547;">★★★★☆</span><br><span style="color:var(--sub);">星4最適</span></td>
+    </tr>
+  </table>
+
+  <div class="build-box">
+    <div class="label">🏆 最適光円錐</div>
+    <div class="content">我が征く巡狩の道（★5・モチーフ）</div>
+    <div style="margin-top:6px;font-size:0.9em;">飛霄のモチーフ光円錐。驚異の防御無視54%（S1時）が最大の武器。飛霄は追加能力により必殺技が追加攻撃扱いになるため、戦闘スキル→付随追加攻撃の流れで「流光」2層を即座に獲得でき、常に防御無視54%状態を維持可能。会心率+15%の補正も非常に貴重で、遺物厳選のハードルを大幅に下げてくれる。会心率+15%＋防御無視54%の相乗効果により、モチーフなしとの差は約15〜20%にもなる。</div>
+  </div>
+
+  <div class="build-box">
+    <div class="label">💰 無課金・低予算向け</div>
+    <div class="content">星海巡航（★5・ヘルタショップS5）</div>
+    <div style="margin-top:6px;font-size:0.9em;">ヘルタショップで交換可能な巡狩光円錐。S5で会心率+16%（HP50%以下で+32%）という破格の会心率補正が魅力。飛霄の会心率厳選が大幅に楽になる。敵撃破時に攻撃力+40%も、敵が湧くウェーブ構成で真価を発揮。モチーフ比約82%の性能で、無課金プレイヤーの最有力候補。星4の「論剣」S5は同じ敵を攻撃し続けるボス戦で強力で、与ダメ+80%（S5）と高い火力を発揮できる。敵が少ないコンテンツでは「論剣」、敵が多い／ウェーブが多いコンテンツでは「星海巡航」と使い分けよう。</div>
+  </div>
+
+  <h3>光円錐選択のポイント</h3>
+  <p>飛霄の光円錐選びで最も重要なのは<strong>「防御無視」</strong>と<strong>「会心率補正」</strong>です。モチーフの「我が征く巡狩の道」が提供する防御無視54%は、他のバフと掛け算で乗算されるため非常に強力です。防御力無視がないと敵の防御力によるダメージ軽減（約50%前後）が適用されますが、54%無視することで軽減率が大幅に低下し、実質ダメージが約40〜50%も増加します。</p>
+  <p>次点の「純粋なる思惟の洗礼」は会心ダメージ+44%（ベース20%＋デバフ3層24%）＋与ダメ36%＋防御無視24%と、モチーフに迫る性能を持ちます。Dr.レイシオのモチーフを持っているなら、飛霄に回すのは非常におすすめです。特にトパーズやアベンチュリンと組むとデバフ条件も安定し、火力比は約90〜93%にまで達します。</p>
+  <p>無課金の場合は「星海巡航」S5の会心率補正が非常に強力で、会心率胴を会心ダメージ胴に変更できる余裕が生まれることもあります。「論剣」S5はボス単体戦で与ダメ+80%と高い火力を発揮しますが、敵が入れ替わるウェーブ構成ではスタックがリセットされるため注意が必要です。</p>
+
+  <!-- 理想編成 -->
+  <h2 id="teams">🤝 理想編成（4チーム＋装備＋ローテ）</h2>
+
+  <h3>編成①：FART編成（プレミアム追撃最強）</h3>
+  <div class="team-grid">
+    <div class="team-slot">
+      <div class="role">🌪️ メインアタッカー</div>
+      <div class="char">飛霄</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">風・巡狩</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🎵 究極サポーター</div>
+      <div class="char">ロビン</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">物理・調和</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🔥 サブアタッカー</div>
+      <div class="char">トパーズ＆カブ</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">炎・巡狩</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🛡️ 耐久＋追撃</div>
+      <div class="char">アベンチュリン</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">虚数・存護</div>
+    </div>
+  </div>
+  <p style="font-size:0.9em;color:var(--sub);"><strong>装備詳細：</strong></p>
+  <ul style="font-size:0.85em;color:var(--sub);margin-bottom:8px;">
+    <li><strong>飛霄</strong>：モチーフ光円錐 / 勇烈4セット / デュラン / 会心率or会心ダメ胴・速度靴・風%オーブ・攻撃%縄 / 速度137+</li>
+    <li><strong>ロビン</strong>：「微かな残響で夜を覆う」or「大衆家庭用」S5 / 射手4セット / ルサカ or フォン / 攻撃力胴・速度靴・攻撃力オーブ・攻撃力縄 / 攻撃力4,000+目標 / 速度120+</li>
+    <li><strong>トパーズ</strong>：「悩みを無価値に」or「星海巡航」S5 / 大公4セット or 勇烈4 / デュラン or サルソット / 会心率胴・速度靴・炎%オーブ・攻撃%縄 / 速度134+</li>
+    <li><strong>アベンチュリン</strong>：「天地を拓く」or「交錯の中の素敵な出会い」S5 / 聖騎士4セット or 大公2+聖騎士2 / デュラン or 仙舟 / 防御力胴・速度靴・防御力オーブ・防御力縄 / 防御力4,000+ / 速度134+</li>
+  </ul>
+  <p style="font-size:0.9em;color:var(--sub);"><strong>ローテーション：</strong> 飛霄秘技（陥陣）→ 戦闘開始：ロビン戦闘スキル（攻撃力+50%）、アベンチュリン戦闘スキル（バリア展開）、トパーズ戦闘スキル（CU召喚+弱点付与）→ 飛霄戦闘スキル（即時追加攻撃）→ 敵攻撃を受けてアベンチュリン追撃→ トパーズのCU攻撃→ 飛霄天賦の追加攻撃→ ロビン必殺技（全体再行動+協奏）→ 協奏中に飛霄戦闘スキル連打→ 飛黄6層達成で飛霄必殺技発動→ 連続必殺技で殲滅。<strong>推定DPS：約58,000〜68,000（1サイクル）</strong></p>
+
+  <div class="note">
+    <strong>💡 編成①のポイント：</strong> 現環境最強の単体火力編成。ロビンの協奏中は全員の行動順が繰り上がり、飛黄の獲得速度が2倍以上に加速する。トパーズのCU（元帥）が毎ターン追加攻撃を行うため、デュラン5層維持と飛黄獲得の両面で完璧なシナジー。アベンチュリンは被弾時に追撃バリア＋追加攻撃を自動発動し、手数をさらに増やす。この編成における飛霄の実質的な飛黄獲得速度は、通常編成の約1.5倍〜2倍。E0でも必殺技を2〜3ターンごとに連射可能。
+  </div>
+
+  <h3>編成②：F2P三月なのか編成（無課金最強）</h3>
+  <div class="team-grid">
+    <div class="team-slot">
+      <div class="role">🌪️ メインアタッカー</div>
+      <div class="char">飛霄</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">風・巡狩</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🎵 サポーター</div>
+      <div class="char">ロビン</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">物理・調和</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🎯 サブアタッカー</div>
+      <div class="char">三月なのか（巡狩）</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">虚数・巡狩（星4配布）</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🛡️ 耐久枠</div>
+      <div class="char">アベンチュリン</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">虚数・存護</div>
+    </div>
+  </div>
+  <p style="font-size:0.9em;color:var(--sub);"><strong>装備詳細：</strong></p>
+  <ul style="font-size:0.85em;color:var(--sub);margin-bottom:8px;">
+    <li><strong>飛霄</strong>：「星海巡航」S5 or 「論剣」S5 / 勇烈4セット / デュラン or サルソット / 会心率胴・速度靴・風%オーブ・攻撃%縄</li>
+    <li><strong>ロビン</strong>：「大衆家庭用」S5 / 射手4セット / ルサカ / 攻撃力胴・速度靴・攻撃力オーブ・攻撃力縄 / 攻撃力4,000目標</li>
+    <li><strong>三月なのか（巡狩）</strong>：「星海巡航」S5 or 「剣術」S5 / 勇烈4 or 大公4 / サルソット or 出雲 / 会心率胴・速度靴・虚数%オーブ・攻撃%縄 / 速度134+（飛霄より遅く調整）</li>
+    <li><strong>アベンチュリン</strong>：「交錯の中の素敵な出会い」S5 / 聖騎士4セット / 仙舟 / 防御力胴・速度靴・防御力オーブ・防御力縄</li>
+  </ul>
+  <p style="font-size:0.9em;color:var(--sub);"><strong>ローテーション：</strong> 飛霄秘技 → 三月なのかスキル（師匠＝飛霄に設定）→ ロビンスキル → アベンチュリンスキル → 飛霄スキル（即時追加攻撃）→ 三月なのかの強化通常攻撃（師匠攻撃で飛霄天賦FUA発動）→ ロビン必殺技（協奏）→ 協奏中に飛霄＋三月連続行動→ 飛黄6層で飛霄必殺技連射。<strong>推定DPS：約45,000〜52,000（1サイクル）</strong></p>
+
+  <div class="note">
+    <strong>💡 編成②のポイント：</strong> 三月なのか（巡狩）はトパーズの代役として非常に優秀。師匠（飛霄）を設定することで、三月の強化通常攻撃が飛霄の天賦追加攻撃を誘発し、さらに飛黄獲得にも貢献する。三月なのか自身もSPを積極的に生成できるため（強化状態の通常攻撃はSP回復+1）、SPが不足しがちな飛霄＋ロビン編成のSP問題を解決してくれる。トパーズ未所持のプレイヤーに最もおすすめの編成。トパーズ編成と比較して火力は約15〜20%低下するが、SP面ではむしろ安定する。
+  </div>
+
+  <h3>編成③：飛霄＋ブローニャ＋ロビン 超行動促進編成（E2推奨）</h3>
+  <div class="team-grid">
+    <div class="team-slot">
+      <div class="role">🌪️ メインアタッカー</div>
+      <div class="char">飛霄（E2推奨）</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">風・巡狩</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🔄 行動促進</div>
+      <div class="char">ブローニャ</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">風・調和</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🎵 火力支援</div>
+      <div class="char">ロビン</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">物理・調和</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🛡️ 耐久枠</div>
+      <div class="char">符玄 / リンクス</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">量子・存護/豊穣</div>
+    </div>
+  </div>
+  <p style="font-size:0.9em;color:var(--sub);"><strong>装備詳細：</strong></p>
+  <ul style="font-size:0.85em;color:var(--sub);margin-bottom:8px;">
+    <li><strong>飛霄</strong>：モチーフ光円錐 or 星海巡航S5 / 勇烈4セット / デュラン / 会心ダメ胴・速度靴・風%オーブ・攻撃%縄（ブローニャが行動促進するため、速度は134程度でOK）</li>
+    <li><strong>ブローニャ</strong>：「戦は終わらない」or「大衆家庭用」S5 / メッセンジャー4セット / ルサカ or ヴォン / 会心ダメ胴・速度靴・HP%オーブ・EP効率縄 / 速度134+（飛霄より速く）</li>
+    <li><strong>ロビン</strong>：「大衆家庭用」S5 / 射手4セット / ルサカ / 攻撃力胴・速度靴・攻撃力オーブ・攻撃力縄</li>
+    <li><strong>符玄</strong>：「記憶の中の姿」or「我が身を盾に」/ 聖騎士4 / 仙舟 / HP%胴・速度靴・HP%オーブ・HP%縄</li>
+  </ul>
+  <p style="font-size:0.9em;color:var(--sub);"><strong>ローテーション：</strong> 飛霄秘技 → ブローニャスキル（飛霄行動促進）→ 飛霄スキル（即時FUA）→ ロビンスキル → 符玄スキル → ブローニャ必殺技（攻撃力+会心ダメバフ）→ ロビン必殺技（協奏）→ 協奏中：ブローニャスキル→飛霄行動促進のループで飛霄を連続行動→飛黄6層で必殺技連発。<strong>推定DPS：約52,000〜60,000（1サイクル）</strong></p>
+
+  <div class="note">
+    <strong>💡 編成③のポイント：</strong> ブローニャの戦闘スキルで飛霄の行動を強制促進することで、飛霄の行動回数を通常の約1.5倍に増加させる編成。飛霄はE2でなくても運用可能だが、E2があるとブローニャの追加攻撃（4凸以上）からの飛黄獲得が加速し、より高い回転率を発揮できる。SP消費が非常に激しいため、ブローニャはSP節約のため通常攻撃を織り交ぜるか、ロビンでSP管理を徹底しよう。符玄の会心率+12%バフは飛霄の会心率確保に大きく貢献する。
+  </div>
+
+  <h3>編成④：無課金・星4中心編成（超低予算）</h3>
+  <div class="team-grid">
+    <div class="team-slot">
+      <div class="role">🌪️ メインアタッカー</div>
+      <div class="char">飛霄</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">風・巡狩</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🎵 サポーター</div>
+      <div class="char">停雲 / アスター</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">雷/炎・調和（星4）</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🎯 サブ＋飛黄供給</div>
+      <div class="char">三月なのか（巡狩）</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">虚数・巡狩（星4）</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">💚 ヒーラー</div>
+      <div class="char">ギャラガー / リンクス</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">炎/量子・豊穣（星4）</div>
+    </div>
+  </div>
+  <p style="font-size:0.9em;color:var(--sub);"><strong>装備詳細：</strong></p>
+  <ul style="font-size:0.85em;color:var(--sub);margin-bottom:8px;">
+    <li><strong>飛霄</strong>：「星海巡航」S5 or 「論剣」S5 / 勇烈4 or 風雲2＋大公2 / サルソット or デュラン / 会心率胴・速度靴・風%オーブ・攻撃%縄</li>
+    <li><strong>停雲</strong>：「大衆家庭用」S5 or 「踊る玉竜」S5 / メッセンジャー4 / ルサカ or 仙舟 / 攻撃力胴・速度靴・攻撃力オーブ・EP効率縄 / 速度160+目標</li>
+    <li><strong>三月なのか（巡狩）</strong>：「星海巡航」S5 or 「沈黙のみ」S5 / 勇烈4 or 大公4 / サルソット / 会心率胴・速度靴・虚数%オーブ・攻撃%縄</li>
+    <li><strong>ギャラガー</strong>：「交錯の中の素敵な出会い」S5 / 過客4 / 仙舟 / 治癒量胴・速度靴・HP%オーブ・EP効率縄 / 速度134+</li>
+  </ul>
+  <p style="font-size:0.9em;color:var(--sub);"><strong>ローテーション：</strong> 飛霄秘技 → 停雲スキル（飛霄にEP供給…ではなく攻撃力バフ）→ 三月なのかスキル（師匠＝飛霄）→ ギャラガー通常攻撃（SP節約）→ 飛霄スキル→ 三月強化通常攻撃→ 飛霄天賦FUA→ 停雲必殺技（攻撃力+50%バフ）→ 飛霄必殺技。SPが足りない場合は三月が通常攻撃でSPを生成。<strong>推定DPS：約32,000〜38,000（1サイクル）</strong></p>
+
+  <div class="note">
+    <strong>💡 編成④のポイント：</strong> 星4キャラのみで構築した超低予算編成。ロビン・アベンチュリン・トパーズのいずれも持っていない場合の最終手段。停雲の攻撃力+50%バフ（必殺技）は飛霄の火力を大きく底上げする。三月なのか（巡狩）が飛黄供給とサブ火力を兼任。耐久枠はギャラガーがSP効率に優れ、追加攻撃も持つため飛黄獲得にも貢献。この編成でも忘却の庭12層の星2〜3クリアは十分可能。プレミアム編成との火力差は約40〜50%だが、育成が進めば高難易度でも戦える。
+  </div>
+
+  <!-- 凸数評価 -->
+  <h2 id="eidolons">💎 星魂（エイドロン）評価</h2>
+
+  <h3>0凸〜6凸 詳細評価</h3>
+  <table>
+    <tr><th>凸数</th><th>名称</th><th>効果</th><th>火力up率</th><th>おすすめ度</th></tr>
+    <tr>
+      <td>無凸（E0）</td><td>—</td>
+      <td>ベース性能。飛黄最大12層、必殺技発動に6層消費。非常に完成された性能。</td>
+      <td><span style="color:var(--accent);">100%</span><br><span style="color:var(--sub);">基準値</span></td>
+      <td><span class="star">★★★★★</span><br><span style="color:var(--sub);">無凸でも最強クラス</span></td>
+    </tr>
+    <tr>
+      <td>1凸（E1）</td><td>極地鎮定</td>
+      <td>「閃裂刃舞」or「斧貫衝天」発動後、飛霄の与える必殺技ダメージが本来の<strong>10%分アップ</strong>（最大5層累積、必殺技終了まで継続）。1ヒット目+10%、2ヒット目+20%…最終6ヒット目+50%。(10%×1+10%×2+...+10%×6=平均+35%)</td>
+      <td><span style="color:var(--accent);">約+25〜30%</span></td>
+      <td><span class="star">★★★★★</span><br><span style="color:var(--accent);">コスパ最優秀</span></td>
+    </tr>
+    <tr>
+      <td>2凸（E2）</td><td>月桂礼賛</td>
+      <td>天賦効果が強化。味方の攻撃が<strong>追加攻撃だった場合</strong>、飛霄は直接飛黄を<strong>1層獲得</strong>。ターンが回ってくるたびに<strong>6回まで</strong>発動可能。</td>
+      <td><span style="color:var(--accent);">約+15〜25%（回転率向上）</span></td>
+      <td><span class="star">★★★★★</span><br><span style="color:var(--accent);">最重要凸！回転率爆上がり</span></td>
+    </tr>
+    <tr>
+      <td>3凸（E3）</td><td>移ろいゆく景星</td>
+      <td>必殺技Lv+2（最大15）、通常攻撃Lv+1（最大10）。</td>
+      <td><span style="color:#e8c547;">約+5%</span></td>
+      <td><span style="color:#c0c0c0;">★★★☆☆</span><br><span style="color:var(--sub);">スキルレベル上げ</span></td>
+    </tr>
+    <tr>
+      <td>4凸（E4）</td><td>胆大心小</td>
+      <td>天賦追加攻撃の<strong>削靭値+100%</strong>。天賦追加攻撃発動時、自身の速度+8%（2T継続）。</td>
+      <td><span style="color:#e8c547;">約+3〜5%</span></td>
+      <td><span style="color:#c0c0c0;">★★☆☆☆</span><br><span style="color:var(--sub);">やや控えめ</span></td>
+    </tr>
+    <tr>
+      <td>5凸（E5）</td><td>星天踏破</td>
+      <td>戦闘スキルLv+2（最大15）、天賦Lv+2（最大15）。</td>
+      <td><span style="color:#c0c0c0;">約+3%</span></td>
+      <td><span style="color:#888;">★★☆☆☆</span><br><span style="color:var(--sub);">6凸への通過点</span></td>
+    </tr>
+    <tr>
+      <td>6凸（E6）</td><td>狐死首丘</td>
+      <td>飛霄が与える<strong>必殺技ダメージの全属性耐性貫通+20%</strong>。天賦追加攻撃ダメージが同時に必殺技ダメージと見なされ、ダメージ倍率+<strong>140%</strong>（Lv10天賦で110%→250%に）。</td>
+      <td><span style="color:var(--accent);">約+50〜70%</span></td>
+      <td><span class="star">★★★★★</span><br><span style="color:var(--accent);">完全体！圧倒的火力</span></td>
+    </tr>
+  </table>
+
+  <h3>凸のすすめ：詳細解説</h3>
+  <div class="card">
+    <p><strong>無凸（E0）でも十分に最強：</strong> 飛霄は無凸でもSSランクの追撃アタッカーとして十分に戦えます。勇烈4セット＋デュラン＋星海巡航S5の構成で、忘却の庭12層フルスター、末日の幻影の高スコアも十分に狙えます。ロビン・トパーズ・アベンチュリンとのFART編成が組めていれば、無凸でも大抵のコンテンツを攻略可能です。</p>
+    <p style="margin-top:8px;"><strong>E1（+25〜30%火力 / コスパ最優秀）：</strong> 必殺技の各ヒット後にダメージが累積的に増加する効果。1ヒット目から10%→20%→…→6ヒット目で50%と、平均して約35%の必殺技ダメージ増加が見込める。計算上、総必殺技ダメージが約25〜30%上昇し、1凸の価格に対する火力向上率は全凸中でもトップクラス。予算が限られているなら、まずE1を狙うのが最も効率的。</p>
+    <p style="margin-top:8px;"><strong>E2（最重要凸 / 回転率革命）：</strong> 味方の攻撃が追加攻撃だった場合、直接飛黄を1層獲得（ターン毎に最大6回）。これにより、トパーズのCUやアベンチュリンの追撃、ロビンの全体再行動からの追加攻撃が飛黄獲得に直結するようになる。検証では、E2による飛黄獲得速度はE0比で約1.5〜2倍に向上。必殺技の回転率が劇的に改善されるため、<strong>火力面での効果は数値以上に大きい</strong>。FART編成で真価を発揮する。</p>
+    <p style="margin-top:8px;"><strong>E4（+3〜5%）：</strong> 削靭値2倍は便利だが火力面での貢献は限定的。速度+8%は永続維持が容易で、134→144に上昇する程度の恩恵。E2に比べると効果は控えめ。</p>
+    <p style="margin-top:8px;"><strong>E6（完全体 / +50〜70%）：</strong> 全属性耐性貫通20%はほぼ全ての敵に対して1.2倍以上のダメージ増加。さらに天賦追加攻撃が必殺技扱いになり倍率が+140%（110%→250%）。天賦追加攻撃のダメージが約2.27倍になるため、飛霄の全火力が大幅に向上。合わせて必殺技ダメージの扱いになることでモチーフ光円錐の防御無視効果も天賦追加攻撃に乗るようになる。理論上の総火力はE0比で約50〜70%向上し、E6飛霄は崩壊スターレイル全体でもトップクラスの瞬間火力を誇る。</p>
+  </div>
+
+  <div class="build-box">
+    <div class="label">🏆 コスパ最優秀凸</div>
+    <div class="content">E1（極地鎮定）→ E2（月桂礼賛）</div>
+    <div style="margin-top:6px;font-size:0.9em;">まずE1で必殺技火力を25〜30%向上させるのが最も効率的。次にE2で飛黄獲得速度を飛躍的に高め、必殺技の回転率を改善する。E0→E1→E2の順で凸を進めるのが、最もコストパフォーマンスに優れた凸計画。E2まで進めるとFART編成での快適さが段違いに向上する。予算が許せばE6まで一気に進めるのも選択肢だが、E2で止めて他キャラの確保に回すのも賢い判断。</div>
+  </div>
+
+  <!-- 相性の良いキャラ -->
+  <h2 id="synergy">🤝 相性の良いキャラ</h2>
+  <table>
+    <tr><th>キャラ</th><th>属性/運命</th><th>相性の理由</th><th>おすすめ度</th></tr>
+    <tr><td>ロビン（Robin）</td><td>物理・調和</td><td>攻撃力+与ダメ+会心ダメ+全体再行動の4種バフが飛霄に完璧にハマる。全体再行動で飛黄獲得速度が倍増。飛霄のベストパートナー。</td><td><span class="star">★★★★★</span></td></tr>
+    <tr><td>トパーズ＆カブ（Topaz）</td><td>炎・巡狩</td><td>CUの毎ターン追加攻撃で飛黄供給＋与ダメ+50%バフ。サブアタッカーとしても高火力。FART編成の核。</td><td><span class="star">★★★★★</span></td></tr>
+    <tr><td>アベンチュリン（Aventurine）</td><td>虚数・存護</td><td>被弾時に追加攻撃を自動発動し飛黄獲得に貢献。継続バリアで耐久面も安定。追撃耐久枠の最高峰。</td><td><span class="star">★★★★★</span></td></tr>
+    <tr><td>三月なのか（巡狩）</td><td>虚数・巡狩（星4）</td><td>師匠（飛霄）設定で強化通常攻撃が飛霄FUAを誘発。SP生成能力も高く、トパーズの代役として最適。無課金の味方。</td><td><span class="star">★★★★★</span></td></tr>
+    <tr><td>ブローニャ（Bronya）</td><td>風・調和</td><td>行動促進で飛霄の行動回数を増加。攻撃力＋会心ダメバフも強力。E2飛霄との相性が特に良い。</td><td><span style="color:#e8c547;">★★★★★</span></td></tr>
+    <tr><td>符玄（Fu Xuan）</td><td>量子・存護</td><td>会心率+12%バフが飛霄の会心率確保に貢献。ダメージ軽減で安定性も向上。</td><td><span style="color:#e8c547;">★★★★☆</span></td></tr>
+    <tr><td>モゼ（Moze）</td><td>雷・巡狩（星4）</td><td>追加攻撃アタッカーとして飛黄供給＋デバフ付与。トパーズの代役候補。</td><td><span style="color:#e8c547;">★★★★☆</span></td></tr>
+    <tr><td>ルアン・メェイ（Ruan Mei）</td><td>氷・調和</td><td>全属性耐性貫通＋速度バフ＋弱点効率UP。弱点撃破状態維持で飛霄の必殺技ダメージが安定。</td><td><span style="color:#e8c547;">★★★★☆</span></td></tr>
+    <tr><td>停雲（Tingyun）</td><td>雷・調和（星4）</td><td>攻撃力+50%バフ（必殺技）が飛霄の火力を大幅強化。無課金サポーターの最有力候補。</td><td><span style="color:#e8c547;">★★★★☆</span></td></tr>
+    <tr><td>ギャラガー（Gallagher）</td><td>炎・豊穣（星4）</td><td>SP効率が高く、必殺技後の追加攻撃で飛黄獲得に貢献。無課金耐久枠の最適解。</td><td><span style="color:#e8c547;">★★★★☆</span></td></tr>
+    <tr><td>リンクス（Lynx）</td><td>量子・豊穣（星4）</td><td>無料配布ヒーラー。SP節約しつつ全体回復。飛霄のターゲット集中を抑える効果も。</td><td><span style="color:#c0c0c0;">★★★☆☆</span></td></tr>
+    <tr><td>モゼ（Moze）</td><td>雷・巡狩（星4）</td><td>追加攻撃主体のサブアタッカー。飛黄供給と敵デバフで間接的に火力支援。</td><td><span style="color:#e8c547;">★★★★☆</span></td></tr>
+  </table>
+
+  <div class="note">
+    <strong>💡 相性のポイント：</strong> 飛霄の編成で最も重要なのは<strong>「味方の手数」</strong>です。飛霄は味方が攻撃すればするほど飛黄が貯まり、必殺技の回転率が上がります。そのため、追加攻撃を持つキャラや再行動を付与できるキャラとの相性が極めて高いです。<strong>ロビン＞トパーズ＞アベンチュリン</strong>の3人が理想の鉄壁トリオで、この3人＋飛霄が「FART」編成として最強とされています。耐久枠はアベンチュリンが最適ですが、符玄（会心率バフ）も強力。無課金の場合は三月なのか（巡狩）とギャラガーを中心に編成しましょう。
+  </div>
+
+  <!-- よくある質問 -->
+  <h2 id="faq">❓ よくある質問（FAQ）</h2>
+
+  <div class="faq-item">
+    <div class="q">Q. 飛霄の速度はいくつが最適ですか？</div>
+    <div class="a">
+      飛霄の速度は<strong>134以上</strong>を推奨します。ベース速度112に速度靴（+25）で137となり、遺物サブで追加しなくても134達成が自動で可能なのが大きな強みです。理想は<strong>143以上</strong>で、ロビンの協奏状態中に3回行動を狙えるラインになります。速度サブに余裕があれば160（グラモス条件）も視野に入りますが、飛霄の場合は会心率と会心ダメージの厳選を優先しましょう。なお、飛霄は高速であるほど味方の行動を多く観測でき、飛黄の獲得チャンスも増えるため、<strong>速度は高ければ高いほど良い</strong>という側面もあります。ただしモチーフ光円錐使用時は速度を上げすぎると「流光」の維持管理が難しくなるため、バランスが重要です。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 飛霄の遺物は何がベストですか？</div>
+    <div class="a">
+      飛霄の最適遺物は<strong>「風雲を薙ぎ払う勇烈（Valorous）」4セット</strong>です。勇烈4セットは追加攻撃発動時に必殺技ダメージ+20%、必殺技発動時に追加攻撃ダメージ+20%と、飛霄の全攻撃をカバーする理想的な効果を持ちます。追加能力「解形」で必殺技が追加攻撃扱いになるため、飛霄は常に4セット効果の両方を同時に享受できるのが最大の強みです。次点の「灰燼を燃やし尽くす大公」4セットは追加攻撃ヒット数でATKアップ（最大48%）が強力ですが、勇烈4と比較すると約5〜7%の火力低下に留まります。オーナメントは「奔狼の都藍王朝（Duran）」が最適で、追加攻撃ダメージ+25%＋会心ダメージ+25%の2種バフを獲得できます。Duranがない場合は「自転が止まったサルソット」（会心率+8%＋必殺技・追加攻撃ダメ+15%）または「顕世の出雲と高天の神国」（会心率+12%）が次善の選択肢です。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 飛霄は何凸がおすすめですか？</div>
+    <div class="a">
+      飛霄は<strong>無凸でも十分に強い</strong>ですが、凸の価値は非常に高いです。以下のように段階的におすすめします：
+      <ol style="margin-top:6px;">
+        <li><strong>E0（無凸）</strong>：完全戦力。FART編成が組めれば大抵のコンテンツを攻略可能。</li>
+        <li><strong>E1（+25〜30%火力）</strong>：必殺技の連撃ダメージが累積増加。コスパ最優秀で、最初の1凸として最もおすすめ。</li>
+        <li><strong>E2（回転率革命）</strong>：味方の追加攻撃が飛黄に直結。FART編成での必殺技連射が驚異的に。予算に余裕があればE2まで。</li>
+        <li><strong>E6（完全体）</strong>：耐性貫通20%＋天賦FUA倍率+140%で圧倒的火力。全凸中最強だが、コストに見合うかはプレイヤーの判断次第。</li>
+      </ol>
+      E1とE2は特に強力で、この2つの凸があるかないかで飛霄の運用感が大きく変わります。まずE1を狙い、余裕があればE2を目指すのが最も現実的で効果的な凸計画です。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 飛霄のモチーフ光円錐は必須ですか？</div>
+    <div class="a">
+      飛霄のモチーフ光円錐「我が征く巡狩の道」は<strong>最適ですが必須ではありません</strong>。モチーフが無い場合の代替候補は以下の通りです：
+      <ol style="margin-top:6px;">
+        <li><strong>★5「純粋なる思惟の洗礼」S1</strong>（Dr.レイシオモチーフ）：会心ダメージ+44%＋与ダメ+36%＋防御無視24%。モチーフ比約90〜93%。非常に強力な次点候補。</li>
+        <li><strong>★5「星海巡航」S5</strong>（ヘルタショップ）：会心率+16%（HP50%以下で+32%）＋撃破時ATK+40%。モチーフ比約80〜84%。無課金最強。</li>
+        <li><strong>★4「論剣」S5</strong>（恒常）：与ダメージ+80%（5層時）。モチーフ比約74〜78%。ボス単体戦で強力。</li>
+        <li><strong>★4「沈黙のみ」S5</strong>（恒常）：与ダメージ+36%（デバフ2種時）。モチーフ比約70〜74%。控えめだが悪くない。</li>
+      </ol>
+      モチーフ光円錐の防御無視54%は非常に強力ですが、星海巡航S5や論剣S5でも十分な火力を出せます。モチーフを引くよりもE1やE2の凸を優先するのも賢い選択です。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 飛霄の必殺技「飛黄」システムの仕組みを詳しく教えてください</div>
+    <div class="a">
+      飛霄は通常のEPゲージを持たず、代わりに専用チャージ「<strong>飛黄（Flying Aureus）</strong>」を使用する独自システムを採用しています。飛黄の基本ルールは以下の通りです：
+      <ul style="margin-top:6px;">
+        <li><strong>飛黄の獲得方法</strong>：
+          <ul>
+            <li>味方（飛霄含む）が2回攻撃するごとに飛黄+1層</li>
+            <li>飛霄のターン開始時に飛黄+1層</li>
+            <li>戦闘開始時に軌跡「通天」で飛黄+3層</li>
+            <li>飛霄秘技使用時、飛黄+1層</li>
+          </ul>
+        </li>
+        <li><strong>飛黄の消費</strong>：必殺技発動時に6層消費</li>
+        <li><strong>飛黄の最大蓄積</strong>：12層（実質13層まで貯められる）</li>
+        <li><strong>飛黄のカウント対象にならないもの</strong>：飛霄の必殺技中の攻撃、付加ダメージ系の効果</li>
+      </ul>
+      <p style="margin-top:6px;">飛黄は6層以上貯まっていればいつでも必殺技を発動でき、12層まで貯めてから必殺技を連射することも可能です（6層消費→残り6層→再度必殺技発動）。バフが乗っているタイミングを見計らって12層まで貯めてから連射するのが理想的な運用です。</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 飛霄と相性の良いキャラは誰ですか？</div>
+    <div class="a">
+      飛霄と最も相性が良いのは<strong>ロビン（Robin）</strong>です。ロビンの必殺技による全体再行動は飛霄の行動回数を倍増させ、飛黄の獲得速度が飛躍的に向上します。また、攻撃力+与ダメージ+会心ダメージの3種バフは飛霄の全火力を底上げします。次いで<strong>トパーズ＆カブ（Topaz）</strong>が優秀で、CUの毎ターン追加攻撃で飛黄を供給しつつ、与ダメージ+50%のバフで飛霄の火力を強化します。耐久枠では<strong>アベンチュリン（Aventurine）</strong>が最適で、被弾時に追加攻撃を自動発動して飛黄獲得に貢献するだけでなく、継続バリアでパーティ全体の耐久性を確保します。この3人＋飛霄の「FART編成」が現環境最強の追撃パーティです。F2Pの場合は<strong>三月なのか（巡狩）</strong>がトパーズの代役として、<strong>ギャラガー</strong>がアベンチュリンの代役として十分に機能します。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 飛霄にとって会心率はどのくらい必要ですか？</div>
+    <div class="a">
+      飛霄の会心率は<strong>戦闘中70%以上</strong>を目標にしましょう。内訳の目安は以下の通りです：
+      <ul style="margin-top:6px;">
+        <li><strong>自体会心率ベース</strong>：5%（全キャラ共通）</li>
+        <li><strong>軌跡ボーナス</strong>：約+12%（2.7%+4%+5.3%）</li>
+        <li><strong>胴体会心率メイン</strong>：約+32%（Lv15時）</li>
+        <li><strong>出雲オーナメント</strong>：+12%（巡狩キャラがいる場合）</li>
+        <li><strong>サルソットオーナメント</strong>：+8%</li>
+        <li><strong>星海巡航S5</strong>：+16%（HP50%以下で+32%）</li>
+        <li><strong>モチーフ光円錐</strong>：+15%</li>
+        <li><strong>符玄がいる場合</strong>：さらに+12%</li>
+      </ul>
+      モチーフ光円錐（+15%）＋軌跡（12%）＋胴体（32%）＝59%なので、サブで11%以上盛れば70%達成。星海巡航S5ならさらに+16%で75%に到達するため、サブでの会心率厳選が大幅に緩和されます。会心率が70%以上達成できているなら、残りのサブステは会心ダメージと攻撃力%に全振りしましょう。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 飛霄はロビンやトパーズなしでも使えますか？</div>
+    <div class="a">
+      飛霄はロビンやトパーズなしでも<strong>十分に使えます</strong>が、火力は低下します。ロビンなしの場合の代替サポーターとしては、<strong>ブローニャ</strong>（行動促進＋バフ）、<strong>ルアン・メェイ</strong>（耐性貫通＋速度バフ）、<strong>停雲</strong>（攻撃力バフ）が有力です。トパーズなしの場合の代替としては、<strong>三月なのか（巡狩）</strong>が最もおすすめで、トパーズ編成と比較して約15〜20%の火力低下に留まります。<strong>モゼ</strong>も追加攻撃アタッカーとして優秀な代役です。耐久枠のアベンチュリンがいない場合は<strong>符玄</strong>（会心率バフ）か<strong>ギャラガー</strong>（SP効率+追撃）で代用しましょう。ロビン・トパーズ・アベンチュリン全てなしでも、飛霄＋三月なのか（巡狩）＋停雲＋ギャラガーで忘却の庭12層星2〜3クリアは十分可能です。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 飛霄の必殺技で弱点撃破状態と非弱点撃破状態、どちらが強いですか？</div>
+    <div class="a">
+      飛霄の必殺技は、敵の弱点撃破状態に応じて最適な攻撃を自動選択します。ダメージ面では<strong>どちらの場合も最大倍率は同じ</strong>（各ヒット60%+30%ボーナス）です。しかし実用的には以下の違いがあります：
+      <ul style="margin-top:6px;">
+        <li><strong>非弱点撃破状態</strong>の敵：斧貫衝天が選択され、さらに弱点撃破効率+100%の効果が発動。靭性を素早く削り、弱点撃破状態に移行させられる。靭性を削ると敵の行動を遅延できるため、防御的なメリットがある。</li>
+        <li><strong>弱点撃破状態</strong>の敵：閃裂刃舞が選択。すでに弱点撃破されているため、そのまま大ダメージを与えられる。ルアン・メェイの超撃破編成では、弱点撃破維持が火力に直結するためこちらが有利。</li>
+      </ul>
+      基本的にはどちらでも火力は同じですが、編成や状況に応じて使い分けましょう。なお、飛霄の必殺技は敵の弱点属性を無視して削靭できるため、風属性が弱点でない敵に対しても同様に靭性を削れます。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 飛霄の「飛黄」は12層以上貯まりますか？</div>
+    <div class="a">
+      飛霄の飛黄は画面上の最大表示は<strong>12層</strong>ですが、内部的にはさらに<strong>2カウント分（飛黄約1層分に相当）までは貯めることが可能</strong>です。つまり、実質的には<strong>最大13層</strong>までストックできることになります。これは、味方の攻撃で飛黄を12層まで貯めた後に、飛霄自身のターン開始時の飛黄+1層が加算されるという形で発生します。12層貯まっている状態で必殺技を撃つと6層消費して6層残るため、もう一度必殺技を発動できる状態になります。この<strong>連続必殺技（12層貯めてからの6層×2連射）</strong>が飛霄の理想的な必殺技運用です。ロビンの協奏状態中に12層貯めて連射するのが最も強力なコンボになります。
+    </div>
+  </div>
+
+  <!-- 評価まとめ -->
+  <h2 id="summary">📋 総評</h2>
+  <div class="card">
+    <p>飛霄（フェイシャオ）は、<strong>崩壊スターレイル史上最強クラスの追撃特化単体アタッカー</strong>です。独自の「飛黄」システムによるEP不要の必殺技連射、天賦による高頻度追加攻撃、そして追加能力「解形」による必殺技の追加攻撃扱い化により、追撃パーティの全てのバフを最大効率で受けることができる、まさに<strong>追撃編成の申し子</strong>と言えるキャラクターです。</p>
+
+    <h4>ビルドの基本方針</h4>
+    <ul style="margin-top:4px;">
+      <li><strong>光円錐</strong>：我が征く巡狩の道（★5）＞ 純粋なる思惟の洗礼（★5）＞ 星海巡航S5（★5）＞ 論剣S5（★4）</li>
+      <li><strong>遺物</strong>：勇烈4セット（最適）＞ 勇烈2+大公2（サブ次第）＞ 大公4セット（次点）</li>
+      <li><strong>オーナメント</strong>：デュラン（最適）＞ サルソット（次点）＝ 出雲（巡狩編成）＞ バナダイス（召喚編成）</li>
+      <li><strong>メインステ</strong>：胴体＝会心率%、脚＝速度%、オーブ＝風ダメージ%、縄＝攻撃力%</li>
+      <li><strong>目標速度</strong>：134以上（ベース112＋速度靴で137。143目標）</li>
+      <li><strong>目標会心率</strong>：戦闘中70%以上</li>
+      <li><strong>目標攻撃力</strong>：バフなし2,800+、ロビンバフ込み4,000+</li>
+      <li><strong>スキル優先</strong>：必殺技 ＞ 天賦 ＞ 戦闘スキル ＞ 通常攻撃</li>
+      <li><strong>凸優先</strong>：E1（火力）→ E2（回転率）が現実的。E6で完全体。</li>
+    </ul>
+
+    <h4>評価点数（10点満点）</h4>
+    <table style="max-width:400px;">
+      <tr><th>項目</th><th>評価</th></tr>
+      <tr><td>瞬間火力</td><td><span class="star">★★★★★★★★★★</span> 10/10</td></tr>
+      <tr><td>継続火力</td><td><span class="star">★★★★★★★★★☆</span> 9/10</td></tr>
+      <tr><td>汎用性</td><td><span class="star">★★★★★★★☆☆☆</span> 7/10（単体特化）</td></tr>
+      <tr><td>編成難易度</td><td><span style="color:#e8c547;">★★★★★★☆☆☆☆</span> 6/10（ロビン推奨）</td></tr>
+      <tr><td>遺物厳選難易度</td><td><span style="color:#c0c0c0;">★★★★★★☆☆☆☆</span> 6/10</td></tr>
+      <tr><td>総合評価</td><td><span class="star">★★★★★★★★★☆</span> 9.5/10</td></tr>
+    </table>
+
+    <h4>こんな人におすすめ</h4>
+    <ul>
+      <li>✅ 追撃（FUA）パーティを組みたい・既に持っている</li>
+      <li>✅ ロビン・トパーズ・アベンチュリンを所持している</li>
+      <li>✅ 敵単体を瞬殺できる強力なアタッカーが欲しい</li>
+      <li>✅ 忘却の庭の0ラウンドクリアを狙いたい</li>
+      <li>✅ スピーディーでスタイリッシュな戦闘スタイルが好き</li>
+      <li>✅ 小松未可子さんのファン（CV担当）</li>
+    </ul>
+
+    <h4>こんな人には向かないかも</h4>
+    <ul>
+      <li>⚠️ ロビン・アベンチュリンを所持しておらず、引く予定もない</li>
+      <li>⚠️ 複数敵への範囲火力を求めている（飛霄は純単体アタッカー）</li>
+      <li>⚠️ 必殺技の操作が面倒（連打が必要なアクティブ必殺技）</li>
+    </ul>
+
+    <p style="margin-top:12px;">飛霄は無凸からE6までどの凸数でも強力で、<strong>追撃パーティの絶対的エース</strong>として長く活躍し続けるでしょう。特にロビン・トパーズ・アベンチュリンとのFART編成は、現環境で最強の単体火力を誇り、忘却の庭・末日の幻影・模擬宇宙の全てで圧倒的なパフォーマンスを発揮します。ぜひこのガイドを参考に、最強の飛霄を育てて全てのコンテンツを攻略してください！</p>
+  </div>
+
+</article>
+
+</body>
+</html>
