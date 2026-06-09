@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4B26RL1D24"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4B26RL1D24');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>【崩壊スターレイル】椒丘（ジャオチウ）完全攻略ガイド｜最強ビルド・遺物・光円錐・おすすめ編成</title>
+<meta name="description" content="崩壊スターレイルの星5炎属性・虚無キャラ「椒丘（ジャオチウ／Jiaoqiu）」の完全攻略ガイド。遺物2セット比較＋%差、光円錐3選択肢＋%差、理想パーティ2編成＋ローテーション、凸数0-6凸の詳細評価、スキル全数値・効果命中・速度調整まで徹底解説。忘却の庭・末日の幻影・模擬宇宙対応。アーケロン（黄泉）の最適デバッファー。">
+<meta name="keywords" content="崩壊スターレイル,椒丘,ジャオチウ,Jiaoqiu,攻略,遺物,光円錐,編成,凸,星魂,ビルド,おすすめ,デバフ,DoT,持続ダメージ,アーケロン,黄泉,虚無">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="【崩壊スターレイル】椒丘（ジャオチウ）完全攻略ガイド｜最強ビルド・遺物・光円錐・おすすめ編成">
+<meta property="og:description" content="崩壊スターレイル椒丘（ジャオチウ）の完全攻略。スキル数値、遺物2セット比較、光円錐ランキング、パーティ編成2選、凸数ごとの評価を詳細解説。アーケロン（黄泉）最適デバッファー兼DoTサポーター！">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="【崩壊スターレイル】椒丘（ジャオチウ）完全攻略ガイド">
+<link rel="canonical" href="https://chjiya.github.io/hsr-guide/guides/ja/jiaoqiu-guide-ja.html">
+<base href="/hsr-guide/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "【崩壊スターレイル】椒丘（ジャオチウ）完全攻略ガイド｜最強ビルド・遺物・光円錐・おすすめ編成",
+  "description": "崩壊スターレイルの星5炎属性・虚無キャラ「椒丘（ジャオチウ）」の完全攻略。スキル解析、おすすめ遺物2セット比較、光円錐3選択肢、理想パーティ2編成、凸数評価、FAQまで徹底解説。",
+  "author": { "@type": "Person", "name": "花叔" },
+  "datePublished": "2026-06-09",
+  "dateModified": "2026-06-09",
+  "articleSection": "キャラクター攻略",
+  "inLanguage": "ja",
+  "about": {
+    "@type": "Thing",
+    "name": "椒丘（ジャオチウ）",
+    "description": "崩壊スターレイルの星5炎属性・虚無の運命を歩むデバフ＆DoT特化サポーターキャラクター"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://chjiya.github.io/hsr-guide/guides/ja/jiaoqiu-guide-ja.html"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "椒丘の速度はいくつが最適ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "椒丘の速度は134以上を最優先とします。ベース速度98に速度靴（+25）で123となり、サブで11以上を盛って134を達成しましょう。アーケロンパーティでは160超えの超高速が理想で、デバフの維持とアーケロンのEP（残夢）供給を最大化できます。速度を上げれば上げるほど椒丘の価値が高まるキャラです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "椒丘のおすすめ遺物は何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "椒丘の最適遺物は「深牢に囚われし囚人（Prisoner in Deep Confinement）」4セットです。4セット効果の防御無視+18%（DoT状態の敵に対して+24%まで上昇）は椒丘の持続ダメージを大幅に強化します。ただし遺物厳選が難しい場合は「2+2構成（囚人2＋ガラファルコン2 or 寿命の道2）」も実用的です。オーナメントは「老いぬ若さのヴォンク（Sprightly Vonwacq）」が最適で、EP回復効率+5%＋開幕行動前延+40%で必殺技の初動を早めます。次点で「壊滅した星々のケール（Broken Keel）」も有効です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "椒丘は何凸がおすすめですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "椒丘は無凸でもアーケロンのベストデバッファーとして十分に機能します。E1は敵に追加デバフを付与し、チーム全体の与ダメージを底上げするため、アーケロンパーティの火力を大幅に向上させます。E2はEP回復効率が向上し、必殺技の回転率がさらに良くなります。E6は椒丘自身がサブアタッカーとして機能し始め、持続ダメージがメインの火力源になります。コスパ重視ならE0→E1が最もおすすめです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "椒丘のモチーフ光円錐は必要ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "椒丘のモチーフ光円錐「幾たらせし春（Those Many Springs）」は最適ですが必須ではありません。イベント光円錐「チュートリアルを始める前に（Before the Tutorial Mission Starts）」S5が無課金で非常に強力で、モチーフと遜色ない効果命中とEP供給を提供します。星4の「別れと孤独を癒すもの（Solitary Healing）」S5も持続ダメージ特化型として優れた選択肢です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "椒丘の効果命中はどれくらい必要ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "椒丘はデバフの確率命中が生命線です。効果命中は67%以上を目標とします。軌跡で効果命中+10%を得られるため、胴体効果命中（+43%）と合わせて53%、サブで14%以上を盛れば十分です。理想的には80%以上を確保することで、高効果抵抗の敵（30%抵抗想定）に対しても安定してデバフを通せます。"
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --bg: #1a1a2e;
+    --card: #16213e;
+    --accent: #ff7043;
+    --text: #e0e0e0;
+    --sub: #a0a0b0;
+    --border: #2a2a4a;
+    --highlight: #0f3460;
+    --green: #4caf84;
+    --red: #e0556a;
+    --blue: #5b9bd5;
+    --purple: #b39ddb;
+    --fire: #ff7043;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', Meiryo, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+    padding: 20px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 1.8em;
+    color: var(--accent);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 1.4em;
+    color: var(--accent);
+    margin: 36px 0 16px;
+    padding: 8px 14px;
+    border-left: 4px solid var(--accent);
+    background: var(--highlight);
+    border-radius: 0 6px 6px 0;
+  }
+  h3 {
+    font-size: 1.15em;
+    color: #ffab91;
+    margin: 24px 0 10px;
+  }
+  h4 {
+    font-size: 1.05em;
+    color: #ffccbc;
+    margin: 16px 0 8px;
+  }
+  .char-header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background: var(--card);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 24px;
+    border: 1px solid var(--border);
+  }
+  .char-icon {
+    width: 90px;
+    height: 90px;
+    border-radius: 12px;
+    background: var(--fire);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2em;
+    flex-shrink: 0;
+    color: #fff;
+  }
+  .char-info { flex: 1; }
+  .char-info .name { font-size: 1.6em; font-weight: bold; color: #fff; }
+  .char-info .tags { margin-top: 6px; display: flex; gap: 8px; flex-wrap: wrap; }
+  .tag {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: bold;
+  }
+  .tag-rarity { background: #b8860b; color: #fff; }
+  .tag-element { background: var(--fire); color: #fff; }
+  .tag-path { background: #ab47bc; color: #fff; }
+  .tag-role { background: var(--blue); color: #fff; }
+
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    margin: 16px 0;
+  }
+  .stat-box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+  }
+  .stat-box .label { font-size: 0.8em; color: var(--sub); }
+  .stat-box .value { font-size: 1.2em; font-weight: bold; color: #fff; margin-top: 4px; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 0.9em;
+  }
+  th {
+    background: var(--highlight);
+    color: var(--accent);
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px solid var(--border);
+  }
+  td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+  .star { color: var(--accent); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px;
+    margin: 16px 0;
+  }
+
+  .build-box {
+    background: var(--highlight);
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin: 12px 0;
+  }
+  .build-box .label { color: var(--accent); font-weight: bold; font-size: 0.85em; }
+  .build-box .content { color: #fff; font-weight: bold; margin-top: 4px; }
+
+  .pros-cons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 16px 0;
+  }
+  .pros, .cons {
+    padding: 14px;
+    border-radius: 8px;
+  }
+  .pros { background: rgba(76,175,132,0.1); border: 1px solid rgba(76,175,132,0.3); }
+  .cons { background: rgba(224,85,106,0.1); border: 1px solid rgba(224,85,106,0.3); }
+  .pros h4 { color: var(--green); margin-bottom: 6px; }
+  .cons h4 { color: var(--red); margin-bottom: 6px; }
+  .pros li, .cons li { margin-left: 18px; font-size: 0.9em; }
+
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 12px 0;
+  }
+  .team-slot {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 8px;
+    text-align: center;
+  }
+  .team-slot .role { font-size: 0.75em; color: var(--sub); margin-bottom: 4px; }
+  .team-slot .char { font-weight: bold; color: #fff; font-size: 0.95em; }
+
+  .faq-item {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin: 12px 0;
+    padding: 16px;
+  }
+  .faq-item .q {
+    color: var(--accent);
+    font-weight: bold;
+    font-size: 1.05em;
+    margin-bottom: 8px;
+  }
+  .faq-item .a {
+    color: var(--text);
+    line-height: 1.8;
+  }
+
+  .note {
+    background: rgba(255,112,67,0.08);
+    border-left: 3px solid var(--accent);
+    padding: 10px 14px;
+    margin: 14px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.9em;
+  }
+
+  .skill-box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px;
+    margin: 10px 0;
+  }
+  .skill-box .skill-name { font-weight: bold; color: var(--accent); font-size: 1.05em; }
+  .skill-box .skill-type { font-size: 0.8em; color: var(--sub); margin-left: 8px; }
+  .skill-box .skill-desc { margin-top: 8px; font-size: 0.9em; }
+
+  .priority-5 { color: var(--accent); }
+  .priority-4 { color: #e8c547; }
+  .priority-3 { color: #c0c0c0; }
+  .priority-2 { color: #888; }
+
+  ol, ul { padding-left: 1.5em; }
+  li { margin: 4px 0; }
+
+  .toc { margin: 16px 0; padding: 14px; background: var(--card); border-radius: 8px; border: 1px solid var(--border); }
+  .toc a { color: var(--accent); text-decoration: none; }
+  .toc a:hover { text-decoration: underline; }
+  .toc li { margin: 4px 0; }
+
+  @media (max-width: 600px) {
+    .char-header { flex-direction: column; text-align: center; }
+    .team-grid { grid-template-columns: repeat(2, 1fr); }
+    .pros-cons { grid-template-columns: 1fr; }
+    .stat-grid { grid-template-columns: repeat(2, 1fr); }
+    body { padding: 12px; }
+  }
+</style>
+</head>
+<body>
+
+<article>
+  <h1>【崩壊スターレイル】椒丘（ジャオチウ）完全攻略ガイド</h1>
+
+  <!-- 目次 -->
+  <div class="toc">
+    <strong>📑 目次</strong>
+    <ol style="margin-top:6px;">
+      <li><a href="#overview">キャラ概要</a></li>
+      <li><a href="#skills">スキル解説（全数値）</a></li>
+      <li><a href="#relics">おすすめ遺物（2セット比較＋%差）</a></li>
+      <li><a href="#lightcones">おすすめ光円錐（3選択肢＋%差）</a></li>
+      <li><a href="#teams">理想編成（2チーム＋装備＋ローテ）</a></li>
+      <li><a href="#eidolons">凸数評価（0〜6凸＋%UP）</a></li>
+      <li><a href="#synergy">相性の良いキャラ</a></li>
+      <li><a href="#faq">よくある質問（FAQ）</a></li>
+      <li><a href="#summary">総評</a></li>
+    </ol>
+  </div>
+
+  <!-- キャラクター基本情報 -->
+  <div class="char-header" id="overview">
+    <div class="char-icon">🔥</div>
+    <div class="char-info">
+      <div class="name">椒丘（ジャオチウ / Jiaoqiu）</div>
+      <div class="tags">
+        <span class="tag tag-rarity">★5</span>
+        <span class="tag tag-element">炎属性</span>
+        <span class="tag tag-path">虚無（Nihility）</span>
+        <span class="tag tag-role">デバッファー / DoTサポーター</span>
+      </div>
+      <div style="margin-top:8px;color:var(--sub);font-size:0.9em;">
+        所属：仙舟「曜青」・丹鼎司｜声優：非公開｜入手：限定排出（イベント跳躍）｜実装：Ver.2.4（2024年7月）
+      </div>
+    </div>
+  </div>
+
+  <!-- ステータス概要 -->
+  <div class="stat-grid">
+    <div class="stat-box">
+      <div class="label">最大HP</div>
+      <div class="value">1,058</div>
+    </div>
+    <div class="stat-box">
+      <div class="label">攻撃力</div>
+      <div class="value">620</div>
+    </div>
+    <div class="stat-box">
+      <div class="label">防御力</div>
+      <div class="value">436</div>
+    </div>
+    <div class="stat-box">
+      <div class="label">速度</div>
+      <div class="value">98</div>
+    </div>
+    <div class="stat-box">
+      <div class="label">EP</div>
+      <div class="value">120</div>
+    </div>
+  </div>
+
+  <!-- キャラクター評価 -->
+  <div class="pros-cons">
+    <div class="pros">
+      <h4>✅ 長所</h4>
+      <ul>
+        <li>アーケロン（黄泉）の最適デバッファー。戦闘スキル＋必殺技で複数デバフを安定付与</li>
+        <li>戦闘スキルによるフィールド展開で持続的なDoTダメージ</li>
+        <li>必殺技の「炙烤（Ashen Roast）」デバフで被ダメージ増加＋行動遅延</li>
+        <li>虚無キャラとしてアーケロンの残夢（EP）蓄積を大幅に加速</li>
+        <li>効果命中盛りやすく、軌跡で効果命中+10%のボーナス</li>
+        <li>トータルデバフ数が多いため、虚無パーティのシナジーが強力</li>
+        <li>星4光円錐でも実用的に運用可能で課金コストを抑えられる</li>
+      </ul>
+    </div>
+    <div class="cons">
+      <h4>⚠️ 短所</h4>
+      <ul>
+        <li>自身の瞬間火力は高くなく、サブアタッカーとしての期待は薄い（E6未満）</li>
+        <li>速度調整が難しく、理想的な超高速（160+）を達成するには厳選が必要</li>
+        <li>効果命中の確保が必須で、サブステの要求値が高い</li>
+        <li>DoT特化だが、持続ダメージのみで敵を倒す速度はアタッカーに劣る</li>
+        <li>アーケロン以外のパーティでの汎用性は限定的（デバフ特化のため）</li>
+        <li>モチーフ光円錐と無課金光円錐の差がそこそこある</li>
+      </ul>
+    </div>
+  </div>
+
+  <p>椒丘（ジャオチウ）は、Ver.2.4「明月に酔う月下の大侠」で実装された星5炎属性・虚無の運命を歩む<strong>デバフ＆DoT特化サポーター</strong>です。彼の最大の特徴は、<strong>戦闘スキルによる持続ダメージ（DoT）フィールド展開</strong>と<strong>必殺技による強力なデバフ「炙烤（あぶり焼き/Ashen Roast）」</strong>です。この2つのスキルにより、敵に複数のデバフを同時に付与し続けることができ、特に<strong>アーケロン（黄泉）</strong>の最適パートナーとして高い評価を得ています。</p>
+  <p>椒丘の真髄は、<strong>「如何にして素早く必殺技を回し、常に炙烤デバフを維持するか」</strong>という一点にあります。必殺技の炙烤デバフは被ダメージ増加効果を持ち、さらに敵の行動を遅延させることでパーティ全体の被弾リスクを軽減します。戦闘スキルはフィールド全体に持続炎ダメージを与えるため、複数敵の処理にも優れています。</p>
+  <p>現在の環境評価は<strong>S〜SSランク（GameWith / Game8 / Altema）</strong>を獲得しており、特にアーケロンパーティにおいては<strong>唯一無二の最適デバッファー</strong>として認知されています。忘却の庭（混沌の記憶）・末日の幻影・模擬宇宙の全ての高難易度コンテンツで、アーケロンと共に第一線で活躍します。</p>
+
+  <!-- スキル解説 -->
+  <h2 id="skills">🔍 スキル解説（全数値）</h2>
+
+  <div class="skill-box">
+    <div class="skill-name">通常攻撃：霞箭 <span class="skill-type">単体攻撃</span></div>
+    <div class="skill-desc">指定した敵単体に椒丘の攻撃力<span style="color:var(--accent);">50%〜100%</span>（Lv1〜Lv6）の炎属性ダメージを与える。<br>削靭値：10<br>強化優先度：<span class="priority-2">★☆☆☆☆</span></div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">椒丘の通常攻撃はSP節約時に稀に使う程度。基本的に毎ターン戦闘スキルを使用してフィールドを維持したいため、通常攻撃を使う機会は限られる。強化は不要。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">戦闘スキル：煙霞繚乱 <span class="skill-type">範囲攻撃 / DoTフィールド</span></div>
+    <div class="skill-desc">
+      指定した敵単体に椒丘の攻撃力<span style="color:var(--accent);">60%〜120%</span>（Lv1〜Lv10）の炎属性ダメージを与え、隣接する敵にも<span style="color:var(--accent);">30%〜60%</span>の炎属性ダメージ。<br>
+      その後、<strong>「煙霞」フィールド</strong>を展開する（2ターン継続）。<br>
+      フィールド中、敵が行動するたびに椒丘の攻撃力<span style="color:var(--accent);">40%〜80%</span>（Lv1〜Lv10）の<strong>持続炎ダメージ（DoT）</strong>を与える。<br>
+      このDoTダメージは敵のターン終了時に追加で発動する。<br>
+      削靭値：20（メインターゲット）<br>
+      強化優先度：<span class="priority-4">★★★★☆</span>
+    </div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">椒丘の要となるスキル。フィールド展開中は敵が行動するたびにDoTダメージが発生するため、敵の行動回数が多いほど総ダメージが増加する。フィールドは2ターン継続で、椒丘が再度戦闘スキルを使うと上書き更新される。常にフィールドを切らさない運用が基本。スキルLvが高いほどDoT倍率が上がるため、優先的に強化したい。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">必殺技：盞中に日月を <span class="skill-type">範囲攻撃 / 炙烤デバフ / 行動遅延</span></div>
+    <div class="skill-desc">
+      敵全体に椒丘の攻撃力<span style="color:var(--accent);">75%〜150%</span>（Lv1〜Lv10）の炎属性ダメージを与える。<br>
+      攻撃を受けた敵に<strong>「炙烤（Ashen Roast）」</strong>状態を付与する（2ターン継続）。<br>
+      炙烤状態の敵は以下の影響を受ける：<br>
+      <ul>
+        <li>被ダメージ+<span style="color:var(--accent);">9%〜18%</span>（Lv1〜Lv10）</li>
+        <li>行動制限系デバフの抵抗-20%</li>
+        <li>ターン終了時に椒丘の攻撃力<span style="color:var(--accent);">60%〜120%</span>（Lv1〜Lv10）の持続炎ダメージ</li>
+      </ul>
+      炙烤状態の敵が行動する時、さらに<span style="color:var(--accent);">10%</span>の追加炎属性持続ダメージ（椒丘の攻撃力の<span style="color:var(--accent);">20%〜40%</span>）を与える。<br>
+      EPコスト：120<br>
+      削靭値：30<br>
+      強化優先度：<span class="priority-5">★★★★★</span>
+    </div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">椒丘の最重要スキル。炙烤デバフはアーケロンの残夢獲得に大きく貢献するだけでなく、被ダメージ増加によりチーム全体の火力を底上げする。さらに敵の行動制限系デバフ耐性を下げるため、ペラの防御デバフやその他のCCデバフが通りやすくなる。EPコスト120と比較的重いので、EP効率縄とオーナメント効果で回転率を確保しよう。最優先でLv10を目指すこと。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">天賦：凝煙集露 <span class="skill-type">デバフシナジー / バフ</span></div>
+    <div class="skill-desc">
+      椒丘が敵にデバフを付与するたびに、自身の攻撃力+<span style="color:var(--accent);">5%〜10%</span>（Lv1〜Lv10）、最大5層まで累積（最大+<span style="color:var(--accent);">25%〜50%</span>）。<br>
+      効果命中がターゲットの効果抵抗を上回っている場合、デバフの延長確率が上がる。<br>
+      戦闘スキルフィールド上の敵がデバフ状態の場合、DoTダメージ+<span style="color:var(--accent);">10%〜20%</span>。<br>
+      強化優先度：<span class="priority-4">★★★★☆</span>
+    </div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">椒丘の火力を支えるパッシブスキル。デバフを付与するたびに攻撃力が累積するため、戦闘開始後すぐに最大スタックに到達する。効果命中を高く保つことでデバフの持続時間延長確率が上がり、フィールド維持の安定性が向上する。天賦Lvが高いほどDoT火力が底上げされるため、必殺技の次に優先して強化したい。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">秘技：雲散霧消 <span class="skill-type">戦闘前効果 / 隠密移動</span></div>
+    <div class="skill-desc">
+      秘技を使用後、20秒間「<strong>雲隠</strong>」状態に入る。<br>
+      雲隠状態中は敵に発見されず、移動速度+30%。<br>
+      戦闘に入った後、敵全体に椒丘の攻撃力<strong>80%</strong>分の炎属性ダメージを与え、<strong>高確率で炙烤状態を付与</strong>（基本確率100%）。<br>
+      さらに戦闘開始時にEPを<strong>20</strong>回復する。
+    </div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">非常に強力な秘技。開幕から敵全体に炙烤デバフを付与できるため、アーケロンパーティでは飛躍的な初動の速さを誇る。さらにEP20回復により、装備が整っていれば開幕即必殺技も可能。模擬宇宙や探索時の雑魚処理から高難易度まで万能に使える。</p>
+
+  <h3>軌跡（追加能力）</h3>
+  <table>
+    <tr><th>軌跡名</th><th>解放条件</th><th>効果</th><th>必須度</th></tr>
+    <tr><td>燻蒸</td><td>昇格2</td><td>戦闘開始時、EPを<strong>15</strong>回復する。炙烤状態の敵が倒された時、周囲の敵に椒丘の攻撃力<strong>60%</strong>の持続炎ダメージを与える。</td><td><span class="star">★★★★★</span></td></tr>
+    <tr><td>灼熱</td><td>昇格4</td><td>椒丘の<strong>効果命中+10%</strong>。戦闘スキルフィールド上の敵が受けるDoTダメージ+<strong>12%</strong>。</td><td><span class="star">★★★★★</span></td></tr>
+    <tr><td>芳煙</td><td>昇格6</td><td>炙烤状態の敵が椒丘の攻撃を受けるたび、ターゲットの<strong>炎属性耐性-12%</strong>（2ターン継続、最大2層）。椒丘のターン開始時に味方全体のHPを<strong>5%</strong>回復。</td><td><span class="star">★★★★★</span></td></tr>
+  </table>
+
+  <div class="note">
+    <strong>💡 スキル強化の優先順位：</strong> 必殺技 ＞ 天賦 ＞ 戦闘スキル ＞ 通常攻撃。必殺技は最優先でLv10を目指そう。天賦と戦闘スキルはLv8〜10推奨。通常攻撃はLv1で放置OK。軌跡の追加能力は3つとも全て取得必須級。特に昇格4の「灼熱」は効果命中+10%が非常に重要で、デバフの安定性に直結する。昇格6の「芳煙」は炎属性耐性ダウンと全体回復という破格の性能。
+  </div>
+
+  <h3>ステータスボーナス合計</h3>
+  <table>
+    <tr><th>ステータス</th><th>ボーナス合計</th></tr>
+    <tr><td>効果命中%</td><td>+10%（昇格4）</td></tr>
+    <tr><td>攻撃力%</td><td>+18%（4%+6%+8%）</td></tr>
+    <tr><td>HP%</td><td>+10%（4%+6%）</td></tr>
+    <tr><td>防御力%</td><td>+7.5%（7.5%）</td></tr>
+  </table>
+
+  <!-- 遺物推荐 -->
+  <h2 id="relics">⚔️ おすすめ遺物（2セット比較＋%差）</h2>
+
+  <h3>トンネル遺物（メインセット）2セット比較</h3>
+  <table>
+    <tr><th>セット</th><th>セット効果</th><th>火力比較</th><th>おすすめ度</th></tr>
+    <tr>
+      <td><strong>深牢に囚われし囚人（Prisoner in Deep Confinement）</strong> 4セット</td>
+      <td>2セット：攻撃力+12%<br>4セット：敵が持続ダメージ（DoT）状態の場合、装備キャラの防御無視+<strong>18%</strong>。敵が持続ダメージ状態×1につき防御無視さらに+<strong>3%</strong>（最大+24%）。</td>
+      <td><span class="star">100%</span><br><span style="color:var(--accent);">基準値</span></td>
+      <td><span class="star">★★★★★</span><br><span style="color:var(--accent);">最適</span></td>
+    </tr>
+    <tr>
+      <td><strong>2+2 ハイブリッド構成</strong><br>（囚人2＋信使2 or ガラファルコン2 or 寿命の道2）</td>
+      <td>囚人2：攻撃力+12%<br>信使/ガラファルコン2：速度+6% or 防御+15%<br>寿命の道2：HP+12%</td>
+      <td><span style="color:#e8c547;">約90〜95%</span><br><span style="color:var(--sub);">−5〜10%</span></td>
+      <td><span style="color:#e8c547;">★★★★☆</span><br><span style="color:var(--sub);">妥協案/厳選次第</span></td>
+    </tr>
+  </table>
+
+  <p><strong>セット比較の詳細解説：</strong>囚人4セットが椒丘の最適解である理由は、椒丘が戦闘スキルフィールドのDoTと必殺技の炙烤という<strong>2種類の持続ダメージ</strong>を常に敵に付与しているため、4セット効果の防御無視+24%（DoT状態×2で+6%加算して最大24%）を<strong>常時フル活用</strong>できる点にあります。防御無視24%は椒丘のDoTダメージを約25〜30%も底上げし、他のバフと乗算で機能するため非常に強力です。</p>
+  <p>2+2構成は、囚人4セットの厳選が不十分な場合の妥協案です。囚人2（攻撃力+12%）＋信使2（速度+6%）は速度目標達成に役立ち、囚人2＋寿命の道2（HP+12%）は耐久面で優れます。サブステータスの品質によっては、2+2構成でも囚人4セットと同等以上のパフォーマンスを発揮できることもあります。</p>
+  <p>なお、椒丘はアーケロンパーティにおいてはDoTダメージそのものより<strong>デバフの付与と維持</strong>が最優先の役割です。遺物選択では火力よりも効果命中と速度の確保を優先しましょう。囚人4セットが理想ですが、効果命中や速度のサブステが不十分な2+2構成のほうが実戦的である場合も多いです。</p>
+
+  <h3>次元界オーナメント（プラナー）</h3>
+  <table>
+    <tr><th>セット</th><th>セット効果</th><th>おすすめ度</th><th>解説</th></tr>
+    <tr>
+      <td><strong>老いぬ若さのヴォンク（Sprightly Vonwacq）</strong></td>
+      <td>EP回復効率+5%。装備キャラの速度が120以上の場合、戦闘開始時に行動が<strong>40%前進</strong>する。</td>
+      <td><span class="star">★★★★★</span></td>
+      <td>椒丘の最適オーナメント。EP回復効率+5%で必殺技の回転率が向上し、開幕行動前進40%で初動のフィールド展開と必殺技が大幅に早まる。アーケロンパーティでは初動の速さが重要なので、この効果は極めて貴重。速度120条件も椒丘なら余裕で達成可能。</td>
+    </tr>
+    <tr>
+      <td><strong>壊滅した星々のケール（Broken Keel）</strong></td>
+      <td>効果抵抗+10%。装備キャラの効果抵抗が30%以上の場合、味方全体の会心ダメージ+<strong>10%</strong>。</td>
+      <td><span style="color:#e8c547;">★★★★☆</span></td>
+      <td>味方全体の会心ダメージ+10%が優秀。椒丘自身は効果抵抗を積極的に盛るキャラではないため30%条件の達成がやや難しいが、サブで効果抵抗を意識すれば可能。ヴォンクが無い場合の第2候補で、特にアーケロンの会心ダメージを底上げできる点で相性が良い。</td>
+    </tr>
+    <tr>
+      <td><strong>星々の実りを食す者の殿堂（Fleet of the Ageless）</strong></td>
+      <td>最大HP+12%。装備キャラの速度が120以上の場合、味方全体の攻撃力+<strong>8%</strong>。</td>
+      <td><span style="color:#c0c0c0;">★★★☆☆</span></td>
+      <td>味方全体の攻撃力+8%は悪くないが、ヴォンクのEP効率と開幕行動前進に比べると椒丘にはやや劣る。速度120条件は達成しやすいので、他に適切なオーナメントが無い場合の選択肢。</td>
+    </tr>
+    <tr>
+      <td><strong>夢は目を覚ます地（Penacony, Land of Dreams）</strong></td>
+      <td>EP回復効率+5%。同じ属性の味方がいる場合、該当属性の味方の与ダメージ+<strong>10%</strong>。</td>
+      <td><span style="color:#c0c0c0;">★★★☆☆</span></td>
+      <td>椒丘は炎属性なので、アーケロン（雷属性）には与ダメ+10%が乗らない点が残念。同じ炎属性キャラ（トパーズ、ギャラガー、フック等）と組む場合に有効だが、現状のメタでは採用しづらい。</td>
+    </tr>
+  </table>
+
+  <h3>遺物メインステータス</h3>
+  <table>
+    <tr><th>部位</th><th>メインステータス</th><th>備考</th></tr>
+    <tr><td>頭部</td><td>HP（固定）</td><td>—</td></tr>
+    <tr><td>手部</td><td>攻撃力（固定）</td><td>—</td></tr>
+    <tr><td>胴体</td><td><strong>効果命中%</strong></td><td>椒丘の最重要ステータス。効果命中胴（Lv15で+43%推奨）。サブだけでは効果命中が不足するため、胴体は確定で効果命中を選択。</td></tr>
+    <tr><td>脚部</td><td><strong>速度</strong></td><td>速度134+が第一目標。速度靴（+25）の上にサブでさらに盛る必要がある。速度160+が理想だが無理のない範囲で調整。</td></tr>
+    <tr><td>次元界オーブ</td><td><strong>HP% または 防御力%</strong></td><td>椒丘のDoTダメージは攻撃力依存だが、サブアタッカーとしての火力より生存性を優先。炎属性ダメージ%オーブも選択肢だが、効果命中・速度確保の観点からHP%/防御%オーブが安定。</td></tr>
+    <tr><td>連結縄</td><td><strong>EP回復効率%</strong></td><td>必殺技の回転率が椒丘の価値を決める。EP効率縄は必須で、ヴォンクと合わせてEP効率+24.4%（通常の12.2%UP）で必殺技回転率が大幅に改善。</td></tr>
+  </table>
+
+  <div class="note">
+    <strong>💡 サブステータス優先度：</strong> 効果命中（67%以上確保） ＞ 速度（134+ / 理想的には160+） ＞ HP% / 防御% ＞ 攻撃力%<br>
+    椒丘は<strong>効果命中</strong>が全ての基本。デバフが通らなければ椒丘を編成する意味が半減する。目標効果命中は<strong>67%以上</strong>。軌跡の+10%と胴体効果命中（+43%）で53%、サブで14%以上を盛る。高難易度では敵の効果抵抗が30%程度想定されるため、効果命中67%で実効命中率約80%となる。より安定を求めるなら80%以上を目標に。<br>
+    <strong>速度ブレイクポイント：</strong> 速度134（忘却の庭1ラウンド2回行動の最低ライン）→ 速度145（ヴォンク込でのさらなる回転率向上）→ 速度160+（アーケロンパーティの理想速度）。椒丘のベース速度98は虚無キャラとしては標準的だが、速度靴（+25）で123、サブで11以上を盛って134達成を目指そう。<br>
+    <strong>HP/DEF目標：</strong> 椒丘は前線で戦うキャラではないが、範囲攻撃を受ける機会は多い。HP 6,000+ / 防御力 1,200+を目安に生存性を確保しよう。
+  </div>
+
+  <!-- 光円錐推荐 -->
+  <h2 id="lightcones">💡 おすすめ光円錐（3選択肢＋%差）</h2>
+
+  <table>
+    <tr><th>光円錐</th><th>レア</th><th>効果概要</th><th>火力比</th><th>おすすめ度</th></tr>
+    <tr>
+      <td><strong>幾たらせし春（Those Many Springs）</strong></td>
+      <td>★5</td>
+      <td>S1時：装備キャラの<strong>効果命中+40%</strong>。装備キャラが敵にデバフを付与した時、追加で<strong>「露洒」</strong>状態を1層付与（最大4層）。1層ごとに持続ダメージ+<strong>7%</strong>（最大+28%）。敵がデバフ状態の場合、与ダメージ+<strong>24%</strong>。</td>
+      <td><span class="star">100%</span></td>
+      <td><span class="star">★★★★★</span><br><span style="color:var(--accent);">最適（モチーフ）</span></td>
+    </tr>
+    <tr>
+      <td><strong>別れと孤独を癒すもの（Solitary Healing）</strong></td>
+      <td>★4</td>
+      <td>S5時：装備キャラの<strong>効果命中+40%</strong>。装備キャラが持続ダメージを付与した時、さらに<strong>1回分の持続ダメージ</strong>を追加で与える。装備キャラの持続ダメージ+<strong>24%</strong>。</td>
+      <td><span style="color:#e8c547;">約85〜90%</span></td>
+      <td><span style="color:#e8c547;">★★★★★</span><br><span style="color:var(--accent);">星4最適</span></td>
+    </tr>
+    <tr>
+      <td><strong>チュートリアルを始める前に（Before the Tutorial Mission Starts）</strong></td>
+      <td>★4</td>
+      <td>S5時：装備キャラの<strong>効果命中+40%</strong>。装備キャラが防御力が低下している敵を攻撃した時、EPを<strong>8</strong>回復する。</td>
+      <td><span style="color:#e8c547;">約80〜85%</span></td>
+      <td><span class="star">★★★★★</span><br><span style="color:var(--accent);">無課金最適（イベント限定）</span></td>
+    </tr>
+  </table>
+
+  <div class="build-box">
+    <div class="label">🏆 最適光円錐</div>
+    <div class="content">幾たらせし春（★5・モチーフ）</div>
+    <div style="margin-top:6px;font-size:0.9em;">椒丘のモチーフ光円錐「幾たらせし春」。効果命中+40%という破格の補正が最大の武器で、胴体効果命中と合わせるだけで効果命中が余裕で80%超え、サブを速度とHPに全振りできるようになる。さらにデバフ付与時に「露洒」状態を累積し、持続ダメージ最大+28%＋与ダメ+24%で椒丘自身の火力も大幅に向上。結果として、デバフ維持の安定性とDoT火力の両面で他の追随を許さない選択肢となる。</div>
+  </div>
+
+  <div class="build-box">
+    <div class="label">💰 無課金・低予算向け</div>
+    <div class="content">チュートリアルを始める前に（★4・イベントS5）</div>
+    <div style="margin-top:6px;font-size:0.9em;">イベント「銀河のハッカー」で入手可能な星4虚無光円錐。S5で効果命中+40%とモチーフ並みの補正があり、防御低下状態の敵攻撃時にEP8回復という強力な効果を持つ。ペラやアーケロンと組むことで防御低下状態が常時維持され、EP回復を頻繁に発動できる。モチーフ比約80〜85%の性能で、無課金プレイヤーには最もおすすめの光円錐。入手機会を逃したプレイヤーは「別れと孤独を癒すもの」S5が次善の選択肢となる。</div>
+  </div>
+
+  <h3>光円錐選択のポイント</h3>
+  <p>椒丘の光円錐選びで最も重要なのは<strong>「効果命中補正」</strong>です。モチーフの「幾たらせし春」は効果命中+40%という圧倒的な補正量で、遺物厳選の自由度が飛躍的に向上します。効果命中胴が不要になるわけではありませんが、サブステを速度とHPに集中できるのは大きなアドバンテージです。</p>
+  <p>無課金最強の「チュートリアルを始める前に」（S5）も効果命中+40%と同等の補正に加え、EP回収効果で必殺技の回転率を高められます。防御低下状態の維持が条件ですが、アーケロンパーティではペラやアーケロン自身が防御デバフを持つため常時発動が可能です。</p>
+  <p>「別れと孤独を癒すもの」（S5）は持続ダメージ特化型で、追加の持続ダメージと持続ダメ+24%の補正により、椒丘のDoT火力を最大限に引き出します。ただしEP回収効果が無いため、必殺技の回転率ではチュートリアルに劣ります。DoT火力を重視する場合はこちら、必殺技回転率を重視する場合はチュートリアルを選びましょう。</p>
+
+  <h3>その他の選択肢</h3>
+  <table>
+    <tr><th>光円錐</th><th>レア</th><th>評価</th></tr>
+    <tr><td><strong>市場にて交わりて（Trend of the Universal Market）</strong></td><td>★4</td><td>燃焼デバフを付与できるため、アーケロンパーティで追加デバフとして有効。ただし効果命中補正が無いため、遺物で効果命中を別途確保する必要がある。防御力+24%（S5）で耐久面は向上。</td></tr>
+    <tr><td><strong>フィーバータイム！（Fermata）</strong></td><td>★4</td><td>持続ダメージ+24%（S5）＋弱点撃破効率UP。効果命中補正が無いため、効果命中確保が課題。モチーフがない場合の次々点。</td></tr>
+    <tr><td><strong>虚ろの世界（In the Name of the World）</strong></td><td>★5</td><td>ヴェルトのモチーフ。効果命中+20%（S1）＋デバフ状態の敵へのダメ+24%。効果命中補正はあるが、持続ダメージ特化ではないため椒丘にはやや方向性が合わない。</td></tr>
+  </table>
+
+  <!-- 理想編成 -->
+  <h2 id="teams">🤝 理想編成（2チーム＋装備＋ローテ）</h2>
+
+  <h3>編成①：アーケロン虚無編成（プレミアム最強）</h3>
+  <div class="team-grid">
+    <div class="team-slot">
+      <div class="role">⚡ メインアタッカー</div>
+      <div class="char">アーケロン（黄泉）</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">雷・虚無</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🔥 デバッファー</div>
+      <div class="char">椒丘</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">炎・虚無</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">✨ 行動促進</div>
+      <div class="char">Sparkle（花火）</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">量子・調和</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🛡️ 耐久枠</div>
+      <div class="char">アベンチュリン</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">虚数・存護</div>
+    </div>
+  </div>
+  <p style="font-size:0.9em;color:var(--sub);"><strong>装備詳細：</strong></p>
+  <ul style="font-size:0.85em;color:var(--sub);margin-bottom:8px;">
+    <li><strong>アーケロン</strong>：「此方の星を穿ちて（Along the Passing Shore）」or「神なき時代にて（Night in the Eternal Dream）」/ パイオニア4セット / イズモ or サルソット / 会心率胴・速度靴・雷%オーブ・攻撃%縄 / 速度134+ / 効果抵抗盛り推奨</li>
+    <li><strong>椒丘</strong>：「幾たらせし春」or「チュートリアルを始める前に」S5 / 囚人4セット / ヴォンク / 効果命中胴・速度靴・HP%オーブ・EP効率縄 / 速度134+ / 効果命中67%+</li>
+    <li><strong>花火（Sparkle）</strong>：「戯れ星遊び（Earthly Escapade）」or「大衆家庭用」S5 / メッセンジャー4 or 風雲2+メッセンジャー2 / ブロークンキール / 会心ダメ胴・速度靴・HP%オーブ・EP効率縄 / 速度160+（アーケロンより速く）</li>
+    <li><strong>アベンチュリン</strong>：「天地を拓く」or「交錯の中の素敵な出会い」S5 / 聖騎士4セット / デュラン or 仙舟 / 防御力胴・速度靴・防御力オーブ・防御力縄 / 防御力4,000+ / 速度134+</li>
+  </ul>
+  <p style="font-size:0.9em;color:var(--sub);"><strong>ローテーション：</strong> 椒丘秘技（開幕炙烤付与+EP20回復）→ 戦闘開始：椒丘戦闘スキル（煙霞フィールド展開）→ 花火戦闘スキル（アーケロン行動促進）→ アーケロン戦闘スキル（残夢蓄積）→ アベンチュリン戦闘スキル（バリア展開）→ 椒丘必殺技（炙烤デバフ更新+被ダメUP）→ 花火必殺技（SP回復+会心ダメバフ）→ アーケロン必殺技（残夢9層で発動、圧倒的火力）→ ループ。<strong>推定DPS：約55,000〜65,000（1サイクル）</strong></p>
+
+  <div class="note">
+    <strong>💡 編成①のポイント：</strong> 現環境最強クラスのアーケロン虚無パーティ。椒丘の戦闘スキルフィールド（DoTデバフ）と必殺技（炙烤デバフ）で合計2つのデバフを常時維持し、アーケロンの残夢蓄積を大幅に加速する。花火の行動促進でアーケロンの手数を増やし、アベンチュリンの継続バリアで安定した耐久を確保。椒丘の炙烤による被ダメ増加（最大18%）はアーケロンの必殺技火力をさらに底上げする。この編成ではアーケロンが3ターンに1回のペースで必殺技を連射可能。アベンチュリンの枠は符玄（会心率+12%）に変更しても強力。
+  </div>
+
+  <h3>編成②：アーケロンF2P編成（低予算版）</h3>
+  <div class="team-grid">
+    <div class="team-slot">
+      <div class="role">⚡ メインアタッカー</div>
+      <div class="char">アーケロン（黄泉）</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">雷・虚無</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🔥 デバッファー</div>
+      <div class="char">椒丘</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">炎・虚無</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">❄️ デバッファー</div>
+      <div class="char">ペラ</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">氷・虚無（星4）</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🍺 ヒーラー</div>
+      <div class="char">ギャラガー</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">炎・豊穣（星4）</div>
+    </div>
+  </div>
+  <p style="font-size:0.9em;color:var(--sub);"><strong>装備詳細：</strong></p>
+  <ul style="font-size:0.85em;color:var(--sub);margin-bottom:8px;">
+    <li><strong>アーケロン</strong>：「神なき時代にて」or「星海巡航」S5 / パイオニア4 or 2+2 / イズモ or サルソット / 会心率胴・速度靴・雷%オーブ・攻撃%縄 / 効果抵抗盛り推奨</li>
+    <li><strong>椒丘</strong>：「チュートリアルを始める前に」S5 or「別れと孤独を癒すもの」S5 / 囚人4 or 2+2構成 / ヴォンク / 効果命中胴・速度靴・HP%オーブ・EP効率縄 / 速度134+ / 効果命中67%+</li>
+    <li><strong>ペラ</strong>：「チュートリアルを始める前に」S5 or「別れと孤独を癒すもの」S5 / 風雲2+メッセンジャー2 / ヴォンク or ブロークンキール / 効果命中胴・速度靴・HP%オーブ・EP効率縄 / 速度160+目標 / 効果命中67%+</li>
+    <li><strong>ギャラガー</strong>：「交錯の中の素敵な出会い」S5 / 過客4 or ガラファルコン2+2 / 仙舟 or ブロークンキール / 治癒量胴・速度靴・HP%オーブ・EP効率縄 or HP%縄 / 速度134+</li>
+  </ul>
+  <p style="font-size:0.9em;color:var(--sub);"><strong>ローテーション：</strong> 椒丘秘技（開幕炙烤）→ 戦闘開始：ペラ通常攻撃 or 戦闘スキル（防御デバフ）→ 椒丘戦闘スキル（煙霞フィールド）→ ギャラガー通常攻撃 or 戦闘スキル（SP管理）→ アーケロン戦闘スキル→ 椒丘必殺技（炙烤更新）→ ペラ必殺技（全体防御デバフ+被ダメ増加）→ アーケロン必殺技（残夢9層で発動）。ペラと椒丘で合計3〜4個のデバフを維持し、アーケロンの残夢を効率的に蓄積。<strong>推定DPS：約38,000〜45,000（1サイクル）</strong></p>
+
+  <div class="note">
+    <strong>💡 編成②のポイント：</strong> 花火とアベンチュリンを持っていない場合のF2P最強編成。椒丘＋ペラの虚無2枚体制で、アーケロンの残夢蓄積速度はプレミアム編成に匹敵する。ペラの全体防御デバフ（-42% at Lv10）はアーケロンの必殺技火力を約30%も底上げする強力な効果。ギャラガーはSP効率が高く、必殺技後の追加攻撃でさらにデバフを1つ追加できるため、アーケロンの残夢獲得に貢献する。この編成の弱点は花火のような行動促進が無いためアーケロンの手数が限られる点だが、虚無3枚＋ギャラガーの編成でデバフ数は十分。忘却の庭12層フルスターも狙える実戦的な編成。
+  </div>
+
+  <h3>その他の編成バリエーション</h3>
+  <p><strong>編成③：デバフ特化編成（超安全志向）</strong> — アーケロン ＋ 椒丘 ＋ ヴェルト（スローデバフ） ＋ 符玄（会心率+12%＋被ダメ軽減）。ヴェルトのスローデバフ＋椒丘の炙烤で敵の行動頻度を大幅に低下させ、符玄の会心率バフでアーケロンの火力を安定させる。アーケロンが高会心率を達成しやすいのが強みだが、DPS的には編成①に劣る。</p>
+  <p><strong>編成④：カフカDoT編成（サブDPS寄り）</strong> — カフカ（DoT誘爆） ＋ 椒丘 ＋ ルアン・メェイ（耐性貫通） ＋ ガラファルコン（耐久＋追加DoT）。椒丘のDoTフィールドと炙烤をカフカの戦闘スキルで誘爆させるコンボ。ルアン・メェイの全属性耐性貫通＋弱点撃破効率UPで持続ダメージを最大化。この編成ではE6椒丘の真価が発揮される。</p>
+
+  <!-- 凸数評価 -->
+  <h2 id="eidolons">💎 星魂（エイドロン）評価</h2>
+
+  <h3>0凸〜6凸 詳細評価</h3>
+  <table>
+    <tr><th>凸数</th><th>名称</th><th>効果</th><th>火力up率</th><th>おすすめ度</th></tr>
+    <tr>
+      <td>無凸（E0）</td><td>—</td>
+      <td>ベース性能。戦闘スキルフィールド展開＋必殺技炙烤デバフでアーケロンの最適デバッファーとして十分に機能する。</td>
+      <td><span style="color:var(--accent);">100%</span><br><span style="color:var(--sub);">基準値</span></td>
+      <td><span class="star">★★★★★</span><br><span style="color:var(--sub);">無凸でも完成</span></td>
+    </tr>
+    <tr>
+      <td>1凸（E1）</td><td>三足金烏・陽炎</td>
+      <td>椒丘のデバフが付与された敵が攻撃を受けるたび、椒丘の攻撃力<strong>40%</strong>分の追加炎属性ダメージを与える。このダメージは<strong>デバフとしてカウントされる</strong>。ターン毎に<strong>1回まで</strong>発動。チーム全体の与ダメージ+<strong>12%</strong>。</td>
+      <td><span style="color:var(--accent);">約+20〜30%</span></td>
+      <td><span class="star">★★★★★</span><br><span style="color:var(--accent);">コスパ最優秀</span></td>
+    </tr>
+    <tr>
+      <td>2凸（E2）</td><td>丹鼎司・本草</td>
+      <td>必殺技発動時にEPを<strong>40</strong>回復する。味方が敵にデバフを付与するたびに、椒丘のEPを<strong>3</strong>回復する（ターン毎に最大6回まで）。</td>
+      <td><span style="color:var(--accent);">約+15〜25%（回転率向上）</span></td>
+      <td><span class="star">★★★★★</span><br><span style="color:var(--accent);">必殺技ループが加速</span></td>
+    </tr>
+    <tr>
+      <td>3凸（E3）</td><td>天孫降臨</td>
+      <td>必殺技Lv+2（最大15）、通常攻撃Lv+1（最大10）。</td>
+      <td><span style="color:#e8c547;">約+5%</span></td>
+      <td><span style="color:#c0c0c0;">★★★☆☆</span><br><span style="color:var(--sub);">スキルレベル上げ</span></td>
+    </tr>
+    <tr>
+      <td>4凸（E4）</td><td>薬王・救急</td>
+      <td>戦闘スキルフィールドの継続時間+<strong>1ターン</strong>（計3ターンに延長）。フィールド上の敵が行動するたび、椒丘のHPを<strong>12%</strong>回復。</td>
+      <td><span style="color:#e8c547;">約+3〜5%</span></td>
+      <td><span style="color:#c0c0c0;">★★★☆☆</span><br><span style="color:var(--sub);">快適性向上</span></td>
+    </tr>
+    <tr>
+      <td>5凸（E5）</td><td>仙舟・医聖</td>
+      <td>戦闘スキルLv+2（最大15）、天賦Lv+2（最大15）。</td>
+      <td><span style="color:#c0c0c0;">約+3%</span></td>
+      <td><span style="color:#888;">★★☆☆☆</span><br><span style="color:var(--sub);">6凸への通過点</span></td>
+    </tr>
+    <tr>
+      <td>6凸（E6）</td><td>太清・丹炎</td>
+      <td>椒丘の持続ダメージ（DoT）が<strong>必殺技ダメージ扱い</strong>になる。持続ダメージ+<strong>120%</strong>（大幅倍率上昇）。炙烤状態の敵が行動するたび、椒丘の攻撃力<strong>150%</strong>の追加炎属性ダメージ（必殺技ダメージ扱い）。</td>
+      <td><span style="color:var(--accent);">約+60〜80%</span></td>
+      <td><span class="star">★★★★★</span><br><span style="color:var(--accent);">完全体！サブDPS化</span></td>
+    </tr>
+  </table>
+
+  <h3>凸のすすめ：詳細解説</h3>
+  <div class="card">
+    <p><strong>無凸（E0）でも十二分に機能：</strong> 椒丘は無凸でもアーケロンの最適デバッファーとして完璧に機能します。戦闘スキルフィールド（DoTデバフ）＋必殺技（炙烤デバフ）の2種デバフを常時維持でき、アーケロンの残夢蓄積に大きく貢献します。アーケロンを持っているなら、無凸椒丘でも引く価値は大いにあります。</p>
+    <p style="margin-top:8px;"><strong>E1（+20〜30% / コスパ最優秀）：</strong> 椒丘のデバフが付与された敵が攻撃を受けるたびに追加炎ダメージ（攻撃力40%）が発生し、これがさらにデバフとしてカウントされるという強力な効果。チーム全体の与ダメージ+12%も捨てがたく、アーケロンパーティ全体の火力を約20〜30%底上げします。E1はアーケロンの残夢獲得をさらに加速するため、<strong>予算が限られているならE1を最優先</strong>で狙いましょう。</p>
+    <p style="margin-top:8px;"><strong>E2（+15〜25% / 必殺技回転率向上）：</strong> 必殺技発動時にEP40回復（実質EPコストが120→80に減少）＋味方のデバフ付与ごとにEP3回復という驚異的なEP効率。E2があれば、ヴォンク＋EP効率縄と組み合わせて<strong>実質2ターンに1回のペース</strong>で必殺技を撃てるようになります。炙烤デバフの維持が格段に安定し、アーケロンの残夢蓄積速度も飛躍的に向上。E1と合わせて運用すれば最強のデバッファーとして君臨します。</p>
+    <p style="margin-top:8px;"><strong>E4（+3〜5% / 快適性向上）：</strong> 戦闘スキルフィールドの継続時間+1ターンはフィールド管理の手間を減らし、SP効率を向上させる。フィールド上の敵が行動するたびに椒丘のHP12%回復は生存性を高める。火力面での直接的な効果は限定的だが、運用の快適さは確実に向上する。</p>
+    <p style="margin-top:8px;"><strong>E6（完全体 / +60〜80%）：</strong> 椒丘の持続ダメージが必殺技ダメージ扱いになり、倍率+120%の大幅強化。炙烤状態の敵が行動するたびに攻撃力150%の追加炎ダメージ（必殺技扱い）が発生。E6椒丘は単なるデバッファーから<strong>本格的なサブDPS</strong>へと変貌を遂げ、DoTダメージだけで毎ターン数万ダメージを叩き出す。カフカDoT編成や持続ダメージ特化編成で真価を発揮する。理論上の火力はE0比で約60〜80%向上。</p>
+  </div>
+
+  <div class="build-box">
+    <div class="label">🏆 コスパ最優秀凸</div>
+    <div class="content">E1（三足金烏・陽炎）→ E2（丹鼎司・本草）</div>
+    <div style="margin-top:6px;font-size:0.9em;">まずE1で追加デバフとチーム火力+12%を獲得するのが最も効率的。次にE2でEP効率を飛躍的に高め、必殺技の回転率を改善する。E0→E1→E2の順で凸を進めるのが、最もコストパフォーマンスに優れた凸計画。E2まで進めると必殺技ループが格段に安定し、アーケロンパーティの総火力が大幅に向上する。E6はDoT編成を本格運用したいヘビーユーザー向け。アーケロン主体の運用ならE2で止めて他のキャラにリソースを回すのが賢明。</div>
+  </div>
+
+  <!-- 相性の良いキャラ -->
+  <h2 id="synergy">🤝 相性の良いキャラ</h2>
+  <table>
+    <tr><th>キャラ</th><th>属性/運命</th><th>相性の理由</th><th>おすすめ度</th></tr>
+    <tr><td>アーケロン（黄泉 / Acheron）</td><td>雷・虚無</td><td>椒丘のベストパートナー。椒丘の2種デバフ（フィールドDoT＋炙烤）がアーケロンの残夢蓄積に直結。デバフを重ねれば重ねるほどアーケロンの必殺技回転率が向上。虚無キャラ同士のシナジーは最強クラス。</td><td><span class="star">★★★★★</span></td></tr>
+    <tr><td>花火（Sparkle）</td><td>量子・調和</td><td>行動促進＋SP供給＋会心ダメバフ。椒丘＋アーケロンのSP消費の重さを花火がカバーし、アーケロンの行動回数を増やすことで総火力が大幅向上。アーケロン編成の理想的なサポーター。</td><td><span class="star">★★★★★</span></td></tr>
+    <tr><td>アベンチュリン（Aventurine）</td><td>虚数・存護</td><td>継続バリアでパーティ全体の耐久性を確保。被弾時の追加攻撃でさらにデバフ（市場にて交わりて装備時）を追加でき、アーケロンの残夢蓄積に間接的に貢献。最高の耐久枠。</td><td><span class="star">★★★★★</span></td></tr>
+    <tr><td>ペラ（Pela）</td><td>氷・虚無（星4）</td><td>全体防御デバフ-42%（Lv10）がアーケロンの火力を大幅強化。虚無キャラとしてアーケロンの残夢蓄積にも貢献。チュートリアル光円錐と相性が良く、EP回収も容易。無課金最強の相方。</td><td><span class="star">★★★★★</span></td></tr>
+    <tr><td>ギャラガー（Gallagher）</td><td>炎・豊穣（星4）</td><td>SP効率の高いヒーラー。必殺技後の追加攻撃がデバフとしてカウントされ、アーケロンの残夢獲得に貢献。炎属性キャラとして椒丘との属性統一も可能。F2P編成の要。</td><td><span class="star">★★★★★</span></td></tr>
+    <tr><td>カフカ（Kafka）</td><td>雷・虚無</td><td>DoT誘爆特化。椒丘のフィールドDoT＋炙烤DoTをカフカの戦闘スキルで誘爆させ、瞬間的な大ダメージを狙う。特にE6椒丘との相性が極めて良い。純DoT編成の核。</td><td><span style="color:#e8c547;">★★★★★</span></td></tr>
+    <tr><td>ルアン・メェイ（Ruan Mei）</td><td>氷・調和</td><td>全属性耐性貫通＋速度バフ＋弱点撃破効率UP。DoT編成での総合サポーターとして最適。椒丘の持続ダメージを最大限に引き出す。</td><td><span style="color:#e8c547;">★★★★★</span></td></tr>
+    <tr><td>符玄（Fu Xuan）</td><td>量子・存護</td><td>会心率+12%バフ＋被ダメージ軽減。アーケロンの会心率確保に大きく貢献。耐久面でも安定感抜群。アベンチュリン未所持時の代役として最適。</td><td><span style="color:#e8c547;">★★★★☆</span></td></tr>
+    <tr><td>黒塔（Herta / 虚無）</td><td>氷・虚無（星4）</td><td>虚無キャラとしてアーケロンの残夢蓄積に貢献。凍結デバフで敵の行動を封じつつ、追加攻撃で手数を稼げる。ややニッチだが、特定の状況で有効。</td><td><span style="color:#c0c0c0;">★★★☆☆</span></td></tr>
+    <tr><td>ヴェルト（Welt）</td><td>虚数・虚無</td><td>スローデバフ＋行動遅延で敵の行動頻度を大幅低下。虚無キャラとしてアーケロン編成の選択肢に入る。椒丘の炙烤と組み合わせて敵を完全に封殺できる。</td><td><span style="color:#e8c547;">★★★★☆</span></td></tr>
+  </table>
+
+  <div class="note">
+    <strong>💡 相性のポイント：</strong> 椒丘の編成で最も重要なのは<strong>「デバフの数」と「虚無キャラの人数」</strong>です。アーケロンは虚無キャラのデバフ（または自身のデバフ）を残夢として蓄積し、9層で必殺技が発動可能になります。椒丘は戦闘スキルフィールド（DoT）＋必殺技（炙烤）＋E1追加ダメージ（デバフ扱い）と、最大3つのデバフを1人で提供できるため、アーケロンの残夢蓄積速度を飛躍的に向上させます。<br>
+    アーケロン以外との組み合わせでは<strong>カフカ（DoT誘爆）＋ルアン・メェイ（耐性貫通）</strong>のDoT編成が有力です。椒丘のDoTをカフカが誘爆し、ルアン・メェイが全体的な火力を底上げします。この編成ではE6椒丘の真価が発揮され、持続ダメージがメインの火力源となります。
+  </div>
+
+  <!-- よくある質問 -->
+  <h2 id="faq">❓ よくある質問（FAQ）</h2>
+
+  <div class="faq-item">
+    <div class="q">Q. 椒丘の速度はいくつが最適ですか？</div>
+    <div class="a">
+      椒丘の速度は<strong>134以上</strong>を最優先とします。ベース速度98に速度靴（+25）で123となり、サブで11以上を盛って134を達成しましょう。忘却の庭の1ラウンド目で2回行動するための最低ラインです。<strong>理想は160以上</strong>で、ヴォンク（行動前進40%）と組み合わせることで初動の爆発力が格段に向上します。アーケロンパーティでは椒丘が先手を取ってフィールドと炙烤デバフを展開することが重要なので、<strong>速度を上げれば上げるほど椒丘の価値が高まる</strong>と言えます。ただし、効果命中67%を確保した上での速度調整になるため、サブステのバランスには注意が必要です。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 椒丘のおすすめ遺物は何ですか？</div>
+    <div class="a">
+      椒丘の最適遺物は<strong>「深牢に囚われし囚人（Prisoner in Deep Confinement）」4セット</strong>です。2セットで攻撃力+12%、4セットで防御無視+18%（DoT状態の敵に対して最大+24%）という効果で、椒丘の持続ダメージを大幅に強化できます。椒丘は常に2種類のDoT（フィールド＋炙烤）を敵に付与しているため、4セット効果を最大値で常時活用できるのが最大の強みです。<br>
+      囚人4セットの厳選が難しい場合は<strong>2+2構成</strong>（囚人2＋信使2/ガラファルコン2/寿命の道2）でも問題なく運用できます。サブステータスの質によっては2+2構成のほうが総合パフォーマンスで上回ることもあります。<br>
+      オーナメントは<strong>「老いぬ若さのヴォンク（Sprightly Vonwacq）」</strong>が最適です。EP回復効率+5%と開幕行動前進40%が椒丘の初動と必殺技回転率を飛躍的に向上させます。次点で<strong>「壊滅した星々のケール（Broken Keel）」</strong>も有効で、味方全体の会心ダメージ+10%が魅力的です。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 椒丘は何凸がおすすめですか？</div>
+    <div class="a">
+      椒丘は<strong>無凸でもアーケロンの最適デバッファーとして完璧に機能します</strong>。凸の価値は間違いなく高いですが、無凸でも十分に引く価値があります。以下のように段階的におすすめします：
+      <ol style="margin-top:6px;">
+        <li><strong>E0（無凸）</strong>：完全戦力。アーケロン編成で2種デバフを提供し、残夢蓄積に大きく貢献。</li>
+        <li><strong>E1（+20〜30%火力）</strong>：追加デバフ＋チーム与ダメ+12%。アーケロン編成の総火力が大幅に向上。コスパ最優秀で、最初の1凸として最もおすすめ。</li>
+        <li><strong>E2（必殺技回転率革命）</strong>：EP40回復＋デバフ付与でEP3回復。実質2ターンに1回の必殺技ループが可能に。予算に余裕があればE2まで。</li>
+        <li><strong>E6（完全体）</strong>：持続ダメージが必殺技扱い＋倍率+120%でサブDPS化。DoT編成の中核となる。火力はE0比で約60〜80%向上。</li>
+      </ol>
+      E1とE2は特に強力で、この2つの凸があるだけでアーケロンパーティの快適さと火力が格段に向上します。まずE1を狙い、余裕があればE2を目指すのが最も現実的で効果的な凸計画です。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 椒丘のモチーフ光円錐は必要ですか？</div>
+    <div class="a">
+      椒丘のモチーフ光円錐「幾たらせし春」は<strong>最適ですが必須ではありません</strong>。無課金・低予算の代替候補は以下の通りです：
+      <ol style="margin-top:6px;">
+        <li><strong>★4「チュートリアルを始める前に」S5</strong>（イベント限定）：効果命中+40%＋防御デバフ敵攻撃でEP8回復。モチーフ比約80〜85%。無課金で最高の選択肢。効果命中面ではモチーフと同等で、EP回収効果で必殺技回転率も良好。</li>
+        <li><strong>★4「別れと孤独を癒すもの」S5</strong>（星4恒常）：効果命中+40%＋持続ダメージ追加＋持続ダメ+24%。モチーフ比約85〜90%。DoT火力重視ならこちら。ただしEP回収効果は無い。</li>
+        <li><strong>★4「市場にて交わりて」S5</strong>（星4恒常）：防御力+24%＋燃焼デバフ付与。効果命中補正が無いため遺物厳選のハードルが上がるが、追加デバフとしてアーケロン編成で有効。</li>
+      </ol>
+      モチーフ光円錐は効果命中+40%＋持続ダメ+28%＋与ダメ+24%と非常に強力ですが、チュートリアルS5でも効果命中面では遜色なく、EP回収効果で必殺技回転率も確保できます。モチーフを引くよりもE1やE2の凸を優先するのも賢い選択です。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 椒丘の効果命中はどれくらい必要ですか？</div>
+    <div class="a">
+      椒丘の必要効果命中は<strong>67%以上</strong>です。これは敵の効果抵抗を30%と想定した場合、実効命中率が約80%になるラインです。より高難易度の敵（効果抵抗40%想定）にも安定してデバフを通したい場合は<strong>80%以上</strong>を目標にしましょう。<br>
+      効果命中の内訳目安は以下の通りです：
+      <ul style="margin-top:6px;">
+        <li><strong>基礎効果命中</strong>：0%（全キャラ共通）</li>
+        <li><strong>軌跡ボーナス（灼熱）</strong>：+10%（昇格4で解放）</li>
+        <li><strong>胴体効果命中メイン</strong>：約+43%（Lv15時）</li>
+        <li><strong>モチーフ光円錐「幾たらせし春」S1</strong>：+40%</li>
+        <li><strong>チュートリアルS5 / 別れと孤独S5</strong>：+40%</li>
+        <li><strong>サブステータス合計</strong>：目標+14%以上（胴体＋軌跡で53%の場合）</li>
+      </ul>
+      モチーフかイベント光円錐があれば効果命中胴（+43%）＋光円錐（+40%）だけで83%に達し、サブで効果命中を盛る必要がなくなります。無課金光円錐が無い場合は、胴体効果命中（+43%）＋軌跡（10%）＋サブ（14%以上）で67%を目指しましょう。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 椒丘はアーケロンなしでも使えますか？</div>
+    <div class="a">
+      椒丘はアーケロンなしでも<strong>使えますが、真価を発揮するのはアーケロン編成です</strong>。アーケロンなしの場合の主な運用方法は以下の通りです：
+      <ul style="margin-top:6px;">
+        <li><strong>DoT編成のサブデバッファー</strong>：カフカ（DoT誘爆）＋ルアン・メェイ（耐性貫通）＋椒丘＋ヒーラーの編成。椒丘のフィールドDoTと炙烤DoTをカフカが誘爆し、ルアン・メェイが全体火力を底上げ。E6椒丘ならメインDoTアタッカーとしても機能。</li>
+        <li><strong>汎用デバッファー枠</strong>：物理or氷アタッカー編成にデバフ要員として挿入。炙烤の被ダメ増加（最大18%）とDoTダメージで火力支援。ただしペラ（防御デバフ）のほうが汎用性は高い。</li>
+        <li><strong>炎属性パーティのサポーター</strong>：トパーズ＋アベンチュリンの追撃編成や、ギャラガーを入れた炎統一編成でサブデバッファーとして起動。</li>
+      </ul>
+      ただし、<strong>椒丘の最大の強みはアーケロンの残夢蓄積を加速する点</strong>にあります。アーケロンを持っていない場合は、椒丘を引く優先度はやや下がります。無凸で引いたとしても、デバッファーとして使えないことはないですが、同じ虚無のペラやヴェルトのほうが汎用性が高いと言えるでしょう。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 椒丘の戦闘スキルフィールドと必殺技の炙烤は同時に維持できますか？</div>
+    <div class="a">
+      はい、完全に同時維持可能です。椒丘の戦闘スキルフィールド（煙霞）と必殺技の炙烤デバフは<strong>全く別枠の効果</strong>であり、両方を同時に敵に付与できます。
+      <ul style="margin-top:6px;">
+        <li><strong>戦闘スキルフィールド（煙霞）</strong>：2ターン継続。フィールド上の敵が行動するたびにDoTダメージ（攻撃力80% at Lv10）。敵のターン終了時にも追加DoT。フィールドを展開したターン含めて実質3行動分のDoTダメージを与えられる。</li>
+        <li><strong>必殺技デバフ（炙烤）</strong>：2ターン継続。被ダメージ+18% at Lv10。行動制限系デバフ抵抗-20%。ターン終了時にDoTダメージ（攻撃力120% at Lv10）。行動時に追加DoT（攻撃力40% at Lv10）。</li>
+      </ul>
+      椒丘の理想的なローテーションは「戦闘スキル（フィールド展開）→ 必殺技（炙烤付与）→ 戦闘スキル（フィールド更新）→ 必殺技（炙烤更新）」のループで、常に両方のデバフを維持し続けることです。EP効率縄＋ヴォンクがあればこのローテーションは十分に現実的で、E2ならさらに余裕を持って回せます。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 椒丘のDoTダメージと炙烤の被ダメ増加、どちらが重要ですか？</div>
+    <div class="a">
+      椒丘においては<strong>炙烤の被ダメ増加（デバフ効果）のほうが重要</strong>です。DoTダメージそのものはあくまでおまけ的な火力で、椒丘の価値の7割はデバフ効果にあります。<br>
+      <ul style="margin-top:6px;">
+        <li><strong>炙烤の被ダメ+18%（Lv10）</strong>：チーム全体の火力を底上げする永続的なバフ。アーケロンの必殺技ダメージが数万〜数十万単位で増加する。</li>
+        <li><strong>炙烤の行動制限デバフ抵抗-20%</strong>：ペラの防御デバフやヴェルトのスローデバフ、凍結等が通りやすくなる。間接的な火力向上と安全確保に貢献。</li>
+        <li><strong>フィールドDoT（攻撃力80% at Lv10）</strong>：1行動あたりのダメージとしては控えめだが、敵の行動回数が多いほど累積ダメージが増える。</li>
+      </ul>
+      遺物や光円錐を選ぶ際は、DoT火力を追求するよりも<strong>効果命中と速度（デバフ維持力）を最優先</strong>しましょう。DoT火力は結果的に付いてくるものと考えて、まずは安定したデバフ運用を目指すのが椒丘の正しい育て方です。
+    </div>
+  </div>
+
+  <!-- 評価まとめ -->
+  <h2 id="summary">📋 総評</h2>
+  <div class="card">
+    <p>椒丘（ジャオチウ）は、<strong>アーケロン（黄泉）の最適デバッファーとして設計された虚無キャラ</strong>です。戦闘スキルによる持続ダメージフィールドと、必殺技による強力な「炙烤」デバフの2つを駆使して、敵に複数のデバフを常時付与し続けることができます。特にアーケロン編成においては、<strong>デバフの数＝火力</strong>と言っても過言ではないほど重要な役割を果たします。</p>
+
+    <h4>ビルドの基本方針</h4>
+    <ul style="margin-top:4px;">
+      <li><strong>光円錐</strong>：幾たらせし春（★5）＞ チュートリアルS5（★4・イベント）＞ 別れと孤独を癒すものS5（★4）</li>
+      <li><strong>遺物</strong>：囚人4セット（最適）＞ 2+2構成（サブ次第）</li>
+      <li><strong>オーナメント</strong>：ヴォンク（最適）＞ ブロークンキール（次点）＞ 不老の仙舟</li>
+      <li><strong>メインステ</strong>：胴体＝効果命中%、脚＝速度%、オーブ＝HP% or 防御力%、縄＝EP回復効率%</li>
+      <li><strong>目標速度</strong>：134以上（最低ライン）→ 145（推奨）→ 160+（理想）</li>
+      <li><strong>目標効果命中</strong>：67%以上（80%推奨）</li>
+      <li><strong>目標HP/防御</strong>：HP 6,000+ / 防御 1,200+</li>
+      <li><strong>スキル優先</strong>：必殺技 ＞ 天賦 ＞ 戦闘スキル ＞ 通常攻撃</li>
+      <li><strong>凸優先</strong>：E1（火力＋追加デバフ）→ E2（EP効率）が現実的。E6でサブDPS化。</li>
+    </ul>
+
+    <h4>評価点数（10点満点）</h4>
+    <table style="max-width:400px;">
+      <tr><th>項目</th><th>評価</th></tr>
+      <tr><td>デバフ性能</td><td><span class="star">★★★★★★★★★★</span> 10/10</td></tr>
+      <tr><td>アーケロンシナジー</td><td><span class="star">★★★★★★★★★★</span> 10/10</td></tr>
+      <tr><td>DoT火力</td><td><span class="star">★★★★★★★☆☆☆</span> 7/10（E6で9/10）</td></tr>
+      <tr><td>汎用性</td><td><span style="color:#e8c547;">★★★★★★☆☆☆☆</span> 6/10（アーケロン非所持で低下）</td></tr>
+      <tr><td>編成難易度</td><td><span style="color:#e8c547;">★★★★★★★★☆☆</span> 8/10（アーケロン必須級）</td></tr>
+      <tr><td>遺物厳選難易度</td><td><span style="color:#c0c0c0;">★★★★★★☆☆☆☆</span> 6/10（効果命中・速度の両立）</td></tr>
+      <tr><td>総合評価（アーケロン編成）</td><td><span class="star">★★★★★★★★★★</span> 10/10</td></tr>
+      <tr><td>総合評価（汎用）</td><td><span style="color:#e8c547;">★★★★★★★☆☆☆</span> 7/10</td></tr>
+    </table>
+
+    <h4>こんな人におすすめ</h4>
+    <ul>
+      <li>✅ アーケロン（黄泉）を所持していて、最強のデバッファーを探している</li>
+      <li>✅ アーケロンパーティの火力を最大限に引き出したい</li>
+      <li>✅ DoT（持続ダメージ）編成に興味がある</li>
+      <li>✅ カフカ＋ルアン・メェイのDoT編成を強化したい</li>
+      <li>✅ デバフを駆使した戦術的なプレイスタイルが好き</li>
+      <li>✅ 虚無キャラを集めてアーケロンの残夢蓄積を極めたい</li>
+    </ul>
+
+    <h4>こんな人には向かないかも</h4>
+    <ul>
+      <li>⚠️ アーケロンを所持しておらず、引く予定もない</li>
+      <li>⚠️ 自身がメインアタッカーとして火力を出せるキャラが欲しい（椒丘はサポーター）</li>
+      <li>⚠️ 単体の瞬間火力が高いキャラを求めている</li>
+      <li>⚠️ 速度と効果命中の厳選が面倒</li>
+    </ul>
+
+    <p style="margin-top:12px;">椒丘は<strong>アーケロンを所持しているなら、引く価値が極めて高いキャラ</strong>です。アーケロン編成におけるデバッファーとしての性能は現状唯一無二で、ペラやヴェルトとは一線を画します。無凸でも十分に機能し、E1・E2と凸を進めるごとにデバフ性能と快適性が飛躍的に向上します。アーケロンパーティの総火力を最大化したいなら、椒丘の確保は最優先事項の一つと言えるでしょう。ぜひこのガイドを参考に、最強の椒丘を育成して全てのコンテンツを攻略してください！</p>
+  </div>
+
+</article>
+
+</body>
+</html>
