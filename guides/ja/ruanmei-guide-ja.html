@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4B26RL1D24"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4B26RL1D24');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>【崩壊スターレイル】ルアンメェイ（阮梅）完全攻略ガイド｜最強ビルド・遺物・光円錐・おすすめ編成</title>
+<meta name="description" content="崩壊スターレイルの星5氷属性・調和キャラ「ルアンメェイ（阮梅／Ruan Mei）」の完全攻略ガイド。撃破特化サポートの遺物・光円錐最適構成、おすすめパーティ編成、凸数評価、スキル数値・弱体効率の仕組みまで徹底解説。忘却の庭・幻想の庭・末日の獣対応。">
+<meta name="keywords" content="崩壊スターレイル,ルアンメェイ,阮梅,Ruan Mei,攻略,遺物,光円錐,編成,凸,星魂,ビルド,おすすめ,調和,撃破,弱体効率,超撃破">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="【崩壊スターレイル】ルアンメェイ（阮梅）完全攻略ガイド｜最強ビルド・遺物・光円錐・おすすめ編成">
+<meta property="og:description" content="崩壊スターレイルルアンメェイ（阮梅）の完全攻略。スキル数値、遺物セット比較、光円錐ランキング、パーティ編成、凸数ごとの火力上昇率を詳細解説。撃破編成の最強サポート。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="【崩壊スターレイル】ルアンメェイ（阮梅）完全攻略ガイド">
+<link rel="canonical" href="https://chjiya.github.io/hsr-guide/guides/ja/ruanmei-guide-ja.html">
+<base href="/hsr-guide/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "【崩壊スターレイル】ルアンメェイ（阮梅）完全攻略ガイド｜最強ビルド・遺物・光円錐・おすすめ編成",
+  "description": "崩壊スターレイルの星5氷属性・調和キャラ「ルアンメェイ（阮梅）」の完全攻略。スキル解析、おすすめ遺物・光円錐・オーナメント、理想パーティ編成、凸数評価、FAQまで徹底解説。",
+  "author": { "@type": "Person", "name": "花叔" },
+  "datePublished": "2025-06-20",
+  "dateModified": "2026-06-09",
+  "articleSection": "キャラクター攻略",
+  "inLanguage": "ja",
+  "about": {
+    "@type": "Thing",
+    "name": "ルアンメェイ（阮梅）",
+    "description": "崩壊スターレイルの星5氷属性・調和の運命を歩むサポートキャラクター。撃破特化サポートとして最強クラス。"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://chjiya.github.io/hsr-guide/guides/ja/ruanmei-guide-ja.html"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "ルアンメェイの速度はいくつが最適ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ルアンメェイの速度は145以上が最適です（モチーフ光円錐「過去と自身の鏡」使用時）。速度145を達成すると、戦闘スキル→通常攻撃×2の3ターンサイクルで必殺技を回収できる3ターン超回転が可能になります。モチーフ光円錐がない場合は速度160以上を目指すか、EP回復効率縄を装備して対応します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ルアンメェイのモチーフ光円錐は必須ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "必須ではありませんが、強く推奨します。「過去と自身の鏡」は撃破特効+60%、必殺技後に味方全体の与ダメ+24%（3T）、EP回復効率+10%と、ルアンメェイに必要な全ての要素を備えています。無課金の場合は「記憶の中の姿（Memories of the Past）」S5や「メッシング・コグス（Meshing Cogs）」S5で代用可能です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ルアンメェイの撃破特効はいくつ必要ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ルアンメェイは撃破特効を可能な限り高めるのが基本です。軌跡で撃破特効+37.3%が得られ、タリアオーナメント（撃破特効16%+さらに16%）を装備することで200%超を狙えます。遺物メインステで胴体BE%、連結縄BE%を選択し、サブステでもBE%を最優先にしましょう。250%以上が理想値です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ルアンメェイは何凸がおすすめですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ルアンメェイは無凸（E0）でも最強クラスの撃破サポーターです。E1は必殺技発動中に味方全体の全属性耐性貫通+20%という強力な効果で、チーム全体の火力を大きく底上げします。E2は味方全体の攻撃力+40%（必殺技中）と破格のバフ。E6は必殺技が事実上永続化するため、理論上最大のバフ効率を実現します。コスパ重視ならE0→E1が最もおすすめです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ルアンメェイにおすすめの遺物セットは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ルアンメェイの最適遺物は「流星の狩人4セット（Thief of Shooting Meteor）」です。2セットで撃破特効+16%、4セットで撃破特効+16%（合計32%）に加え、装備者が敵の弱点を撃破した際にEPを3回復します。これにより必殺技の回転率が大幅に向上します。火力を重視するなら2セットハイブリッド（例えば流星2+メッセンジャー2や流星2+マスケティア2）も有効ですが、撃破特化編成では4セットのEP回収メリットが大きいです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ルアンメェイは超撃破編成以外でも使えますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい、汎用性の高い調和キャラです。ルアンメェイの戦闘スキルによる与ダメ+68%と弱体効率+50%は、超撃破編成以外のあらゆるパーティでも強力です。必殺技による敵の行動遅延+耐性貫通は、DoT編成（カフカ＋ブラックスワン）や氷属性編成（鏡流）でも有効。しかし、その潜在能力を最大限に引き出すには撃破編成が最適で、特に超撃破編成において彼女の価値は計り知れません。"
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --bg: #1a1a2e;
+    --card: #16213e;
+    --accent: #4fc3f7;
+    --text: #e0e0e0;
+    --sub: #a0a0b0;
+    --border: #2a2a4a;
+    --highlight: #0f3460;
+    --green: #4caf84;
+    --red: #e0556a;
+    --blue: #5b9bd5;
+    --purple: #b39ddb;
+    --ice: #81d4fa;
+    --break: #ffab40;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', Meiryo, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+    padding: 20px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 1.8em;
+    color: var(--accent);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 1.4em;
+    color: var(--accent);
+    margin: 36px 0 16px;
+    padding: 8px 14px;
+    border-left: 4px solid var(--accent);
+    background: var(--highlight);
+    border-radius: 0 6px 6px 0;
+  }
+  h3 {
+    font-size: 1.15em;
+    color: #80d8ff;
+    margin: 24px 0 10px;
+  }
+  h4 {
+    font-size: 1.05em;
+    color: #b0e0ff;
+    margin: 16px 0 8px;
+  }
+  .char-header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background: var(--card);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 24px;
+    border: 1px solid var(--border);
+  }
+  .char-icon {
+    width: 90px;
+    height: 90px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--ice), var(--break));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2em;
+    flex-shrink: 0;
+    color: #fff;
+  }
+  .char-info { flex: 1; }
+  .char-info .name { font-size: 1.6em; font-weight: bold; color: #fff; }
+  .char-info .tags { margin-top: 6px; display: flex; gap: 8px; flex-wrap: wrap; }
+  .tag {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: bold;
+  }
+  .tag-rarity { background: #b8860b; color: #fff; }
+  .tag-element { background: var(--ice); color: #1a1a2e; }
+  .tag-path { background: var(--break); color: #1a1a2e; }
+  .tag-role { background: var(--accent); color: #1a1a2e; }
+
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    margin: 16px 0;
+  }
+  .stat-box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+  }
+  .stat-box .label { font-size: 0.8em; color: var(--sub); }
+  .stat-box .value { font-size: 1.2em; font-weight: bold; color: #fff; margin-top: 4px; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 0.9em;
+  }
+  th {
+    background: var(--highlight);
+    color: var(--accent);
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px solid var(--border);
+  }
+  td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+  .star { color: var(--accent); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px;
+    margin: 16px 0;
+  }
+
+  .build-box {
+    background: var(--highlight);
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin: 12px 0;
+  }
+  .build-box .label { color: var(--accent); font-weight: bold; font-size: 0.85em; }
+  .build-box .content { color: #fff; font-weight: bold; margin-top: 4px; }
+
+  .pros-cons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 16px 0;
+  }
+  .pros, .cons {
+    padding: 14px;
+    border-radius: 8px;
+  }
+  .pros { background: rgba(76,175,132,0.1); border: 1px solid rgba(76,175,132,0.3); }
+  .cons { background: rgba(224,85,106,0.1); border: 1px solid rgba(224,85,106,0.3); }
+  .pros h4 { color: var(--green); margin-bottom: 6px; }
+  .cons h4 { color: var(--red); margin-bottom: 6px; }
+  .pros li, .cons li { margin-left: 18px; font-size: 0.9em; }
+
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 12px 0;
+  }
+  .team-slot {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 8px;
+    text-align: center;
+  }
+  .team-slot .role { font-size: 0.75em; color: var(--sub); margin-bottom: 4px; }
+  .team-slot .char { font-weight: bold; color: #fff; font-size: 0.95em; }
+
+  .faq-item {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin: 12px 0;
+    padding: 16px;
+  }
+  .faq-item .q {
+    color: var(--accent);
+    font-weight: bold;
+    font-size: 1.05em;
+    margin-bottom: 8px;
+  }
+  .faq-item .a {
+    color: var(--text);
+    line-height: 1.8;
+  }
+
+  .note {
+    background: rgba(79,195,247,0.08);
+    border-left: 3px solid var(--accent);
+    padding: 10px 14px;
+    margin: 14px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.9em;
+  }
+
+  .skill-box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px;
+    margin: 10px 0;
+  }
+  .skill-box .skill-name { font-weight: bold; color: var(--accent); font-size: 1.05em; }
+  .skill-box .skill-type { font-size: 0.8em; color: var(--sub); margin-left: 8px; }
+  .skill-box .skill-desc { margin-top: 8px; font-size: 0.9em; }
+
+  .priority-5 { color: var(--accent); }
+  .priority-4 { color: #e8c547; }
+  .priority-3 { color: #c0c0c0; }
+  .priority-2 { color: #888; }
+
+  ol, ul { padding-left: 1.5em; }
+  li { margin: 4px 0; }
+
+  .toc { margin: 16px 0; padding: 14px; background: var(--card); border-radius: 8px; border: 1px solid var(--border); }
+  .toc a { color: var(--accent); text-decoration: none; }
+  .toc a:hover { text-decoration: underline; }
+  .toc li { margin: 4px 0; }
+
+  .break-highlight { color: var(--break); font-weight: bold; }
+  .ice-highlight { color: var(--ice); font-weight: bold; }
+
+  @media (max-width: 600px) {
+    .char-header { flex-direction: column; text-align: center; }
+    .team-grid { grid-template-columns: repeat(2, 1fr); }
+    .pros-cons { grid-template-columns: 1fr; }
+    .stat-grid { grid-template-columns: repeat(2, 1fr); }
+    body { padding: 12px; }
+  }
+</style>
+</head>
+<body>
+
+<article>
+  <h1>【崩壊スターレイル】ルアンメェイ（阮梅）完全攻略ガイド</h1>
+
+  <!-- 目次 -->
+  <div class="toc">
+    <strong>📑 目次</strong>
+    <ol style="margin-top:6px;">
+      <li><a href="#overview">キャラ概要</a></li>
+      <li><a href="#skills">スキル解説（全数値）</a></li>
+      <li><a href="#relics">おすすめ遺物（セット比較＋%差）</a></li>
+      <li><a href="#lightcones">おすすめ光円錐（4選択肢＋%差）</a></li>
+      <li><a href="#teams">理想編成（3編成＋ローテーション詳細）</a></li>
+      <li><a href="#eidolons">凸数評価（0-6凸、各%up率）</a></li>
+      <li><a href="#synergy">相性の良いキャラ</a></li>
+      <li><a href="#build">おすすめビルドまとめ表</a></li>
+      <li><a href="#faq">よくある質問（FAQ）</a></li>
+      <li><a href="#summary">総評</a></li>
+    </ol>
+  </div>
+
+  <!-- キャラクター基本情報 -->
+  <div class="char-header" id="overview">
+    <div class="char-icon">🌸</div>
+    <div class="char-info">
+      <div class="name">ルアンメェイ（阮梅 / Ruan Mei）</div>
+      <div class="tags">
+        <span class="tag tag-rarity">★5</span>
+        <span class="tag tag-element">氷属性</span>
+        <span class="tag tag-path">調和（Harmony）</span>
+        <span class="tag tag-role">撃破サポート / バッファー</span>
+      </div>
+      <div style="margin-top:8px;color:var(--sub);font-size:0.9em;">
+        所属：星穹列車・天才クラブ＃81｜声優：大西沙織｜入手：限定排出（イベント跳躍）
+      </div>
+    </div>
+  </div>
+
+  <!-- ステータス概要 -->
+  <div class="stat-grid">
+    <div class="stat-box">
+      <div class="label">最大HP</div>
+      <div class="value">1,214</div>
+    </div>
+    <div class="stat-box">
+      <div class="label">攻撃力</div>
+      <div class="value">543</div>
+    </div>
+    <div class="stat-box">
+      <div class="label">防御力</div>
+      <div class="value">485</div>
+    </div>
+    <div class="stat-box">
+      <div class="label">速度</div>
+      <div class="value">104</div>
+    </div>
+    <div class="stat-box">
+      <div class="label">EP（必殺技）</div>
+      <div class="value">130</div>
+    </div>
+  </div>
+
+  <!-- キャラクター評価 -->
+  <div class="pros-cons">
+    <div class="pros">
+      <h4>✅ 長所</h4>
+      <ul>
+        <li>戦闘スキルで味方全体の与ダメ+68%＋弱体効率（WBE）+50%という破格のバフ</li>
+        <li>天賦で味方がスキル使用時に速度+10%＋撃破特効+30%（3T）</li>
+        <li>必殺技で敵全体の行動遅延＋全属性耐性貫通+25%（味方全体）</li>
+        <li>秘技で戦闘開始時に自動で戦闘スキル発動（初動SP不要）</li>
+        <li>超撃破編成における最重要パーツの一つ</li>
+        <li>基礎速度104と調和キャラの中でも高め</li>
+        <li>撃破特効が軌跡で最大+37.3%獲得可能</li>
+        <li>必殺技コスト130と比較的軽い</li>
+      </ul>
+    </div>
+    <div class="cons">
+      <h4>⚠️ 短所</h4>
+      <ul>
+        <li>撃破編成全盛の現環境ではほぼ必須級だが、非撃破編成ではやや過剰性能</li>
+        <li>戦闘スキルの持続が2ターンとやや短い（3ターンに1回の使用が必要）</li>
+        <li>天賦の発動条件が「味方がスキル使用時」とやや限定的</li>
+        <li>SP消費が激しい編成では戦技の維持が難しい場合がある</li>
+        <li>撃破特効以外のバフステータス（会心・攻撃力など）は持たない</li>
+        <li>自身の個人火力は低い（純粋サポート特化）</li>
+      </ul>
+    </div>
+  </div>
+
+  <p>ルアンメェイ（阮梅）は、Ver.1.6「銀河のハイウェイを駆けて」で実装された星5氷属性・調和の運命を歩むサポートキャラクターです。星穹列車のメンバーであり、天才クラブ＃81の一員。遺伝子研究の第一人者であり、その美貌と知性で多くの開拓者を魅了しています。ルアンメェイの最大の特徴は、<strong>味方全体の与ダメージを大幅に上昇させる戦闘スキルと、敵全体の行動を遅延させつつ全属性耐性貫通を付与する必殺技</strong>にあります。</p>
+  <p>ルアンメェイは<strong>現環境で最強クラスの撃破（ブレイク）特化サポートキャラクター</strong>であり、特に超撃破（スーパーブレイク）編成において最高のパフォーマンスを発揮します。戦闘スキル「一縷花の香、一掬の酒」は味方全体の与ダメージを最大+68%上昇させると同時に、弱体効率（Weakness Break Efficiency）を+50%も増加させるという破格の効果を持ちます。これは敵の靭性ゲージを削る速度が50%増加することを意味し、撃破主体の編成では文字通りゲームチェンジャー級の効果です。</p>
+  <p>加えて、ルアンメェイの天賦「華落ちて実を得る」は、味方が戦闘スキルを使用した際にその味方の速度+10%と撃破特効+30%を3ターン付与します。これにより、パーティ全体の行動回数が増加し、撃破ダメージも大幅に上昇。必殺技「万雷の花、絢爛の琴」は敵全体にダメージを与えつつ行動を遅延させ、味方全体に全属性耐性貫通+25%を2ターン付与。耐性貫通は文字通り全てのダメージを増加させる貴重なバフであり、どの編成でも強力に機能します。</p>
+  <p>現在の高難易度コンテンツにおいて、<strong>SSランク（Prydwen：Tier 0.5 / Game8 / Altema）</strong>を獲得。特に超撃破編成ではTier 0級の評価を受けており、ファイヤフライ（Firefly）、ボスヒル（Boothill）、ラッパ（Rappa）といった撃破アタッカーと組むことで、想像を絶する破壊力を発揮します。忘却の庭（混沌の記憶）・模擬宇宙・末日の獣・幻想の庭と全ての高難易度コンテンツで活躍可能な万能サポーターです。</p>
+
+  <!-- スキル解説 -->
+  <h2 id="skills">🔍 スキル解説（全数値）</h2>
+
+  <div class="skill-box">
+    <div class="skill-name">通常攻撃：一振りの剣、一粒の露 <span class="skill-type">単体攻撃 / エネルギー+20 / 削靭10</span></div>
+    <div class="skill-desc">
+      指定した敵単体にルアンメェイの攻撃力<span class="ice-highlight">50%〜100%</span>（Lv1〜Lv6）の氷属性ダメージを与える。<br>
+      強化優先度：<span class="priority-2">★★☆☆☆</span>
+    </div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">ルアンメェイの通常攻撃はSP節約時の繋ぎとして使用。調和キャラなので基本的に通常攻撃を連打することはないが、必殺技回転率を高めるための通常攻撃→スキル→通常攻撃の3ターンサイクルでは重要な役割を果たす。戦闘スキルが切れている場面でSPが不足している場合などに使用。ルアンメェイの個人火力はバフ性能に比べて重要度が低いため、通常攻撃のレベル上げ優先度は最も低い。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">戦闘スキル：一縷花の香、一掬の酒 <span class="skill-type">サポート / 全体バフ / エネルギー+30</span></div>
+    <div class="skill-desc">
+      味方全体の与ダメージを<span class="ice-highlight">34%〜68%</span>（Lv1〜Lv12）上昇させる。<br>
+      さらに、味方全体の<strong class="break-highlight">弱体効率（WBE）を+50%</strong>上昇させる。<br>
+      <strong>2ターン</strong>継続。このターン経過はルアンメェイのターン開始時に1ずつ減少する。<br>
+      強化優先度：<span class="priority-5">★★★★★</span>
+    </div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">ルアンメェイの最重要スキル。Lv10で与ダメージ+62%（Lv12で+68%）と、調和キャラの中でもトップクラスの与ダメバフを誇る全体バフ。さらに特筆すべきは<strong>弱体効率（Weakness Break Efficiency）+50%</strong>の効果で、これは敵の靭性（タフネス）ゲージを削る速度が50%増加することを意味する。撃破編成ではこの効果が全ての起点となり、超撃破ダメージの発生頻度を劇的に向上させる。2ターン持続で実質3ターンに1回の使用で済むため、SP効率も良好。A6軌跡でスキル使用時に追加で5エネルギー回復するため、必殺技の回転率にも貢献。最優先でLv10以上を目指そう。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">必殺技：万雷の花、絢爛の琴（Violet Spark, Floral Scent in the Air） <span class="skill-type">サポート / 全体攻撃 / 行動遅延 / EP:130</span></div>
+    <div class="skill-desc">
+      敵全体にルアンメェイの攻撃力<span class="ice-highlight">100%〜200%</span>（Lv1〜Lv12）の氷属性ダメージを与える。<br><br>
+      <strong>追加効果：</strong><br>
+      ① 敵全体の<strong class="break-highlight">行動を遅延</strong>させる（遅延量はルアンメェイの撃破特効に依存）。<br>
+      ② 味方全体に<strong>全属性耐性貫通+25%</strong>を<strong>2ターン</strong>付与する。<br>
+      ③ ルアンメェイが敵の弱点を撃破（ブレイク）した時、追加で敵の行動を遅延させる。<br>
+      エネルギー回復：<span class="ice-highlight">5</span><br>
+      強化優先度：<span class="priority-5">★★★★★</span>
+    </div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">ルアンメェイの必殺技は、攻撃とサポートを兼ね備えたハイブリッドスキル。敵全体の行動遅延は撃破特効が高ければ高いほど効果が上昇し、高難易度コンテンツで敵の攻撃チャンスを大幅に減らすことができる。味方全体への全属性耐性貫通+25%は、あらゆる属性のDPSに等しく恩恵を与える貴重な効果で、文字通り全てのダメージを25%底上げする計算になる（耐性が低い敵ほど効果は大きい）。耐性貫通は防御無視とは別枠で乗算されるため、他のバフと重複した時の相乗効果が非常に高い。必殺技コストは130と比較的軽く、EP回復効率や光円錐の効果と組み合わせることで3ターンでの回転が可能。必殺技は最優先でLv10以上を目指そう。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">天賦：華落ちて実を得る（Blossom Under the Cold Moonlight） <span class="skill-type">常時パッシブ / バフ</span></div>
+    <div class="skill-desc">
+      味方が戦闘スキルを使用した後、その味方の<strong>速度を<span class="ice-highlight">6%〜10%</span></strong>（Lv1〜Lv10）上昇させる。<br>
+      さらに、その味方の<strong class="break-highlight">撃破特効を+30%</strong>上昇させる。<br>
+      <strong>3ターン</strong>継続。同じ味方に重ね掛け可能（持続ターン更新）。<br>
+      強化優先度：<span class="priority-4">★★★★☆</span>
+    </div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">ルアンメェイの天賦は、味方が戦闘スキルを使用するたびにその味方に速度+10%と撃破特効+30%を3ターン付与する。速度バフは行動回数の増加に直結し、撃破特効+30%は超撃破編成でのダメージを大幅に引き上げる。この効果は味方がスキルを使うたびに持続ターンが更新されるため、実戦ではほぼ永続的なバフとして機能する。速度+10%は特に重要で、撃破アタッカーが速度ブレイクポイント（145、160など）に到達するための貴重な補助となる。また、ルアンメェイ自身もこの天賦の恩恵を間接的に受ける（味方がスキルを使うことで編成全体のパフォーマンスが向上する）。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">秘技：遺伝子の囁き（Whispers of the Gene） <span class="skill-type">戦闘前効果</span></div>
+    <div class="skill-desc">
+      秘技を使用した後、次の戦闘開始時に自動的に<strong>戦闘スキルを発動</strong>する。<br>
+      この自動発動はSPを消費しない。<br>
+      味方の次元効果は同時に1つまで。
+    </div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">ルアンメェイの秘技は極めて実用的。戦闘開始時に自動で戦闘スキルが発動するため、開幕から与ダメ+68%と弱体効率+50%のバフが味方全体に適用された状態で戦闘を開始できる。しかもこの自動発動は<strong>SPを消費しない</strong>ため、開幕のSP管理が非常に楽になる。忘却の庭や模擬宇宙など、複数ウェーブにわたるコンテンツでは各ウェーブの開始時に効果を発揮する。撃破編成では初動の弱体効率バフが特に重要で、開幕から敵の靭性を素早く削り切ることができる。使用を強く推奨。</p>
+
+  <h3>軌跡（追加能力）</h3>
+  <table>
+    <tr><th>軌跡名</th><th>解放条件</th><th>効果</th><th>必須度</th></tr>
+    <tr><td>避世の息吹（Breath of Seclusion）</td><td>昇格2（A2）</td><td>戦闘開始時、ルアンメェイのEPを<strong>15</strong>回復する。</td><td><span class="star">★★★★★</span></td></tr>
+    <tr><td>有機酵母（Organic Yeast）</td><td>昇格4（A4）</td><td>ルアンメェイの撃破特効が<strong>+20%</strong>。</td><td><span class="star">★★★★★</span></td></tr>
+    <tr><td>細胞活性化（Cellular Activation）</td><td>昇格6（A6）</td><td>戦闘スキル使用時、追加で<strong>5</strong>エネルギー回復。</td><td><span class="star">★★★★★</span></td></tr>
+  </table>
+
+  <h3>スモールトラシス（小軌跡）</h3>
+  <table>
+    <tr><th>ステータス</th><th>獲得値</th></tr>
+    <tr><td>撃破特効（Break Effect）</td><td>+37.3%</td></tr>
+    <tr><td>氷属性ダメージ</td><td>+14.4%</td></tr>
+    <tr><td>HP</td><td>+10%</td></tr>
+  </table>
+
+  <div class="note">
+    <strong>💡 スキル強化の優先順位：</strong> 必殺技 ＞ 戦闘スキル ＞ 天賦 ＞ 通常攻撃。必殺技と戦闘スキルは両方ともLv10以上が強く推奨される。天賦はLv8〜10を目標に。軌跡の追加能力は3つとも全て取得必須級。特にA2の開幕EP+15とA4の撃破特効+20%はルアンメェイの性能を大きく左右する。A6の戦技+5エネも必殺技回転率に直結するため、忘れずに取得しよう。
+  </div>
+
+  <!-- 遺物推荐 -->
+  <h2 id="relics">⚔️ おすすめ遺物</h2>
+
+  <h3>トンネル遺物（メインセット）比較</h3>
+  <table>
+    <tr><th>セット構成</th><th>セット効果</th><th>性能比較</th><th>おすすめ度</th></tr>
+    <tr>
+      <td><strong>流星の狩人4セット</strong><br>（Thief of Shooting Meteor）</td>
+      <td>2セット：撃破特効+16%<br>4セット：撃破特効+16%（合計32%）<br>装備者が敵の弱点を撃破した時、EPを3回復する。</td>
+      <td><span class="star">100%</span><br><span class="ice-highlight">撃破編成最適</span></td>
+      <td><span class="star">★★★★★</span><br>撃破特化最適</td>
+    </tr>
+    <tr>
+      <td><strong>流星の狩人2 + メッセンジャー2</strong><br>（Thief + Messenger）</td>
+      <td>流星2：撃破特効+16%<br>メッセンジャー2：速度+6%</td>
+      <td><span style="color:#e8c547;">約95%</span><br><span style="color:var(--sub);">−5%</span></td>
+      <td><span style="color:#e8c547;">★★★★☆</span><br>速度重視</td>
+    </tr>
+    <tr>
+      <td><strong>流星の狩人2 + マスケティア2</strong><br>（Thief + Musketeer）</td>
+      <td>流星2：撃破特効+16%<br>マスケティア2：攻撃力+12%</td>
+      <td><span style="color:#c0c0c0;">約90%</span><br><span style="color:var(--sub);">−10%</span></td>
+      <td><span style="color:#c0c0c0;">★★★☆☆</span><br>妥協案</td>
+    </tr>
+  </table>
+
+  <p><strong>セット比較の詳細解説：</strong>ルアンメェイの遺物は<strong>撃破特効（Break Effect）を最優先</strong>にしたセット選択が求められます。「流星の狩人（Thief of Shooting Meteor）4セット」が撃破特効+32%という圧倒的な数値を提供し、さらに装備者が敵の弱点を撃破した際にEPを3回復する効果で必殺技の回転率も向上。4セット効果のEP回復はルアンメェイの必殺技回転に大きく貢献するため、可能な限り4セットを揃えたい。どうしても4セットが揃わない場合の次善策として「流星2＋メッセンジャー2」のハイブリッド構成が速度面で優れる。マスケティア2との組み合わせはルアンメェイの個人火力には寄与するが、撃破特効の観点では流星2のみとなるため性能は落ちる。</p>
+
+  <h3>次元界オーナメント（プラナー）比較</h3>
+  <table>
+    <tr><th>セット</th><th>セット効果</th><th>おすすめ度</th><th>解説</th></tr>
+    <tr>
+      <td><strong>盗賊公国タリア（Talia: Kingdom of Banditry）</strong></td>
+      <td>撃破特効+16%。速度145以上の時、さらに撃破特効+20%（合計+36%）。</td>
+      <td><span class="star">★★★★★</span></td>
+      <td>ルアンメェイの最適オーナメント。撃破特効を最大+36%も稼げるため、撃破特効を最ステータスとするルアンメェイと完璧にマッチする。速度145の条件もルアンメェイの目標速度と一致しているため、無理なく達成可能。撃破編成ではほぼ一択。</td>
+    </tr>
+    <tr>
+      <td><strong>陽気なフォンワク（Sprightly Vonwacq）</strong></td>
+      <td>EP回復効率+5%。速度120以上で戦闘開始時に行動順が40%促進される。</td>
+      <td><span style="color:#e8c547;">★★★★☆</span></td>
+      <td>EP回復効率+5%で必殺技の回転率を底上げ。開幕の行動促進40%でルアンメェイが先手を取りやすくなる。ただし撃破特効の補強はないため、撃破編成ではタリアに劣る。必殺技回転を重視する場合や、撃破特効が既に十分高い場合の選択肢。</td>
+    </tr>
+    <tr>
+      <td><strong>老いぬ者の仙舟（Fleet of the Ageless）</strong></td>
+      <td>HP+12%。速度120以上で味方全体の攻撃力+8%。</td>
+      <td><span style="color:#c0c0c0;">★★★☆☆</span></td>
+      <td>味方全体に攻撃力+8%バフを提供できる。HP+12%で耐久力を補えるのも利点だが、撃破特効やEP効率に寄与しないため優先度は低い。</td>
+    </tr>
+  </table>
+
+  <h3>遺物メインステータス</h3>
+  <table>
+    <tr><th>部位</th><th>メインステータス</th><th>備考</th></tr>
+    <tr><td>頭部</td><td>HP（固定）</td><td>—</td></tr>
+    <tr><td>手部</td><td>攻撃力（固定）</td><td>—</td></tr>
+    <tr><td>胴体</td><td><strong>撃破特効%（Break Effect%）</strong></td><td>BE%一択。ルアンメェイのバフ量と行動遅延量に直結。</td></tr>
+    <tr><td>脚部</td><td><strong>速度（SPD）</strong></td><td>速度145+目標。脚部は速度一択。</td></tr>
+    <tr><td>次元界オーブ</td><td><strong>HP%</strong> または 防御力%</td><td>HP%推奨。ルアンメェイは攻撃力より耐久力が重要。</td></tr>
+    <tr><td>連結縄</td><td><strong>撃破特効%（BE%）</strong> または EP回復効率%</td><td>BE%が最優先。EP効率縄はモチーフ光円錐がない場合の選択肢。</td></tr>
+  </table>
+
+  <div class="note">
+    <strong>💡 サブステータス優先度：</strong> 撃破特効%（250%+目標） ＞ 速度（145+目標） ＞ HP% ≧ 防御力% ＞ 効果抵抗<br>
+    ルアンメェイは<strong>撃破特効が全て</strong>と言っても過言ではない。撃破特効は戦闘スキルの与ダメバフ量には直接影響しないが、天賦の撃破特効+30%の土台となり、必殺技の行動遅延量を決定し、超撃破編成でのパーティ全体の火力に間接的に貢献する。さらにタリアオーナメントの発動条件にも関わるため、可能な限り高めよう。<br>
+    <strong>速度ブレイクポイント：</strong> ルアンメェイの目標速度は<strong>145以上</strong>（モチーフ光円錐装備時）。理由は以下の通り：速度145を達成すると、戦闘スキル→通常攻撃→通常攻撃の3ターンサイクルにおいて、モチーフ光円錐「過去と自身の鏡」のEP回復効率+10%と組み合わせることで、<strong>3ターンでの必殺技回収</strong>が可能になる。速度145未満だと3ターン回収が安定せず、4ターンサイクルになる場合がある。モチーフ光円錐がない場合は速度160以上を目指すか、EP回復効率縄で代用する。<br>
+    <strong>推奨撃破特効：</strong> 250%以上が目標（軌跡37.3%＋タリア36%＋流星4セット32%＋胴体BE%＋縄BE%＋サブステ）。装備が整えば300%超も可能。撃破特効が高ければ高いほど、超撃破ダメージが上昇し、必殺技の行動遅延量も増加する。
+  </div>
+
+  <!-- 光円錐推荐 -->
+  <h2 id="lightcones">💡 おすすめ光円錐（4選択肢＋%差）</h2>
+
+  <table>
+    <tr><th>光円錐</th><th>レア</th><th>効果概要</th><th>性能比</th><th>おすすめ度</th></tr>
+    <tr>
+      <td><strong>過去と自身の鏡（Past Self in Mirror）</strong></td>
+      <td>★5</td>
+      <td>S1時：撃破特効+60%。装備者が必殺技を発動した後、味方全体の与ダメージ+24%（3ターン）。さらにEP回復効率+10%。装備者が撃破特効150%以上の時、戦闘スキル使用時にSPを1回復する（1ターンに1回）。</td>
+      <td><span class="star">100%</span></td>
+      <td><span class="star">★★★★★</span><br><span class="ice-highlight">最適（モチーフ）</span></td>
+    </tr>
+    <tr>
+      <td><strong>記憶の中の姿（Memories of the Past）</strong></td>
+      <td>★4</td>
+      <td>S5時：撃破特効+56%。装備者が攻撃を行った後、EPを+8（命中した敵1体につき1回、最大1回）回復。攻撃が命中しなくても発動。</td>
+      <td><span style="color:#e8c547;">約92%</span></td>
+      <td><span style="color:#e8c547;">★★★★★</span><br><span class="ice-highlight">星4最適</span></td>
+    </tr>
+    <tr>
+      <td><strong>メッシング・コグス（Meshing Cogs）</strong></td>
+      <td>★3</td>
+      <td>S5時：装備者が攻撃を行った後、または攻撃を受けた後、追加でEPを+4回復。1ターンに1回まで。</td>
+      <td><span style="color:#c0c0c0;">約85%</span></td>
+      <td><span style="color:#e8c547;">★★★★☆</span><br><span style="color:var(--sub);">無課金最適</span></td>
+    </tr>
+    <tr>
+      <td><strong>ダンスダンスダンス（Dance Dance Dance）</strong></td>
+      <td>★4</td>
+      <td>S5時：装備者が必殺技を発動した後、味方全体の行動順が16%促進される。</td>
+      <td><span style="color:#c0c0c0;">約88%</span></td>
+      <td><span style="color:#e8c547;">★★★★☆</span><br><span style="color:var(--sub);">行動促進特化</span></td>
+    </tr>
+  </table>
+
+  <div class="build-box">
+    <div class="label">🏆 最適光円錐</div>
+    <div class="content">過去と自身の鏡（★5・モチーフ）</div>
+    <div style="margin-top:6px;font-size:0.9em;">ルアンメェイのモチーフ光円錐「過去と自身の鏡」。撃破特効+60%という破格の数値に加え、必殺技後に味方全体の与ダメージ+24%（3ターン）とルアンメェイの戦闘スキルと重複する強力な全体バフを提供。EP回復効率+10%で必殺技の3ターン回転を安定させ、撃破特効150%以上で戦闘スキル使用時にSPを1回復する効果（1ターンに1回）により、SP管理も大幅に改善される。ルアンメェイを本格的に運用するならモチーフ光円錐の確保を強く推奨。モチーフがない場合との差は明確で、撃破特効量・バフ量・EP効率・SP管理の全てにおいて優位に立つ。</div>
+  </div>
+
+  <div class="build-box">
+    <div class="label">💰 無課金・低予算向け</div>
+    <div class="content">記憶の中の姿（★4・S5）or メッシング・コグス（★3・S5）</div>
+    <div style="margin-top:6px;font-size:0.9em;">「記憶の中の姿（Memories of the Past）」S5は撃破特効+56%と星4最高クラスのBE%を提供し、モチーフに最も近い性能を発揮する。攻撃後のEP+8回復も必殺技回転率に貢献。恒常ガチャやショップ交換で入手可能なため、無課金プレイヤーの現実的な最適解。さらに安価な選択肢として星3の「メッシング・コグス（Meshing Cogs）」S5がある。攻撃または被弾後にEP+4回復（1T1回）で必殺技の回転率を安定させる。撃破特効は0だが、ルアンメェイの軌跡と遺物でBE%を十分に確保できるため、実用的な選択肢となる。星4の「ダンスダンスダンス（Dance Dance Dance）」S5は必殺技発動時に味方全体の行動順を16%促進。撃破特効はないが、パーティ全体の行動回数を増やすことで間接的に火力を向上させる。超撃破編成では行動回数がそのまま火力に繋がるため、検討に値する。</div>
+  </div>
+
+  <h3>光円錐選択のポイント</h3>
+  <p>ルアンメェイの光円錐選びで最も重要なのは<strong>「撃破特効（Break Effect）」</strong>と<strong>「EP回復効率」</strong>の2点です。必殺技コスト130は調和キャラの中では軽い部類ですが、3ターンでの安定した必殺技回転のためにはEP効率の確保が重要です。モチーフの「過去と自身の鏡」は撃破特効+60%とEP効率+10%を同時に満たし、さらに与ダメ+24%とSP回復まで備えた理想的な光円錐。「記憶の中の姿」S5はBE%+56%とEP回復効果でモチーフに最も近い性能を発揮します。無課金なら「メッシング・コグス」S5でEP効率を確保しつつ、遺物で撃破特効を盛るのが現実的です。「ダンスダンスダンス」は撃破編成の行動回数を増やす独自の価値があります。</p>
+
+  <!-- 理想編成 -->
+  <h2 id="teams">🤝 理想編成（3編成＋ローテーション詳細）</h2>
+
+  <h3>編成①：ファイヤフライ超撃破編成（最強推奨）</h3>
+  <div class="team-grid">
+    <div class="team-slot">
+      <div class="role">🌸 撃破サポート</div>
+      <div class="char">ルアンメェイ</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">氷・調和</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🔥 メインアタッカー</div>
+      <div class="char">ファイヤフライ（Firefly）</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">炎・破壊</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🌾 調和MC（HMC）</div>
+      <div class="char">開拓者（調和）</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">炎・調和</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🕯️ 耐久枠</div>
+      <div class="char">霊紗（Lingsha）</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">炎・豊穣</div>
+    </div>
+  </div>
+  <p style="font-size:0.9em;color:var(--sub);"><strong>装備詳細：</strong></p>
+  <ul style="font-size:0.85em;color:var(--sub);margin-bottom:8px;">
+    <li><strong>ルアンメェイ</strong>：「過去と自身の鏡」S1 / 流星の狩人4セット / タリア / 撃破%胴・速度靴・HP%オーブ・撃破%縄 / 速度145+ / 撃破特効250%+目標</li>
+    <li><strong>ファイヤフライ</strong>：「夢は岸辺に還る」S1 or 「記憶の中の姿」S5 / 流星の狩人4セット or 鉄騎4セット / タリア or カーガンナイ / 攻撃%胴・速度靴・攻撃%オーブ・撃破%縄 / 速度155+（変身中行動値向上） / 撃破特効250%+目標</li>
+    <li><strong>開拓者（調和）</strong>：「記憶の中の姿」S5 or 「メッシング・コグス」S5 / 流星の狩人4セット or 風吹4セット / タリア or フォンワク / 速度重視 / 撃破特効200%+目標（超撃破ダメージはHMCの撃破特効にも依存）</li>
+    <li><strong>霊紗（Lingsha）</strong>：「甦る夜明け」S1 or 「何かと交換」S5 / 流星の狩人4セット or 過客4セット / タリア or 仙舟 / 治癒量胴・速度靴・HP%オーブ・撃破%縄 / 速度145+ / 撃破特効150%+目標</li>
+  </ul>
+  <p style="font-size:0.9em;color:var(--sub);"><strong>ローテーション：</strong> ルアンメェイ秘技使用（自動戦闘スキル発動）→ HMC戦闘スキル（超撃破バフ展開）→ 霊紗戦闘スキル or 通常攻撃（SP状況次第）→ ファイヤフライ変身（戦闘スキル連打で靭性削り＋超撃破発動）→ ルアンメェイ必殺技で敵全体行動遅延＋耐性貫通バフ→ ファイヤフライ強化スキル連打で超撃破ダメージを連発→ HMC必殺技で超撃破サポート継続→ 霊紗のウサギ追撃で靭性削りと回復→ ルアンメェイ戦闘スキル更新（与ダメ+WBEバフ維持）→ EPを溜めてルアンメェイ必殺技ループ。<strong>推定DPS：約65,000〜78,000（1サイクル）／全編成中最強クラスの超撃破火力</strong></p>
+
+  <p style="font-size:0.9em;color:var(--sub);margin-top:14px;"><strong>解説：</strong>この編成はルアンメェイの真骨頂。ルアンメェイの弱体効率+50%により、ファイヤフライは変身中に敵の靭性ゲージを瞬時に削り切り、超撃破ダメージを連発できる。ルアンメェイの必殺技による耐性貫通+25%は、ファイヤフライの属性（炎）が敵に有効でない場合でも安定した火力を保証する。HMC（調和開拓者）の超撃破バフとルアンメェイの撃破特効バフ（天賦+30%）が重なることで、ファイヤフライの超撃破ダメージは天井知らずに上昇。霊紗も撃破編成に対応したヒーラーで、自身のウサギによる追撃攻撃が靭性削りと回復を同時にこなす。火力・耐久・SP効率の全てにおいてバランスの取れた最強編成。霊紗の代わりにギャラガー（Gallagher）を入れるとより低予算で組める。</p>
+
+  <h3>編成②：ボスヒル超撃破編成</h3>
+  <div class="team-grid">
+    <div class="team-slot">
+      <div class="role">🌸 撃破サポート</div>
+      <div class="char">ルアンメェイ</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">氷・調和</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🤠 メインアタッカー</div>
+      <div class="char">ボスヒル（Boothill）</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">物理・狩猟</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🌾 調和MC（HMC）</div>
+      <div class="char">開拓者（調和）</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">炎・調和</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🍺 耐久枠</div>
+      <div class="char">ギャラガー（Gallagher）</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">炎・豊穣</div>
+    </div>
+  </div>
+  <p style="font-size:0.9em;color:var(--sub);"><strong>装備詳細：</strong></p>
+  <ul style="font-size:0.85em;color:var(--sub);margin-bottom:8px;">
+    <li><strong>ルアンメェイ</strong>：「過去と自身の鏡」S1 or 「記憶の中の姿」S5 / 流星の狩人4セット / タリア / 撃破%胴・速度靴・HP%オーブ・撃破%縄 / 速度145+</li>
+    <li><strong>ボスヒル</strong>：「川を渡り歩く者」S1 or 「星海巡航」S5 / 流星の狩人4セット or 鉄騎2+風吹2 / タリア / 速度靴・物理%オーブ・撃破%縄 / 速度145+/撃破特効250%+</li>
+    <li><strong>開拓者（調和）</strong>：「記憶の中の姿」S5 or 「メッシング・コグス」S5 / 流星の狩人4セット / タリア or フォンワク / 速度重視 / 撃破特効200%+</li>
+    <li><strong>ギャラガー</strong>：「何かと交換」S5 or 「等価交換」S5 / 流星の狩人4セット or 過客4セット / タリア or 仙舟 / 治癒量胴・速度靴・HP%オーブ・撃破%縄 / 速度150+</li>
+  </ul>
+  <p style="font-size:0.9em;color:var(--sub);"><strong>ローテーション：</strong> ルアンメェイ秘技→戦闘開始→ルアンメェイ戦闘スキル（WBE+50%）→ボスヒル戦闘スキル（敵に「一発勝負」付与）→HMC戦闘スキル（超撃破バフ）→ギャラガー通常攻撃（SP節約）→ボスヒル必殺技（大ダメージ＋撃破）→ルアンメェイ必殺技（行動遅延＋耐性貫通）→ボスヒル強化通常攻撃連打（超撃破大ダメージ）→靭性削り切って撃破→ボスヒル必殺技でフィニッシュ。<strong>推定DPS：約55,000〜68,000（1サイクル）</strong></p>
+
+  <p style="font-size:0.9em;color:var(--sub);margin-top:14px;"><strong>解説：</strong>ボスヒルは単体撃破に特化したアタッカーで、ルアンメェイの弱体効率+50%により「一発勝負」を付与した敵の靭性を驚異的な速度で削ることができる。撃破後の超撃破ダメージはボスヒルの高い撃破特効とHMCの超撃破バフにより破格の数値に。ギャラガーはSP供給と回復を両立し、撃破編成に最適な星4ヒーラー。ルアンメェイの天賦による速度+10%と撃破特効+30%は、ボスヒルのパフォーマンスを大きく引き上げる。</p>
+
+  <h3>編成③：ラッパ超撃破編成</h3>
+  <div class="team-grid">
+    <div class="team-slot">
+      <div class="role">🌸 撃破サポート</div>
+      <div class="char">ルアンメェイ</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">氷・調和</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🎨 メインアタッカー</div>
+      <div class="char">ラッパ（Rappa）</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">虚数・知恵</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🌾 調和MC（HMC）</div>
+      <div class="char">開拓者（調和）</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">炎・調和</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🦊 サブサポート</div>
+      <div class="char">フォグ（Fugue）</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">炎・虚無</div>
+    </div>
+  </div>
+  <p style="font-size:0.9em;color:var(--sub);"><strong>装備詳細：</strong></p>
+  <ul style="font-size:0.85em;color:var(--sub);margin-bottom:8px;">
+    <li><strong>ルアンメェイ</strong>：「過去と自身の鏡」S1 / 流星の狩人4セット / タリア / 撃破%胴・速度靴・HP%オーブ・撃破%縄 / 速度145+</li>
+    <li><strong>ラッパ</strong>：「屈折する悪意」S1 or 「今日も平和な一日」S5 / 流星の狩人4セット or 鉄騎4セット / タリア or カーガンナイ / 攻撃%胴・速度靴・虚数%オーブ・撃破%縄 / 速度135+/撃破特効220%+</li>
+    <li><strong>開拓者（調和）</strong>：「記憶の中の姿」S5 / 流星の狩人4セット / タリア / 速度重視 / 撃破特効200%+</li>
+    <li><strong>フォグ（Fugue）</strong>：「待って、もう一度待って」S1 or 「解きほぐされた織物」S5 / 流星の狩人4セット or 風吹4セット / タリア or カーガンナイ / 効果命中胴・速度靴・HP%オーブ・撃破%縄 / 速度155+ / 効果命中67%+目標</li>
+  </ul>
+  <p style="font-size:0.9em;color:var(--sub);"><strong>ローテーション：</strong> ルアンメェイ秘技→戦闘開始→ルアンメェイ戦闘スキル（WBE+与ダメバフ）→HMC戦闘スキル（超撃破展開）→フォグ戦闘スキル（燃焼＋撃破特効デバフ）→ラッパ戦闘スキル（靭性削り＋超撃破）→ルアンメェイ必殺技（耐性貫通＋行動遅延）→ラッパ必殺技（全体超撃破大ダメージ）→ループ。<strong>推定DPS：約60,000〜72,000（1サイクル）</strong></p>
+
+  <p style="font-size:0.9em;color:var(--sub);margin-top:14px;"><strong>解説：</strong>ラッパは虚数属性の知恵・撃破アタッカー。ラッパの戦闘スキルは敵全体の靭性を削ることができ、フォグのサポートによりさらに撃破効率が向上。ルアンメェイの弱体効率+50%と天賦の撃破特効+30%がラッパの火力を最大限に引き出す。フォグは燃焼状態の敵に対する撃破特効を増加させるため、ルアンメェイとHMCとの3重撃破シナジーが成立。この編成は複数敵の状況で特に真価を発揮する。</p>
+
+  <div class="note">
+    <strong>💡 編成のポイント：</strong> ルアンメェイを活かす編成の共通点は<strong>「撃破を軸としたシナジー」</strong>です。ルアンメェイの弱体効率+50%は、撃破アタッカーの靭性削り速度を1.5倍に引き上げ、超撃破ダメージの発生頻度を劇的に増加させます。いずれの編成でも<strong>開拓者（調和・HMC）</strong>はほぼ必須級のパートナー。HMCの超撃破バフがなければ、撃破編成の火力は半減すると言っても過言ではありません。<br>
+    耐久枠は<strong>霊紗（Lingsha）</strong>が撃破編成に最も適しており、自身のウサギ追撃で靭性削りに貢献できる。ギャラガー（Gallagher）は星4ながら優秀なSP効率と撃破シナジーを持ち、無課金編成の頼れるヒーラーです。フォグ（Fugue）は撃破編成のサブサポーターとして最適で、ルアンメェイ＋HMC＋フォグのトリプル撃破サポートは圧巻の破壊力を誇ります。
+  </div>
+
+  <!-- 凸数評価 -->
+  <h2 id="eidolons">💎 星魂（エイドロン）評価</h2>
+
+  <h3>0凸〜6凸 詳細評価</h3>
+  <table>
+    <tr><th>凸数</th><th>名称</th><th>効果</th><th>火力up率</th><th>おすすめ度</th></tr>
+    <tr>
+      <td>無凸（E0）</td><td>—</td>
+      <td>ベース性能。与ダメ+68%全体バフ＋弱体効率+50%＋天賦の速度+10%/撃破特効+30%＋必殺技の行動遅延＋耐性貫通25%。無凸でも最強クラスの撃破サポート。</td>
+      <td><span class="star">100%</span><br><span style="color:var(--sub);">基準値</span></td>
+      <td><span class="star">★★★★★</span><br><span style="color:var(--sub);">無凸でも最強</span></td>
+    </tr>
+    <tr>
+      <td>1凸（E1）</td><td>隠された甘やかさ（Hidden Sweetness）</td>
+      <td>必殺技発動中、味方全体の<strong>全属性耐性貫通+20%</strong>（必殺技基礎の25%と合計で45%に）。</td>
+      <td><span class="star">約+20〜28%</span></td>
+      <td><span class="star">★★★★★</span><br><span class="ice-highlight">最優先凸！超高コスパ</span></td>
+    </tr>
+    <tr>
+      <td>2凸（E2）</td><td>月光下のほろ酔い（Moonlit Tipsy）</td>
+      <td>必殺技発動中、味方全体の<strong>攻撃力+40%</strong>。</td>
+      <td><span style="color:#e8c547;">約+15〜20%</span></td>
+      <td><span style="color:#e8c547;">★★★★☆</span><br><span style="color:var(--sub);">強力な攻撃力バフ</span></td>
+    </tr>
+    <tr>
+      <td>3凸（E3）</td><td>遺伝子の螺旋（Genetic Spiral）</td>
+      <td>戦闘スキルLv+2（最大15）、天賦Lv+2（最大15）。</td>
+      <td><span style="color:#c0c0c0;">約+3〜5%</span></td>
+      <td><span style="color:#c0c0c0;">★★★☆☆</span><br><span style="color:var(--sub);">スキルレベル上げ</span></td>
+    </tr>
+    <tr>
+      <td>4凸（E4）</td><td>香り高き三彩（Fragrant Tri-Chrome）</td>
+      <td>天賦の効果発動時、追加で全味方の効果抵抗+15%（2ターン）。</td>
+      <td><span style="color:#c0c0c0;">耐久/サポート特化</span></td>
+      <td><span style="color:#e8c547;">★★★★☆</span><br><span style="color:var(--sub);">安定性向上</span></td>
+    </tr>
+    <tr>
+      <td>5凸（E5）</td><td>蕊の中の花芯（Heart of the Bloom）</td>
+      <td>通常攻撃Lv+1（最大10）、必殺技Lv+2（最大15）。</td>
+      <td><span style="color:#c0c0c0;">約+2%</span></td>
+      <td><span style="color:#888;">★★☆☆☆</span><br><span style="color:var(--sub);">6凸への通過点</span></td>
+    </tr>
+    <tr>
+      <td>6凸（E6）</td><td>永遠なる梅花の章（Eternal Plum Blossom）</td>
+      <td>必殺技発動中、天賦の持続ターンが<strong>経過しなくなる</strong>（天賦効果が実質永続化）。さらに必殺技の行動遅延効果+50%。</td>
+      <td><span class="star">約+30〜40%</span></td>
+      <td><span class="star">★★★★★</span><br><span class="ice-highlight">完全体！必殺技が実質無限</span></td>
+    </tr>
+  </table>
+
+  <h3>凸のすすめ：詳細解説</h3>
+  <div class="card">
+    <p><strong>無凸（E0）でも最強クラス：</strong> ルアンメェイは無凸でもSSランクサポーターとして十分に戦えます。与ダメ+68%（全体）、弱体効率+50%、天賦の速度+10%/撃破特効+30%（味方全体）、必殺技の行動遅延＋耐性貫通25%と、これだけで文句なしの最強クラス。特に超撃破編成では無凸でもTier 0の評価を得ています。</p>
+    <p style="margin-top:8px;"><strong>E1（最高コスパ凸！＋20〜28%火力UP）：</strong> ルアンメェイの凸の中で<strong>最も価値が高い</strong>のがE1。必殺技発動中に味方全体の全属性耐性貫通がさらに+20%され、基礎の25%と合わせて合計45%もの耐性貫通をチーム全体に提供できる。耐性貫通は防御無視や属性ダメバフとは別枠で乗算されるため、編成全体の最終ダメージを大きく引き上げる。特に敵の属性耐性が高い高難易度コンテンツで真価を発揮。全てのプレイヤーにE1取得を強く推奨する。</p>
+    <p style="margin-top:8px;"><strong>E2（+15〜20% + 攻撃力+40%）：</strong> 必殺技発動中に味方全体の攻撃力+40%を追加。超撃破編成では超撃破ダメージの計算式に攻撃力も関与するため、攻撃力バフは直接火力向上に繋がる。E1とE2の両方を取得すると、ルアンメェイのサポート能力は飛躍的に向上する。</p>
+    <p style="margin-top:8px;"><strong>E4（サポート特化・安定性向上）：</strong> 天賦発動時に全味方の効果抵抗+15%（2ターン）。効果抵抗は高難易度コンテンツでの行動制限耐性として機能し、編成の安定性を向上させる。数字に表れにくいが、忘却の庭の高位層で価値を発揮する。</p>
+    <p style="margin-top:8px;"><strong>E6（完全体・必殺技が実質無限）：</strong> 必殺技発動中、天賦の持続ターンが経過しなくなる。つまりルアンメェイの天賦効果（味方の速度+10%と撃破特効+30%）が必殺技が持続している間、<strong>永続的に継続</strong>する。さらに必殺技の行動遅延効果が+50%向上。E6ルアンメェイは必殺技を1度発動すれば、天賦効果が切れることなく戦闘を継続できるため、理論上最大のバフ効率を実現する。ただし、そのコストに見合うかはプレイヤーの判断次第。</p>
+  </div>
+
+  <div class="build-box">
+    <div class="label">🏆 コスパ最優秀凸</div>
+    <div class="content">E1（隠された甘やかさ）</div>
+    <div style="margin-top:6px;font-size:0.9em;">全属性耐性貫通+20%（合計45%）がチーム全体の火力を約20〜28%底上げ。ルアンメェイ無凸でも強いが、E1を取得することでサポート能力が飛躍的に向上する。モチーフ光円錐とE1のどちらを先に取得するかは意見が分かれるが、汎用性で言えばE1が優れる。理想はモチーフ＋E1の同時取得。</div>
+  </div>
+
+  <!-- 相性の良いキャラ -->
+  <h2 id="synergy">🤝 相性の良いキャラ</h2>
+  <table>
+    <tr><th>キャラ</th><th>属性/運命</th><th>相性の理由</th><th>おすすめ度</th></tr>
+    <tr><td>ファイヤフライ（Firefly）</td><td>炎・破壊</td><td>ルアンメェイと最も相性の良い撃破DPS。弱体効率+50%で変身中の靭性削り速度が飛躍的に向上。天賦の撃破特効+30%と速度+10%がファイヤフライの火力を最大化。</td><td><span class="star">★★★★★</span></td></tr>
+    <tr><td>開拓者（調和・HMC）</td><td>炎・調和</td><td>超撃破編成の要。HMCの超撃破バフとルアンメェイの弱点撃破サポートが完璧にシナジー。ルアンメェイ＋HMCのセットで超撃破編成が成立する。</td><td><span class="star">★★★★★</span></td></tr>
+    <tr><td>ボスヒル（Boothill）</td><td>物理・狩猟</td><td>単体撃破に特化したDPS。ルアンメェイのWBE+50%で「一発勝負」の靭性削りが高速化。撃破後の超撃破ダメージが破格。</td><td><span class="star">★★★★★</span></td></tr>
+    <tr><td>ラッパ（Rappa）</td><td>虚数・知恵</td><td>全体撃破アタッカー。ルアンメェイのバフで靭性削りと超撃破ダメージを両立。複数敵戦で特に強力。</td><td><span class="star">★★★★★</span></td></tr>
+    <tr><td>霊紗（Lingsha）</td><td>炎・豊穣</td><td>撃破編成最適ヒーラー。ウサギ追撃で靭性削りに貢献。撃破特効ビルドで回復量と火力を両立。</td><td><span class="star">★★★★★</span></td></tr>
+    <tr><td>フォグ（Fugue）</td><td>炎・虚無</td><td>撃破特効デバフと燃焼で敵の被撃破ダメージを増加。ルアンメェイ＋HMC＋フォグでトリプル撃破シナジー。</td><td><span class="star">★★★★★</span></td></tr>
+    <tr><td>ギャラガー（Gallagher）</td><td>炎・豊穣（星4）</td><td>撃破編成に最適な星4ヒーラー。SP効率が良く、撃破特効を盛ることで回復量が増加。無課金編成の要。</td><td><span style="color:#e8c547;">★★★★★</span></td></tr>
+    <tr><td>鏡流（Jingliu）</td><td>氷・破壊</td><td>氷属性DPSとしてルアンメェイの耐性貫通25%と与ダメ+68%バフが非常に有効。ただし撃破シナジーはないため相互互換。</td><td><span style="color:#e8c547;">★★★★☆</span></td></tr>
+    <tr><td>カフカ（Kafka）</td><td>雷・虚無</td><td>DoT編成でルアンメェイのバフが有効。与ダメ+68%と耐性貫通25%はDoTダメージも強化する。</td><td><span style="color:#e8c547;">★★★★☆</span></td></tr>
+    <tr><td>丹恒・飲月君（Dan Heng IL）</td><td>虚数・破壊</td><td>与ダメ+68%＋耐性貫通25%の強力なバフを活用。ただし撃破シナジーは限定的で、純粋な火力サポートとして機能。</td><td><span style="color:#e8c547;">★★★★☆</span></td></tr>
+    <tr><td>姫子（Himeko）</td><td>炎・知恵</td><td>追撃が撃破時に発動するため、ルアンメェイのWBE+50%で姫子の追撃頻度が向上。炎属性シナジーも良好。</td><td><span style="color:#e8c547;">★★★★☆</span></td></tr>
+    <tr><td>雪衣（Xueyi）</td><td>量子・破壊（星4）</td><td>撃破特効が火力に直結する星4アタッカー。ルアンメェイの全バフを効率良く活用できる。</td><td><span style="color:#e8c547;">★★★★☆</span></td></tr>
+    <tr><td>ロビン（Robin）</td><td>物理・調和</td><td>W調和編成。ルアンメェイの与ダメ+68%＋耐性貫通25%とロビンの全体行動前進＋攻撃力バフが重なる最強のサポート布陣。</td><td><span style="color:#e8c547;">★★★★☆</span></td></tr>
+  </table>
+
+  <div class="note">
+    <strong>💡 相性のポイント：</strong> ルアンメェイの真価を発揮するには<strong>「撃破を軸とした編成」</strong>が必須です。中でも<strong>開拓者（調和・HMC）</strong>との組み合わせが最も重要で、HMCの超撃破バフなしでは撃破編成の火力は半減します。ファイヤフライ・ボスヒル・ラッパのいずれかをメインアタッカーとし、HMCとルアンメェイでWサポートし、霊紗かギャラガーで耐久を確保するのが黄金パターン。フォグがいればさらに撃破シナジーが強化されます。非撃破編成でもルアンメェイの与ダメ+68%と耐性貫通25%は十分強力ですが、天賦の撃破特効+30%が無駄になりがちなため、その潜在能力を最大限に引き出すなら撃破編成一択です。
+  </div>
+
+  <!-- おすすめビルドまとめ表 -->
+  <h2 id="build">📊 おすすめビルドまとめ表</h2>
+
+  <div class="card">
+    <h4>🏆 最適ビルド（撃破編成対応）</h4>
+    <table>
+      <tr><th>項目</th><th>最適</th><th>代替案</th></tr>
+      <tr><td>光円錐</td><td>過去と自身の鏡（★5）</td><td>記憶の中の姿S5（★4）＞メッシング・コグスS5（★3）＞ダンスダンスダンスS5（★4）</td></tr>
+      <tr><td>遺物セット</td><td>流星の狩人4セット</td><td>流星2+メッセンジャー2 ＞ 流星2+マスケティア2</td></tr>
+      <tr><td>オーナメント</td><td>盗賊公国タリア</td><td>陽気なフォンワク ＞ 老いぬ者の仙舟</td></tr>
+      <tr><td>胴体</td><td>撃破特効%（BE%）</td><td>—（BE%一択）</td></tr>
+      <tr><td>脚部</td><td>速度（SPD）</td><td>—（速度一択、145+目標）</td></tr>
+      <tr><td>次元界オーブ</td><td>HP%</td><td>防御力%（耐久力重視）</td></tr>
+      <tr><td>連結縄</td><td>撃破特効%（BE%）</td><td>EP回復効率%（モチーフなし時に検討）</td></tr>
+      <tr><td>目標撃破特効</td><td>250〜300%+</td><td>200%以上必須</td></tr>
+      <tr><td>目標速度</td><td>145〜160</td><td>145以上（モチーフ時は145+、それ以外は160+目標）</td></tr>
+      <tr><td>目標HP</td><td>3500+</td><td>耐久力をサブで確保</td></tr>
+      <tr><td>サブステ優先度</td><td>撃破特効% ＞ 速度 ＞ HP% ＞ 防御% ＞ 効果抵抗</td><td>会心系・攻撃%は不要</td></tr>
+      <tr><td>スキル優先</td><td>必殺技 ＞ 戦闘スキル ＞ 天賦 ＞ 通常攻撃</td><td>—</td></tr>
+      <tr><td>軌跡優先</td><td>A2 ＞ A4 ＞ A6</td><td>全て取得必須</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h4>💰 無課金ビルド</h4>
+    <table>
+      <tr><th>項目</th><th>おすすめ</th></tr>
+      <tr><td>光円錐</td><td>メッシング・コグスS5（★3） or 記憶の中の姿S5（★4・恒常）</td></tr>
+      <tr><td>遺物セット</td><td>流星の狩人4セット（撃破特効+32%＋撃破時EP+3）</td></tr>
+      <tr><td>オーナメント</td><td>盗賊公国タリア（撃破特効+16%/条件達成で+36%）</td></tr>
+      <tr><td>胴体/脚部/オーブ</td><td>胴体：撃破% / 脚部：速度 / オーブ：HP%</td></tr>
+      <tr><td>連結縄</td><td>撃破特効%（EP効率は光円錐「メッシング・コグス」で確保）</td></tr>
+      <tr><td>目標撃破特効</td><td>200%+（軌跡37%+遺物セット32%+タリア36%+胴体+縄+サブで達成可能）</td></tr>
+      <tr><td>目標速度</td><td>145+（メッシング・コグス使用時はEP効率より速度重視）</td></tr>
+    </table>
+  </div>
+
+  <!-- よくある質問 -->
+  <h2 id="faq">❓ よくある質問（FAQ）</h2>
+
+  <div class="faq-item">
+    <div class="q">Q. ルアンメェイの速度はいくつが最適ですか？</div>
+    <div class="a">
+      ルアンメェイの速度は<strong>145以上</strong>が最適です。特にモチーフ光円錐「過去と自身の鏡」を装備している場合、速度145を達成することで<strong>戦闘スキル→通常攻撃→通常攻撃の3ターンサイクルで必殺技を安定して回収</strong>できるようになります。これはモチーフ光円錐のEP回復効率+10%と天賦のEP回復効果が組み合わさることで実現します。<br><br>
+      <strong>速度145の重要性：</strong> 速度145未満だと3ターンでの必殺技回収が不安定になり、4ターンサイクルに伸びる可能性が高まります。1ターンの差は撃破編成の総火力に大きく影響するため、可能な限り145以上を確保しましょう。<br><br>
+      <strong>モチーフ光円錐なしの場合：</strong> モチーフがない場合はEP回復効率が不足するため、速度160以上を目指すか、連結縄にEP回復効率%を選択することで対応します。速度160を達成するには脚部の速度メインに加え、サブステで十分な速度を盛る必要があります。<br><br>
+      <strong>速度ブレイクポイントまとめ：</strong> 134（首輪2行動目安）→145（モチーフ3T回収ライン・タリア第2条件）→160（モチ攻略なしの3T回収ライン）。可能な限り145以上を目指しましょう。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. ルアンメェイの撃破特効はいくつ必要ですか？目標値を教えてください</div>
+    <div class="a">
+      ルアンメェイの撃破特効は<strong>250%以上</strong>が目標です。ルアンメェイの撃破特効は以下の要素に影響します：<br><br>
+      <strong>① 天賦の撃破特効+30%：</strong> ルアンメェイ自身の撃破特効がベースとなる訳ではありませんが、味方に付与する+30%と合わせて総合的な撃破ダメージに貢献。<br>
+      <strong>② 必殺技の行動遅延量：</strong> ルアンメェイの撃破特効が高いほど、必殺技による敵の行動遅延量が増加。高難易度では敵の攻撃頻度を大きく減らせる。<br>
+      <strong>③ タリアオーナメントの発動条件：</strong> 速度145＋撃破特効の高さがタリアの効果を最大化。<br><br>
+      <strong>撃破特効の積み上げ方の目安：</strong><br>
+      - 軌跡ボーナス：+37.3%<br>
+      - 流星の狩人4セット：+32%<br>
+      - タリアオーナメント（速度145+）：+36%<br>
+      - 胴体メイン（BE%）：+64.8%（Lv15）<br>
+      - 連結縄メイン（BE%）：+64.8%（Lv15）<br>
+      - サブステータスからの獲得：+20〜50%<br><br>
+      合計で約250〜300%が達成可能。モチーフ光円錐「過去と自身の鏡」S1を装備すればさらに+60%され、300%超えも視野に入ります。撃破特効250%以上を達成できれば、超撃破編成で破格のパフォーマンスを発揮できるでしょう。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. ルアンメェイの必殺技（行動遅延＋耐性貫通）の仕組みを詳しく教えてください</div>
+    <div class="a">
+      ルアンメェイの必殺技「万雷の花、絢爛の琴」は以下の2つの主要効果を持ちます：<br><br>
+      <strong>① 敵全体の行動遅延：</strong> ルアンメェイの必殺技は敵全体にダメージを与えた後、その敵の行動を遅延させる。この遅延量はルアンメェイの<strong>撃破特効（Break Effect）</strong>に依存する。撃破特効が高ければ高いほど、敵の次の行動までの行動値（AV）が大きく後退する。高撃破特効（250%+）のルアンメェイの場合、敵を実質半行動分遅延させることも可能で、これにより敵の攻撃機会を大幅に減らすことができる。<br><br>
+      <strong>② 味方全体の全属性耐性貫通+25%（2ターン）：</strong> 必殺技発動後、味方全体に全属性耐性貫通+25%が2ターン付与される。耐性貫通は<strong>敵の属性耐性を無視する効果</strong>で、敵が持つ属性耐性（通常20%、弱点属性の場合は0%、強敵では40%以上の耐性を持つことも）を直接減少させる。例えば、敵の全属性耐性が20%の場合、耐性貫通25%で実質的な耐性が-5%になる（＝与ダメージが5%増加）。基礎ダメージに対して単純に+25%の最終ダメージ増加と考えると分かりやすい。他のバフ（与ダメアップ、攻撃力アップ、会心系など）とは<strong>別枠で乗算</strong>されるため、編成全体の火力に大きく貢献する。<br><br>
+      <strong>③ 弱点撃破時の追加遅延：</strong> ルアンメェイ自身が敵の弱点を撃破した場合、さらに追加で敵の行動を遅延させる効果がある。ただしルアンメェイの個人火力は高くないため、この効果が活きるのは撃破編成での削り中にたまたま氷属性の弱点を撃破した場合などに限られる。<br><br>
+      必殺技の基本コストは130。EP回復効率や光円錐効果を組み合わせることで、<strong>3ターンでの必殺技回転</strong>が可能。ルアンメェイの必殺技は敵の行動を抑制しながら味方の火力を底上げする、攻防一体の優秀なスキルです。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. ルアンメェイの戦闘スキル（弱体効率+50%）は具体的にどのような効果ですか？</div>
+    <div class="a">
+      ルアンメェイの戦闘スキル「一縷花の香、一掬の酒」の弱体効率（WBE: Weakness Break Efficiency）+50%は、<strong>敵の靭性（タフネス）ゲージを削る速度を50%増加させる</strong>効果です。具体的な影響は以下の通り：<br><br>
+      <strong>① 靭性削り速度の向上：</strong> 通常、各攻撃には設定された靭性削り量があります（通常攻撃で10、戦闘スキルで20〜40、必殺技で20〜60など）。弱体効率+50%の効果で、これらの削り量が<strong>1.5倍</strong>になります。例えば、通常攻撃で削る靭性が10→15に、戦闘スキルで20→30に増加します。<br><br>
+      <strong>② 撃破までの時間短縮：</strong> 敵の靭性ゲージを削り切るために必要な攻撃回数が約33%減少します。これにより、より早く敵を弱点撃破状態に追い込めます。<br><br>
+      <strong>③ 超撃破ダメージの発生頻度向上：</strong> 超撃破編成では、敵の靭性を削るたびに超撃破ダメージが発生します。弱体効率+50%により、1回の攻撃でより多くの靭性を削るため、1回の攻撃あたりの超撃破ダメージが増加します。また、敵を何度も撃破→靭性回復→撃破のサイクルを高速で回せるようになります。<br><br>
+      <strong>④ 実戦での体感：</strong> ファイヤフライの変身中戦闘スキル（通常靭性削り30程度）は、ルアンメェイのWBE+50%により約45もの靭性削りを1回で行えるようになります。これにより、靭性ゲージが180程度のエリート敵でも、強化スキル4回で撃破可能になります（通常時は6回必要）。<br><br>
+      弱体効率の効果は<strong>パーティ内の全てのキャラに適用</strong>されるため、ルアンメェイ一人のバフで編成全体の撃破速度が大きく向上します。これがルアンメェイが撃破編成の最強サポートと呼ばれる所以です。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. ルアンメェイは超撃破編成以外でも使えますか？汎用性は？</div>
+    <div class="a">
+      ルアンメェイは超撃破編成で真価を発揮しますが、<strong>超撃破編成以外でも十分に活躍できます</strong>。その理由は以下の通り：<br><br>
+      <strong>① 戦闘スキル（与ダメ+62〜68%全体）</strong>：調和キャラの中でもトップクラスの与ダメバフ。ルアンメェイと同じく調和のロビン（+50%）やブローニャ（+66%・単体）と比較しても遜色ない数値。どの編成でも100%有効な純粋な火力バフとして機能します。<br><br>
+      <strong>② 必殺技（全属性耐性貫通+25%全体）</strong>：全属性に対応した耐性貫通は、あらゆるDPSの最終ダメージを25%底上げします。防御無視や与ダメバフとは別枠で乗算されるため、バフの多い編成ほど効果が際立ちます。<br><br>
+      <strong>③ 必殺技の行動遅延</strong>：敵全体の行動を遅延させる効果は、全ての編成で有効な防御的サポート。高難易度ほどその価値が増します。<br><br>
+      <strong>④ 天賦の速度+10%</strong>：味方がスキルを使用するたびに速度10%バフを付与。これは純粋に編成全体の行動回数を増加させる汎用的な効果です。<br><br>
+      <strong>⑤ 秘技の自動戦闘スキル</strong>：開幕からSP消費なしでバフが展開されるため、どの編成でも初動が安定します。<br><br>
+      具体的に超撃破以外でおすすめの編成：<br>
+      - DoT編成（カフカ＋ブラックスワン）：与ダメ+68%と耐性貫通25%はDoTダメージも強化<br>
+      - 鏡流氷属性編成：ルアンメェイの天賦速度+10%と与ダメバフが非常に有効<br>
+      - W調和編成（ルアンメェイ＋ロビン/ブローニャ）：バフの重ね掛けでDPSを極限まで強化<br>
+      ただし、天賦の撃破特効+30%がほぼ無駄になる点は認識しておく必要があります。その潜在能力を100%引き出すには撃破編成が最適です。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. ルアンメェイの遺物は流星の狩人4セット一択ですか？2セットハイブリッドでも良いですか？</div>
+    <div class="a">
+      ルアンメェイの遺物は<strong>流星の狩人（Thief of Shooting Meteor）4セットが最適</strong>です。理由は以下の通り：<br><br>
+      <strong>流星4セットのメリット：</strong><br>
+      ① <strong>撃破特効+32%</strong>（2セット+16%＋4セット+16%）と、1つのセットで得られるBE%としては最高効率。<br>
+      ② <strong>弱点撃破時にEPを3回復</strong>：この効果が非常に重要。ルアンメェイの必殺技回転率に直接貢献し、撃破編成では頻繁に弱点撃破が発生するため、実戦では無視できないEP供給源となる。<br>
+      ③ 流星の狩人は量子トンネル（第2トンネル）で周回可能。同ダンジョンでは量子セットもドロップするため、無駄になりにくい。<br><br>
+      <strong>2セットハイブリッドを検討すべきケース：</strong><br>
+      - 流星4セットの良質な胴体BE%や速度靴がどうしても揃わない場合<br>
+      - 速度が不足している場合（流星2＋メッセンジャー2で速度+6%を確保）<br>
+      - すでに撃破特効が300%を超えており、EP回復よりも速度を優先したい場合<br><br>
+      2セットハイブリッドは流星4セットのEP回復効果を失うデメリットがありますが、速度の確保が難しい場合は「流星2＋メッセンジャー2」も現実的な妥協案です。しかし可能な限り流星4セットを目指しましょう。撃破編成では4セットのEP回復が必殺技の回転率に大きく寄与します。
+    </div>
+  </div>
+
+  <!-- 総評 -->
+  <h2 id="summary">📝 総評</h2>
+  <div class="card">
+    <p>ルアンメェイ（阮梅）は、崩壊スターレイルにおける<strong>最強クラスの撃破特化サポートキャラクター</strong>です。戦闘スキルによる与ダメージ+68%と弱体効率+50%の全体バフは、撃破編成の要として機能し、天賦による速度+10%と撃破特効+30%のサポート、必殺技による行動遅延＋全属性耐性貫通25%と、サポート性能の全てが高い次元でまとまっています。</p>
+    <p style="margin-top:8px;">特に超撃破（スーパーブレイク）編成において、ルアンメェイは<strong>ファイヤフライ、開拓者（調和）、霊紗/ギャラガー</strong>と組み合わせることで現環境最強クラスの火力を叩き出します。ルアンメェイの弱体効率+50%が靭性削り速度を1.5倍に引き上げ、天賦の撃破特効+30%が超撃破ダメージを底上げし、必殺技の耐性貫通25%が敵の属性耐性を無視した安定したダメージを保証します。</p>
+    <p style="margin-top:8px;"><strong>ルアンメェイを育成すべきプレイヤー：</strong></p>
+    <ul>
+      <li>超撃破編成（ファイヤフライ、ボスヒル、ラッパ）を運用したい全てのプレイヤー</li>
+      <li>強力な汎用サポートキャラが欲しいプレイヤー（与ダメ+68%＋耐性貫通25%は全編成で有効）</li>
+      <li>忘却の庭・末日の獣・幻想の庭の全コンテンツで安定した攻略を目指すプレイヤー</li>
+      <li>調和キャラを充実させたいプレイヤー（ロビンと並ぶ最強格の一人）</li>
+    </ul>
+    <p style="margin-top:8px;"><strong>引くべきでないプレイヤー：</strong></p>
+    <ul>
+      <li>撃破編成に全く興味がない（ただし与ダメ+68%バフだけでも価値は高い）</li>
+      <li>すでにロビンやスパークレなど強力な調和キャラを十分に所持しており、リソースが限られている</li>
+    </ul>
+    <p style="margin-top:8px;">総合評価として、ルアンメェイは<strong>現環境においてTier 0.5〜1級のサポートキャラクター</strong>であり、超撃破編成に特化すればTier 0に匹敵する価値を持ちます。無凸でも最強クラスの性能を発揮し、E1でさらに飛躍的な強化を得られるため、凸を進めるコストパフォーマンスも優秀です。崩壊スターレイルを本格的にプレイする全ての開拓者に、ルアンメェイの育成を強くおすすめします。</p>
+  </div>
+
+</article>
+
+<footer style="text-align:center;padding:40px 20px;color:var(--sub);font-size:0.85rem;border-top:1px solid var(--border);margin-top:60px;">
+  <p>© 2026 星穹攻略站 · 崩壊スターレイル攻略百科</p>
+  <p style="margin-top:6px;font-size:0.8rem;">ゲーム内画像の著作権はHoYoverseに帰属します。</p>
+  <!-- 🌐 Game Guide Network -->
+  <div style="margin-top:1.5rem;padding:1.5rem;background:var(--card);border-radius:8px;">
+    <p style="color:var(--sub);font-size:0.8rem;margin-bottom:0.8rem;">🎮 攻略ネットワーク — More Game Guides</p>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:0.6rem;">
+      <a href="https://chjiya.github.io/teyvat-guide/" style="color:var(--accent);text-decoration:none;padding:0.3rem 0.6rem;border:1px solid var(--border);border-radius:4px;font-size:0.8rem;">原神 Genshin</a>
+      <a href="https://chjiya.github.io/hsr-guide/" style="color:var(--accent);text-decoration:none;padding:0.3rem 0.6rem;border:1px solid var(--border);border-radius:4px;font-size:0.8rem;">星鉄 HSR</a>
+      <a href="https://chjiya.github.io/zzz-guide/" style="color:var(--accent);text-decoration:none;padding:0.3rem 0.6rem;border:1px solid var(--border);border-radius:4px;font-size:0.8rem;">絶区零 ZZZ</a>
+      <a href="https://chjiya.github.io/sr-guide-en/" style="color:var(--accent);text-decoration:none;padding:0.3rem 0.6rem;border:1px solid var(--border);border-radius:4px;font-size:0.8rem;">HSR (EN)</a>
+      <a href="https://chjiya.github.io/enshin-guide-en/" style="color:var(--accent);text-decoration:none;padding:0.3rem 0.6rem;border:1px solid var(--border);border-radius:4px;font-size:0.8rem;">Genshin (EN)</a>
+      <a href="https://chjiya.github.io/zzz-guide-en/" style="color:var(--accent);text-decoration:none;padding:0.3rem 0.6rem;border:1px solid var(--border);border-radius:4px;font-size:0.8rem;">ZZZ (EN)</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
