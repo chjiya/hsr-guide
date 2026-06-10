@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4B26RL1D24"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4B26RL1D24');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>【崩壊スターレイル】景元（Jing Yuan）2025年版ビルドガイド｜遺物・光円錐・編成</title>
+<meta name="description" content="崩壊スターレイルの星5雷属性・知恵キャラ「景元（Jing Yuan／ジンユエン）」の2025年最新ビルドガイド。遺物・光円錐の最適構成、神君（神の槍）の仕組み、理想パーティ編成、凸数評価、スキル数値を徹底解説。忘却の庭・模擬宇宙対応。">
+<meta name="keywords" content="崩壊スターレイル,景元,Jing Yuan,ジンユエン,攻略,遺物,光円錐,編成,凸,星魂,ビルド,おすすめ,知恵,雷,神君,神の槍,2025">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="【崩壊スターレイル】景元（Jing Yuan）2025年版ビルドガイド">
+<meta property="og:description" content="崩壊スターレイル景元（Jing Yuan）の2025年最新ビルドガイド。神君システム、遺物・光円錐ランキング、編成4選を詳細解説。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<link rel="canonical" href="https://chjiya.github.io/hsr-guide/guides/ja/jingyuan-guide-ja.html">
+<base href="/hsr-guide/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "【崩壊スターレイル】景元（Jing Yuan）2025年版ビルドガイド｜遺物・光円錐・編成",
+  "description": "崩壊スターレイルの星5雷属性・知恵キャラ「景元（Jing Yuan）」の2025年最新ビルドガイド。神君システム、おすすめ遺物・光円錐・オーナメント、理想パーティ編成4選、凸数評価、FAQまで徹底解説。",
+  "author": { "@type": "Person", "name": "花叔" },
+  "datePublished": "2026-06-10",
+  "dateModified": "2026-06-10",
+  "articleSection": "キャラクター攻略",
+  "inLanguage": "ja",
+  "about": {
+    "@type": "Thing",
+    "name": "景元（Jing Yuan）",
+    "description": "崩壊スターレイルの星5雷属性・知恵の運命を歩むアタッカーキャラクター"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://chjiya.github.io/hsr-guide/guides/ja/jingyuan-guide-ja.html"
+  }
+}
+</script>
+
+<style>
+  :root { --bg: #1a1a2e; --card: #16213e; --accent: #ffd54f; --text: #e0e0e0; --sub: #a0a0b0; --border: #2a2a4a; --highlight: #0f3460; --green: #4caf84; --red: #e0556a; --music: #ffb300; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',Meiryo,sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; padding: 20px; max-width: 860px; margin: 0 auto; }
+  h1 { font-size: 1.8em; color: var(--accent); border-bottom: 2px solid var(--accent); padding-bottom: 12px; margin-bottom: 20px; }
+  h2 { font-size: 1.4em; color: var(--accent); margin: 36px 0 16px; padding: 8px 14px; border-left: 4px solid var(--accent); background: var(--highlight); border-radius: 0 6px 6px 0; }
+  h3 { font-size: 1.15em; color: #ffe082; margin: 24px 0 10px; }
+  h4 { font-size: 1.05em; color: #ffecb3; margin: 16px 0 8px; }
+  .char-header { display: flex; gap: 20px; align-items: center; background: var(--card); border-radius: 12px; padding: 20px; margin-bottom: 24px; border: 1px solid var(--border); }
+  .char-icon { width: 90px; height: 90px; border-radius: 12px; background: linear-gradient(135deg, #ffd54f, #f57f17); display: flex; align-items: center; justify-content: center; font-size: 2.2em; flex-shrink: 0; color: #fff; }
+  .char-info { flex: 1; } .char-info .name { font-size: 1.6em; font-weight: bold; color: #fff; }
+  .char-info .tags { margin-top: 6px; display: flex; gap: 8px; flex-wrap: wrap; }
+  .tag { display: inline-block; padding: 3px 12px; border-radius: 20px; font-size: 0.85em; font-weight: bold; }
+  .tag-rarity { background: #b8860b; color: #fff; }
+  .tag-element { background: #ffd54f; color: #1a1a2e; }
+  .tag-path { background: var(--accent); color: #1a1a2e; }
+  .tag-role { background: #f57f17; color: #fff; }
+  .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin: 16px 0; }
+  .stat-box { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 12px; text-align: center; }
+  .stat-box .label { font-size: 0.8em; color: var(--sub); }
+  .stat-box .value { font-size: 1.2em; font-weight: bold; color: #fff; margin-top: 4px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.9em; }
+  th { background: var(--highlight); color: var(--accent); padding: 10px 12px; text-align: left; font-weight: bold; border-bottom: 2px solid var(--border); }
+  td { padding: 10px 12px; border-bottom: 1px solid var(--border); }
+  tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+  .star { color: var(--accent); }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 18px; margin: 16px 0; }
+  .build-box { background: var(--highlight); border: 1px solid var(--accent); border-radius: 8px; padding: 14px 18px; margin: 12px 0; }
+  .build-box .label { color: var(--accent); font-weight: bold; font-size: 0.85em; }
+  .build-box .content { color: #fff; font-weight: bold; margin-top: 4px; }
+  .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0; }
+  .pros, .cons { padding: 14px; border-radius: 8px; }
+  .pros { background: rgba(76,175,132,0.1); border: 1px solid rgba(76,175,132,0.3); }
+  .cons { background: rgba(224,85,106,0.1); border: 1px solid rgba(224,85,106,0.3); }
+  .pros h4 { color: var(--green); margin-bottom: 6px; }
+  .cons h4 { color: var(--red); margin-bottom: 6px; }
+  .pros li, .cons li { margin-left: 18px; font-size: 0.9em; }
+  .team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 12px 0; }
+  .team-slot { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 12px 8px; text-align: center; }
+  .team-slot .role { font-size: 0.75em; color: var(--sub); margin-bottom: 4px; }
+  .team-slot .char { font-weight: bold; color: #fff; font-size: 0.95em; }
+  .faq-item { background: var(--card); border: 1px solid var(--border); border-radius: 8px; margin: 12px 0; padding: 16px; }
+  .faq-item .q { color: var(--accent); font-weight: bold; font-size: 1.05em; margin-bottom: 8px; }
+  .faq-item .a { color: var(--text); line-height: 1.8; }
+  .note { background: rgba(255,213,79,0.08); border-left: 3px solid var(--accent); padding: 10px 14px; margin: 14px 0; border-radius: 0 6px 6px 0; font-size: 0.9em; }
+  .skill-box { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 14px; margin: 10px 0; }
+  .skill-box .skill-name { font-weight: bold; color: var(--accent); font-size: 1.05em; }
+  .skill-box .skill-type { font-size: 0.8em; color: var(--sub); margin-left: 8px; }
+  .skill-box .skill-desc { margin-top: 8px; font-size: 0.9em; }
+  .priority-5 { color: var(--accent); } .priority-4 { color: #e8c547; } .priority-3 { color: #c0c0c0; } .priority-2 { color: #888; }
+  ol, ul { padding-left: 1.5em; } li { margin: 4px 0; }
+  .toc { margin: 16px 0; padding: 14px; background: var(--card); border-radius: 8px; border: 1px solid var(--border); }
+  .toc a { color: var(--accent); text-decoration: none; }
+  .toc a:hover { text-decoration: underline; }
+  .toc li { margin: 4px 0; }
+  @media (max-width: 600px) { .char-header { flex-direction: column; text-align: center; } .team-grid { grid-template-columns: repeat(2, 1fr); } .pros-cons { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<article>
+  <h1>【崩壊スターレイル】景元（Jing Yuan）2025年版ビルドガイド</h1>
+  <div class="toc">
+    <strong>📑 目次</strong>
+    <ol style="margin-top:6px;">
+      <li><a href="#overview">キャラ概要</a></li>
+      <li><a href="#skills">スキル解説（全数値）</a></li>
+      <li><a href="#relics">おすすめ遺物（2025年最新）</a></li>
+      <li><a href="#lightcones">おすすめ光円錐</a></li>
+      <li><a href="#teams">理想編成（4編成）</a></li>
+      <li><a href="#eidolons">凸数評価</a></li>
+      <li><a href="#synergy">相性の良いキャラ（2025年版）</a></li>
+      <li><a href="#build">ビルドまとめ表</a></li>
+      <li><a href="#faq">よくある質問（FAQ）</a></li>
+      <li><a href="#summary">総評</a></li>
+    </ol>
+  </div>
+
+  <div class="char-header" id="overview">
+    <div class="char-icon">⚡</div>
+    <div class="char-info">
+      <div class="name">景元（Jing Yuan / ジンユエン）</div>
+      <div class="tags">
+        <span class="tag tag-rarity">★5</span>
+        <span class="tag tag-element">雷属性</span>
+        <span class="tag tag-path">知恵（Erudition）</span>
+        <span class="tag tag-role">メインアタッカー / 神君運用</span>
+      </div>
+      <div style="margin-top:8px;color:var(--sub);font-size:0.9em;">所属：仙舟「羅浮」、雲上五暁｜声優：小野大輔｜入手：恒常・限定排出｜実装：Ver.1.0</div>
+    </div>
+  </div>
+
+  <div class="stat-grid">
+    <div class="stat-box"><div class="label">最大HP</div><div class="value">1,164</div></div>
+    <div class="stat-box"><div class="label">攻撃力</div><div class="value">679</div></div>
+    <div class="stat-box"><div class="label">防御力</div><div class="value">412</div></div>
+    <div class="stat-box"><div class="label">速度</div><div class="value">99</div></div>
+    <div class="stat-box"><div class="label">EP（必殺技）</div><div class="value">130</div></div>
+  </div>
+
+  <div class="pros-cons">
+    <div class="pros"><h4>✅ 長所</h4><ul><li>神君（神の槍）による確定10段攻撃が圧倒的</li>
+      <li>全知恵キャラ中トップクラスの単体火力</li>
+      <li>2025年環境でも通用する十分な基礎火力</li>
+      <li>恒常からも入手可能で凸が進めやすい</li>
+      <li>ロビン・フォフォなど新サポーターで大幅強化</li>
+      <li>神君の攻撃は追撃扱いで追撃バフが乗る</li></ul></div>
+    <div class="cons"><h4>⚠️ 短所</h4><ul><li>基礎速度99と遅く神君の速度調整が難しい</li>
+      <li>CC（行動制限）で神君のスタックが消失</li>
+      <li>新キャラと比較すると火力の天井は低め</li>
+      <li>神君の攻撃順が読めない場面がある</li>
+      <li>SP効率が悪く編成に制約がある</li></ul></div>
+  </div>
+
+  <p>景元（Jing Yuan）は、Ver.1.0から実装されている星5雷属性・知恵の運命を歩むアタッカーキャラクターです。仙舟「羅浮」の将軍であり、雲上五暁の一人として君臨するその姿は、プレイヤーから絶大な人気を誇ります。</p>
+  <p>景元の最大の特徴は、<strong>「神君（神の槍／Lightning Lord）」という固有の召喚物による追撃システム</strong>です。戦闘スキルと必殺技で神君の攻撃段数を蓄積し、神君のターンが回ってきた時に蓄積段数×倍率の確定雷ダメージを敵全体に与えます。最大10段まで蓄積可能で、10段フルスタック時の総ダメージ倍率は660%（Lv10）と破格の数値です。</p>
+  <p>2025年現在も、<strong>ロビン・フォフォ・ティンギュンなど新世代サポーターの登場により再評価が進んでいる</strong>キャラクターです。特にロビンの全体行動前進は景元の行動回数を増やし、神君のスタック蓄積を大幅に加速。適切にサポートすれば、最新のVer.3.xキャラにも引けを取らない火力を発揮します。</p>
+
+  <h2 id="skills">🔍 スキル解説（全数値）</h2>
+  <div class="skill-box">
+    <div class="skill-name">通常攻撃：閃光 <span class="skill-type">単体攻撃 / エネルギー+20 / 削靭10</span></div>
+    <div class="skill-desc">攻撃力<span style="color:var(--accent);">50%〜100%</span>（Lv1〜Lv6）の雷属性ダメージ。神君段数+<span style="color:var(--accent);">1</span>。強化優先度：<span class="priority-2">★★☆☆☆</span></div>
+  </div>
+  <div class="skill-box">
+    <div class="skill-name">戦闘スキル：流刑の雷 <span class="skill-type">拡散攻撃 / 消費SP:1 / エネルギー+30</span></div>
+    <div class="skill-desc">指定した敵単体に攻撃力<span style="color:var(--accent);">100%〜200%</span>（Lv1〜Lv12）の雷ダメージ、隣接敵に<span style="color:var(--accent);">50%〜100%</span>の雷ダメージ。<br>神君段数+<span style="color:var(--accent);">2</span>。<br>強化優先度：<span class="priority-5">★★★★★</span></div>
+  </div>
+  <div class="skill-box">
+    <div class="skill-name">必殺技：神変・万象の雷 <span class="skill-type">全体攻撃 / EP:130</span></div>
+    <div class="skill-desc">敵全体に攻撃力<span style="color:var(--accent);">120%〜240%</span>（Lv1〜Lv10）の雷属性ダメージ。<br>神君段数+<span style="color:var(--accent);">3</span>。<br>さらに次の神君攻撃の<strong>会心ダメージ+<span style="color:var(--accent);">25%〜40%</span></strong>（Lv1〜Lv10）。<br>エネルギー回復：<span style="color:var(--accent);">5</span><br>強化優先度：<span class="priority-5">★★★★★</span></div>
+  </div>
+  <div class="skill-box">
+    <div class="skill-name">天賦：神君（Lightning Lord） <span class="skill-type">召喚 / 追撃</span></div>
+    <div class="skill-desc">戦闘開始時、神君が召喚される（速度固定<span style="color:var(--accent);">60</span>）。<br>
+      神君のターンが回ってきた時、蓄積された段数（最大10）に応じて攻撃：<br>
+      1段あたり攻撃力<span style="color:var(--accent);">33%〜66%</span>（Lv1〜Lv10）の雷属性ダメージ×段数（敵全体）。<br>
+      神君の攻撃は<strong>追撃扱い</strong>。<br>
+      景元が行動制限を受けた時、神君段数は<strong>リセット</strong>される。<br>
+      強化優先度：<span class="priority-5">★★★★★</span></div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">景元の真骨頂。神君の速度は固定60で、約167AV（アクションバリュー）ごとに行動。1行動あたりに蓄積できる段数は最大で通常攻撃1+戦技2+必殺技3=6段が基本。ロビンの行動前進で景元の行動回数を増やせば、神君10段フルスタックも現実的に狙える。10段時の総倍率660%（Lv10）は全知恵キャラ中でも最高クラス。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">秘技：衛星砲撃 <span class="skill-type">戦闘前効果</span></div>
+    <div class="skill-desc">秘技使用後、次の戦闘開始時に敵全体に攻撃力80%の雷ダメージ+神君段数+3で開始する。</div>
+  </div>
+
+  <h2 id="relics">🏆 おすすめ遺物（2025年最新）</h2>
+  <h3>最適セット：風吹き渡る勇姿4セット</h3>
+  <div class="build-box"><div class="label">2セット</div><div class="content">会心率+12%</div></div>
+  <div class="build-box"><div class="label">4セット</div><div class="content">追撃ダメージ+16%。必殺技+追撃の与ダメ+16%。</div></div>
+  <p>2025年現在、景元に最も推奨されるセット。神君は追撃扱いのため4セット効果をフル活用できる。会心率+12%も遺物厳選のハードルを下げてくれる。</p>
+
+  <h3>次点：雪の密林の狩人4セット</h3>
+  <div class="build-box"><div class="label">2セット</div><div class="content">会心ダメージ+25%</div></div>
+  <div class="build-box"><div class="label">4セット</div><div class="content">必殺技後、次の攻撃の与ダメ+25%。</div></div>
+  <p>必殺技→神君攻撃の流れで4セット効果が発動。神君の火力を特化したい場合に選択。</p>
+
+  <h3>オーナメント</h3>
+  <table><tr><th>順位</th><th>オーナメント</th><th>効果</th></tr>
+  <tr><td>🥇</td><td>奔狼のサルソット</td><td>会心率+8%、必殺技+追撃与ダメ+15%。神君の火力を最大化。</td></tr>
+  <tr><td>🥈</td><td>虚無のステーション</td><td>攻撃力+12%、速度120以上でさらに+12%。</td></tr>
+  </table>
+
+  <h2 id="lightcones">💡 おすすめ光円錐（2025年版）</h2>
+  <table><tr><th>順位</th><th>光円錐名</th><th>レア</th><th>効果</th></tr>
+  <tr><td>🥇</td><td>果てなき銀河の騎行（Before Dawn）</td><td>★5</td><td>会心ダメ+36%。戦技+必殺技与ダメ+18%。神君（追撃）与ダメ+48%。モチーフ。</td></tr>
+  <tr><td>🥈</td><td>石造りの海にて（Into the Unreachable Veil）</td><td>★5</td><td>会心ダメ+36%。必殺技後、追撃与ダメ+48%（3ターン）。EP回復効率+12%。</td></tr>
+  <tr><td>🥉</td><td>今日も平和です S5（Geniuses' Greetings）</td><td>★4</td><td>攻撃力+24%。必殺技発動時、会心ダメ+36%（2ターン）。</td></tr>
+  <tr><td>④</td><td>天才たちの日常 S5</td><td>★4</td><td>攻撃力+16%。敵撃破時+8%（最大3）。</td></tr>
+  <tr><td>⑤</td><td>銀河鉄道の夜 S5</td><td>★5</td><td>敵1体につき攻撃力+9%。撃破時与ダメ+30%。</td></tr>
+  </table>
+
+  <div class="note">💡 モチーフ「果てなき銀河の騎行」は神君（追撃）与ダメ+48%と、景元専用と言える圧倒的な性能。持っていれば最優先で装備させよう。</div>
+
+  <h2 id="teams">👥 理想編成（2025年版）</h2>
+  <h3>編成① ロビンシナジー型（現環境最強）</h3>
+  <div class="team-grid">
+    <div class="team-slot"><div class="role">メインDPS</div><div class="char">景元</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">ロビン</div></div>
+    <div class="team-slot"><div class="role">バッファー</div><div class="char">ティンギュン</div></div>
+    <div class="team-slot"><div class="role">ヒーラー</div><div class="char">フォフォ</div></div>
+  </div>
+  <p>2025年現在、景元の最適編成。ロビンの全体行動前進で景元の行動回数が増え、神君スタック蓄積が大幅に加速。ティンギュンのEP供給で必殺技の回転率UP、フォフォの会心率バフと継続回復で安定感抜群。神君10段フルスタックが狙いやすくなった。</p>
+
+  <h3>編成② 汎用ハイパーキャリー型</h3>
+  <div class="team-grid">
+    <div class="team-slot"><div class="role">メインDPS</div><div class="char">景元</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">ルアンメェイ</div></div>
+    <div class="team-slot"><div class="role">バッファー</div><div class="char">ティンギュン</div></div>
+    <div class="team-slot"><div class="role">ヒーラー</div><div class="char">フォフォ/アベンチュリン</div></div>
+  </div>
+
+  <h3>編成③ 追撃編成</h3>
+  <div class="team-grid">
+    <div class="team-slot"><div class="role">メインDPS</div><div class="char">景元</div></div>
+    <div class="team-slot"><div class="role">サブDPS</div><div class="char">トパーズ＆カブ</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">ロビン</div></div>
+    <div class="team-slot"><div class="role">ヒーラー</div><div class="char">アベンチュリン</div></div>
+  </div>
+  <p>神君は追撃扱いのため、トパーズの追撃マークとロビンの追撃バフが乗る。アベンチュリンのシールドでCC対策も可能。</p>
+
+  <h3>編成④ 無課金向け</h3>
+  <div class="team-grid">
+    <div class="team-slot"><div class="role">メインDPS</div><div class="char">景元</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">アスター</div></div>
+    <div class="team-slot"><div class="role">バッファー</div><div class="char">停雲（ティンギュン）</div></div>
+    <div class="team-slot"><div class="role">ヒーラー</div><div class="char">ナターシャ</div></div>
+  </div>
+
+  <h2 id="eidolons">💎 凸数評価</h2>
+  <table><tr><th>凸数</th><th>効果</th><th>火力上昇</th></tr>
+  <tr><td>E0</td><td>基本性能。神君10段管理が鍵。</td><td>基準</td></tr>
+  <tr><td>E1</td><td>神君攻撃時、15%の確率で段数が減少しない。与ダメ+20%。</td><td>+15%</td></tr>
+  <tr><td>E2</td><td>戦技の拡散倍率+25%。神君会心ダメ+20%。</td><td>+15%</td></tr>
+  <tr><td>E3</td><td>戦技Lv+2。天賦Lv+2。</td><td>+10%</td></tr>
+  <tr><td>E4</td><td>必殺技後、味方全体のEP+10。自身は+15。</td><td>サポート↑</td></tr>
+  <tr><td>E5</td><td>必殺技Lv+2。通常攻撃Lv+1。</td><td>+8%</td></tr>
+  <tr><td>E6</td><td>神君の段数上限+3（最大13段）。神君攻撃時、確定で段数が2減少しない。会心ダメ+50%。</td><td>+50%+</td></tr>
+  </table>
+
+  <div class="note">💡 景元は恒常星5キャラなので、凸が進みやすいのも強み。E1とE2は比較的手に入りやすく、E6まで行くと神君13段＆段数維持で壊れ級の性能になる。</div>
+
+  <h2 id="synergy">🤝 相性の良いキャラ（2025年版）</h2>
+  <ul>
+    <li><strong>ロビン</strong>：全体行動前進+攻撃力バフ+追撃EP回復。景元の行動回数を増やし神君スタックを加速。</li>
+    <li><strong>ティンギュン</strong>：EP供給+攻撃力バフ+会心ダメバフ。必殺技回転率を大きく改善。</li>
+    <li><strong>フォフォ</strong>：継続回復+会心率バフ+EP供給（微量）。全ての要素が好相性。</li>
+    <li><strong>ルアンメェイ</strong>：耐性貫通+速度UP+撃破延長。速度バフで神君の行動間隔を短縮。</li>
+    <li><strong>トパーズ＆カブ</strong>：追撃マーク+サブ火力。神君が追撃扱いなのを活かせる。</li>
+    <li><strong>アベンチュリン</strong>：シールド+CC耐性。景元の最大の弱点であるCC対策に最適。</li>
+  </ul>
+
+  <h2 id="build">📋 ビルドまとめ表</h2>
+  <table><tr><th>項目</th><th>おすすめ</th></tr>
+  <tr><td>光円錐</td><td>果てなき銀河の騎行（★5・モチーフ）＞ 石造りの海にて（★5）＞ 今日も平和ですS5（★4）</td></tr>
+  <tr><td>遺物</td><td>勇姿4（最適・2025年推奨）＞ 雪の密林の狩人4</td></tr>
+  <tr><td>オーナメント</td><td>奔狼のサルソット（最適）＞ 虚無のステーション</td></tr>
+  <tr><td>胴体</td><td>会心率%（70%目標）or 会心ダメ%</td></tr>
+  <tr><td>脚</td><td>速度% or 攻撃力%（ロビン編成なら攻撃力%も可）</td></tr>
+  <tr><td>オーブ</td><td>雷属性ダメージ%（確定）</td></tr>
+  <tr><td>縄</td><td>攻撃力%（ティンギュンがいればEP不要）</td></tr>
+  <tr><td>目標会心率</td><td>70%以上（勇姿4+サルソットで簡単達成）</td></tr>
+  <tr><td>目標会心ダメ</td><td>140%以上（神君必殺技後+40%で180%+）</td></tr>
+  <tr><td>目標速度</td><td>100以上（ロビン編成なら妥協可）</td></tr>
+  <tr><td>目標攻撃力</td><td>2,800以上</td></tr>
+  <tr><td>スキル優先</td><td>戦闘スキル ＞ 必殺技 ＞ 天賦 ＞ 通常攻撃</td></tr>
+  </table>
+
+  <h2 id="faq">❓ よくある質問（FAQ）</h2>
+  <div class="faq-item">
+    <div class="q">Q. 2025年現在、景元はまだ使えますか？</div>
+    <div class="a"><strong>十分使えます。</strong> Ver.1.0キャラということで最新のヘルタやキャストリスと比較すると火力の天井はやや劣りますが、適切にサポートすれば忘却の庭12層を十分攻略可能なスペックは維持しています。<br><br>
+    特に以下の環境では景元の価値が高いです：<br>
+    - ロビン+ティンギュン+フォフォのサポートが揃っている編成<br>
+    - 雷弱点の敵が多いコンテンツ<br>
+    - 敵が2〜3体で神君の範囲攻撃が活きる場面<br>
+    - 凸が進んでいる（E2以上だとかなり強い）<br><br>
+    総合的に言えば<strong>「最前線からは一歩退いたが、十分現役」</strong>という評価です。好きなキャラを活躍させたいなら、最新サポーターを充実させることでカバーできます。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 景元の神君は何段まで貯めるべきですか？</div>
+    <div class="a">基本的には<strong>10段フルスタックを目指す</strong>のが理想ですが、状況に応じて7〜8段でも十分強力です。重要なのは「神君が行動する前に次のスタックを貯めきれない場合は、早めに神君を行動させて再度スタックを貯め直す」という判断です。<br><br>
+    目安：<br>
+    - 戦技+必殺技で2+3=5段（基本）<br>
+    - ロビンの行動前進で景元が追加行動→さらに戦技で+2=7段<br>
+    - フォフォのEP供給でもう一度必殺技→+3=10段<br>
+    10段時の総ダメージは660%+必殺技バフ会心ダメ+40%で、ほとんどの敵を瞬殺できる火力です。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 景元の最大の弱点であるCC対策はどうすればいいですか？</div>
+    <div class="a">景元はCC（行動制限）を受けると神君の段数が全てリセットされるため、CC対策は必須です。以下の方法が有効です。<br><br>
+    <strong>1. アベンチュリンを編成する</strong><br>
+    シールドを常時張ることでCC耐性（効果抵抗）を間接的に高められます。<br><br>
+    <strong>2. 効果抵抗を盛る</strong><br>
+    遺物サブで効果抵抗をある程度確保。折れた竜骨オーナメントも有効。<br><br>
+    <strong>3. 軌跡の効果抵抗ノードを解放</strong><br>
+    景元の軌跡には効果抵抗+10%のノードがあります。忘れずに解放しましょう。<br><br>
+    <strong>4. フォフォの全体浄化を活用</strong><br>
+    フォフォの必殺技は味方全体のデバフを解除できます。CCを受けたらすぐにフォフォの必殺技で回復。<br><br>
+    <strong>5. 行動順を調整する</strong><br>
+    敵のCC攻撃のタイミングを読んで、神君が行動する前に防御的な立ち回りをするのも有効です。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 景元のモチーフ光円錐は必須ですか？</div>
+    <div class="a">必須ではありませんが、<strong>強く推奨します。</strong>「果てなき銀河の騎行」の追撃与ダメ+48%は神君と完全にシンクロしており、他の光円錐と比較して明確な火力差があります。<br><br>
+    モチーフなしの場合、無課金なら「今日も平和です」S5が最も現実的な選択肢です。または恒常から入手できる「銀河鉄道の夜」や「石造りの海にて（知恵モチーフ）」も有効ですが、入手難易度はモチーフ以上に高いです。
+    </div>
+  </div>
+
+  <h2 id="summary">📋 総評</h2>
+  <div class="card">
+    <p>景元（Jing Yuan）は、<strong>崩壊スターレイルの顔とも言える人気キャラクターであり、2025年現在も適切なサポートで十分戦える現役の知恵アタッカー</strong>です。神君による圧倒的な範囲火力と、ロビン・フォフォ・ティンギュンといった最新サポーターとの相乗効果は、発売から2年以上経った今でも色褪せていません。</p>
+
+    <h4>2025年版ビルド基本方針</h4>
+    <ul style="margin-top:4px;">
+      <li><strong>光円錐</strong>：果てなき銀河の騎行（モチーフ）＞ 石造りの海にて（★5）＞ 今日も平和ですS5（★4）</li>
+      <li><strong>遺物</strong>：勇姿4セット（最適・2025年推奨）＞ 雪の密林の狩人4セット</li>
+      <li><strong>オーナメント</strong>：奔狼のサルソット（最適）</li>
+      <li><strong>メインステ</strong>：胴体＝会心率%、脚＝速度%/攻撃力%、オーブ＝雷ダメ%、縄＝攻撃力%</li>
+      <li><strong>目標会心率</strong>：70%以上（勇姿+サルソットで容易）</li>
+      <li><strong>目標会心ダメ</strong>：140%以上（神君会心ダメと合わせて180%+）</li>
+      <li><strong>最適編成</strong>：景元＋ロビン＋ティンギュン＋フォフォ（2025年最強編成）</li>
+      <li><strong>スキル優先</strong>：戦闘スキル ＞ 必殺技 ＞ 天賦 ＞ 通常攻撃</li>
+      <li><strong>凸優先</strong>：E1（段数維持＋与ダメ）＞ E6（完全体・13段）</li>
+    </ul>
+
+    <h4>評価点数（10点満点）</h4>
+    <table style="max-width:400px;">
+      <tr><th>項目</th><th>評価</th></tr>
+      <tr><td>火力性能</td><td><span class="star">★★★★★★★★☆☆</span> 8/10（サポート次第で9〜10）</td></tr>
+      <tr><td>神君システム</td><td><span class="star">★★★★★★★★★★</span> 10/10（唯一無二）</td></tr>
+      <tr><td>汎用性</td><td><span class="star">★★★★★★★☆☆☆</span> 7/10（CCリスクあり）</td></tr>
+      <tr><td>ロビン編成適正</td><td><span class="star">★★★★★★★★★★</span> 10/10（神加速）</td></tr>
+      <tr><td>遺物厳選難易度</td><td><span class="star">★★★★★★★★☆☆</span> 8/10（比較的簡単）</td></tr>
+      <tr><td>2025年環境評価</td><td><span class="star">★★★★★★★★☆☆</span> 8/10（現役十分）</td></tr>
+      <tr><td>総合評価</td><td><span class="star">★★★★★★★★☆☆</span> 8/10（愛があれば9）</td></tr>
+    </table>
+
+    <h4>こんな人におすすめ（2025年版）</h4>
+    <ul>
+      <li>✅ 景元が好きで最後まで活躍させたい</li>
+      <li>✅ ロビン・フォフォ・ティンギュンなどの強力サポーターを持っている</li>
+      <li>✅ 恒常から凸が進んでいて無駄にしたくない</li>
+      <li>✅ 雷属性の範囲アタッカーがもう1人欲しい</li>
+      <li>✅ 神君の圧倒的範囲攻撃を楽しみたい</li>
+    </ul>
+
+    <h4>こんな人には向かないかも</h4>
+    <ul>
+      <li>⚠️ 最新キャラで厳選された環境最強パーティを求めている</li>
+      <li>⚠️ CC対策のための編成制約が嫌</li>
+      <li>⚠️ オートバトル中心でプレイしている（神君管理が難しい）</li>
+      <li>⚠️ 凸が進んでおらずモチーフ光円錐もない（火力不足を感じやすい）</li>
+    </ul>
+
+    <p style="margin-top:12px;">景元は2025年現在も、<strong>適切なサポートがあれば十分に第一線で戦えるポテンシャルを秘めたキャラクター</strong>です。特にロビンの登場により、神君スタックの蓄積速度が飛躍的に向上し、かつて「時代遅れ」と言われた評価を覆しました。愛着のあるキャラを活躍させたい方は、ぜひこの2025年版ガイドを参考に、最強の景元を育成してください！</p>
+  </div>
+
+  <!-- Amazonアフィリエイト広告プレースホルダー -->
+  <div style="margin-top:40px;padding:20px;background:var(--card);border:1px solid var(--border);border-radius:10px;text-align:center;">
+    <p style="color:var(--sub);font-size:0.85rem;">📢 Amazonアフィリエイト広告枠</p>
+    <p style="color:#888;font-size:0.75rem;margin-top:4px;">※ 現在準備中。後ほど広告コードを設置予定。</p>
+  </div>
+
+</article>
+</body>
+</html>

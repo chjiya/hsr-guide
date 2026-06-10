@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4B26RL1D24"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4B26RL1D24');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>【崩壊スターレイル】ファイノン（Phainon）物理ビルドガイド｜遺物・光円錐・編成</title>
+<meta name="description" content="崩壊スターレイルの星5物理属性・毀滅キャラ「ファイノン（Phainon／フェイノン）」の完全攻略ガイド。遺物・光円錐の最適構成、理想パーティ編成、凸数評価、スキル数値・聖痕状態を徹底解説。忘却の庭対応。">
+<meta name="keywords" content="崩壊スターレイル,ファイノン,Phainon,フェイノン,攻略,遺物,光円錐,編成,凸,星魂,ビルド,おすすめ,毀滅,物理,聖痕">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="【崩壊スターレイル】ファイノン（Phainon）物理ビルドガイド">
+<meta property="og:description" content="崩壊スターレイルファイノン（Phainon）の完全攻略。スキル数値、遺物セット比較、光円錐ランキング、パーティ編成4選を詳細解説。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<link rel="canonical" href="https://chjiya.github.io/hsr-guide/guides/ja/phainon-guide-ja.html">
+<base href="/hsr-guide/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "【崩壊スターレイル】ファイノン（Phainon）物理ビルドガイド｜遺物・光円錐・編成",
+  "description": "崩壊スターレイルの星5物理属性・毀滅キャラ「ファイノン（Phainon）」の完全攻略。スキル解析、おすすめ遺物・光円錐・オーナメント、理想パーティ編成4選、凸数評価、FAQまで徹底解説。",
+  "author": { "@type": "Person", "name": "花叔" },
+  "datePublished": "2026-06-10",
+  "dateModified": "2026-06-10",
+  "articleSection": "キャラクター攻略",
+  "inLanguage": "ja",
+  "about": {
+    "@type": "Thing",
+    "name": "ファイノン（Phainon）",
+    "description": "崩壊スターレイルの星5物理属性・毀滅の運命を歩むアタッカーキャラクター"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://chjiya.github.io/hsr-guide/guides/ja/phainon-guide-ja.html"
+  }
+}
+</script>
+
+<style>
+  :root { --bg: #1a1a2e; --card: #16213e; --accent: #ef5350; --text: #e0e0e0; --sub: #a0a0b0; --border: #2a2a4a; --highlight: #0f3460; --green: #4caf84; --red: #e0556a; --music: #ff7043; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',Meiryo,sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; padding: 20px; max-width: 860px; margin: 0 auto; }
+  h1 { font-size: 1.8em; color: var(--accent); border-bottom: 2px solid var(--accent); padding-bottom: 12px; margin-bottom: 20px; }
+  h2 { font-size: 1.4em; color: var(--accent); margin: 36px 0 16px; padding: 8px 14px; border-left: 4px solid var(--accent); background: var(--highlight); border-radius: 0 6px 6px 0; }
+  h3 { font-size: 1.15em; color: #ef9a9a; margin: 24px 0 10px; }
+  h4 { font-size: 1.05em; color: #ffcdd2; margin: 16px 0 8px; }
+  .char-header { display: flex; gap: 20px; align-items: center; background: var(--card); border-radius: 12px; padding: 20px; margin-bottom: 24px; border: 1px solid var(--border); }
+  .char-icon { width: 90px; height: 90px; border-radius: 12px; background: linear-gradient(135deg, #ef5350, #b71c1c); display: flex; align-items: center; justify-content: center; font-size: 2.2em; flex-shrink: 0; color: #fff; }
+  .char-info { flex: 1; } .char-info .name { font-size: 1.6em; font-weight: bold; color: #fff; }
+  .char-info .tags { margin-top: 6px; display: flex; gap: 8px; flex-wrap: wrap; }
+  .tag { display: inline-block; padding: 3px 12px; border-radius: 20px; font-size: 0.85em; font-weight: bold; }
+  .tag-rarity { background: #b8860b; color: #fff; }
+  .tag-element { background: #ef5350; color: #fff; }
+  .tag-path { background: var(--accent); color: #fff; }
+  .tag-role { background: #ff7043; color: #fff; }
+  .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin: 16px 0; }
+  .stat-box { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 12px; text-align: center; }
+  .stat-box .label { font-size: 0.8em; color: var(--sub); }
+  .stat-box .value { font-size: 1.2em; font-weight: bold; color: #fff; margin-top: 4px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.9em; }
+  th { background: var(--highlight); color: var(--accent); padding: 10px 12px; text-align: left; font-weight: bold; border-bottom: 2px solid var(--border); }
+  td { padding: 10px 12px; border-bottom: 1px solid var(--border); }
+  tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+  .star { color: var(--accent); }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 18px; margin: 16px 0; }
+  .build-box { background: var(--highlight); border: 1px solid var(--accent); border-radius: 8px; padding: 14px 18px; margin: 12px 0; }
+  .build-box .label { color: var(--accent); font-weight: bold; font-size: 0.85em; }
+  .build-box .content { color: #fff; font-weight: bold; margin-top: 4px; }
+  .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0; }
+  .pros, .cons { padding: 14px; border-radius: 8px; }
+  .pros { background: rgba(76,175,132,0.1); border: 1px solid rgba(76,175,132,0.3); }
+  .cons { background: rgba(224,85,106,0.1); border: 1px solid rgba(224,85,106,0.3); }
+  .pros h4 { color: var(--green); margin-bottom: 6px; }
+  .cons h4 { color: var(--red); margin-bottom: 6px; }
+  .pros li, .cons li { margin-left: 18px; font-size: 0.9em; }
+  .team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 12px 0; }
+  .team-slot { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 12px 8px; text-align: center; }
+  .team-slot .role { font-size: 0.75em; color: var(--sub); margin-bottom: 4px; }
+  .team-slot .char { font-weight: bold; color: #fff; font-size: 0.95em; }
+  .faq-item { background: var(--card); border: 1px solid var(--border); border-radius: 8px; margin: 12px 0; padding: 16px; }
+  .faq-item .q { color: var(--accent); font-weight: bold; font-size: 1.05em; margin-bottom: 8px; }
+  .faq-item .a { color: var(--text); line-height: 1.8; }
+  .note { background: rgba(239,83,80,0.08); border-left: 3px solid var(--accent); padding: 10px 14px; margin: 14px 0; border-radius: 0 6px 6px 0; font-size: 0.9em; }
+  .skill-box { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 14px; margin: 10px 0; }
+  .skill-box .skill-name { font-weight: bold; color: var(--accent); font-size: 1.05em; }
+  .skill-box .skill-type { font-size: 0.8em; color: var(--sub); margin-left: 8px; }
+  .skill-box .skill-desc { margin-top: 8px; font-size: 0.9em; }
+  .priority-5 { color: var(--accent); } .priority-4 { color: #e8c547; } .priority-3 { color: #c0c0c0; } .priority-2 { color: #888; }
+  ol, ul { padding-left: 1.5em; } li { margin: 4px 0; }
+  .toc { margin: 16px 0; padding: 14px; background: var(--card); border-radius: 8px; border: 1px solid var(--border); }
+  .toc a { color: var(--accent); text-decoration: none; }
+  .toc a:hover { text-decoration: underline; }
+  .toc li { margin: 4px 0; }
+  @media (max-width: 600px) { .char-header { flex-direction: column; text-align: center; } .team-grid { grid-template-columns: repeat(2, 1fr); } .pros-cons { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<article>
+  <h1>【崩壊スターレイル】ファイノン（Phainon）物理ビルドガイド</h1>
+  <div class="toc">
+    <strong>📑 目次</strong>
+    <ol style="margin-top:6px;">
+      <li><a href="#overview">キャラ概要</a></li>
+      <li><a href="#skills">スキル解説（全数値）</a></li>
+      <li><a href="#relics">おすすめ遺物</a></li>
+      <li><a href="#lightcones">おすすめ光円錐</a></li>
+      <li><a href="#teams">理想編成（4編成）</a></li>
+      <li><a href="#eidolons">凸数評価</a></li>
+      <li><a href="#synergy">相性の良いキャラ</a></li>
+      <li><a href="#build">ビルドまとめ表</a></li>
+      <li><a href="#faq">よくある質問（FAQ）</a></li>
+      <li><a href="#summary">総評</a></li>
+    </ol>
+  </div>
+
+  <div class="char-header" id="overview">
+    <div class="char-icon">⚔️</div>
+    <div class="char-info">
+      <div class="name">ファイノン（Phainon / フェイノン）</div>
+      <div class="tags">
+        <span class="tag tag-rarity">★5</span>
+        <span class="tag tag-element">物理属性</span>
+        <span class="tag tag-path">毀滅（Destruction）</span>
+        <span class="tag tag-role">メインアタッカー</span>
+      </div>
+      <div style="margin-top:8px;color:var(--sub);font-size:0.9em;">所属：オクヘイマ｜声優：非公開｜入手：限定排出｜実装：Ver.3.3</div>
+    </div>
+  </div>
+
+  <div class="stat-grid">
+    <div class="stat-box"><div class="label">最大HP</div><div class="value">1,358</div></div>
+    <div class="stat-box"><div class="label">攻撃力</div><div class="value">679</div></div>
+    <div class="stat-box"><div class="label">防御力</div><div class="value">462</div></div>
+    <div class="stat-box"><div class="label">速度</div><div class="value">103</div></div>
+    <div class="stat-box"><div class="label">EP（必殺技）</div><div class="value">120</div></div>
+  </div>
+
+  <div class="pros-cons">
+    <div class="pros"><h4>✅ 長所</h4><ul><li>聖痕状態中の拡散攻撃が圧倒的</li><li>必殺技コスト120で回転率良好</li><li>物理属性+毀滅で幅広い敵に対応</li><li>EP回復効果が豊富で必殺技が回しやすい</li><li>聖痕スタック管理が楽</li><li>HPが高く耐久面で優位</li></ul></div>
+    <div class="cons"><h4>⚠️ 短所</h4><ul><li>聖痕状態中以外の火力が低い</li><li>CCに弱く行動阻害で火力が激減</li><li>速度が103とやや遅め</li><li>物理属性は耐性持ちの敵が多い</li></ul></div>
+  </div>
+
+  <p>ファイノン（Phainon）は、Ver.3.3で実装された星5物理属性・毀滅の運命を歩むアタッカーキャラクターです。オクヘイマの戦士であり、「聖痕」の力を操る特異な存在です。</p>
+  <p>ファイノンの最大の特徴は、<strong>「聖痕」スタックを消費して放つ強化拡散攻撃「聖痕解放」</strong>です。戦闘スキルと必殺技で聖痕を蓄積し、通常攻撃が聖痕を消費して拡散攻撃に変化。聖痕1スタックにつき攻撃回数が増加し、最大3スタックで3連続拡散攻撃という圧倒的な瞬間火力を叩き出します。</p>
+  <p>物理属性の毀滅キャラとして、忘却の庭・模擬宇宙・末日の獣など高難易度コンテンツで活躍。特に敵が2〜3体の状況での瞬間火力は全キャラ中トップクラスです。</p>
+
+  <h2 id="skills">🔍 スキル解説（全数値）</h2>
+  <div class="skill-box">
+    <div class="skill-name">通常攻撃（聖痕解放）：断罪の一撃 <span class="skill-type">拡散攻撃 / エネルギー+20</span></div>
+    <div class="skill-desc">聖痕を<strong>1スタック消費</strong>して発動。指定した敵単体に攻撃力<span style="color:var(--accent);">80%〜160%</span>の物理ダメージ、隣接敵に<span style="color:var(--accent);">40%〜80%</span>の物理ダメージ。<br>聖痕スタック数に応じて追加攻撃：2スタック消費で2連撃、3スタック消費で3連撃。<br>聖痕がない場合は通常の単体攻撃（50%〜100%）。<br>強化優先度：<span class="priority-5">★★★★★</span></div>
+  </div>
+  <div class="skill-box">
+    <div class="skill-name">戦闘スキル：聖痕の刻印 <span class="skill-type">単体攻撃 / 消費SP:1 / エネルギー+30</span></div>
+    <div class="skill-desc">指定した敵単体に攻撃力<span style="color:var(--accent);">100%〜200%</span>（Lv1〜Lv12）の物理ダメージ。<br>さらに<strong>聖痕を2スタック獲得</strong>。味方全体の攻撃力+<span style="color:var(--accent);">10%〜20%</span>（3ターン）。<br>強化優先度：<span class="priority-5">★★★★★</span></div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">ファイノンの聖痕獲得手段。SP消費1で聖痕2スタック+味方全体攻撃力バフが優秀。毎ターン戦技使用で聖痕を貯め、通常攻撃で解放するサイクルが基本。味方全体攻撃力バフも地味に強力。</p>
+  <div class="skill-box">
+    <div class="skill-name">必殺技：聖痕・絶対零度 <span class="skill-type">全体攻撃 / EP:120</span></div>
+    <div class="skill-desc">敵全体に攻撃力<span style="color:var(--accent);">130%〜260%</span>（Lv1〜Lv10）の物理ダメージ。<br>さらに<strong>聖痕を3スタック獲得</strong>し、聖痕解放の与ダメ+<span style="color:var(--accent);">30%〜50%</span>（3ターン）。<br>エネルギー回復：<span style="color:var(--accent);">5</span><br>強化優先度：<span class="priority-5">★★★★★</span></div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">ファイノンの火力の起点。聖痕3スタックを一気に獲得し、聖痕解放の与ダメ+50%（Lv10）のバフも得られる。必殺技→通常攻撃（聖痕解放3連撃）の流れが基本的な火力コンボ。EP120と軽いのも魅力。</p>
+  <div class="skill-box">
+    <div class="skill-name">天賦：不滅の聖痕 <span class="skill-type">常時パッシブ</span></div>
+    <div class="skill-desc">聖痕1スタックにつき会心率+<span style="color:var(--accent);">4%〜8%</span>、会心ダメージ+<span style="color:var(--accent);">6%〜12%</span>。<br>聖痕獲得時、<span style="color:var(--accent);">5エネルギー</span>回復する。<br>味方が必殺技を使用するたび、ファイノンは<strong>聖痕を1スタック</strong>獲得する。<br>強化優先度：<span class="priority-4">★★★★☆</span></div>
+  </div>
+
+  <h2 id="relics">🏆 おすすめ遺物</h2>
+  <h3>最適セット：宝命の鋳者4セット</h3>
+  <div class="build-box"><div class="label">2セット</div><div class="content">最大HP+12%</div></div>
+  <div class="build-box"><div class="label">4セット</div><div class="content">ダメージを受ける/HP消費時、会心率+8%（最大2）。</div></div>
+
+  <h3>次点：勇者の凱旋4セット</h3>
+  <div class="build-box"><div class="label">2セット</div><div class="content">会心率+12%</div></div>
+  <div class="build-box"><div class="label">4セット</div><div class="content">HP消費時、会心ダメ+20%（最大2スタック）。</div></div>
+
+  <h3>オーナメント</h3>
+  <table><tr><th>順位</th><th>オーナメント</th><th>効果</th></tr>
+  <tr><td>🥇</td><td>奔狼のサルソット</td><td>会心率+8%、必殺技+追撃ダメ+15%</td></tr>
+  <tr><td>🥈</td><td>競走者（ルチラントアリーナ）</td><td>会心率+8%、通常攻撃+戦技ダメ+20%</td></tr>
+  </table>
+
+  <h2 id="lightcones">💡 おすすめ光円錐</h2>
+  <table><tr><th>順位</th><th>光円錐名</th><th>レア</th><th>効果</th></tr>
+  <tr><td>🥇</td><td>聖痕の継承者（Heir of Stigmata）</td><td>★5</td><td>会心率+18%。聖痕解放の与ダメ+60%。聖痕獲得時EP+3追加。</td></tr>
+  <tr><td>🥈</td><td>満たされない野望 S5</td><td>★4</td><td>HP+20%。HP50%以下で与ダメ+36%。</td></tr>
+  <tr><td>🥉</td><td>秘密誓い S5</td><td>★4</td><td>与ダメ+40%。敵HPが多い時さらに+40%。</td></tr>
+  <tr><td>④</td><td>いま、ひとりの時間 S5</td><td>★4</td><td>攻撃力+24%。敵撃破時HP+12%。</td></tr>
+  </table>
+
+  <h2 id="teams">👥 理想編成</h2>
+  <h3>編成① ハイパーキャリー型</h3>
+  <div class="team-grid">
+    <div class="team-slot"><div class="role">DPS</div><div class="char">ファイノン</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">ルアンメェイ</div></div>
+    <div class="team-slot"><div class="role">バッファー</div><div class="char">ティンギュン</div></div>
+    <div class="team-slot"><div class="role">ヒーラー</div><div class="char">フォフォ</div></div>
+  </div>
+  <h3>編成② 行動前進型</h3>
+  <div class="team-grid">
+    <div class="team-slot"><div class="role">DPS</div><div class="char">ファイノン</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">ロビン</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">ブローニャ</div></div>
+    <div class="team-slot"><div class="role">ヒーラー</div><div class="char">アベンチュリン</div></div>
+  </div>
+  <h3>編成③ 撃破編成型</h3>
+  <div class="team-grid">
+    <div class="team-slot"><div class="role">DPS</div><div class="char">ファイノン</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">ルアンメェイ</div></div>
+    <div class="team-slot"><div class="role">ヒーラー</div><div class="char">ギャラガー</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">ブローニャ</div></div>
+  </div>
+  <h3>編成④ 無課金向け</h3>
+  <div class="team-grid">
+    <div class="team-slot"><div class="role">DPS</div><div class="char">ファイノン</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">アスター</div></div>
+    <div class="team-slot"><div class="role">バッファー</div><div class="char">ティンギュン</div></div>
+    <div class="team-slot"><div class="role">ヒーラー</div><div class="char">ナターシャ</div></div>
+  </div>
+
+  <h2 id="eidolons">💎 凸数評価</h2>
+  <table><tr><th>凸数</th><th>効果</th><th>火力上昇</th></tr>
+  <tr><td>E0</td><td>基本的な聖痕管理で十分戦える</td><td>基準</td></tr>
+  <tr><td>E1</td><td>聖痕解放の会心ダメ+50%。聖痕最大スタック+1（最大4）。</td><td>+35%</td></tr>
+  <tr><td>E2</td><td>速度+15%。戦技で聖痕+3（基本2から強化）。</td><td>+15%</td></tr>
+  <tr><td>E3</td><td>戦技Lv+2。天賦Lv+2。</td><td>+12%</td></tr>
+  <tr><td>E4</td><td>聖痕解放の拡散範囲が敵全体に変更。</td><td>殲滅力↑</td></tr>
+  <tr><td>E5</td><td>必殺技Lv+2。通常攻撃Lv+1。</td><td>+10%</td></tr>
+  <tr><td>E6</td><td>聖痕解放が確定で全スタック消費せず（最大スタック維持）。会心ダメ+60%。</td><td>+80%+</td></tr>
+  </table>
+
+  <h2 id="synergy">🤝 相性の良いキャラ</h2>
+  <ul>
+    <li><strong>ルアンメェイ</strong>：耐性貫通+速度UP。聖痕解放の火力を底上げ。</li>
+    <li><strong>ロビン</strong>：行動前進+攻撃力バフ。聖痕獲得機会を増加。</li>
+    <li><strong>ブローニャ</strong>：行動前進。ファイノンの聖痕コンボをサポート。</li>
+    <li><strong>フォフォ</strong>：会心率バフ+継続回復。安定感抜群。</li>
+    <li><strong>ティンギュン</strong>：攻撃力+会心ダメ+EP供給。</li>
+  </ul>
+
+  <h2 id="build">📋 ビルドまとめ表</h2>
+  <table><tr><th>項目</th><th>おすすめ</th></tr>
+  <tr><td>光円錐</td><td>聖痕の継承者（★5）＞ 満たされない野望S5（★4）＞ 秘密誓いS5（★4）</td></tr>
+  <tr><td>遺物</td><td>宝命の鋳者4（最適）＞ 勇者の凱旋4</td></tr>
+  <tr><td>オーナメント</td><td>奔狼のサルソット（最適）＞ 競走者</td></tr>
+  <tr><td>胴体</td><td>会心率% or 会心ダメ%</td></tr>
+  <tr><td>脚</td><td>速度%（134目標）</td></tr>
+  <tr><td>オーブ</td><td>物理属性ダメージ%</td></tr>
+  <tr><td>縄</td><td>攻撃力%</td></tr>
+  <tr><td>目標会心率</td><td>70%以上（聖痕3スタックで94%+）</td></tr>
+  <tr><td>目標会心ダメ</td><td>140%以上（聖痕3スタックで176%+）</td></tr>
+  <tr><td>目標速度</td><td>134以上</td></tr>
+  <tr><td>スキル優先</td><td>聖痕解放（通常攻撃）＞ 戦闘スキル ＞ 必殺技 ＞ 天賦</td></tr>
+  </table>
+
+  <h2 id="faq">❓ よくある質問</h2>
+  <div class="faq-item">
+    <div class="q">Q. ファイノンの基本ローテーションを教えてください。</div>
+    <div class="a">基本ローテーション：1）戦技で聖痕2スタック獲得 → 2）通常攻撃で聖痕解放（2連撃）。次のターン：3）戦技で聖痕2スタック獲得 → 4）必殺技で聖痕3スタック+バフ → 5）通常攻撃で聖痕解放（3連撃）。これを繰り返します。必殺技が溜まったら最優先で使い、聖痕3スタック+バフ状態で聖痕解放を叩き込みましょう。</div>
+  </div>
+  <div class="faq-item">
+    <div class="q">Q. ファイノンは無凸でも使えますか？</div>
+    <div class="a">十分使えます。E0でも聖痕3スタック+必殺技バフで強力なコンボが可能です。ただし、聖痕最大スタックが4になるE1（会心ダメ+50%）は火力が大きく跳ね上がるため、凸を考えるならE1が最優先です。</div>
+  </div>
+
+  <h2 id="summary">📋 総評</h2>
+  <div class="card">
+    <p>ファイノンは<strong>聖痕システムによるユニークなコンボ型の攻撃スタイルが魅力的な毀滅アタッカー</strong>です。聖痕管理さえマスターすれば、3連拡散攻撃による圧倒的な瞬間火力を連発でき、高難易度コンテンツで大活躍します。</p>
+    <h4>評価点数（10点満点）</h4>
+    <table style="max-width:400px;"><tr><th>項目</th><th>評価</th></tr>
+    <tr><td>火力性能</td><td><span class="star">★★★★★★★★★★</span> 10/10</td></tr>
+    <tr><td>瞬間火力</td><td><span class="star">★★★★★★★★★★</span> 10/10</td></tr>
+    <tr><td>汎用性</td><td><span class="star">★★★★★★★★☆☆</span> 8/10</td></tr>
+    <tr><td>操作難易度</td><td><span style="color:#e8c547;">★★★★★★★☆☆☆</span> 7/10（聖痕管理が必要）</td></tr>
+    <tr><td>総合評価</td><td><span class="star">★★★★★★★★★☆</span> 9/10</td></tr>
+    </table>
+    <p style="margin-top:12px;">コンボ型のアタッカーが好きな方に強くおすすめできるキャラです。ぜひこのガイドを参考に最強のファイノンを育成してください！</p>
+  </div>
+</article>
+</body>
+</html>

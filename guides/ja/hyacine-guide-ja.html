@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4B26RL1D24"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4B26RL1D24');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>【崩壊スターレイル】ヒアシン（Hyacine）ヒーラービルドガイド｜遺物・光円錐・編成</title>
+<meta name="description" content="崩壊スターレイルの星5風属性・豊穣キャラ「ヒアシン（Hyacine／ヒヤシンス）」のヒーラービルド完全ガイド。遺物・光円錐の最適構成、理想パーティ編成、凸数評価、スキル数値・治療システムを徹底解説。忘却の庭対応。">
+<meta name="keywords" content="崩壊スターレイル,ヒアシン,Hyacine,ヒヤシンス,ヒーラー,攻略,遺物,光円錐,編成,凸,星魂,ビルド,おすすめ,豊穣,風,治療">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="【崩壊スターレイル】ヒアシン（Hyacine）ヒーラービルドガイド">
+<meta property="og:description" content="崩壊スターレイルヒアシン（Hyacine）のヒーラービルド完全攻略。スキル数値、遺物セット比較、光円錐ランキング、パーティ編成4選を詳細解説。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<link rel="canonical" href="https://chjiya.github.io/hsr-guide/guides/ja/hyacine-guide-ja.html">
+<base href="/hsr-guide/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "【崩壊スターレイル】ヒアシン（Hyacine）ヒーラービルドガイド｜遺物・光円錐・編成",
+  "description": "崩壊スターレイルの星5風属性・豊穣キャラ「ヒアシン（Hyacine）」のヒーラービルド完全攻略。おすすめ遺物・光円錐・オーナメント、理想パーティ編成4選、凸数評価、FAQまで徹底解説。",
+  "author": { "@type": "Person", "name": "花叔" },
+  "datePublished": "2026-06-10",
+  "dateModified": "2026-06-10",
+  "articleSection": "キャラクター攻略",
+  "inLanguage": "ja",
+  "about": {
+    "@type": "Thing",
+    "name": "ヒアシン（Hyacine）",
+    "description": "崩壊スターレイルの星5風属性・豊穣の運命を歩むヒーラーキャラクター"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://chjiya.github.io/hsr-guide/guides/ja/hyacine-guide-ja.html"
+  }
+}
+</script>
+
+<style>
+  :root { --bg: #1a1a2e; --card: #16213e; --accent: #81c784; --text: #e0e0e0; --sub: #a0a0b0; --border: #2a2a4a; --highlight: #0f3460; --green: #4caf84; --red: #e0556a; --music: #66bb6a; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',Meiryo,sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; padding: 20px; max-width: 860px; margin: 0 auto; }
+  h1 { font-size: 1.8em; color: var(--accent); border-bottom: 2px solid var(--accent); padding-bottom: 12px; margin-bottom: 20px; }
+  h2 { font-size: 1.4em; color: var(--accent); margin: 36px 0 16px; padding: 8px 14px; border-left: 4px solid var(--accent); background: var(--highlight); border-radius: 0 6px 6px 0; }
+  h3 { font-size: 1.15em; color: #a5d6a7; margin: 24px 0 10px; }
+  h4 { font-size: 1.05em; color: #c8e6c9; margin: 16px 0 8px; }
+  .char-header { display: flex; gap: 20px; align-items: center; background: var(--card); border-radius: 12px; padding: 20px; margin-bottom: 24px; border: 1px solid var(--border); }
+  .char-icon { width: 90px; height: 90px; border-radius: 12px; background: linear-gradient(135deg, #81c784, #2e7d32); display: flex; align-items: center; justify-content: center; font-size: 2.2em; flex-shrink: 0; color: #fff; }
+  .char-info { flex: 1; } .char-info .name { font-size: 1.6em; font-weight: bold; color: #fff; }
+  .char-info .tags { margin-top: 6px; display: flex; gap: 8px; flex-wrap: wrap; }
+  .tag { display: inline-block; padding: 3px 12px; border-radius: 20px; font-size: 0.85em; font-weight: bold; }
+  .tag-rarity { background: #b8860b; color: #fff; }
+  .tag-element { background: #81c784; color: #1a1a2e; }
+  .tag-path { background: var(--music); color: #fff; }
+  .tag-role { background: var(--accent); color: #1a1a2e; }
+  .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin: 16px 0; }
+  .stat-box { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 12px; text-align: center; }
+  .stat-box .label { font-size: 0.8em; color: var(--sub); }
+  .stat-box .value { font-size: 1.2em; font-weight: bold; color: #fff; margin-top: 4px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.9em; }
+  th { background: var(--highlight); color: var(--accent); padding: 10px 12px; text-align: left; font-weight: bold; border-bottom: 2px solid var(--border); }
+  td { padding: 10px 12px; border-bottom: 1px solid var(--border); }
+  tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+  .star { color: var(--accent); }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 18px; margin: 16px 0; }
+  .build-box { background: var(--highlight); border: 1px solid var(--accent); border-radius: 8px; padding: 14px 18px; margin: 12px 0; }
+  .build-box .label { color: var(--accent); font-weight: bold; font-size: 0.85em; }
+  .build-box .content { color: #fff; font-weight: bold; margin-top: 4px; }
+  .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0; }
+  .pros, .cons { padding: 14px; border-radius: 8px; }
+  .pros { background: rgba(76,175,132,0.1); border: 1px solid rgba(76,175,132,0.3); }
+  .cons { background: rgba(224,85,106,0.1); border: 1px solid rgba(224,85,106,0.3); }
+  .pros h4 { color: var(--green); margin-bottom: 6px; }
+  .cons h4 { color: var(--red); margin-bottom: 6px; }
+  .pros li, .cons li { margin-left: 18px; font-size: 0.9em; }
+  .team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 12px 0; }
+  .team-slot { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 12px 8px; text-align: center; }
+  .team-slot .role { font-size: 0.75em; color: var(--sub); margin-bottom: 4px; }
+  .team-slot .char { font-weight: bold; color: #fff; font-size: 0.95em; }
+  .faq-item { background: var(--card); border: 1px solid var(--border); border-radius: 8px; margin: 12px 0; padding: 16px; }
+  .faq-item .q { color: var(--accent); font-weight: bold; font-size: 1.05em; margin-bottom: 8px; }
+  .faq-item .a { color: var(--text); line-height: 1.8; }
+  .note { background: rgba(129,199,132,0.08); border-left: 3px solid var(--accent); padding: 10px 14px; margin: 14px 0; border-radius: 0 6px 6px 0; font-size: 0.9em; }
+  .skill-box { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 14px; margin: 10px 0; }
+  .skill-box .skill-name { font-weight: bold; color: var(--accent); font-size: 1.05em; }
+  .skill-box .skill-type { font-size: 0.8em; color: var(--sub); margin-left: 8px; }
+  .skill-box .skill-desc { margin-top: 8px; font-size: 0.9em; }
+  .priority-5 { color: var(--accent); } .priority-4 { color: #e8c547; } .priority-3 { color: #c0c0c0; } .priority-2 { color: #888; }
+  ol, ul { padding-left: 1.5em; } li { margin: 4px 0; }
+  .toc { margin: 16px 0; padding: 14px; background: var(--card); border-radius: 8px; border: 1px solid var(--border); }
+  .toc a { color: var(--accent); text-decoration: none; }
+  .toc a:hover { text-decoration: underline; }
+  .toc li { margin: 4px 0; }
+  @media (max-width: 600px) { .char-header { flex-direction: column; text-align: center; } .team-grid { grid-template-columns: repeat(2, 1fr); } .pros-cons { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<article>
+  <h1>【崩壊スターレイル】ヒアシン（Hyacine）ヒーラービルドガイド</h1>
+  <div class="toc">
+    <strong>📑 目次</strong>
+    <ol style="margin-top:6px;">
+      <li><a href="#overview">キャラ概要</a></li>
+      <li><a href="#skills">スキル解説（全数値）</a></li>
+      <li><a href="#relics">おすすめ遺物</a></li>
+      <li><a href="#lightcones">おすすめ光円錐</a></li>
+      <li><a href="#teams">理想編成（4編成）</a></li>
+      <li><a href="#eidolons">凸数評価</a></li>
+      <li><a href="#build">ビルドまとめ表</a></li>
+      <li><a href="#faq">よくある質問（FAQ）</a></li>
+      <li><a href="#summary">総評</a></li>
+    </ol>
+  </div>
+
+  <div class="char-header" id="overview">
+    <div class="char-icon">🌿</div>
+    <div class="char-info">
+      <div class="name">ヒアシン（Hyacine / ヒヤシンス）</div>
+      <div class="tags">
+        <span class="tag tag-rarity">★5</span>
+        <span class="tag tag-element">風属性</span>
+        <span class="tag tag-path">豊穣（Abundance）</span>
+        <span class="tag tag-role">ヒーラー / サポート</span>
+      </div>
+      <div style="margin-top:8px;color:var(--sub);font-size:0.9em;">所属：オクヘイマ｜声優：非公開｜入手：限定排出｜実装：Ver.3.3</div>
+    </div>
+  </div>
+
+  <div class="stat-grid">
+    <div class="stat-box"><div class="label">最大HP</div><div class="value">1,458</div></div>
+    <div class="stat-box"><div class="label">攻撃力</div><div class="value">528</div></div>
+    <div class="stat-box"><div class="label">防御力</div><div class="value">485</div></div>
+    <div class="stat-box"><div class="label">速度</div><div class="value">105</div></div>
+    <div class="stat-box"><div class="label">EP（必殺技）</div><div class="value">110</div></div>
+  </div>
+
+  <div class="pros-cons">
+    <div class="pros"><h4>✅ 長所</h4><ul><li>継続回復+全体回復の両方に対応</li><li>必殺技コスト110で回転率が非常に良い</li><li>HP上限バフでチームの耐久を底上げ</li><li>風属性でDoT解除が可能</li><li>SP効率が良く通常攻撃でも回復可能</li><li>基礎HPが高く自身の耐久も高い</li></ul></div>
+    <div class="cons"><h4>⚠️ 短所</h4><ul><li>バフ量はフォフォやルアンに劣る</li><li>回復量がHP依存で攻撃力は低め</li><li>浄化は持っているが頻度は限定的</li><li>シールドは張れない</li></ul></div>
+  </div>
+
+  <p>ヒアシン（Hyacine）は、Ver.3.3で実装された星5風属性・豊穣の運命を歩むヒーラーキャラクターです。オクヘイマの聖なる花を司る存在で、その治癒力で仲間を守ります。</p>
+  <p>ヒアシンの最大の特徴は、<strong>「生命の息吹」と呼ばれる独自の継続回復システム</strong>です。戦闘スキルでHPが最も低い味方に「生命の息吹」状態を付与し、この状態の味方はターン終了時にヒアシンの最大HP×12%のHPを回復します。さらに必殺技では味方全体を即時回復+2ターンの継続回復を与えるため、<strong>フォフォに匹敵する安定した回復性能</strong>を持ちます。</p>
+  <p>また、天賦により味方全体のHP上限+15%（Lv10）という貴重なバフを持ち、HP消費型のアタッカー（ミデイ、刃など）との相性が抜群。フォフォと並ぶ現環境最強クラスのヒーラーの1人です。</p>
+
+  <h2 id="skills">🔍 スキル解説（全数値）</h2>
+  <div class="skill-box">
+    <div class="skill-name">通常攻撃：癒しの花弁 <span class="skill-type">単体攻撃 / エネルギー+20</span></div>
+    <div class="skill-desc">攻撃力<span style="color:var(--accent);">50%〜100%</span>の風属性ダメージを与え、味方全体をヒアシンの最大HP×<span style="color:var(--accent);">3%〜5%</span>回復。強化優先度：<span class="priority-3">★★★☆☆</span></div>
+  </div>
+  <div class="skill-box">
+    <div class="skill-name">戦闘スキル：生命の息吹 <span class="skill-type">回復 / 消費SP:1 / エネルギー+30</span></div>
+    <div class="skill-desc">指定した味方単体をヒアシンの最大HP×<span style="color:var(--accent);">15%〜30%</span>（Lv1〜Lv12）回復。<br>
+      さらに「<strong>生命の息吹</strong>」状態を付与（3ターン）。この状態の味方はターン終了時に最大HP×<span style="color:var(--accent);">6%〜12%</span>回復。<br>
+      生命の息吹状態の味方が攻撃を受けた時、さらに最大HP×<span style="color:var(--accent);">3%〜6%</span>回復（1ターン最大2回）。<br>
+      強化優先度：<span class="priority-5">★★★★★</span></div>
+  </div>
+  <div class="skill-box">
+    <div class="skill-name">必殺技：百花繚乱 <span class="skill-type">全体回復 / EP:110</span></div>
+    <div class="skill-desc">味方全体をヒアシンの最大HP×<span style="color:var(--accent);">12%〜24%</span>（Lv1〜Lv10）回復。<br>
+      さらに<strong>「百花の加護」</strong>を付与（2ターン）。この状態の味方は行動制限系デバフを1回無効化し、ターン終了時に最大HP×<span style="color:var(--accent);">6%</span>回復。<br>
+      エネルギー回復：<span style="color:var(--accent);">5</span><br>
+      強化優先度：<span class="priority-5">★★★★★</span></div>
+  </div>
+  <div class="skill-box">
+    <div class="skill-name">天賦：花守りの恵み <span class="skill-type">常時パッシブ</span></div>
+    <div class="skill-desc">味方全体の<strong>最大HP+<span style="color:var(--accent);">8%〜15%</span></strong>（Lv1〜Lv10）。<br>
+      ヒアシンの回復量+<span style="color:var(--accent);">10%〜20%</span>。<br>
+      ヒアシンが回復を行った時、対象のデバフを1つ解除する。<br>
+      強化優先度：<span class="priority-5">★★★★★</span></div>
+  </div>
+
+  <h2 id="relics">🏆 おすすめ遺物</h2>
+  <h3>最適セット：メッセンジャー4セット</h3>
+  <div class="build-box"><div class="label">2セット</div><div class="content">速度+6%</div></div>
+  <div class="build-box"><div class="label">4セット</div><div class="content">必殺技発動時、味方全体の速度+12%（1ターン）。</div></div>
+
+  <h3>次点：守護者2+メッセンジャー2（ハイブリッド）</h3>
+  <div class="build-box"><div class="label">守護者2</div><div class="content">最大HP+12%</div></div>
+  <div class="build-box"><div class="label">メッセンジャー2</div><div class="content">速度+6%</div></div>
+
+  <h3>オーナメント</h3>
+  <table><tr><th>順位</th><th>オーナメント</th><th>効果</th></tr>
+  <tr><td>🥇</td><td>折れた竜骨（Broken Keel）</td><td>効果抵抗+10%。効果抵抗30%以上で味方全体の会心ダメ+10%。</td></tr>
+  <tr><td>🥈</td><td>老いぬ者の仙舟</td><td>HP+12%。速度120以上で味方全体の攻撃力+8%。</td></tr>
+  <tr><td>🥉</td><td>陽気なフォンワク</td><td>EP回復効率+5%。速度120以上で行動40%前進。</td></tr>
+  </table>
+
+  <h2 id="lightcones">💡 おすすめ光円錐</h2>
+  <table><tr><th>順位</th><th>光円錐名</th><th>レア</th><th>効果</th></tr>
+  <tr><td>🥇</td><td>永遠の花園（Eternal Garden）</td><td>★5</td><td>HP+24%。回復量+18%。生命の息吹の回復量+50%。必殺技使用時、味方全体の与ダメ+20%（2ターン）。</td></tr>
+  <tr><td>🥈</td><td>此方の夜明け S5（Shared Feeling）</td><td>★4</td><td>必殺技発動時、味方全体のHP+16%。SP+1回復。</td></tr>
+  <tr><td>🥉</td><td>一緒に暖まろう S5</td><td>★4</td><td>戦技使用時、HP+12%。味方全体の与ダメ+8%（2ターン）。</td></tr>
+  <tr><td>④</td><td>等価交換 S5</td><td>★4</td><td>味方のEP回復+8/16/24（ターン開始時確率発動）。</td></tr>
+  </table>
+
+  <h2 id="teams">👥 理想編成</h2>
+  <h3>編成① HP消費アタッカー編成（最適）</h3>
+  <div class="team-grid">
+    <div class="team-slot"><div class="role">DPS</div><div class="char">ミデイ</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">ルアンメェイ</div></div>
+    <div class="team-slot"><div class="role">サブ</div><div class="char">ロビン</div></div>
+    <div class="team-slot"><div class="role">ヒーラー</div><div class="char">ヒアシン</div></div>
+  </div>
+  <h3>編成② 汎用ハイパーキャリー型</h3>
+  <div class="team-grid">
+    <div class="team-slot"><div class="role">DPS</div><div class="char">任意アタッカー</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">ティンギュン</div></div>
+    <div class="team-slot"><div class="role">サブ</div><div class="char">任意</div></div>
+    <div class="team-slot"><div class="role">ヒーラー</div><div class="char">ヒアシン</div></div>
+  </div>
+  <h3>編成③ 刃+ミデイW破壊編成</h3>
+  <div class="team-grid">
+    <div class="team-slot"><div class="role">DPS</div><div class="char">ミデイ</div></div>
+    <div class="team-slot"><div class="role">DPS</div><div class="char">刃</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">ルアンメェイ</div></div>
+    <div class="team-slot"><div class="role">ヒーラー</div><div class="char">ヒアシン</div></div>
+  </div>
+  <h3>編成④ 無課金向け</h3>
+  <div class="team-grid">
+    <div class="team-slot"><div class="role">DPS</div><div class="char">丹恒</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">アスター</div></div>
+    <div class="team-slot"><div class="role">サブ</div><div class="char">主人公</div></div>
+    <div class="team-slot"><div class="role">ヒーラー</div><div class="char">ヒアシン</div></div>
+  </div>
+
+  <h2 id="eidolons">💎 凸数評価</h2>
+  <table><tr><th>凸数</th><th>効果</th><th>おすすめ度</th></tr>
+  <tr><td>E0</td><td>既に最強クラスのヒーラー。HP上限バフが強力。</td><td>⭐⭐⭐⭐⭐</td></tr>
+  <tr><td>E1</td><td>生命の息吹の回復量+30%。百花の加護のターン数+1（合計3ターン）。</td><td>⭐⭐⭐⭐</td></tr>
+  <tr><td>E2</td><td>戦技で付与する生命の息吹が全体化。味方全体の与ダメ+15%（3ターン）。</td><td>⭐⭐⭐⭐⭐</td></tr>
+  <tr><td>E3</td><td>戦技Lv+2。天賦Lv+2。</td><td>⭐⭐⭐</td></tr>
+  <tr><td>E4</td><td>味方全体の効果抵抗+20%。百花の加護中、デバフ無効化回数+1。</td><td>⭐⭐⭐⭐</td></tr>
+  <tr><td>E5</td><td>必殺技Lv+2。通常攻撃Lv+1。</td><td>⭐⭐</td></tr>
+  <tr><td>E6</td><td>生命の息吹の回復が確定で全味方に波及。味方全体の会心ダメージ+30%。</td><td>⭐⭐⭐⭐⭐</td></tr>
+  </table>
+
+  <h2 id="build">📋 ビルドまとめ表</h2>
+  <table><tr><th>項目</th><th>おすすめ</th></tr>
+  <tr><td>光円錐</td><td>永遠の花園（★5）＞ 此方の夜明けS5（★4）＞ 一緒に暖まろうS5</td></tr>
+  <tr><td>遺物</td><td>メッセンジャー4（最適）＞ 守護者2+メッセンジャー2</td></tr>
+  <tr><td>オーナメント</td><td>折れた竜骨（最適）＞ 老いぬ者の仙舟</td></tr>
+  <tr><td>胴体</td><td>HP% or 回復量%</td></tr>
+  <tr><td>脚</td><td>速度%（134目標）</td></tr>
+  <tr><td>オーブ</td><td>HP%</td></tr>
+  <tr><td>縄</td><td>EP回復効率% or HP%（110と軽めなのでHP%も可）</td></tr>
+  <tr><td>目標HP</td><td>7,000以上（天賦含めると実質8,000+）</td></tr>
+  <tr><td>目標速度</td><td>134以上</td></tr>
+  <tr><td>目標効果抵抗</td><td>30%（折れた竜骨発動用）</td></tr>
+  <tr><td>スキル優先</td><td>戦技 ＞ 必殺技 ＞ 天賦 ＞ 通常攻撃</td></tr>
+  <tr><td>凸優先</td><td>E2（戦技全体化）＞ E6（完全体）</td></tr>
+  </table>
+
+  <h2 id="faq">❓ よくある質問</h2>
+  <div class="faq-item">
+    <div class="q">Q. ヒアシンとフォフォはどちらが強いですか？</div>
+    <div class="a">両方とも現環境最強クラスのヒーラーですが、役割が異なります。<br><br>フォフォは会心率バフ+EP供給+継続回復が強みで、火力編成のサポートとして優れています。<br>ヒアシンはHP上限バフ+豊富な継続回復+デバフ解除+CC耐性（百花の加護）が強みで、HP消費型アタッカーや高難易度の耐久編成で輝きます。<br><br>総合すると、フォフォは攻撃寄り、ヒアシンは防御寄りのヒーラーです。両方持っていれば状況に応じて使い分けるのがベストです。</div>
+  </div>
+  <div class="faq-item">
+    <div class="q">Q. ヒアシンの回復量はHP依存ですか？攻撃力依存ですか？</div>
+    <div class="a">ヒアシンのすべての回復量は<strong>最大HPに依存</strong>します。したがって、攻撃力は全く必要なく、HP%と速度%を優先して盛りましょう。遺物はHP%を最優先にし、胴体もHP%（または回復量%）、脚は速度%で編成します。</div>
+  </div>
+
+  <h2 id="summary">📋 総評</h2>
+  <div class="card">
+    <p>ヒアシンは<strong>HP上限バフ+豊富な継続回復+CC耐性支援を持つ現環境最強クラスのヒーラー</strong>です。特にミデイや刃などHP消費型アタッカーとの相性が抜群で、天賦のHP上限+15%はチーム全体の耐久力を大きく引き上げます。</p>
+    <h4>評価点数（10点満点）</h4>
+    <table style="max-width:400px;"><tr><th>項目</th><th>評価</th></tr>
+    <tr><td>回復量</td><td><span class="star">★★★★★★★★★★</span> 10/10</td></tr>
+    <tr><td>継続回復</td><td><span class="star">★★★★★★★★★★</span> 10/10</td></tr>
+    <tr><td>サポート性能</td><td><span class="star">★★★★★★★★★☆</span> 9/10</td></tr>
+    <tr><td>HP消費編成適正</td><td><span class="star">★★★★★★★★★★</span> 10/10</td></tr>
+    <tr><td>遺物厳選難易度</td><td><span class="star">★★★★★★★★★☆</span> 9/10（HP%だけ）</td></tr>
+    <tr><td>総合評価</td><td><span class="star">★★★★★★★★★☆</span> 9.5/10</td></tr>
+    </table>
+    <p style="margin-top:12px;">HP消費型アタッカーを主力にしている方、または安定したヒーラーを求めている方に最もおすすめできるキャラです。ぜひこのガイドを参考に最強のヒアシンを育成してください！</p>
+  </div>
+</article>
+</body>
+</html>
