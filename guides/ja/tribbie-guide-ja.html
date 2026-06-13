@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4B26RL1D24"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4B26RL1D24');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>【崩壊スターレイル】トリビー（Tribbie）サポートビルドガイド｜遺物・光円錐・編成</title>
+<meta name="description" content="崩壊スターレイルの星5量子属性・調和キャラ「トリビー（Tribbie／トリビィ）」のサポートビルド完全ガイド。遺物・光円錐の最適構成、理想パーティ編成、凸数評価、スキル数値を徹底解説。忘却の庭・幻想の庭対応。">
+<meta name="keywords" content="崩壊スターレイル,トリビー,Tribbie,トリビィ,攻略,遺物,光円錐,編成,凸,星魂,ビルド,おすすめ,調和,量子,サポート">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="【崩壊スターレイル】トリビー（Tribbie）サポートビルドガイド">
+<meta property="og:description" content="崩壊スターレイルトリビー（Tribbie）のサポートビルド完全攻略。スキル数値、遺物セット比較、光円錐ランキング、パーティ編成4選を詳細解説。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="【崩壊スターレイル】トリビー（Tribbie）サポートビルドガイド">
+<link rel="canonical" href="https://chjiya.github.io/hsr-guide/guides/ja/tribbie-guide-ja.html">
+<base href="/hsr-guide/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "【崩壊スターレイル】トリビー（Tribbie）サポートビルドガイド｜遺物・光円錐・編成",
+  "description": "崩壊スターレイルの星5量子属性・調和キャラ「トリビー（Tribbie）」のサポートビルド完全攻略。スキル解析、おすすめ遺物・光円錐・オーナメント、理想パーティ編成4選、凸数評価、FAQまで徹底解説。",
+  "author": { "@type": "Person", "name": "花叔" },
+  "datePublished": "2026-06-10",
+  "dateModified": "2026-06-10",
+  "articleSection": "キャラクター攻略",
+  "inLanguage": "ja",
+  "about": {
+    "@type": "Thing",
+    "name": "トリビー（Tribbie）",
+    "description": "崩壊スターレイルの星5量子属性・調和の運命を歩むサポートキャラクター"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://chjiya.github.io/hsr-guide/guides/ja/tribbie-guide-ja.html"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "トリビーの速度はいくつが最適ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "トリビーの速度は101（基礎速度）のままで問題ありません。トリビーのバフ効果は速度に依存しないため、速度を上げるより耐久や効果抵抗にリソースを振る方が有効です。ただし、軌跡で行動制限耐性を得られるため、効果抵抗は最低限で大丈夫です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "トリビーはどのようなサポートが得意ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "トリビーは属性耐性デバフと与ダメバフを得意とするディバッファー型サポートです。戦闘スキルで敵単体の全属性耐性-25%（Lv10）と与ダメ+30%（味方全体）を同時に付与でき、必殺技では敵全体の防御力を-30%（Lv10）しつつ味方全体の攻撃力を+40%上昇させるという、攻防一体のバフ/デバフ性能を持ちます。"
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --bg: #1a1a2e;
+    --card: #16213e;
+    --accent: #7c4dff;
+    --text: #e0e0e0;
+    --sub: #a0a0b0;
+    --border: #2a2a4a;
+    --highlight: #0f3460;
+    --green: #4caf84;
+    --red: #e0556a;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', Meiryo, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+    padding: 20px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  h1 { font-size: 1.8em; color: var(--accent); border-bottom: 2px solid var(--accent); padding-bottom: 12px; margin-bottom: 20px; }
+  h2 { font-size: 1.4em; color: var(--accent); margin: 36px 0 16px; padding: 8px 14px; border-left: 4px solid var(--accent); background: var(--highlight); border-radius: 0 6px 6px 0; }
+  h3 { font-size: 1.15em; color: #b388ff; margin: 24px 0 10px; }
+  h4 { font-size: 1.05em; color: #d0b0ff; margin: 16px 0 8px; }
+  .char-header { display: flex; gap: 20px; align-items: center; background: var(--card); border-radius: 12px; padding: 20px; margin-bottom: 24px; border: 1px solid var(--border); }
+  .char-icon { width: 90px; height: 90px; border-radius: 12px; background: linear-gradient(135deg, #7c4dff, #536dfe); display: flex; align-items: center; justify-content: center; font-size: 2.2em; flex-shrink: 0; color: #fff; }
+  .char-info { flex: 1; }
+  .char-info .name { font-size: 1.6em; font-weight: bold; color: #fff; }
+  .char-info .tags { margin-top: 6px; display: flex; gap: 8px; flex-wrap: wrap; }
+  .tag { display: inline-block; padding: 3px 12px; border-radius: 20px; font-size: 0.85em; font-weight: bold; }
+  .tag-rarity { background: #b8860b; color: #fff; }
+  .tag-element { background: #7c4dff; color: #fff; }
+  .tag-path { background: #ffd54f; color: #1a1a2e; }
+  .tag-role { background: var(--accent); color: #fff; }
+  .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin: 16px 0; }
+  .stat-box { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 12px; text-align: center; }
+  .stat-box .label { font-size: 0.8em; color: var(--sub); }
+  .stat-box .value { font-size: 1.2em; font-weight: bold; color: #fff; margin-top: 4px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.9em; }
+  th { background: var(--highlight); color: var(--accent); padding: 10px 12px; text-align: left; font-weight: bold; border-bottom: 2px solid var(--border); }
+  td { padding: 10px 12px; border-bottom: 1px solid var(--border); }
+  tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+  .star { color: var(--accent); }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 18px; margin: 16px 0; }
+  .build-box { background: var(--highlight); border: 1px solid var(--accent); border-radius: 8px; padding: 14px 18px; margin: 12px 0; }
+  .build-box .label { color: var(--accent); font-weight: bold; font-size: 0.85em; }
+  .build-box .content { color: #fff; font-weight: bold; margin-top: 4px; }
+  .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0; }
+  .pros, .cons { padding: 14px; border-radius: 8px; }
+  .pros { background: rgba(76,175,132,0.1); border: 1px solid rgba(76,175,132,0.3); }
+  .cons { background: rgba(224,85,106,0.1); border: 1px solid rgba(224,85,106,0.3); }
+  .pros h4 { color: var(--green); margin-bottom: 6px; }
+  .cons h4 { color: var(--red); margin-bottom: 6px; }
+  .pros li, .cons li { margin-left: 18px; font-size: 0.9em; }
+  .team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 12px 0; }
+  .team-slot { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 12px 8px; text-align: center; }
+  .team-slot .role { font-size: 0.75em; color: var(--sub); margin-bottom: 4px; }
+  .team-slot .char { font-weight: bold; color: #fff; font-size: 0.95em; }
+  .faq-item { background: var(--card); border: 1px solid var(--border); border-radius: 8px; margin: 12px 0; padding: 16px; }
+  .faq-item .q { color: var(--accent); font-weight: bold; font-size: 1.05em; margin-bottom: 8px; }
+  .faq-item .a { color: var(--text); line-height: 1.8; }
+  .note { background: rgba(124,77,255,0.08); border-left: 3px solid var(--accent); padding: 10px 14px; margin: 14px 0; border-radius: 0 6px 6px 0; font-size: 0.9em; }
+  .skill-box { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 14px; margin: 10px 0; }
+  .skill-box .skill-name { font-weight: bold; color: var(--accent); font-size: 1.05em; }
+  .skill-box .skill-type { font-size: 0.8em; color: var(--sub); margin-left: 8px; }
+  .skill-box .skill-desc { margin-top: 8px; font-size: 0.9em; }
+  .priority-5 { color: var(--accent); }
+  .priority-4 { color: #e8c547; }
+  .priority-3 { color: #c0c0c0; }
+  .priority-2 { color: #888; }
+  ol, ul { padding-left: 1.5em; }
+  li { margin: 4px 0; }
+  .toc { margin: 16px 0; padding: 14px; background: var(--card); border-radius: 8px; border: 1px solid var(--border); }
+  .toc a { color: var(--accent); text-decoration: none; }
+  .toc a:hover { text-decoration: underline; }
+  .toc li { margin: 4px 0; }
+  @media (max-width: 600px) {
+    .char-header { flex-direction: column; text-align: center; }
+    .team-grid { grid-template-columns: repeat(2, 1fr); }
+    .pros-cons { grid-template-columns: 1fr; }
+    .stat-grid { grid-template-columns: repeat(2, 1fr); }
+    body { padding: 12px; }
+  }
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3857626678274044"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+<article>
+  <h1>【崩壊スターレイル】トリビー（Tribbie）サポートビルドガイド</h1>
+
+  <div class="toc">
+    <strong>📑 目次</strong>
+    <ol style="margin-top:6px;">
+      <li><a href="#overview">キャラ概要</a></li>
+      <li><a href="#skills">スキル解説（全数値）</a></li>
+      <li><a href="#relics">おすすめ遺物（セット比較）</a></li>
+      <li><a href="#lightcones">おすすめ光円錐</a></li>
+      <li><a href="#teams">理想編成（4編成）</a></li>
+      <li><a href="#eidolons">凸数評価</a></li>
+      <li><a href="#synergy">相性の良いキャラ</a></li>
+      <li><a href="#build">ビルドまとめ表</a></li>
+      <li><a href="#faq">よくある質問（FAQ）</a></li>
+      <li><a href="#summary">総評</a></li>
+    </ol>
+  </div>
+
+  <div class="char-header" id="overview">
+    <div class="char-icon">🔮</div>
+    <div class="char-info">
+      <div class="name">トリビー（Tribbie / トリビィ）</div>
+      <div class="tags">
+        <span class="tag tag-rarity">★5</span>
+        <span class="tag tag-element">量子属性</span>
+        <span class="tag tag-path">調和（Harmony）</span>
+        <span class="tag tag-role">サポート / ディバッファー</span>
+      </div>
+      <div style="margin-top:8px;color:var(--sub);font-size:0.9em;">
+        所属：オクヘイマ｜声優：非公開｜入手：限定排出｜実装：Ver.3.1
+      </div>
+    </div>
+  </div>
+
+  <div class="stat-grid">
+    <div class="stat-box"><div class="label">最大HP</div><div class="value">1,188</div></div>
+    <div class="stat-box"><div class="label">攻撃力</div><div class="value">582</div></div>
+    <div class="stat-box"><div class="label">防御力</div><div class="value">436</div></div>
+    <div class="stat-box"><div class="label">速度</div><div class="value">101</div></div>
+    <div class="stat-box"><div class="label">EP（必殺技）</div><div class="value">140</div></div>
+  </div>
+
+  <div class="pros-cons">
+    <div class="pros">
+      <h4>✅ 長所</h4>
+      <ul>
+        <li>敵の全属性耐性-25%（戦技）がユニークで代替不可</li>
+        <li>必殺技で防御デバフ+攻撃バフの両方を同時に行える</li>
+        <li>SP効率が良く、3ターンに1回の戦技運用が可能</li>
+        <li>量子属性で量子編成の核になれる</li>
+        <li>速度不要で遺物厳選が楽</li>
+        <li>凸効果が全て強力で伸びしろが大きい</li>
+      </ul>
+    </div>
+    <div class="cons">
+      <h4>⚠️ 短所</h4>
+      <ul>
+        <li>純粋な火力バフ量ではルアンメェイやロビンに劣る</li>
+        <li>自分の火力はほとんどない（サポート特化）</li>
+        <li>効果命中が必要（デバフを安定して通すため）</li>
+        <li>必殺技コスト140とやや重い</li>
+        <li>速度が遅いため行動順調整が必要な場合がある</li>
+        <li>追撃編成とのシナジーが薄い</li>
+      </ul>
+    </div>
+  </div>
+
+  <p>トリビー（Tribbie）は、Ver.3.1で実装された星5量子属性・調和の運命を歩むサポートキャラクターです。オクヘイマの叡智を象徴する存在で、敵味方の「調和」を司ります。</p>
+  <p>トリビーの最大の特徴は、<strong>敵に「全属性耐性ダウン」を付与できる唯一無二の調和キャラ</strong>という点です。戦闘スキルで敵単体の全属性耐性-25%と味方全体の与ダメ+30%を同時に付与でき、必殺技ではさらに防御力-30%と攻撃力+40%という破格のバフ/デバフを展開します。</p>
+  <p>特に<strong>量子属性編成や複合属性編成での価値が非常に高く</strong>、銀狼と組んだ量子パや、ヘルタ＋キャストリスのW知恵編成などで真価を発揮します。属性の壁を越えたバフは、今後の環境でも腐りにくい性能と言えるでしょう。</p>
+
+  <h2 id="skills">🔍 スキル解説（全数値）</h2>
+
+  <div class="skill-box">
+    <div class="skill-name">通常攻撃：調律の波動 <span class="skill-type">単体攻撃 / エネルギー+20 / 削靭10</span></div>
+    <div class="skill-desc">指定した敵単体にトリビーの攻撃力<span style="color:var(--accent);">50%〜100%</span>（Lv1〜Lv6）の量子属性ダメージを与える。強化優先度：<span class="priority-2">★★☆☆☆</span></div>
+  </div>
+
+  <div class="skill-box">
+    <div class="skill-name">戦闘スキル：叡智の調和（Harmony of Wisdom） <span class="skill-type">デバフ＋バフ / 消費SP:1 / エネルギー+30</span></div>
+    <div class="skill-desc">
+      指定した敵単体の<strong>全属性耐性を<span style="color:var(--accent);">15%〜25%</span></strong>（Lv1〜Lv12）ダウンさせる（2ターン）。<br>
+      同時に味方全体の<strong>与ダメージを<span style="color:var(--accent);">15%〜30%</span></strong>（Lv1〜Lv12）上昇させる（3ターン）。<br>
+      ターン経過はトリビーのターン開始時に1ずつ減少。<br>
+      強化優先度：<span class="priority-5">★★★★★</span>
+    </div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">トリビーの最重要スキル。全属性耐性-25%（Lv10）は他のどのキャラも持たない独自のデバフで、属性混合編成での価値が極めて高い。味方全体の与ダメ+30%も強力で、3ターン持続かつSP消費1で運用できるコスパの良さが光る。最優先でLv10以上。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">必殺技：諸天調和の境界（Boundary of Cosmic Harmony） <span class="skill-type">バフ＋デバフ / EP:140</span></div>
+    <div class="skill-desc">
+      敵全体の<strong>防御力を<span style="color:var(--accent);">16%〜30%</span></strong>（Lv1〜Lv10）ダウンさせる（2ターン）。<br>
+      味方全体の<strong>攻撃力を<span style="color:var(--accent);">20%〜40%</span></strong>（Lv1〜Lv10）上昇させる（3ターン）。<br>
+      さらに味方全体の<strong>EPを<span style="color:var(--accent);">15</span>回復</strong>する。<br>
+      強化優先度：<span class="priority-5">★★★★★</span>
+    </div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">攻防一体の必殺技。防御デバフ（-30%）と攻撃力バフ（+40%）はDPSの総火力を大きく底上げする。さらに全体EP+15回復効果により、パーティ全体の必殺技回転率が向上。サポーターとしての総合力は全キャラ中トップクラス。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">天賦：因果律の干渉 <span class="skill-type">常時パッシブ / サポート</span></div>
+    <div class="skill-desc">
+      トリビーの効果命中が<span style="color:var(--accent);">10%〜25%</span>（Lv1〜Lv10）上昇する。<br>
+      味方が必殺技を発動するたび、トリビーは<strong>5エネルギー</strong>回復する。<br>
+      さらにトリビーのデバフを受けている敵が倒された時、残りの敵1体につき<strong>3エネルギー</strong>を味方全体に供給（1ターン最大12）。<br>
+      強化優先度：<span class="priority-4">★★★★☆</span>
+    </div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">効果命中+25%（Lv10）により、デバフを安定して通せるようになる。味方の必殺技で5EP回復は140コストの必殺技の回転率向上に大きく貢献。敵撃破時の全体EP供給も地味に強力で、殲滅編成での連鎖的な必殺技発動をサポートする。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">秘技：静寂の調律 <span class="skill-type">戦闘前効果</span></div>
+    <div class="skill-desc">秘技使用後、20秒間持続する静寂フィールドを展開。この状態で敵に接触すると戦闘開始時に敵全体の全属性耐性-20%（2ターン）が付与され、味方全体のEP+20。</div>
+  </div>
+
+  <h2 id="relics">🏆 おすすめ遺物</h2>
+
+  <h3>最適セット：メッセンジャー2＋守護者2（ハイブリッド）</h3>
+  <div class="build-box">
+    <div class="label">メッセンジャー2セット</div>
+    <div class="content">速度+6%</div>
+  </div>
+  <div class="build-box">
+    <div class="label">守護者2セット</div>
+    <div class="content">最大HP+12%</div>
+  </div>
+  <p>トリビーは速度より耐久と効果命中が重要なため、速度は最低限確保しつつHPで生存率を高めるこの構成が安定。</p>
+
+  <h3>次点：メッセンジャー4セット</h3>
+  <div class="build-box">
+    <div class="label">4セット効果</div>
+    <div class="content">必殺技発動時、味方全体の速度+12%（1ターン）。</div>
+  </div>
+  <p>必殺技が回る編成ならチーム全体の速度を底上げできる。トリビー自身の速度が低くても、発動さえすればチーム全体の行動順が前進するため、ハイパーキャリー編成と好相性。</p>
+
+  <h3>オーナメント</h3>
+  <table>
+    <tr><th>順位</th><th>オーナメント</th><th>効果</th></tr>
+    <tr><td>🥇</td><td>折れた竜骨（Broken Keel）</td><td>効果抵抗+10%。効果抵抗30%以上で味方全体の会心ダメージ+10%。</td></tr>
+    <tr><td>🥈</td><td>老いぬ者の仙舟</td><td>HP+12%。速度120以上で攻撃力+8%（味方全体）。</td></tr>
+    <tr><td>🥉</td><td>陽気なフォンワク</td><td>EP回復効率+5%。速度120以上で戦闘開始時、行動が40%前進。</td></tr>
+  </table>
+
+  <h2 id="lightcones">💡 おすすめ光円錐</h2>
+
+  <table>
+    <tr><th>順位</th><th>光円錐名</th><th>レア</th><th>効果</th></tr>
+    <tr><td>🥇</td><td>時を超える叡智（Timeless Wisdom）</td><td>★5</td><td>効果命中+24%。必殺技発動時、味方全体の与ダメ+28%（2ターン）。軌跡でデバフ耐性+35%。</td></tr>
+    <tr><td>🥈</td><td>過去と未来（Past and Future）S5</td><td>★4</td><td>戦闘スキル使用後、次の味方の与ダメ+32%。トリビーは速度が遅いので効果が活きやすい。</td></tr>
+    <tr><td>🥉</td><td>ダンス！ダンス！ダンス！（Dance! Dance! Dance!）S5</td><td>★4</td><td>必殺技発動時、味方全体の行動が16%前進。全体行動促進。</td></tr>
+    <tr><td>④</td><td>メモリーズ・オブ・イット（Memories of It）S5</td><td>★4</td><td>EP回復効率+16%。必殺技火力は上がらないが回転率向上。</td></tr>
+  </table>
+
+  <h2 id="teams">👥 理想編成</h2>
+
+  <h3>編成① 量子ハイパーキャリー型</h3>
+  <div class="team-grid">
+    <div class="team-slot"><div class="role">メインDPS</div><div class="char">青雀/ゼーレ</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">トリビー</div></div>
+    <div class="team-slot"><div class="role">デバッファー</div><div class="char">銀狼</div></div>
+    <div class="team-slot"><div class="role">ヒーラー</div><div class="char">フォフォ</div></div>
+  </div>
+  <p>純量子編成の完成形。トリビーの全属性耐性ダウンと銀狼の弱点埋め込み・防御デバフが重なり、量子DPSが最大火力を発揮。フォフォの会心率バフとトリビーの攻撃力バフで火力の天井が非常に高い。</p>
+
+  <h3>編成② 知恵Wアタッカー型</h3>
+  <div class="team-grid">
+    <div class="team-slot"><div class="role">メインDPS</div><div class="char">ヘルタ</div></div>
+    <div class="team-slot"><div class="role">メインDPS</div><div class="char">キャストリス</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">トリビー</div></div>
+    <div class="team-slot"><div class="role">ヒーラー</div><div class="char">アベンチュリン</div></div>
+  </div>
+  <p>ヘルタ＋キャストリスのW知恵編成にトリビーを組み合わせた高火力編成。全属性耐性ダウンにより両DPSの火力が同時に底上げされ、防御デバフでさらに追い打ち。殲滅力は全編成中トップクラス。</p>
+
+  <h3>編成③ 汎用ハイパーキャリー型</h3>
+  <div class="team-grid">
+    <div class="team-slot"><div class="role">メインDPS</div><div class="char">任意DPS</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">トリビー</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">ルアンメェイ/ロビン</div></div>
+    <div class="team-slot"><div class="role">ヒーラー</div><div class="char">フォフォ</div></div>
+  </div>
+  <p>最も汎用性の高い編成。トリビー＋ルアンメェイ（またはロビン）のWサポートでDPSの火力を限界突破。防御デバフ、耐性ダウン、与ダメバフが重複するため、どのDPSと組んでも高いパフォーマンスを発揮する。</p>
+
+  <h3>編成④ 無課金向け</h3>
+  <div class="team-grid">
+    <div class="team-slot"><div class="role">メインDPS</div><div class="char">丹恒（物理）or 青雀</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">トリビー</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">アスター</div></div>
+    <div class="team-slot"><div class="role">ヒーラー</div><div class="char">ナターシャ</div></div>
+  </div>
+
+  <h2 id="eidolons">💎 凸数評価（星魂）</h2>
+
+  <table>
+    <tr><th>凸数</th><th>効果</th><th>おすすめ度</th></tr>
+    <tr><td>E0</td><td>基本性能。耐性ダウン+防御デバフで十分強力。</td><td>⭐⭐⭐⭐⭐</td></tr>
+    <tr><td>E1</td><td>戦技の全属性耐性ダウンが-30%（基本-25%から強化）。与ダメバフ+35%（基本+30%）。</td><td>⭐⭐⭐⭐⭐</td></tr>
+    <tr><td>E2</td><td>必殺技のEP回復効果+5（合計+20）。必殺技使用後、味方全体の速度+10%（1ターン）。</td><td>⭐⭐⭐⭐</td></tr>
+    <tr><td>E3</td><td>戦闘スキルLv+2。天賦Lv+2。</td><td>⭐⭐⭐</td></tr>
+    <tr><td>E4</td><td>トリビーのデバフを受けている敵が受けるダメージ+15%（チーム全体の火力UP）。</td><td>⭐⭐⭐⭐</td></tr>
+    <tr><td>E5</td><td>必殺技Lv+2。通常攻撃Lv+1。</td><td>⭐⭐</td></tr>
+    <tr><td>E6</td><td>戦技の全属性耐性ダウン永続化（ターン制限解除）。防御デバフ-40%に強化。チーム全体の会心ダメージ+30%。</td><td>⭐⭐⭐⭐⭐</td></tr>
+  </table>
+
+  <h2 id="synergy">🤝 相性の良いキャラ</h2>
+  <ul>
+    <li><strong>銀狼</strong>：量子編成の要。トリビーの耐性ダウン+銀狼の防御デバフで量子パが完成。</li>
+    <li><strong>ヘルタ（The Herta）</strong>：知恵編成。両方とも範囲攻撃+デバフで殲滅力が跳ね上がる。</li>
+    <li><strong>キャストリス</strong>：同じく知恵編成。トリビーの耐性ダウンで記憶状態中の火力がさらに向上。</li>
+    <li><strong>ゼーレ</strong>：量子アタッカー。トリビーの全バフをフル活用できる。</li>
+    <li><strong>ルアンメェイ</strong>：Wサポート編成。耐性貫通+耐性ダウンで属性補正を極限まで高められる。</li>
+    <li><strong>フォフォ</strong>：耐久+会心率サポート。トリビーのHPの低さを補える。</li>
+  </ul>
+
+  <h2 id="build">📋 おすすめビルドまとめ表</h2>
+  <table>
+    <tr><th>項目</th><th>おすすめ</th></tr>
+    <tr><td>光円錐</td><td>時を超える叡智（★5）＞ 過去と未来S5（★4）＞ ダンスダンスS5（★4）</td></tr>
+    <tr><td>遺物</td><td>メッセンジャー2+守護者2（安定）＞ メッセンジャー4（速度バフ）</td></tr>
+    <tr><td>オーナメント</td><td>折れた竜骨（最適）＞ 老いぬ者の仙舟 ＞ 陽気なフォンワク</td></tr>
+    <tr><td>胴体</td><td>HP% or 効果命中%</td></tr>
+    <tr><td>脚</td><td>HP% or 速度%（バランス）</td></tr>
+    <tr><td>オーブ</td><td>HP% or 防御%（耐久力重視）</td></tr>
+    <tr><td>縄</td><td>EP回復効率%（確定）</td></tr>
+    <tr><td>目標効果命中</td><td>60%以上（天賦含めると実質85%+）</td></tr>
+    <tr><td>目標速度</td><td>121以上（できれば134）</td></tr>
+    <tr><td>目標HP</td><td>5,000以上</td></tr>
+    <tr><td>スキル優先</td><td>戦闘スキル ＞ 必殺技 ＞ 天賦 ＞ 通常攻撃</td></tr>
+    <tr><td>凸優先</td><td>E1（バフ強化）＞ E6（完全体）</td></tr>
+  </table>
+
+  <h2 id="faq">❓ よくある質問（FAQ）</h2>
+
+  <div class="faq-item">
+    <div class="q">Q. トリビーとルアンメェイはどちらが強いですか？</div>
+    <div class="a">
+      両方とも調和の最強サポーターですが、役割が異なります。<br><br>
+      <strong>トリビーの強み：</strong><br>
+      - 全属性耐性ダウン（ユニーク効果・代替不可）<br>
+      - 防御デバフ+攻撃バフの同時展開<br>
+      - チーム全体のEPサポート<br>
+      - 量子編成で無類の強さ<br><br>
+      <strong>ルアンメェイの強み：</strong><br>
+      - 属性耐性貫通（撃破時さらに強力）<br>
+      - 撃破効率UP+撃破延長<br>
+      - 速度UP（全員の行動回数増加）<br>
+      - 追撃編成でも活躍<br><br>
+      総評：<strong>トリビーは属性混合や量子編成で輝き、ルアンメェイは汎用撃破編成で輝く</strong>。両方持っていればWサポート編成でさらに強力。どちらか1人なら手持ち編成に合わせて選ぶのが良いですが、トリビーの耐性ダウンは他のキャラでは絶対に代替できない唯一無二の価値があります。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. トリビーに効果命中はどのくらい必要ですか？</div>
+    <div class="a">
+      トリビーのデバフ（全属性耐性ダウン、防御ダウン）を安定して通すには、<strong>効果命中60%以上</strong>が推奨です。<br><br>
+      天賦Lv10で効果命中+25%されるため、遺物と光円錐で35%以上を確保すればOK。具体的には以下の組み合わせが目安です。<br>
+      - 「時を超える叡智」（モチーフ光円錐）の効果命中+24%があれば、遺物サブで11%以上<br>
+      - モチーフなしなら胴体を効果命中%にするか、サブで35%以上を確保<br>
+      - 効果抵抗無視の敵（エリート・ボス）には高めの効果命中が必要<br><br>
+      効果命中を盛りすぎると耐久ステが犠牲になるため、60%〜80%程度を目標にバランスを取りましょう。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. トリビーはロビンの代わりになりますか？</div>
+    <div class="a">
+      トリビーとロビンは<strong>完全な代替関係ではありません</strong>。<br><br>
+      ロビンは全体行動100%前進+攻撃力バフ+追撃連携が強みで、特に追撃編成で圧倒的な強さを発揮します。<br>
+      トリビーは全属性耐性ダウン+防御デバフ+与ダメバフが強みで、量子編成や知恵編成、属性混合編成で輝きます。<br><br>
+      つまり<strong>「追撃編成ならロビン、量子/知恵編成ならトリビー」</strong>という住み分けが明確です。両方持っていればWサポートとして共存させるのが最も強力で、例えば「ヘルタ＋キャストリス＋トリビー＋ロビン」のような編成も理論上可能です。ただしヒーラー不在になるため、高難易度では耐久面に注意が必要です。
+    </div>
+  </div>
+
+  <h2 id="summary">📋 総評</h2>
+  <div class="card">
+    <p>トリビー（Tribbie）は、<strong>崩壊スターレイルで唯一「全属性耐性ダウン」を付与できる貴重な調和サポートキャラクター</strong>です。属性を問わないデバフは編成の幅を大きく広げ、量子パ・知恵Wアタッカー・属性混合編成など様々な場面で活躍します。</p>
+
+    <h4>ビルドの基本方針</h4>
+    <ul style="margin-top:4px;">
+      <li><strong>光円錐</strong>：時を超える叡智（★5）＞ 過去と未来S5（★4）＞ ダンスダンスS5（★4）</li>
+      <li><strong>遺物</strong>：メッセンジャー2+守護者2（安定）＞ メッセンジャー4</li>
+      <li><strong>オーナメント</strong>：折れた竜骨（最適）＞ 老いぬ者の仙舟</li>
+      <li><strong>縄</strong>：EP回復効率%のみ（確定）</li>
+      <li><strong>目標効果命中</strong>：60%以上（天賦含め実質85%+）</li>
+      <li><strong>凸優先</strong>：E1（バフ強化）＞ E6（完全体）</li>
+    </ul>
+
+    <h4>評価点数（10点満点）</h4>
+    <table style="max-width:400px;">
+      <tr><th>項目</th><th>評価</th></tr>
+      <tr><td>サポート性能</td><td><span class="star">★★★★★★★★★★</span> 10/10</td></tr>
+      <tr><td>デバフ能力</td><td><span class="star">★★★★★★★★★★</span> 10/10（唯一無二）</td></tr>
+      <tr><td>汎用性</td><td><span class="star">★★★★★★★★☆☆</span> 8/10</td></tr>
+      <tr><td>編成自由度</td><td><span class="star">★★★★★★★★★☆</span> 9/10</td></tr>
+      <tr><td>遺物厳選難易度</td><td><span class="star">★★★★★★★★★☆</span> 9/10（速度不要で楽）</td></tr>
+      <tr><td>総合評価</td><td><span class="star">★★★★★★★★★☆</span> 9/10</td></tr>
+    </table>
+
+    <p style="margin-top:12px;">トリビーは、そのユニークな全属性耐性ダウンデバフにより、崩壊スターレイルのサポーターとして確固たる地位を築いています。特に量子編成や複合属性編成での価値は計り知れず、適切に運用すれば多くのコンテンツで編成の幅を広げてくれるでしょう。ぜひこのガイドを参考に、最強のトリビーを育成してください！</p>
+  </div>
+
+</article>
+
+</body>
+</html>

@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4B26RL1D24"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4B26RL1D24');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>【崩壊スターレイル】ロビン（知更鳥）完全攻略ガイド｜最強ビルド・遺物・光円錐・おすすめ編成</title>
+<meta name="description" content="崩壊スターレイルの星5物理属性・調和キャラ「ロビン（知更鳥／Robin）」の完全攻略ガイド。遺物・光円錐の最適構成、理想パーティ編成5選、凸数評価、スキル数値・コンサート状態の仕組みまで徹底解説。忘却の庭・幻想の庭・末日の獣対応。">
+<meta name="keywords" content="崩壊スターレイル,ロビン,知更鳥,Robin,攻略,遺物,光円錐,編成,凸,星魂,ビルド,おすすめ,調和,コンサート">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="【崩壊スターレイル】ロビン（知更鳥）完全攻略ガイド｜最強ビルド・遺物・光円錐・おすすめ編成">
+<meta property="og:description" content="崩壊スターレイルロビン（知更鳥）の完全攻略。スキル数値、遺物セット比較、光円錐ランキング、パーティ編成5選、凸数ごとの火力上昇率を詳細解説。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="【崩壊スターレイル】ロビン（知更鳥）完全攻略ガイド">
+<link rel="canonical" href="https://chjiya.github.io/hsr-guide/guides/ja/robin-guide-ja.html">
+<base href="/hsr-guide/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "【崩壊スターレイル】ロビン（知更鳥）完全攻略ガイド｜最強ビルド・遺物・光円錐・おすすめ編成",
+  "description": "崩壊スターレイルの星5物理属性・調和キャラ「ロビン（知更鳥）」の完全攻略。スキル解析、おすすめ遺物・光円錐・オーナメント、理想パーティ編成5選、凸数評価、FAQまで徹底解説。",
+  "author": { "@type": "Person", "name": "花叔" },
+  "datePublished": "2025-06-20",
+  "dateModified": "2026-06-09",
+  "articleSection": "キャラクター攻略",
+  "inLanguage": "ja",
+  "about": {
+    "@type": "Thing",
+    "name": "ロビン（知更鳥）",
+    "description": "崩壊スターレイルの星5物理属性・調和の運命を歩むサポートキャラクター"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://chjiya.github.io/hsr-guide/guides/ja/robin-guide-ja.html"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "ロビンの速度はいくつが最適ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ロビンの速度は120〜121が最適です。コンサート状態中は速度が固定90になるため、開幕で最初に行動できるだけの速度があれば十分です。軌跡A2で開幕行動順が25%促進されるため、120程度でほとんどの編成で最初に動けます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ロビンのモチーフ光円錐は必須ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "必須ではありませんが、推奨度は高いです。「流れゆく夜の調べ（Flowing Nightglow）」はEP回復効率+15%、攻撃力+48%（重ね掛け可能）、必殺技中に味方全体与ダメ+24%とロビンの全てを底上げします。無課金なら「コーラス（Chorus）」S5やイベント配布の「明日への旅路（For Tomorrow's Journey）」が有力な代替案です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ロビンのコンサート状態はどのくらい持続しますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "コンサート状態はアクションバーにカウントダウン（速度固定90）が表示され、このカウントダウンのターンが回ってくるまで持続します。速度90のカウントダウンは約111〜120AVで経過します。実戦では味方の攻撃回数が多いほどロビンの追加ダメージとEP回収量が増えるため、追撃編成ほどコンサート中の価値が高まります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ロビンの攻撃力はいくつ必要ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ロビンの攻撃力は4000以上が目標です。必殺技の攻撃力バフ（ロビンの攻撃力×22.8%+200）と追加ダメージ（120%分率）は両方ともロビンの攻撃力を参照するため、攻撃力を可能な限り高める必要があります。遺物メインステは胴体・靴・オーブの3箇所を攻撃力%で統一し、サブステも攻撃力%を最優先に盛りましょう。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ロビンは何凸がおすすめですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ロビンは無凸（E0）でも最強クラスの調和キャラとして活躍できます。凸を進めるならE1が最もコスパに優れ、コンサート中に味方全体の全属性耐性貫通+24%という破格のバフを提供します。E2でさらに速度+16%と天賦のEP回復量増加が加わり、必殺技の回転率が向上。E6は追撃編成で壊レベルの火力を叩き出します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ロビンにおすすめの遺物セットは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ロビンの最適遺物は2セットハイブリッド構成です。「仮面舞踏会のチャム（メッセンジャー）2セット（速度+6%）＋ビルドの銃手（マスケティア）2セット（攻撃力+12%）」が汎用性が高く安定した選択肢です。追撃編成特化なら「風吹き渡る勇姿（Valorous）2セット（追加攻撃ダメ+16%）＋メッセンジャー2セット」も有効。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ロビンは追撃パーティ以外でも使えますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい、追撃パーティ以外でも十分活躍できます。ロビンの戦闘スキルによる与ダメ+50%（全体）と天賦の会心ダメージ+20%（全体）は汎用性が高く、どのパーティでも有効です。必殺技の全体行動促進（100%行動前進）は全編成で強力で、DoTパーティ（カフカ＋ブラックスワン）やハイパーキャリー編成（丹恒・飲月君、黄泉E2）でも高いパフォーマンスを発揮します。"
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --bg: #1a1a2e;
+    --card: #16213e;
+    --accent: #4fc3f7;
+    --text: #e0e0e0;
+    --sub: #a0a0b0;
+    --border: #2a2a4a;
+    --highlight: #0f3460;
+    --green: #4caf84;
+    --red: #e0556a;
+    --blue: #5b9bd5;
+    --purple: #b39ddb;
+    --music: #e8a838;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', Meiryo, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+    padding: 20px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 1.8em;
+    color: var(--accent);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 1.4em;
+    color: var(--accent);
+    margin: 36px 0 16px;
+    padding: 8px 14px;
+    border-left: 4px solid var(--accent);
+    background: var(--highlight);
+    border-radius: 0 6px 6px 0;
+  }
+  h3 {
+    font-size: 1.15em;
+    color: #80d8ff;
+    margin: 24px 0 10px;
+  }
+  h4 {
+    font-size: 1.05em;
+    color: #b0e0ff;
+    margin: 16px 0 8px;
+  }
+  .char-header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background: var(--card);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 24px;
+    border: 1px solid var(--border);
+  }
+  .char-icon {
+    width: 90px;
+    height: 90px;
+    border-radius: 12px;
+    background: var(--music);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2em;
+    flex-shrink: 0;
+    color: #fff;
+  }
+  .char-info { flex: 1; }
+  .char-info .name { font-size: 1.6em; font-weight: bold; color: #fff; }
+  .char-info .name .jp { font-size: 1.6em; font-weight: bold; color: #fff; }
+  .char-info .tags { margin-top: 6px; display: flex; gap: 8px; flex-wrap: wrap; }
+  .tag {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: bold;
+  }
+  .tag-rarity { background: #b8860b; color: #fff; }
+  .tag-element { background: #9e9e9e; color: #fff; }
+  .tag-path { background: var(--music); color: #1a1a2e; }
+  .tag-role { background: var(--accent); color: #1a1a2e; }
+
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    margin: 16px 0;
+  }
+  .stat-box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+  }
+  .stat-box .label { font-size: 0.8em; color: var(--sub); }
+  .stat-box .value { font-size: 1.2em; font-weight: bold; color: #fff; margin-top: 4px; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 0.9em;
+  }
+  th {
+    background: var(--highlight);
+    color: var(--accent);
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px solid var(--border);
+  }
+  td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+  .star { color: var(--accent); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px;
+    margin: 16px 0;
+  }
+
+  .build-box {
+    background: var(--highlight);
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin: 12px 0;
+  }
+  .build-box .label { color: var(--accent); font-weight: bold; font-size: 0.85em; }
+  .build-box .content { color: #fff; font-weight: bold; margin-top: 4px; }
+
+  .pros-cons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 16px 0;
+  }
+  .pros, .cons {
+    padding: 14px;
+    border-radius: 8px;
+  }
+  .pros { background: rgba(76,175,132,0.1); border: 1px solid rgba(76,175,132,0.3); }
+  .cons { background: rgba(224,85,106,0.1); border: 1px solid rgba(224,85,106,0.3); }
+  .pros h4 { color: var(--green); margin-bottom: 6px; }
+  .cons h4 { color: var(--red); margin-bottom: 6px; }
+  .pros li, .cons li { margin-left: 18px; font-size: 0.9em; }
+
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 12px 0;
+  }
+  .team-slot {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 8px;
+    text-align: center;
+  }
+  .team-slot .role { font-size: 0.75em; color: var(--sub); margin-bottom: 4px; }
+  .team-slot .char { font-weight: bold; color: #fff; font-size: 0.95em; }
+
+  .faq-item {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin: 12px 0;
+    padding: 16px;
+  }
+  .faq-item .q {
+    color: var(--accent);
+    font-weight: bold;
+    font-size: 1.05em;
+    margin-bottom: 8px;
+  }
+  .faq-item .a {
+    color: var(--text);
+    line-height: 1.8;
+  }
+
+  .note {
+    background: rgba(79,195,247,0.08);
+    border-left: 3px solid var(--accent);
+    padding: 10px 14px;
+    margin: 14px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.9em;
+  }
+
+  .skill-box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px;
+    margin: 10px 0;
+  }
+  .skill-box .skill-name { font-weight: bold; color: var(--accent); font-size: 1.05em; }
+  .skill-box .skill-type { font-size: 0.8em; color: var(--sub); margin-left: 8px; }
+  .skill-box .skill-desc { margin-top: 8px; font-size: 0.9em; }
+
+  .priority-5 { color: var(--accent); }
+  .priority-4 { color: #e8c547; }
+  .priority-3 { color: #c0c0c0; }
+  .priority-2 { color: #888; }
+
+  ol, ul { padding-left: 1.5em; }
+  li { margin: 4px 0; }
+
+  .toc { margin: 16px 0; padding: 14px; background: var(--card); border-radius: 8px; border: 1px solid var(--border); }
+  .toc a { color: var(--accent); text-decoration: none; }
+  .toc a:hover { text-decoration: underline; }
+  .toc li { margin: 4px 0; }
+
+  @media (max-width: 600px) {
+    .char-header { flex-direction: column; text-align: center; }
+    .team-grid { grid-template-columns: repeat(2, 1fr); }
+    .pros-cons { grid-template-columns: 1fr; }
+    .stat-grid { grid-template-columns: repeat(2, 1fr); }
+    body { padding: 12px; }
+  }
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3857626678274044"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+<article>
+  <h1>【崩壊スターレイル】ロビン（知更鳥）完全攻略ガイド</h1>
+
+  <!-- 目次 -->
+  <div class="toc">
+    <strong>📑 目次</strong>
+    <ol style="margin-top:6px;">
+      <li><a href="#overview">キャラ概要</a></li>
+      <li><a href="#skills">スキル解説（全数値）</a></li>
+      <li><a href="#relics">おすすめ遺物（セット比較＋%差）</a></li>
+      <li><a href="#lightcones">おすすめ光円錐（4選択肢＋%差）</a></li>
+      <li><a href="#teams">理想編成（5編成＋ローテーション詳細）</a></li>
+      <li><a href="#eidolons">凸数評価（0-6凸、各%up率）</a></li>
+      <li><a href="#synergy">相性の良いキャラ</a></li>
+      <li><a href="#build">おすすめビルドまとめ表</a></li>
+      <li><a href="#faq">よくある質問（FAQ）</a></li>
+      <li><a href="#summary">総評</a></li>
+    </ol>
+  </div>
+
+  <!-- キャラクター基本情報 -->
+  <div class="char-header" id="overview">
+    <div class="char-icon">🎵</div>
+    <div class="char-info">
+      <div class="name">ロビン（知更鳥 / Robin）</div>
+      <div class="tags">
+        <span class="tag tag-rarity">★5</span>
+        <span class="tag tag-element">物理属性</span>
+        <span class="tag tag-path">調和（Harmony）</span>
+        <span class="tag tag-role">サポート / サブアタッカー</span>
+      </div>
+      <div style="margin-top:8px;color:var(--sub);font-size:0.9em;">
+        所属：ピノコニー・ファミリー｜声優：名塚佳織｜入手：限定排出（イベント跳躍）
+      </div>
+    </div>
+  </div>
+
+  <!-- ステータス概要 -->
+  <div class="stat-grid">
+    <div class="stat-box">
+      <div class="label">最大HP</div>
+      <div class="value">1,281</div>
+    </div>
+    <div class="stat-box">
+      <div class="label">攻撃力</div>
+      <div class="value">641</div>
+    </div>
+    <div class="stat-box">
+      <div class="label">防御力</div>
+      <div class="value">485</div>
+    </div>
+    <div class="stat-box">
+      <div class="label">速度</div>
+      <div class="value">102</div>
+    </div>
+    <div class="stat-box">
+      <div class="label">EP（必殺技）</div>
+      <div class="value">160</div>
+    </div>
+  </div>
+
+  <!-- キャラクター評価 -->
+  <div class="pros-cons">
+    <div class="pros">
+      <h4>✅ 長所</h4>
+      <ul>
+        <li>全体行動100%前進という唯一無二の必殺技効果</li>
+        <li>与ダメ+50%（全体）＋会心ダメージ+20%（常時）の強力バフ</li>
+        <li>コンサート中の追加ダメージが固定会心100%/会心ダメ150%で個人火力も高い</li>
+        <li>戦闘スキルが3ターン持続でSP効率が非常に良い</li>
+        <li>コンサート中はCC耐性（行動制限無効）</li>
+        <li>追撃編成で破格のシナジー（A4軌跡で追撃会心ダメ+25%）</li>
+        <li>遺物厳選が他の調和キャラより圧倒的に簡単（速度・会心不要）</li>
+        <li>基礎攻撃力640と全キャラ中トップクラス</li>
+      </ul>
+    </div>
+    <div class="cons">
+      <h4>⚠️ 短所</h4>
+      <ul>
+        <li>必殺技コスト160と非常に重い</li>
+        <li>EP回収が味方の攻撃頻度に依存（編成によってばらつく）</li>
+        <li>コンサート中はロビン自身が行動不能（戦技更新できない）</li>
+        <li>オートバトルでは必殺技の使いどころが難しい</li>
+        <li>追撃編成以外ではEP回収効率が低下</li>
+        <li>基礎HPが低め（耐久面に注意）</li>
+        <li>モチーフ光円錐「流れゆく夜の調べ」との依存度がやや高い</li>
+      </ul>
+    </div>
+  </div>
+
+  <p>ロビン（知更鳥）は、Ver.2.2「等しく響く空の下で」で実装された星5物理属性・調和の運命を歩むサポートキャラクターです。ピノコニーが生んだ銀河規模の歌姫で、その美しい歌声で味方全体を鼓舞します。ロビンの最大の特徴は、<strong>必殺技「千声一同・結晶詩」でコンサート状態に入り、味方全体を100%行動前進させると同時に、自身の攻撃力を参照した強力な全体攻撃力バフを付与する</strong>という破格のサポート性能です。</p>
+  <p>ロビンは<strong>現環境で最強クラスの調和（Harmony）サポートキャラクター</strong>であり、特に追撃（フォローアップアタック）編成において真価を発揮します。必殺技の全体行動前進はブローニャの単体行動前進を超える効果で、パーティ全体の行動回数を飛躍的に増加させます。さらにコンサート中は味方の攻撃ごとに追加物理ダメージ（固定会心100%/会心ダメ150%）を与えるため、サブアタッカーとしても侮れない火力を叩き出します。</p>
+  <p>ルアンメェイと並ぶ汎用性の高い調和キャラであり、<strong>SSランク（Prydwen：Tier 1 / Game8 / Altema）</strong>を獲得。忘却の庭（混沌の記憶）・模擬宇宙・末日の獣・幻想の庭と全ての高難易度コンテンツで活躍します。特に追撃編成でのパフォーマンスは圧倒的で、飛翔（Feixiao）やトパーズ＆カブなどの追撃アタッカーと組むことで、想像を超える火力を発揮します。</p>
+
+  <!-- スキル解説 -->
+  <h2 id="skills">🔍 スキル解説（全数値）</h2>
+
+  <div class="skill-box">
+    <div class="skill-name">通常攻撃：羽撃きホワイトノイズ <span class="skill-type">単体攻撃 / エネルギー+20 / 削靭10</span></div>
+    <div class="skill-desc">
+      指定した敵単体にロビンの攻撃力<span style="color:var(--accent);">50%〜100%</span>（Lv1〜Lv6）の物理属性ダメージを与える。<br>
+      強化優先度：<span class="priority-2">★★☆☆☆</span>
+    </div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">ロビンの通常攻撃はSP節約時の繋ぎとして使用。調和キャラなので基本的に通常攻撃を連打することはないが、SPが不足している場面や戦闘スキルの効果が切れていない場合に使用する。エネルギー供給源としても機能するが、ロビンの火力要因は必殺技の追加ダメージが主体のため、通常攻撃のレベル上げ優先度は最も低い。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">戦闘スキル：カナリアのアリア <span class="skill-type">サポート / 全体バフ / エネルギー+30</span></div>
+    <div class="skill-desc">
+      味方全体の与ダメージを<span style="color:var(--accent);">25%〜50%</span>（Lv1〜Lv12）上昇させる。<strong>3ターン</strong>継続。<br>
+      このターン経過はロビンのターン開始時に1ずつ減少する。<br>
+      軌跡A6「順次通路」習得後：戦闘スキル使用時に追加で<strong>5エネルギー</strong>回復。<br>
+      強化優先度：<span class="priority-5">★★★★★</span>
+    </div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">ロビンの最重要サポートスキル。Lv10で与ダメージ+50%と破格の数値を誇る全体バフ。3ターン持続でターン経過はロビンのターン開始時にしか減らないため、コンサート中はターンが経過せず、実質的にコンサート終了までスキル効果が持続する。SP効率が非常に良く、3ターンに1回の使用で済むため、ほとんどのSPをDPSに回せる。A6軌跡で使用時に+5エネルギーを得られるようになり、必殺技の回転率向上にも貢献。最優先でLv10以上を目指そう。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">必殺技：千声一同・結晶詩（Vox Harmonique, Opus Cosmique） <span class="skill-type">サポート / コンサート / EP:160</span></div>
+    <div class="skill-desc">
+      ロビンが<strong>「コンサート（Concerto）」</strong>状態に入り、ロビン以外の味方全員を<strong>即座に行動させる（100%行動前進）</strong>。<br><br>
+      <strong>コンサート状態中の効果：</strong><br>
+      ① 味方全体の攻撃力をロビンの攻撃力の<span style="color:var(--accent);">22.8%</span>＋<span style="color:var(--accent);">200</span>（Lv10時）上昇させる。<br>
+      ② 味方が攻撃を行うたび、ロビンが追加物理ダメージ（攻撃力の<span style="color:var(--accent);">72%〜120%</span>、Lv1〜Lv10）を1回与える。<br>
+      ③ この追加ダメージの<strong>会心率は100%固定、会心ダメージは150%固定</strong>で調整不可。<br>
+      ④ ロビンはコンサート中、<strong>行動制限系デバフ（CC）を完全無効化</strong>される。<br>
+      ⑤ ロビンはコンサート中、<strong>ターンが回ってこず行動不能</strong>（戦技更新不可）。<br>
+      ⑥ アクションバーに速度<strong>固定90</strong>のカウントダウンが表示され、これのターンが回ってきたらコンサート終了。<br>
+      エネルギー回復：<span style="color:var(--accent);">5</span><br>
+      強化優先度：<span class="priority-5">★★★★★</span>
+    </div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">ロビンの真骨頂。味方全体を即座に行動させる効果は崩壊スターレイル全体でも唯一無二。コンサート中の攻撃力バフ（22.8%×ロビンATK＋200）はロビンの攻撃力が4000の場合、約1112もの攻撃力を味方全体に付与できる。追加ダメージは会心系ステータスを一切必要とせず（固定100%/150%）、攻撃力だけで火力が完結するため、攻撃力特化ビルドで最大限の効果を発揮する。コンサートの持続時間はカウントダウン（速度90）が約111〜120AVで経過するため、味方の速度が速いほどコンサート中により多くの行動回数を稼げる。必殺技は最優先でLv10（可能ならLv12+）を目指そう。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">天賦：共鳴の音律（Tonal Resonance） <span class="skill-type">常時パッシブ / バフ / EP供給</span></div>
+    <div class="skill-desc">
+      味方全体の<strong>会心ダメージを<span style="color:var(--accent);">8%〜20%</span></strong>（Lv1〜Lv10）上昇させる。<br>
+      味方が敵に攻撃を行った後、ロビンは<strong>2エネルギー</strong>を追加で回復する。<br>
+      強化優先度：<span class="priority-4">★★★★☆</span>
+    </div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">ロビンの天賦はシンプルながら強力。会心ダメージ+20%（Lv10時）は常時発動で、出雲オーナメントやBroken Keelなどの効果と重複する。会心ダメージバフは全アタッカーに恩恵があり、特に高会心ダメ編成で効果的。味方の攻撃ごとに2エネルギー回復はロビンの必殺技回転率に直結。追撃が頻発する編成（飛翔・トパーズ・アベンチュリンなど）では、1ターンに複数回のエネルギー回復が見込め、160コストの必殺技の回転を大幅に加速する。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">秘技：酩酊の序曲（Overture of Inebriation） <span class="skill-type">戦闘前効果</span></div>
+    <div class="skill-desc">秘技を使用した後、15秒間持続する特殊な次元（フィールド）を展開する。次元内の敵はロビンを攻撃せず、ロビンに追従する。次元が展開された状態で戦闘に入った場合、各ウェーブ開始時にロビンが<strong>5エネルギー</strong>回復する。味方の次元効果は同時に1つまで。</div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">ロビン専用の便利な秘技。敵を引き連れて移動できるため、移動中の被弾を防げる。戦闘開始時に各ウェーブで5エネルギー回復するため、必殺技の初動を大幅に加速できる。2ウェーブ構成の忘却の庭では合計10エネルギー、3ウェーブの模擬宇宙では15エネルギーもの先行チャージが可能。必殺技コスト160に対して貴重なエネルギー源となる。</p>
+
+  <h3>軌跡（追加能力）</h3>
+  <table>
+    <tr><th>軌跡名</th><th>解放条件</th><th>効果</th><th>必須度</th></tr>
+    <tr><td>色彩豊かなカデンツァ（Coloratura Cadenza）</td><td>昇格2（A2）</td><td>戦闘開始時、ロビンの行動順が<strong>25%</strong>促進される。</td><td><span style="color:var(--accent);">★★★★★</span></td></tr>
+    <tr><td>即興の華麗（Impromptu Flourish）</td><td>昇格4（A4）</td><td>コンサート状態中、味方全体の追加攻撃（フォローアップアタック）の会心ダメージが<strong>+25%</strong>。</td><td><span style="color:var(--accent);">★★★★★</span></td></tr>
+    <tr><td>順次通路（Sequential Passage）</td><td>昇格6（A6）</td><td>戦闘スキル使用時、追加で<strong>5</strong>エネルギー回復。</td><td><span style="color:var(--accent);">★★★★★</span></td></tr>
+  </table>
+
+  <h3>スモールトラシス（小軌跡）</h3>
+  <table>
+    <tr><th>ステータス</th><th>獲得値</th></tr>
+    <tr><td>攻撃力（ATK）</td><td>+28%</td></tr>
+    <tr><td>HP</td><td>+18%</td></tr>
+    <tr><td>速度（SPD）</td><td>+5</td></tr>
+  </table>
+
+  <div class="note">
+    <strong>💡 スキル強化の優先順位：</strong> 必殺技 ＞ 戦闘スキル ＞ 天賦 ＞ 通常攻撃。必殺技は迷わず最優先でLv10（可能ならLv12）を目指そう。戦闘スキルもLv10推奨。天賦はLv8〜10を目標に。軌跡の追加能力は3つとも全て取得必須級。特にA2の行動順促進25%はロビンが開幕で最初に動くために重要。A4の追撃会心ダメ+25%は追撃編成で火力が大きく変わる。A6の戦技+5エネは必殺技回転率に直結する。
+  </div>
+
+  <!-- 遺物推荐 -->
+  <h2 id="relics">⚔️ おすすめ遺物</h2>
+
+  <h3>トンネル遺物（メインセット）比較</h3>
+  <table>
+    <tr><th>セット構成</th><th>セット効果</th><th>火力/バフ比較</th><th>おすすめ度</th></tr>
+    <tr>
+      <td><strong>メッセンジャー2 + マスケティア2</strong><br>（仮面舞踏会のチャム＋荒野の銃手）</td>
+      <td>メッセンジャー2：速度+6%<br>マスケティア2：攻撃力+12%</td>
+      <td><span class="star">100%</span><br><span style="color:var(--accent);">基準値（汎用最適）</span></td>
+      <td><span class="star">★★★★★</span><br><span style="color:var(--accent);">汎用最適</span></td>
+    </tr>
+    <tr>
+      <td><strong>メッセンジャー4セット</strong><br>（仮面舞踏会のチャム4）</td>
+      <td>2セット：速度+6%<br>4セット：必殺技発動時、味方全体の速度+12%（1T）</td>
+      <td><span style="color:var(--accent);">約98%</span><br><span style="color:var(--sub);">−2%</span></td>
+      <td><span style="color:#e8c547;">★★★★☆</span><br><span style="color:var(--sub);">PT速度UP特化</span></td>
+    </tr>
+    <tr>
+      <td><strong>勇姿2 + メッセンジャー2</strong><br>（風吹き渡る勇姿＋メッセンジャー）</td>
+      <td>勇姿2：追加攻撃ダメ+16%<br>メッセンジャー2：速度+6%</td>
+      <td><span style="color:#e8c547;">約99%</span><br><span style="color:var(--sub);">−1%（追撃編成）</span></td>
+      <td><span style="color:#e8c547;">★★★★☆</span><br><span style="color:var(--sub);">追撃編成特化</span></td>
+    </tr>
+    <tr>
+      <td><strong>サセルドス2 + メッセンジャー2</strong><br>（再召喚のサセルドス＋メッセンジャー）</td>
+      <td>サセルドス2：速度+6%<br>メッセンジャー2：速度+6%（計12%）</td>
+      <td><span style="color:#c0c0c0;">約96%</span><br><span style="color:var(--sub);">−4%（ATK不足）</span></td>
+      <td><span style="color:#c0c0c0;">★★★☆☆</span><br><span style="color:var(--sub);">速度特化</span></td>
+    </tr>
+  </table>
+
+  <p><strong>セット比較の詳細解説：</strong>ロビンの遺物は他のキャラと異なり、速度と会心率を追求する必要がないため、<strong>攻撃力%を最優先</strong>にしたセット選択が求められます。メッセンジャー2（速度+6%）＋マスケティア2（攻撃力+12%）のハイブリッド構成が攻撃力と実用性のバランスに優れており、最も安定した選択肢です。メッセンジャー4セットは必殺技発動時に味方全体に速度+12%（1ターン）を付与できるため、チーム全体の速度を底上げしたい場合に有効。ただしロビン自身の火力には寄与しないため、火力面ではマスケティア2に劣ります。風吹き渡る勇姿（Valorous）2セットは追加攻撃ダメ+16%でコンサート中の追加ダメージを強化。追撃編成では特に効果的です。サセルドス2は速度二重取りになりますが、攻撃力%が不足しがちで総合的には劣ります。</p>
+
+  <h3>次元界オーナメント（プラナー）比較</h3>
+  <table>
+    <tr><th>セット</th><th>セット効果</th><th>おすすめ度</th><th>解説</th></tr>
+    <tr>
+      <td><strong>陽気なフォンワク（Sprightly Vonwacq）</strong></td>
+      <td>EP回復効率+5%。速度120以上で戦闘開始時に行動順が40%促進される。</td>
+      <td><span class="star">★★★★★</span></td>
+      <td>ロビンの最適オーナメント。EP回復効率+5%が必殺技の回転率を向上させ、行動順促進40%（A2の25%と合わせて実質最速行動確定）により、開幕で先手を取って戦闘スキルを展開できる。使用率約61%と最も人気が高い。</td>
+    </tr>
+    <tr>
+      <td><strong>老いぬ者の仙舟（Fleet of the Ageless）</strong></td>
+      <td>HP+12%。速度120以上で味方全体の攻撃力+8%。</td>
+      <td><span style="color:#e8c547;">★★★★☆</span></td>
+      <td>味方全体に攻撃力+8%バフを提供できる貴重なオーナメント。ロビンの攻撃力バフと重複するため相乗効果が高い。HP+12%でロビンの低い耐久力を補えるのも利点。ただしEP回復効率がないため、必殺技の回転率はフォンワクに劣る。</td>
+    </tr>
+    <tr>
+      <td><strong>折れた竜骨（Broken Keel）</strong></td>
+      <td>効果抵抗+10%。効果抵抗が30%以上の時、味方全体の会心ダメージ+10%。</td>
+      <td><span style="color:#e8c547;">★★★★☆</span></td>
+      <td>味方全体に会心ダメージ+10%の貴重なバフ。ロビンの天賦（会心ダメ+20%）と重複し、合計で会心ダメージ+30%をチームに供給可能。効果抵抗30%の条件を満たすのがややハードルだが、サブで効果抵抗を盛ることで達成可能。編成のDPSが高会心率・会心ダメ型の場合に特に有効。</td>
+    </tr>
+    <tr>
+      <td><strong>ルシャカ、沈みし海（Lushaka, the Sunken Seas）</strong></td>
+      <td>EP回復効率+5%。パーティ内の1番目に配置されたキャラの攻撃力+12%。</td>
+      <td><span style="color:#e8c547;">★★★★☆</span></td>
+      <td>EP回復効率+5%に加え、特定のDPS1体に攻撃力+12%を追加で付与。飛翔や黄泉などメインアタッカーが明確な編成で有効。使用率約25.8%とフォンワクに次いで人気。</td>
+    </tr>
+    <tr>
+      <td><strong>ピノコニー、夢の地（Penacony, Land of the Dreams）</strong></td>
+      <td>EP回復効率+5%。同属性の味方がいる場合、その味方の与ダメージ+10%。</td>
+      <td><span style="color:#c0c0c0;">★★★☆☆</span></td>
+      <td>物理属性のDPS（クラーラ、ルカ、ゼーレは物理ではないため注意）と組む場合のみ検討。ロビンと物理属性DPSを同時に運用する編成は限られるため、汎用性は低い。</td>
+    </tr>
+  </table>
+
+  <h3>遺物メインステータス</h3>
+  <table>
+    <tr><th>部位</th><th>メインステータス</th><th>備考</th></tr>
+    <tr><td>頭部</td><td>HP（固定）</td><td>—</td></tr>
+    <tr><td>手部</td><td>攻撃力（固定）</td><td>—</td></tr>
+    <tr><td>胴体</td><td><strong>攻撃力%</strong></td><td>攻撃力%一択。ロビンの追加ダメージは固定会心のため会心率/会心ダメ不要。</td></tr>
+    <tr><td>脚部</td><td><strong>攻撃力%</strong> または 速度</td><td>速度が120未満なら速度靴推奨。120以上なら攻撃力%靴でOK。</td></tr>
+    <tr><td>次元界オーブ</td><td><strong>攻撃力%</strong> または 物理ダメージ%</td><td>攻撃力%推奨（サポートバフ効果増加）。物理ダメ%は追加ダメージのみ強化。</td></tr>
+    <tr><td>連結縄</td><td><strong>EP回復効率%</strong> または 攻撃力%</td><td>EP回復効率が安定（フォンワク＋EP縄で119.4%）。追撃編成なら攻撃%縄も可。</td></tr>
+  </table>
+
+  <div class="note">
+    <strong>💡 サブステータス優先度：</strong> 攻撃力%（4000以上目標） ＞ 速度（120目標） ＞ HP% ≧ 防御力% ＞ 効果抵抗<br>
+    ロビンは他の調和キャラと異なり、<strong>会心率・会心ダメージが完全に不要</strong>（コンサートの追加ダメージは固定会心100%/会心ダメ150%のため）。そのため、サブステは攻撃力%一点集中で良い。攻撃力が4000を超えたら、速度120を達成するためにサブで速度を調整。残りのサブステは耐久面（HP%/防御%）に振ってOK。<br>
+    <strong>速度ブレイクポイント：</strong> ロビンはコンサート中に速度が固定90になるため、通常状態での速度は開幕で最初に動くためだけに必要。A2軌跡の行動促進25%があるため、<strong>速度120</strong>でほとんどの編成で先手を取れる。スパークレ（速度160）など超高速キャラと組む場合は121〜122程度まで上げると安全。<br>
+    <strong>推奨EP効率：</strong> フォンワク（5%）＋EP縄（19.44%）で合計約24.44%。これにより天賦のエネルギー回復と組み合わせて効率的な必殺技ループが可能に。追撃編成でエネルギーが豊富な場合は攻撃%縄への変更も検討可。
+  </div>
+
+  <!-- 光円錐推荐 -->
+  <h2 id="lightcones">💡 おすすめ光円錐（4選択肢＋%差）</h2>
+
+  <table>
+    <tr><th>光円錐</th><th>レア</th><th>効果概要</th><th>火力比</th><th>おすすめ度</th></tr>
+    <tr>
+      <td><strong>流れゆく夜の調べ（Flowing Nightglow）</strong></td>
+      <td>★5</td>
+      <td>EP回復効率+15%（S1）。味方が攻撃するたびに「カンツォーネ」1層獲得（最大5層）。1層につきロビンの攻撃力+4.8%（最大+24%）。カンツォーネ5層で味方全体の与ダメージ+24%（必殺技中持続）。</td>
+      <td><span class="star">100%</span></td>
+      <td><span class="star">★★★★★</span><br><span style="color:var(--accent);">最適（モチーフ）</span></td>
+    </tr>
+    <tr>
+      <td><strong>戦いは終わらない（But the Battle Isn't Over）</strong></td>
+      <td>★5</td>
+      <td>EP回復効率+10%（S1）。戦闘スキル使用時、次の行動をする味方の与ダメージ+30%。戦闘スキルを発動した後、SPを1回復する（3ターンに1回）。</td>
+      <td><span style="color:#e8c547;">約88%</span></td>
+      <td><span style="color:#e8c547;">★★★★★</span><br><span style="color:var(--accent);">★5次点（SP回復）</span></td>
+    </tr>
+    <tr>
+      <td><strong>明日への旅路（For Tomorrow's Journey）</strong></td>
+      <td>★4</td>
+      <td>S5時：装備キャラが必殺技を発動した後、攻撃力+32%（2T）。必殺技の与ダメージ+28%。</td>
+      <td><span style="color:#e8c547;">約90%</span></td>
+      <td><span style="color:#e8c547;">★★★★★</span><br><span style="color:var(--accent);">イベント配布（最高性能）</span></td>
+    </tr>
+    <tr>
+      <td><strong>コーラス（Chorus）</strong></td>
+      <td>★3</td>
+      <td>S5時：戦闘開始後、味方全体の攻撃力+12%（4T）。無凸完凸で即効性のある全体攻撃力バフ。</td>
+      <td><span style="color:#c0c0c0;">約75%</span></td>
+      <td><span style="color:#e8c547;">★★★★☆</span><br><span style="color:var(--sub);">無課金最適</span></td>
+    </tr>
+  </table>
+
+  <div class="build-box">
+    <div class="label">🏆 最適光円錐</div>
+    <div class="content">流れゆく夜の調べ（★5・モチーフ）</div>
+    <div style="margin-top:6px;font-size:0.9em;">ロビンのモチーフ光円錐。EP回復効率+15%が必殺技の回転率を大幅に改善し、攻撃力最大+24%（カンツォーネ5層）はロビンのバフ量と追加ダメージを大きく底上げ。さらに5層到達時は味方全体の与ダメージ+24%とロビンのスキルと重複する破格のバフを提供する。ロビンを本格的に運用するならモチーフ光円錐の確保を強く推奨。モチーフがない場合との火力差は明確で、バフ量・EP効率・追加ダメージの全てにおいて優位に立つ。</div>
+  </div>
+
+  <div class="build-box">
+    <div class="label">💰 無課金・低予算向け</div>
+    <div class="content">明日への旅路（★4・S5）or コーラス（★3・S5）</div>
+    <div style="margin-top:6px;font-size:0.9em;">「明日への旅路」は期間限定イベントで入手可能な星4光円錐。S5で必殺技発動後に攻撃力+32%に加え、与ダメージ+28%とロビンの個人火力とサポート力を両立できる優れもの。モチーフ比で約90%の性能を発揮する。イベントを逃した場合や無課金の場合は星3「コーラス」S5が現実的な選択肢。戦闘開始から4ターンの間、味方全体の攻撃力+12%を提供する。EP回復効率がないため必殺技の回転率は落ちるが、攻撃力バフの観点では悪くない性能。「戦いは終わらない」はブローニャのモチーフで、恒常ガチャから入手可能。SP回復が便利で、EP回復効率+10%も有効だが、与ダメ+30%は次の行動をする味方のみと限定的。</div>
+  </div>
+
+  <h3>光円錐選択のポイント</h3>
+  <p>ロビンの光円錐選びで最も重要なのは<strong>「EP回復効率」</strong>と<strong>「攻撃力%」</strong>の2点です。必殺技コスト160は非常に重いため、EP回復効率を可能な限り確保して回転率を高めることが最優先。次いで攻撃力%でバフ量と追加ダメージを増強します。モチーフの「流れゆく夜の調べ」はEP回復効率+15%と攻撃力+24%（最大）、さらに味方全体与ダメ+24%と3拍子揃った理想的な性能。イベント配布の「明日への旅路」S5はモチーフ未所持の最有力候補で、攻撃力32%と必殺技ダメ28%を両立。無課金なら「コーラス」S5で攻撃力バフを確保しつつ、遺物でEP回復効率を補いましょう。</p>
+
+  <!-- 理想編成 -->
+  <h2 id="teams">🤝 理想編成（5編成＋ローテーション詳細）</h2>
+
+  <h3>編成①：飛翔追撃FART編成（最強推奨）</h3>
+  <div class="team-grid">
+    <div class="team-slot">
+      <div class="role">🎵 サポート</div>
+      <div class="char">ロビン</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">物理・調和</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🌪️ メインアタッカー</div>
+      <div class="char">飛翔（Feixiao）</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">風・狩猟</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🔥 追撃サブDPS</div>
+      <div class="char">トパーズ＆カブ</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">炎・狩猟</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🛡️ 耐久枠</div>
+      <div class="char">アベンチュリン</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">虚数・存護</div>
+    </div>
+  </div>
+  <p style="font-size:0.9em;color:var(--sub);"><strong>装備詳細：</strong></p>
+  <ul style="font-size:0.85em;color:var(--sub);margin-bottom:8px;">
+    <li><strong>ロビン</strong>：「流れゆく夜の調べ」S1 / メッセンジャー2＋マスケティア2 / フォンワク / 攻撃%胴・攻撃%靴・攻撃%オーブ・EP効率縄 / 速度120目標 / ATK4000+</li>
+    <li><strong>飛翔</strong>：「書に記された誓いを果たす時」S1 or モチーフ / 勇姿4セット or 灰燼4セット / ドゥランド / 会心率胴・速度靴・風%オーブ・攻撃%縄 / 速度134+/会心率80%+目標</li>
+    <li><strong>トパーズ＆カブ</strong>：「悩みは娯楽の裏返し」S1 or 「星海巡航」S5 / 灰燼4セット or 勇姿2+灰燼2 / ドゥランド or サルソット / 会心ダメ胴・速度靴・炎%オーブ・攻撃%縄 / 速度134+目標</li>
+    <li><strong>アベンチュリン</strong>：「運命の刻」S1 or 「交錯の中の素敵な出会い」S5 / 聖騎士4セット / ザムナ or 仙舟 or ルサカ / 防御%胴・速度靴・防御%オーブ・防御%縄 / 速度134+目標 / 防御4000+</li>
+  </ul>
+  <p style="font-size:0.9em;color:var(--sub);"><strong>ローテーション：</strong> ロビン秘技使用（次元展開）→ 開幕：ロビン戦闘スキル（与ダメ+50%全員付与）→ 飛翔スキル/通常→トパーズスキル（カブ展開）→アベンチュリン通常攻撃→ロビンEPが溜まり次第必殺技発動（全員100%行動前進＋コンサート開始）→ コンサート中は全員の攻撃ごとにロビン追加ダメージ（固定120%×攻撃力）→ 飛翔の追撃と必殺技で超高火力→ カブの追撃＋トパーズの追加攻撃で更に追撃→ アベンチュリンのバリア追撃でも発動→ コンサート終了直前にロビン戦闘スキル更新→再度EPを溜めて必殺技ループ。<strong>推定DPS：約58,000〜68,000（1サイクル）／全編成中最強クラス</strong></p>
+
+  <h3>編成②：飛翔＋三月なのか（巡狩）編成</h3>
+  <div class="team-grid">
+    <div class="team-slot">
+      <div class="role">🎵 サポート</div>
+      <div class="char">ロビン</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">物理・調和</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🌪️ メインアタッカー</div>
+      <div class="char">飛翔（Feixiao）</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">風・狩猟</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">❄️ 追撃サブDPS</div>
+      <div class="char">三月なのか（巡狩）</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">氷・狩猟（無料）</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🛡️ 耐久枠</div>
+      <div class="char">アベンチュリン / リンクス</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">虚数/量子・存護/豊穣</div>
+    </div>
+  </div>
+  <p style="font-size:0.9em;color:var(--sub);"><strong>装備詳細：</strong></p>
+  <ul style="font-size:0.85em;color:var(--sub);margin-bottom:8px;">
+    <li><strong>ロビン</strong>：「明日への旅路」S5 / メッセンジャー2＋マスケティア2 / フォンワク / 攻撃%胴・速度靴・攻撃%オーブ・EP効率縄 / 速度120+ / ATK3500+目標</li>
+    <li><strong>飛翔</strong>：「星海巡航」S5 or モチーフ / 勇姿4セット or 灰燼4セット / ドゥランド / 会心率胴・速度靴・風%オーブ・攻撃%縄 / 速度134+ / 会心率80%+</li>
+    <li><strong>三月なのか（巡狩）</strong>：「星海巡航」S5 or 「論剣」S5 / 勇姿4セット or 灰燼4セット / ドゥランド / 会心ダメ胴・速度靴・氷%オーブ・攻撃%縄 / 速度120+ / 追撃で頻繁に発動</li>
+    <li><strong>アベンチュリン</strong>：「交錯の中の素敵な出会い」S5 / 聖騎士4セット / ザムナ / 防御%胴・速度靴・防御%オーブ・防御%縄</li>
+  </ul>
+  <p style="font-size:0.9em;color:var(--sub);"><strong>ローテーション：</strong> トパーズの代わりに三月なのか（巡狩）を採用した無課金寄り編成。三月の追撃発動条件（味方が攻撃された時／会心バフ時）を飛翔とアベンチュリンで満たしやすい。ロビンのコンサート中は三月の追撃が頻発し、追加ダメージを効率よく発動させる。飛翔の必殺技火力と三月の高い追撃頻度で、編成①には一歩譲るものの十分な火力を発揮。<strong>推定DPS：約48,000〜55,000（1サイクル）</strong></p>
+
+  <h3>編成③：Dr.レイシオ＋トパーズ 追撃編成</h3>
+  <div class="team-grid">
+    <div class="team-slot">
+      <div class="role">🎵 サポート</div>
+      <div class="char">ロビン</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">物理・調和</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">📐 メインアタッカー</div>
+      <div class="char">Dr.レイシオ</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">虚数・狩猟</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🔥 追跡タグ</div>
+      <div class="char">トパーズ＆カブ</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">炎・狩猟</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🛡️ 耐久枠</div>
+      <div class="char">アベンチュリン</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">虚数・存護</div>
+    </div>
+  </div>
+  <p style="font-size:0.9em;color:var(--sub);"><strong>装備詳細：</strong></p>
+  <ul style="font-size:0.85em;color:var(--sub);margin-bottom:8px;">
+    <li><strong>ロビン</strong>：「流れゆく夜の調べ」S1 or 「戦いは終わらない」S1 / メッセンジャー2＋マスケティア2 / フォンワク / 攻撃%胴・攻撃%靴・攻撃%オーブ・EP効率縄</li>
+    <li><strong>Dr.レイシオ</strong>：「永遠の饗宴にようこそ」S1 or 「星海巡航」S5 / 灰燼4セット or 死水4セット / サルソット or ドゥランド / 会心率胴・速度靴・虚数%オーブ・攻撃%縄 / 効果命中サブ必須</li>
+    <li><strong>トパーズ＆カブ</strong>：「悩みは娯楽の裏返し」S1 or 「論剣」S5 / 灰燼4セット / ドゥランド / 会心ダメ胴・速度靴・炎%オーブ・攻撃%縄</li>
+    <li><strong>アベンチュリン</strong>：「運命の刻」S1 or 星4存護光円錐 / 聖騎士4セット / ザムナ / 防御%胴・速度靴・防御%オーブ・防御%縄 / 防御4000+</li>
+  </ul>
+  <p style="font-size:0.9em;color:var(--sub);"><strong>ローテーション：</strong> トパーズのカブが敵に「負債証明」を付与→Dr.レイシオが追撃（50%以上の確率で追加攻撃）→アベンチュリンのバリア展開→ロビン戦闘スキル→ロビン必殺技で全体行動前進→コンサート中、全員の攻撃でロビン追加ダメージ＋Dr.レイシオの追撃頻発。トパーズのカブが常に追撃可能な状態を作るため、Dr.レイシオの天賦追撃条件を安定して満たせる。アベンチュリンも虚数属性でDr.レイシオと属性シナジーあり。2体の狩猟キャラ＋ロビンの全体行動前進で単体ボスを瞬殺する火力編成。<strong>推定DPS：約52,000〜60,000（1サイクル）</strong></p>
+
+  <h3>編成④：DoT編成（カフカ＋ブラックスワン）</h3>
+  <div class="team-grid">
+    <div class="team-slot">
+      <div class="role">🎵 サポート</div>
+      <div class="char">ロビン</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">物理・調和</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">⚡ DoT起爆</div>
+      <div class="char">カフカ</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">雷・虚無</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🌫️ DoTスタッカー</div>
+      <div class="char">ブラックスワン</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">風・虚無</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">💚 耐久枠</div>
+      <div class="char">フォフォ（Huohuo）</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">風・豊穣</div>
+    </div>
+  </div>
+  <p style="font-size:0.9em;color:var(--sub);"><strong>装備詳細：</strong></p>
+  <ul style="font-size:0.85em;color:var(--sub);margin-bottom:8px;">
+    <li><strong>ロビン</strong>：「明日への旅路」S5 or モチーフ / メッセンジャー2＋マスケティア2 / フォンワク / 攻撃%胴・速度靴・攻撃%オーブ・EP効率縄</li>
+    <li><strong>カフカ</strong>：「待って、もう一度待って」S1 or 「良い夜に、おやすみ」S5 / 深牢に囚われし幽囚4セット / グラモス or 宇宙ステーション / 攻撃%胴・速度靴・雷%オーブ・攻撃%縄 / 速度160目標 / 効果命中30%+</li>
+    <li><strong>ブラックスワン</strong>：「絶え間ない雨」S1 or 「良い夜に、おやすみ」S5 / 深牢4セット or 射手2+深牢2 / パン惑星 or 宇宙ステーション / 効果命中胴・速度靴・風%オーブ・攻撃%縄 / 効果命中120%目標</li>
+    <li><strong>フォフォ</strong>：「甦る夜明け」S1 or 「共有する安らぎ」S5 / 過客4セット or メッセンジャー2+過客2 / 仙舟 or ロビンのオーナメント / 治癒量胴・速度靴・HP%オーブ・EP効率縄 / 速度160目標</li>
+  </ul>
+  <p style="font-size:0.9em;color:var(--sub);"><strong>ローテーション：</strong> ロビン戦闘スキル（与ダメ+50%）→カフカ戦闘スキル（追撃発動＋DoT付与）→ブラックスワン戦闘スキル（DoTスタック）→フォフォ通常（SP節約）→ロビン必殺技（全体行動前進＋コンサート）→コンサート中、カフカの追撃頻発＋ブラックスワンのDoT蓄積→カフカ必殺技で全DoT起爆→超高倍率のDoTダメージ。ロビンの攻撃力バフはDoTダメージにも乗るため、カフカとブラックスワンの火力を大幅に強化。フォフォの必殺技でロビンのEPを補充し、必殺技の回転率をさらに高める。DoT編成にロビンを入れることで、従来のルアンメェイ編成とは異なる強力なシナジーを発揮。<strong>推定DPS：約45,000〜52,000（1サイクル）</strong></p>
+
+  <h3>編成⑤：ハイパーキャリー編成（丹恒・飲月君 / 黄泉E2）</h3>
+  <div class="team-grid">
+    <div class="team-slot">
+      <div class="role">🎵 サポート</div>
+      <div class="char">ロビン</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">物理・調和</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🐉 メインアタッカー</div>
+      <div class="char">丹恒・飲月君</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">虚数・破壊</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🔄 行動促進</div>
+      <div class="char">ブローニャ / サンデー</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">風/虚数・調和</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">💚 耐久枠</div>
+      <div class="char">フォフォ / 羅刹</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">風/虚数・豊穣</div>
+    </div>
+  </div>
+  <p style="font-size:0.9em;color:var(--sub);"><strong>装備詳細：</strong></p>
+  <ul style="font-size:0.85em;color:var(--sub);margin-bottom:8px;">
+    <li><strong>ロビン</strong>：「流れゆく夜の調べ」S1 / メッセンジャー2＋マスケティア2 / フォンワク / 攻撃%胴・速度靴・攻撃%オーブ・EP効率縄</li>
+    <li><strong>丹恒・飲月君</strong>：「比陽光更明亮的」S1 or 「星海巡航」S5 / 廃土客2＋銃手2 or 虚数4セット / サルソット / 会心ダメ胴・速度靴・虚数%オーブ・攻撃%縄 / 速度134+/会心率70%+目標</li>
+    <li><strong>ブローニャ</strong>：「戦いは終わらない」S1 or 「過ぎ去りし昼夜」 / メッセンジャー4 / フォンワク or ブロークンキール / 会心ダメ胴・速度靴・風%オーブ・EP効率縄 / 速度134+（飲月より速く）</li>
+    <li><strong>フォフォ</strong>：「甦る夜明け」S1 / 過客4セット / 仙舟 / 治癒量胴・速度靴・HP%オーブ・EP効率縄 / 速度160目標</li>
+  </ul>
+  <p style="font-size:0.9em;color:var(--sub);"><strong>ローテーション：</strong> ロビン戦闘スキル（与ダメ+50%）→ブローニャ戦闘スキル（飲月君即時行動）→飲月君強化スキル3連打→ロビン必殺技（全体行動前進＋コンサート開始）→飲月君もう1セット行動→ブローニャ行動で飲月君再度促進→飲月君の強化スキル連打→ロビン追加ダメージも合わさって圧倒的な瞬間火力。フォフォの必殺技でEP補給＋攻撃力バフ。飲月君の高い攻撃力倍率にロビンの全体行動前進＆攻撃力バフが乗るため、1ターンに想像を絶するダメージを叩き出せる。ブローニャの代わりにサンデーも有効。<strong>推定DPS：約50,000〜62,000（1サイクル）</strong></p>
+
+  <div class="note">
+    <strong>💡 編成のポイント：</strong> ロビンの編成で最も重要なのは<strong>「味方の攻撃頻度」</strong>です。ロビンの天賦EP回復（攻撃ごとに2エネルギー）とコンサート中の追加ダメージは、味方が攻撃すればするほど効果が高まります。そのため、追撃が頻発する編成（飛翔・トパーズ・アベンチュリン・クラーラなど）が最も相性が良く、結果として必殺技の回転率も向上します。DoT編成でもカフカの追撃や高速行動でEP効率が良好です。<br>
+    耐久枠は<strong>フォフォ（Huohuo）</strong>が最も相性が良い。フォフォの必殺技は味方全体のEPを%回復するため、ロビンの重い必殺技コスト160を補えます。アベンチュリンも追撃でロビンのEP回復と追加ダメージをトリガーできるため、追撃編成では欠かせないパートナーです。
+  </div>
+
+  <!-- 凸数評価 -->
+  <h2 id="eidolons">💎 星魂（エイドロン）評価</h2>
+
+  <h3>0凸〜6凸 詳細評価</h3>
+  <table>
+    <tr><th>凸数</th><th>名称</th><th>効果</th><th>火力up率</th><th>おすすめ度</th></tr>
+    <tr>
+      <td>無凸（E0）</td><td>—</td>
+      <td>ベース性能。与ダメ+50%全体バフ＋コンサートで全体行動前進＋攻撃力バフ＋追加ダメージ。無凸でも最強クラスのサポート。</td>
+      <td><span style="color:var(--accent);">100%</span><br><span style="color:var(--sub);">基準値</span></td>
+      <td><span class="star">★★★★★</span><br><span style="color:var(--sub);">無凸でも最強</span></td>
+    </tr>
+    <tr>
+      <td>1凸（E1）</td><td>微笑みの国（Land of Smiles）</td>
+      <td>コンサート状態中、味方全体の<strong>全属性耐性貫通+24%</strong>。</td>
+      <td><span style="color:var(--accent);">約+20〜25%</span></td>
+      <td><span class="star">★★★★★</span><br><span style="color:var(--accent);">最優先凸！超高コスパ</span></td>
+    </tr>
+    <tr>
+      <td>2凸（E2）</td><td>二人分のアフタヌーンティー（Afternoon Tea For Two）</td>
+      <td>コンサート状態中、味方全体の<strong>速度+16%</strong>。天賦のEP回復効果が<strong>+1</strong>（合計3エネルギー/攻撃）。</td>
+      <td><span style="color:var(--accent);">約+10〜15%</span></td>
+      <td><span style="color:#e8c547;">★★★★☆</span><br><span style="color:var(--sub);">EP回転率向上</span></td>
+    </tr>
+    <tr>
+      <td>3凸（E3）</td><td>逆さまの調律（Inverted Tuning）</td>
+      <td>戦闘スキルLv+2（最大15）、必殺技Lv+2（最大15）。</td>
+      <td><span style="color:#c0c0c0;">約+3〜5%</span></td>
+      <td><span style="color:#c0c0c0;">★★★☆☆</span><br><span style="color:var(--sub);">スキルレベル上げ</span></td>
+    </tr>
+    <tr>
+      <td>4凸（E4）</td><td>雫の鍵（Raindrop Key）</td>
+      <td>必殺技発動時、味方全体の<strong>行動制限デバフを解除</strong>。コンサート中、味方全体の<strong>効果抵抗+50%</strong>。</td>
+      <td><span style="color:#c0c0c0;">耐久/サポート特化</span></td>
+      <td><span style="color:#e8c547;">★★★★☆</span><br><span style="color:var(--sub);">高難易度で輝く</span></td>
+    </tr>
+    <tr>
+      <td>5凸（E5）</td><td>孤独な旅人の嘆き（Lonestar's Lament）</td>
+      <td>通常攻撃Lv+1（最大10）、天賦Lv+2（最大15）。</td>
+      <td><span style="color:#c0c0c0;">約+2%</span></td>
+      <td><span style="color:#888;">★★☆☆☆</span><br><span style="color:var(--sub);">6凸への通過点</span></td>
+    </tr>
+    <tr>
+      <td>6凸（E6）</td><td>月なき真夜中（Moonless Midnight）</td>
+      <td>コンサート中、ロビンの追加物理ダメージの会心ダメージが<strong>+450%</strong>（合計600%）。この強化効果は1回の必殺技につき最大<strong>8回</strong>まで発動可能。必殺技使用ごとにリセット。</td>
+      <td><span style="color:var(--accent);">約+50〜80%（追撃編成）</span></td>
+      <td><span class="star">★★★★★</span><br><span style="color:var(--accent);">完全体！壊レベルの火力</span></td>
+    </tr>
+  </table>
+
+  <h3>凸のすすめ：詳細解説</h3>
+  <div class="card">
+    <p><strong>無凸（E0）でも最強クラス：</strong> ロビンは無凸でもSSランクサポーターとして十分に戦えます。与ダメ+50%（全体）、会心ダメ+20%（全体）、コンサートの全体行動前進＋攻撃力バフ＋追加ダメージと、これだけで文句なしの最強クラス。モチーフ光円錐があればさらに安定します。</p>
+    <p style="margin-top:8px;"><strong>E1（最高コスパ凸！＋20〜25%火力UP）：</strong> ロビンの凸の中で<strong>最も価値が高い</strong>のがE1。コンサート中に味方全体の全属性耐性貫通+24%という破格の効果は、あらゆるDPSの最終ダメージを大きく引き上げます。耐性貫通は他のバフと乗算で効果を発揮するため、編成のDPSが高ければ高いほど価値が増します。ルアンメェイの全属性耐性貫通（25%）とほぼ同等の効果をコンサート中に常時付与できると考えると、その価値が理解できるでしょう。E1ロビン＋ルアンメェイで耐性貫通49%という驚異的な組み合わせも可能。</p>
+    <p style="margin-top:8px;"><strong>E2（+10〜15% + EP回転率向上）：</strong> コンサート中に味方全体の速度+16%は、特に低速DPSの行動回数を増加させる効果あり。天賦のEP回復が攻撃ごとに2→3に増加するため、必殺技の回転率が約20%向上。E1とE2を両方取得すると、ロビンの全体的なパフォーマンスが格段に向上します。</p>
+    <p style="margin-top:8px;"><strong>E4（サポート特化）：</strong> 必殺技発動時に味方全体のCC（行動制限デバフ）を解除し、コンサート中は効果抵抗+50%。忘却の庭の高位層や末日の獣の高難易度で、敵の行動制限攻撃に対する保険として非常に有効。数字に表れにくいが、安定した攻略を目指すなら価値のある凸。</p>
+    <p style="margin-top:8px;"><strong>E6（完全体・壊レベル）：</strong> コンサート中の追加物理ダメージの会心ダメージが150%→600%に跳ね上がり、しかも1必殺技あたり8回までこの強化効果が適用される。飛翔＋トパーズ＋ロビンE6＋アベンチュリンの編成では、コンサート中の攻撃1回ごとに約600%会心ダメの物理ダメージが飛び交い、文字通りすべての敵を瞬時に消し飛ばす。追撃編成においてE6ロビンはキャリーそのものとなり、DPSの火力を補完するどころか凌駕することもある。ただしそのコストに見合うかはプレイヤーの判断次第。</p>
+  </div>
+
+  <div class="build-box">
+    <div class="label">🏆 コスパ最優秀凸</div>
+    <div class="content">E1（微笑みの国）</div>
+    <div style="margin-top:6px;font-size:0.9em;">全属性耐性貫通+24%がチーム全体の火力を約20〜25%底上げ。ロビン無凸でも強いが、E1を取得することでサポート能力が飛躍的に向上する。モチーフ光円錐を先に確保するか、E1を先に取るかは意見が分かれるが、汎用性で言えばE1が優れる。</div>
+  </div>
+
+  <!-- 相性の良いキャラ -->
+  <h2 id="synergy">🤝 相性の良いキャラ</h2>
+  <table>
+    <tr><th>キャラ</th><th>属性/運命</th><th>相性の理由</th><th>おすすめ度</th></tr>
+    <tr><td>飛翔（Feixiao）</td><td>風・狩猟</td><td>ロビンと最も相性の良いDPS。追撃頻発でロビンのEP回収と追加ダメージを最大化。ロビンの全体行動前進で飛翔の必殺技回転率が飛躍的に向上。</td><td><span class="star">★★★★★</span></td></tr>
+    <tr><td>トパーズ＆カブ（Topaz & Numby）</td><td>炎・狩猟</td><td>カブの追撃が常時発動可能でロビンの天賦EP回復と完璧にシナジー。ロビンの全バフ（会心ダメ45%＋与ダメ50%）を常時受けられる。</td><td><span class="star">★★★★★</span></td></tr>
+    <tr><td>アベンチュリン（Aventurine）</td><td>虚数・存護</td><td>追撃でロビンのEP供給＋追加ダメージ発動。バリアでロビンの低い耐久力をカバー。SPも通常攻撃で節約可能。</td><td><span class="star">★★★★★</span></td></tr>
+    <tr><td>フォフォ（Huohuo）</td><td>風・豊穣</td><td>必殺技で味方全体のEPを%回復→ロビンの160コスト必殺技を強力サポート。攻撃力バフもロビンと重複。</td><td><span class="star">★★★★★</span></td></tr>
+    <tr><td>Dr.レイシオ（Dr. Ratio）</td><td>虚数・狩猟</td><td>デバフ条件さえ満たせば高頻度の追撃を発動。ロビンの全体行動前進で追加行動+追撃の二段構えが強力。</td><td><span style="color:#e8c547;">★★★★★</span></td></tr>
+    <tr><td>カフカ（Kafka）</td><td>雷・虚無</td><td>追撃（戦技後の追加攻撃）が高頻度でロビンのEP効率を向上。DoT編成の核としてロビンの攻撃力バフがDoTにも乗る。</td><td><span style="color:#e8c547;">★★★★★</span></td></tr>
+    <tr><td>クラーラ（Clara）</td><td>物理・破壊</td><td>被弾時の追撃が高頻度。ロビンとの物理属性シナジーも微弱ながら存在。無課金編成の要。</td><td><span style="color:#e8c547;">★★★★☆</span></td></tr>
+    <tr><td>サンデー（Sunday）</td><td>虚数・調和</td><td>ロビンとサンデーのW調和でDPSを徹底サポート。サンデーの必殺技でロビンにEP供給可能。飛翔＋ロビン＋サンデーの編成が超強力。</td><td><span style="color:#e8c547;">★★★★★</span></td></tr>
+    <tr><td>ブローニャ（Bronya）</td><td>風・調和</td><td>ロビンの全体行動前進＋ブローニャの単体行動促進でDPSの行動回数を最大化。W調和編成の古典的選択肢。</td><td><span style="color:#e8c547;">★★★★☆</span></td></tr>
+    <tr><td>丹恒・飲月君（Dan Heng IL）</td><td>虚数・破壊</td><td>強化スキル3連打でスキル1回につきロビン追加ダメージ1回。ロビンの全体行動前進で強化スキル2連続が可能に。</td><td><span style="color:#e8c547;">★★★★☆</span></td></tr>
+    <tr><td>三月なのか（巡狩）（March 7th Hunt）</td><td>氷・狩猟（星4）</td><td>配布無料キャラながら追撃頻度が高い。飛翔の無課金相方としてロビンと好相性。</td><td><span style="color:#e8c547;">★★★★☆</span></td></tr>
+    <tr><td>アスター（Asta）</td><td>炎・調和（星4）</td><td>全体速度バフ＋攻撃力バフ。ロビンの速度不足を補いつつ、攻撃力も強化。星4で入手容易。</td><td><span style="color:#c0c0c0;">★★★☆☆</span></td></tr>
+    <tr><td>羅刹（Luocha）</td><td>虚数・豊穣</td><td>SP一切不要のヒーラー。ロビンのSP消費を気にせず運用可能。自動回復フィールドで安定性も高い。</td><td><span style="color:#e8c547;">★★★★☆</span></td></tr>
+  </table>
+
+  <div class="note">
+    <strong>💡 相性のポイント：</strong> ロビンの最大の特徴は「味方の攻撃頻度が高いほどロビンの価値が上がる」という点です。そのため、<strong>追撃が頻発するキャラとの相性が抜群</strong>です。飛翔・トパーズ・アベンチュリンという「FART編成」の3人と組めば、ロビンの潜在能力を最大限に引き出せます。耐久枠はフォフォ（EP回復）かアベンチュリン（追撃）がベストマッチ。無課金ならクラーラ＋三月なのか（巡狩）で追撃頻度を確保しつつ、星4ヒーラーで耐久を補う形が現実的です。サンデーやブローニャとのW調和編成も非常に強力で、DPSの行動回数を極限まで増やすことができます。
+  </div>
+
+  <!-- おすすめビルドまとめ表 -->
+  <h2 id="build">📊 おすすめビルドまとめ表</h2>
+
+  <div class="card">
+    <h4>🏆 最適ビルド（追撃編成対応・汎用）</h4>
+    <table>
+      <tr><th>項目</th><th>最適</th><th>代替案</th></tr>
+      <tr><td>光円錐</td><td>流れゆく夜の調べ（★5）</td><td>明日への旅路S5（★4）＞戦いは終わらない（★5）＞コーラスS5（★3）</td></tr>
+      <tr><td>遺物セット</td><td>メッセンジャー2＋マスケティア2</td><td>メッセンジャー4 > 勇姿2+メッセンジャー2 > サセルドス2+メッセンジャー2</td></tr>
+      <tr><td>オーナメント</td><td>陽気なフォンワク</td><td>老いぬ者の仙舟 > 折れた竜骨 > ルシャカ</td></tr>
+      <tr><td>胴体</td><td>攻撃力%</td><td>—（会心系不要）</td></tr>
+      <tr><td>脚部</td><td>攻撃力% or 速度（120未満なら）</td><td>—</td></tr>
+      <tr><td>次元界オーブ</td><td>攻撃力%</td><td>物理ダメージ%（追加ダメージのみ強化）</td></tr>
+      <tr><td>連結縄</td><td>EP回復効率%</td><td>攻撃力%（追撃編成でEPが十分な場合）</td></tr>
+      <tr><td>目標攻撃力</td><td>4000〜4500+</td><td>3500以上必須</td></tr>
+      <tr><td>目標速度</td><td>120〜121</td><td>115以上（A2促進で先手確定ライン）</td></tr>
+      <tr><td>目標HP</td><td>3200+</td><td>サブで調整</td></tr>
+      <tr><td>サブステ優先度</td><td>攻撃力% ＞ 速度 ＞ HP% ＞ 防御%</td><td>会心系は一切不要</td></tr>
+      <tr><td>スキル優先</td><td>必殺技 ＞ 戦闘スキル ＞ 天賦 ＞ 通常攻撃</td><td>—</td></tr>
+      <tr><td>軌跡優先</td><td>A2 ＞ A4 ＞ A6</td><td>全て取得必須</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h4>💰 無課金ビルド</h4>
+    <table>
+      <tr><th>項目</th><th>おすすめ</th></tr>
+      <tr><td>光円錐</td><td>コーラスS5（★3） or 明日への旅路S5（★4・イベント）</td></tr>
+      <tr><td>遺物セット</td><td>メッセンジャー2＋マスケティア2（速度+6%＋攻撃力+12%）</td></tr>
+      <tr><td>オーナメント</td><td>陽気なフォンワク（EP効率+5%）or 老いぬ者の仙舟（全体攻撃力+8%）</td></tr>
+      <tr><td>胴体/脚部/オーブ</td><td>全て攻撃力%（可能な限り）</td></tr>
+      <tr><td>連結縄</td><td>EP回復効率%（最優先）</td></tr>
+      <tr><td>目標攻撃力</td><td>3500+</td></tr>
+      <tr><td>目標速度</td><td>120+</td></tr>
+    </table>
+  </div>
+
+  <!-- よくある質問 -->
+  <h2 id="faq">❓ よくある質問（FAQ）</h2>
+
+  <div class="faq-item">
+    <div class="q">Q. ロビンの速度はいくつが最適ですか？</div>
+    <div class="a">
+      ロビンの速度は<strong>120〜121</strong>が最適です。理由は以下の通り：ロビンはコンサート状態中、速度が<strong>固定90</strong>になるため戦闘中の速度は実質的に意味がありません。速度が必要なのは開幕で最初に行動するためだけです。A2軌跡「色彩豊かなカデンツァ」で戦闘開始時に行動順が25%促進されるため、速度120程度あればほとんどの編成で最初に動けます。ただしスパークレ（速度160）など超高速サポーターと組む場合は、確実に先手を取るために122〜124まで上げると安全です。速度120以上を達成したら、残りのサブステはすべて攻撃力%に振りましょう。<strong>速度ブレイクポイントまとめ：</strong> 115（A2含め最低限先手ライン）→120（推奨ライン）→122+（超高速編成対応）。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. ロビンの攻撃力はいくつ必要ですか？目標を教えてください</div>
+    <div class="a">
+      ロビンの攻撃力は<strong>4000以上</strong>が目標です。ロビンの必殺技バフは「ロビンの攻撃力×22.8%＋200」で計算されるため、攻撃力が高ければ高いほど味方全体に供給される攻撃力バフ量が増加します。具体的な計算例：<br>
+      - 攻撃力3000の場合：3000×0.228＋200 = 884の攻撃力バフ<br>
+      - 攻撃力4000の場合：4000×0.228＋200 = 1,112の攻撃力バフ（約+26%向上）<br>
+      - 攻撃力4500の場合：4500×0.228＋200 = 1,226の攻撃力バフ（約+39%向上）<br>
+      攻撃力を盛れば盛るほど、チーム全体の火力がリニアに向上します。遺物メインステを攻撃力%で3箇所統一し、サブステも攻撃力%優先で厳選しましょう。軌跡で攻撃力+28%、モチーフ光円錐でさらに+24%の補正が得られるため、十分達成可能な数値です。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. ロビンのコンサート状態の持続時間はどのくらいですか？仕組みを教えてください</div>
+    <div class="a">
+      ロビンのコンサート状態は、アクションバーに表示される<strong>専用カウントダウン</strong>で管理されます。このカウントダウンは<strong>速度固定90</strong>で動作し、カウントダウンのターンが回ってきた時点でコンサート状態が終了し、ロビンが即座に行動します。<br><br>
+      速度90のカウントダウンが1巡するのにかかる行動値（AV）は、<strong>10,000 ÷ 90 ≈ 111.1 AV</strong>です。つまり約111〜120行動値（敵や味方の速度に影響されない固定値）でコンサートが終了します。<br><br>
+      <strong>コンサート中の重要な仕様：</strong><br>
+      - ロビンはコンサート中、<strong>一切行動不可</strong>（ターンが回ってこない）<br>
+      - 戦闘スキルの持続ターンはロビンのターン開始時に減少するため、コンサート中はターンが経過せず、戦闘スキル効果が実質的に持続し続ける<br>
+      - コンサート中も天賦のEP回復は有効（味方の攻撃ごとに2エネルギー）<br>
+      - 行動制限系デバフ（凍結・支配・絡みつきなど）を<strong>完全無効化</strong><br>
+      - ロビン自身は行動促進/遅延/速度変化の影響を一切受けない<br><br>
+      実戦的な持続時間の目安：追撃編成の場合、コンサート中に味方全体で6〜10回程度の攻撃が可能で、その間にロビンは12〜20エネルギー（天賦）＋5（必殺技ベース）を獲得します。これにより次回の必殺技に必要な160エネルギーの約10〜15%がコンサート中に回収可能です。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. ロビンは追撃パーティ以外でも使えますか？汎用性は？</div>
+    <div class="a">
+      ロビンは追撃パーティが最も得意ですが、<strong>追撃パーティ以外でも十分に活躍できます</strong>。その理由は以下の通り：<br><br>
+      <strong>① 戦闘スキル（与ダメ+50%全体）</strong>：どの編成でも100%有効な純粋な火力バフ。ルアンメェイの与ダメバフ（68%・条件付き）には一歩譲るが、SP効率と持続ターンで勝る。<br>
+      <strong>② 天賦（会心ダメ+20%全体）</strong>：常時発動の貴重な会心ダメバフ。全アタッカーに恩恵がある。<br>
+      <strong>③ 必殺技の全体行動前進</strong>：追撃がなくても、味方全体を即座に行動させる効果はすべての編成で強力。特に行動順のリセットやラウンド跨ぎの調整に有用。<br>
+      <strong>④ コンサート中の追加ダメージ</strong>：固定会心100%で必ずダメージが出るため、DPSの火力が低い編成でも安定した追加火力を供給できる。<br><br>
+      具体的に追撃以外でおすすめの編成：<br>
+      - DoT編成（カフカ＋ブラックスワン）：カフカの追撃＋高速行動でEP効率が良好<br>
+      - ハイパーキャリー編成（丹恒・飲月君＋ブローニャ）：W調和でDPSの行動回数を極限まで増加<br>
+      - 黄泉E2編成：黄泉E2＋調和キャラ枠としてロビンを採用。全体行動前進で黄泉の行動回数増加<br>
+      - 汎用編成（任意DPS＋任意サポーター）：ルアンメェイの代わりに入れても十分機能する
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. ロビンのモチーフ光円錐は必須ですか？代替案を教えてください</div>
+    <div class="a">
+      ロビンのモチーフ光円錐「流れゆく夜の調べ（Flowing Nightglow）」は<strong>最適ですが必須ではありません</strong>。モチーフがない場合の代替候補とモチーフ比の性能は以下の通り：<br><br>
+      <strong>① ★4「明日への旅路（For Tomorrow's Journey）」S5（約90%）</strong><br>
+      期間限定イベントで入手可能。必殺技発動後に攻撃力+32%（2T）と必殺技ダメ+28%。モチーフ未所持の最有力候補で、攻撃力補正はモチーフを上回る場面もある。EP効率がない点のみ注意。<br><br>
+      <strong>② ★5「戦いは終わらない（But the Battle Isn't Over）」S1（約88%）</strong><br>
+      ブローニャのモチーフで恒常ガチャから入手可能。EP回復効率+10%が有効で、SP回復効果も便利。ただし与ダメ+30%は次の行動をする味方1体のみと限定的で、ロビンの全体バフとは方向性がやや異なる。<br><br>
+      <strong>③ ★3「コーラス（Chorus）」S5（約75%）</strong><br>
+      無課金最強の選択肢。戦闘開始から4ターンの間、味方全体の攻撃力+12%。星3のため育成コストが低く、重ねるのも容易。EP効率がない点と持続が4ターン限定な点がネックだが、ロビンの基本的な役割（攻撃力バフ）は十分に果たせる。<br><br>
+      <strong>総評：</strong> モチーフ光円錐はEP効率+15%、攻撃力最大+24%（カンツォーネ5層）、味方全体与ダメ+24%とロビンの全てを底上げする理想的な設計です。無課金でどうしても確保できない場合も、上記の代替案で十分戦えます。優先順位は、モチーフ光円錐 ≧ E1凸 ＞ 無凸＋代替光円錐 というのが一般的な評価です。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. ロビンのおすすめ遺物セットを詳しく教えてください。なぜ4セットではなく2セットハイブリッドが推奨なのですか？</div>
+    <div class="a">
+      ロビンに4セット効果が推奨されない理由は、<strong>ロビンに合致する完璧な4セット遺物が存在しない</strong>からです。各4セット効果とロビンとの相性を見てみましょう：<br><br>
+      <strong>メッセンジャー4セット：</strong> 必殺技発動時に味方全体の速度+12%（1T）。悪くはないが、速度バフは1ターンのみで効果が限定的。火力に直接寄与しない。<br>
+      <strong>マスケティア4セット：</strong> 通常攻撃ダメ+10%＋攻撃力+10%（4セット）。ロビンは通常攻撃をほとんど使わないため無駄が多い。<br>
+      <strong>勇姿4セット：</strong> 追加攻撃ダメ+16%＋必殺技で追加攻撃の会心率+60%（1T）。会心率バフが意味がない（ロビンの追加ダメは固定会心100%）。<br><br>
+      一方、2セットハイブリッド構成なら必要なステータス（速度＋攻撃力）を効率的に取得できます。メッセンジャー2で速度+6%、マスケティア2で攻撃力+12%が最もバランスが良い組み合わせです。<br><br>
+      <strong>各セット構成の比較（対基準比）：</strong><br>
+      ・メッセンジャー2＋マスケティア2 ＝ 100%（基準）<br>
+      ・メッセンジャー4 ＝ 約98%（チーム速度UP特化）<br>
+      ・勇姿2＋メッセンジャー2 ＝ 約99%（追撃編成特化、ほぼ互角）<br>
+      ・メッセンジャー2＋サセルドス2 ＝ 約96%（速度過剰で攻撃力不足）<br><br>
+      結論として、遺物厳選のしやすさとコストパフォーマンスを考慮すると、メッセンジャー2＋マスケティア2のハイブリッド構成が最も実用的です。厳選が進み、サブで攻撃力%を十分に盛れているなら、メッセンジャー4セット（チーム速度UP）や勇姿2＋メッセンジャー2（追撃特化）への変更も検討して良いでしょう。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. ロビンとルアンメェイはどちらが強いですか？両方持っていたらどう使い分ければいいですか？</div>
+    <div class="a">
+      ロビンとルアンメェイは<strong>両方とも崩壊スターレイル最高クラスの調和キャラ</strong>で、単純な優劣はつけられません。以下の使い分けが効果的です：<br><br>
+      <strong>ロビンが優位な場面：</strong><br>
+      - 追撃編成（飛翔・トパーズ・Dr.レイシオなど）→ ロビンの圧勝<br>
+      - 高頻度攻撃編成（カフカDoT、アグライアなど）→ EP回収効率が高い<br>
+      - 短期決戦（ラウンド数が限られる忘却の庭など）→ 全体行動前進で時間稼ぎ<br>
+      - 攻撃力の高いDSPとの編成 → 攻撃力バフの価値が高い<br><br>
+      <strong>ルアンメェイが優位な場面：</strong><br>
+      - 撃破特化編成（開拓者・調和、火力開拓など）→ ルアンメェイ圧勝<br>
+      - DoT編成 → ルアンメェイの全属性耐性貫通＋撃破効率UPが貢献<br>
+      - Wサポーター編成で属性耐性貫通を重ねたい場合<br>
+      - 長期戦（撃破延長が有効な戦闘）<br><br>
+      <strong>両方同時運用：</strong> ロビン＋ルアンメェイのW調和編成は非常に強力で、DPS1人を2人の最強サポーターで支える形。飛翔＋ロビン＋ルアンメェイ＋アベンチュリンや、黄泉E2＋ロビン＋ルアンメェイ＋フォフォなどが該当。ただしDPSが攻撃力バフを活かせるタイプか確認しよう。<br><br>
+      <strong>総合評価：</strong> 両方とも引いて損はない。どちらか1人なら、手持ちのDPSに合わせて選ぶのが良い。追撃アタッカーを多く持っているならロビン、撃破やDoT中心ならルアンメェイがおすすめ。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. ロビンに会心率や会心ダメージは必要ですか？</div>
+    <div class="a">
+      ロビンに<strong>会心率と会心ダメージは一切不要</strong>です。ロビンのコンサート中の追加物理ダメージは<strong>固定会心率100%・固定会心ダメージ150%</strong>で計算されるため、装備や遺物の会心系ステータスは全く影響しません。たとえ遺物サブで会心率30%を盛っても、固定100%は変わりません。<br><br>
+      これはロビンの大きな強みの一つで、他のアタッカーのように「会心率＝70%以上が必須」といった厳しい条件がありません。その分、すべてのサブステを<strong>攻撃力%</strong>に振ることができ、結果として攻撃力の天井が非常に高くなります。<br><br>
+      <strong>ロビンにとって意味のあるステータス：</strong><br>
+      ✅ 攻撃力%：最優先。バフ量とダメージの両方を強化<br>
+      ✅ 速度：120まで。開幕の行動順確保に必要<br>
+      ✅ HP% / 防御%：耐久力向上。ロビンの低い基礎耐久を補う<br>
+      ⚠️ 効果抵抗：折れた竜骨を使う場合のみ30%目標<br>
+      ❌ 会心率：完全不要<br>
+      ❌ 会心ダメージ：完全不要<br>
+      ❌ 撃破特効：不要（ロビンはほとんど攻撃しない）<br>
+      ❌ 効果命中：不要（デバフを持たない）
+    </div>
+  </div>
+
+  <!-- 評価まとめ -->
+  <h2 id="summary">📋 総評</h2>
+  <div class="card">
+    <p>ロビン（知更鳥）は、<strong>崩壊スターレイル史上でも屈指の汎用性とバフ性能を兼ね備えた最強クラスの調和サポートキャラクター</strong>です。全体行動100%前進という唯一無二の必殺技効果、与ダメ+50%（全体）の戦闘スキル、固定会心100%の追加ダメージ、そして会心ダメ+20%の天賦と、攻撃面においてこれ以上ないほどのサポート能力を持ちます。</p>
+
+    <h4>ビルドの基本方針</h4>
+    <ul style="margin-top:4px;">
+      <li><strong>光円錐</strong>：流れゆく夜の調べ（★5・モチーフ）＞ 明日への旅路S5（★4）＞ 戦いは終わらない（★5）＞ コーラスS5（★3）</li>
+      <li><strong>遺物</strong>：メッセンジャー2＋マスケティア2（最適）＞ メッセンジャー4（チーム速度）＞ 勇姿2+メッセンジャー2（追撃特化）</li>
+      <li><strong>オーナメント</strong>：陽気なフォンワク（最適）＞ 老いぬ者の仙舟 / 折れた竜骨 / ルシャカ</li>
+      <li><strong>メインステ</strong>：胴体＝攻撃力%、脚＝攻撃力%（or 速度）、オーブ＝攻撃力%、縄＝EP回復効率%</li>
+      <li><strong>目標攻撃力</strong>：4000〜4500+（高いほどチーム火力UP）</li>
+      <li><strong>目標速度</strong>：120〜121（A2行動促進で先手確定）</li>
+      <li><strong>スキル優先</strong>：必殺技 ＞ 戦闘スキル ＞ 天賦 ＞ 通常攻撃</li>
+      <li><strong>凸優先</strong>：E1が最高コスパ（全属性耐性貫通+24%）＞ E2（速度+16%＋EP+1）</li>
+    </ul>
+
+    <h4>評価点数（10点満点）</h4>
+    <table style="max-width:400px;">
+      <tr><th>項目</th><th>評価</th></tr>
+      <tr><td>サポート性能</td><td><span class="star">★★★★★★★★★★</span> 10/10</td></tr>
+      <tr><td>個人火力</td><td><span class="star">★★★★★★★★☆☆</span> 8/10</td></tr>
+      <tr><td>汎用性</td><td><span class="star">★★★★★★★★★☆</span> 9/10</td></tr>
+      <tr><td>追撃編成適正</td><td><span class="star">★★★★★★★★★★</span> 10/10</td></tr>
+      <tr><td>編成難易度</td><td><span style="color:#e8c547;">★★★★★★★★★☆</span> 9/10（どの編成にも入る）</td></tr>
+      <tr><td>遺物厳選難易度</td><td><span style="color:#e8c547;">★★★★★★★★★★</span> 10/10（会心不要で楽）</td></tr>
+      <tr><td>総合評価</td><td><span class="star">★★★★★★★★★☆</span> 9.5/10</td></tr>
+    </table>
+
+    <h4>こんな人におすすめ</h4>
+    <ul>
+      <li>✅ 飛翔（Feixiao）やトパーズなど追撃アタッカーを持っている</li>
+      <li>✅ 強力なサポーターを1人確保して多くの編成を強化したい</li>
+      <li>✅ SP効率の良いサポートキャラが欲しい</li>
+      <li>✅ 忘却の庭・幻想の庭のスコアアタックを狙いたい</li>
+      <li>✅ ルアンメェイに続く2人目の最強サポーターが欲しい</li>
+      <li>✅ 遺物厳選に時間をかけたくない（会心不要で非常に簡単）</li>
+      <li>✅ ピノコニーの歌姫が好き（CV：名塚佳織）</li>
+    </ul>
+
+    <h4>こんな人には向かないかも</h4>
+    <ul>
+      <li>⚠️ 追撃アタッカーを一切持っていない（EP回収効率が落ちる）</li>
+      <li>⚠️ オートバトルメインでプレイしている（必殺技のタイミングが難しい）</li>
+      <li>⚠️ 凸やモチーフ光円錐を引く余裕がない（無凸でも強いが、完璧を求めるなら投資が必要）</li>
+      <li>⚠️ 既にルアンメェイやブローニャなど強力な調和キャラが揃っている（優先度は下がる）</li>
+    </ul>
+
+    <p style="margin-top:12px;">ロビンは無凸からE6まで、どの凸数でも強力なパフォーマンスを発揮し、<strong>崩壊スターレイルの調和キャラの中で最もユニークで強力な存在</strong>です。特に追撃編成（飛翔・トパーズ・アベンチュリン）との組み合わせでは、他に代えがたいシナジーを発揮し、編成全体の火力を従来の1.5倍以上に引き上げます。遺物厳選が非常に簡単なのも大きな魅力で、初心者からベテランまで幅広くおすすめできるキャラクターです。ぜひこのガイドを参考に、最強のロビンを育てて、すべてのコンテンツを攻略してください！</p>
+  </div>
+
+</article>
+
+</body>
+</html>

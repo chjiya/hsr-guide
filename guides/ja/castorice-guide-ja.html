@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4B26RL1D24"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4B26RL1D24');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>【崩壊スターレイル】キャストリス（Castorice）最強ビルドガイド｜遺物・光円錐・編成</title>
+<meta name="description" content="崩壊スターレイルの星5虚数属性・知恵キャラ「キャストリス（Castorice／カストリス）」の完全攻略ガイド。遺物・光円錐の最適構成、理想パーティ編成、凸数評価、スキル数値・記憶状態の仕組みまで徹底解説。忘却の庭対応。">
+<meta name="keywords" content="崩壊スターレイル,キャストリス,Castorice,カストリス,攻略,遺物,光円錐,編成,凸,星魂,ビルド,おすすめ,知恵,虚数,記憶">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="【崩壊スターレイル】キャストリス（Castorice）最強ビルドガイド">
+<meta property="og:description" content="崩壊スターレイルキャストリス（Castorice）の完全攻略。スキル数値、遺物セット比較、光円錐ランキング、パーティ編成5選を詳細解説。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="【崩壊スターレイル】キャストリス（Castorice）最強ビルドガイド">
+<link rel="canonical" href="https://chjiya.github.io/hsr-guide/guides/ja/castorice-guide-ja.html">
+<base href="/hsr-guide/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "【崩壊スターレイル】キャストリス（Castorice）最強ビルドガイド｜遺物・光円錐・編成",
+  "description": "崩壊スターレイルの星5虚数属性・知恵キャラ「キャストリス（Castorice）」の完全攻略。スキル解析、おすすめ遺物・光円錐・オーナメント、理想パーティ編成5選、凸数評価、FAQまで徹底解説。",
+  "author": { "@type": "Person", "name": "花叔" },
+  "datePublished": "2026-06-10",
+  "dateModified": "2026-06-10",
+  "articleSection": "キャラクター攻略",
+  "inLanguage": "ja",
+  "about": {
+    "@type": "Thing",
+    "name": "キャストリス（Castorice）",
+    "description": "崩壊スターレイルの星5虚数属性・知恵の運命を歩むアタッカーキャラクター"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://chjiya.github.io/hsr-guide/guides/ja/castorice-guide-ja.html"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "キャストリスの速度はいくつが最適ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "キャストリスの速度は100〜120が最適です。知恵キャラとしては速度を抑えめにし、その分攻撃力と会心ステータスにリソースを振るのが基本です。ただし、記憶状態の管理とEP回収の観点から、最低限100以上は確保しましょう。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "キャストリスのモチーフ光円錐は必要ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "必須ではありませんが、推奨度は高いです。モチーフ「深淵の記憶録」は会心ダメージ+36%、記憶状態中にさらに与ダメ+30%と申し分ない性能です。無課金なら「今日も平和です（Geniuses' Greetings）」S5が有力な代替案で、攻撃力%+会心ダメバフを提供します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "キャストリスの記憶状態とは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "記憶状態はキャストリスの必殺技使用後に発動する強化状態です。4ターン継続し、通常攻撃が拡散範囲攻撃に変化、戦闘スキルが敵全体攻撃になるほか、会心ダメージ+30%、EP獲得量+20%のバフを得ます。記憶状態中の火力は通常時の約1.4倍に達し、EP回収効率も向上するため、常に記憶状態を維持することが重要です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "キャストリスは何凸がおすすめですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "キャストリスは無凸（E0）でも強力な知恵アタッカーとして活躍できます。E1で記憶状態中の与ダメ+25%、E2で会心率+12%と会心ダメ+20%の大幅強化、E6で記憶状態中の追加攻撃が2回発生するようになり、壊レベルの殲滅力を叩き出します。コスパ重視ならE1、完全体を目指すならE6がおすすめです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "キャストリスにおすすめの遺物セットは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "最適は「雪の密林の狩人（Hunter of Glacial Forest）4セット」です。会心ダメージ+25%と必殺技後の与ダメ+25%（最短1ターン）が記憶状態との相性抜群です。次点で「フリージングの深淵4セット（追加攻撃ダメ+20%、会心ダメ+20%）」も有効。オーナメントは「虚無のステーション」か「フリージングのサルソット」の2択です。"
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --bg: #1a1a2e;
+    --card: #16213e;
+    --accent: #4fc3f7;
+    --text: #e0e0e0;
+    --sub: #a0a0b0;
+    --border: #2a2a4a;
+    --highlight: #0f3460;
+    --green: #4caf84;
+    --red: #e0556a;
+    --blue: #5b9bd5;
+    --purple: #b39ddb;
+    --music: #9c27b0;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', Meiryo, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+    padding: 20px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  h1 { font-size: 1.8em; color: var(--accent); border-bottom: 2px solid var(--accent); padding-bottom: 12px; margin-bottom: 20px; }
+  h2 { font-size: 1.4em; color: var(--accent); margin: 36px 0 16px; padding: 8px 14px; border-left: 4px solid var(--accent); background: var(--highlight); border-radius: 0 6px 6px 0; }
+  h3 { font-size: 1.15em; color: #80d8ff; margin: 24px 0 10px; }
+  h4 { font-size: 1.05em; color: #b0e0ff; margin: 16px 0 8px; }
+  .char-header { display: flex; gap: 20px; align-items: center; background: var(--card); border-radius: 12px; padding: 20px; margin-bottom: 24px; border: 1px solid var(--border); }
+  .char-icon { width: 90px; height: 90px; border-radius: 12px; background: linear-gradient(135deg, #6a1b9a, #4a148c); display: flex; align-items: center; justify-content: center; font-size: 2.2em; flex-shrink: 0; color: #fff; }
+  .char-info { flex: 1; }
+  .char-info .name { font-size: 1.6em; font-weight: bold; color: #fff; }
+  .char-info .tags { margin-top: 6px; display: flex; gap: 8px; flex-wrap: wrap; }
+  .tag { display: inline-block; padding: 3px 12px; border-radius: 20px; font-size: 0.85em; font-weight: bold; }
+  .tag-rarity { background: #b8860b; color: #fff; }
+  .tag-element { background: #9e9e9e; color: #fff; }
+  .tag-path { background: var(--music); color: #fff; }
+  .tag-role { background: var(--accent); color: #1a1a2e; }
+  .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin: 16px 0; }
+  .stat-box { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 12px; text-align: center; }
+  .stat-box .label { font-size: 0.8em; color: var(--sub); }
+  .stat-box .value { font-size: 1.2em; font-weight: bold; color: #fff; margin-top: 4px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.9em; }
+  th { background: var(--highlight); color: var(--accent); padding: 10px 12px; text-align: left; font-weight: bold; border-bottom: 2px solid var(--border); }
+  td { padding: 10px 12px; border-bottom: 1px solid var(--border); }
+  tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+  .star { color: var(--accent); }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 18px; margin: 16px 0; }
+  .build-box { background: var(--highlight); border: 1px solid var(--accent); border-radius: 8px; padding: 14px 18px; margin: 12px 0; }
+  .build-box .label { color: var(--accent); font-weight: bold; font-size: 0.85em; }
+  .build-box .content { color: #fff; font-weight: bold; margin-top: 4px; }
+  .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0; }
+  .pros, .cons { padding: 14px; border-radius: 8px; }
+  .pros { background: rgba(76,175,132,0.1); border: 1px solid rgba(76,175,132,0.3); }
+  .cons { background: rgba(224,85,106,0.1); border: 1px solid rgba(224,85,106,0.3); }
+  .pros h4 { color: var(--green); margin-bottom: 6px; }
+  .cons h4 { color: var(--red); margin-bottom: 6px; }
+  .pros li, .cons li { margin-left: 18px; font-size: 0.9em; }
+  .team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 12px 0; }
+  .team-slot { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 12px 8px; text-align: center; }
+  .team-slot .role { font-size: 0.75em; color: var(--sub); margin-bottom: 4px; }
+  .team-slot .char { font-weight: bold; color: #fff; font-size: 0.95em; }
+  .faq-item { background: var(--card); border: 1px solid var(--border); border-radius: 8px; margin: 12px 0; padding: 16px; }
+  .faq-item .q { color: var(--accent); font-weight: bold; font-size: 1.05em; margin-bottom: 8px; }
+  .faq-item .a { color: var(--text); line-height: 1.8; }
+  .note { background: rgba(79,195,247,0.08); border-left: 3px solid var(--accent); padding: 10px 14px; margin: 14px 0; border-radius: 0 6px 6px 0; font-size: 0.9em; }
+  .skill-box { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 14px; margin: 10px 0; }
+  .skill-box .skill-name { font-weight: bold; color: var(--accent); font-size: 1.05em; }
+  .skill-box .skill-type { font-size: 0.8em; color: var(--sub); margin-left: 8px; }
+  .skill-box .skill-desc { margin-top: 8px; font-size: 0.9em; }
+  .priority-5 { color: var(--accent); }
+  .priority-4 { color: #e8c547; }
+  .priority-3 { color: #c0c0c0; }
+  .priority-2 { color: #888; }
+  ol, ul { padding-left: 1.5em; }
+  li { margin: 4px 0; }
+  .toc { margin: 16px 0; padding: 14px; background: var(--card); border-radius: 8px; border: 1px solid var(--border); }
+  .toc a { color: var(--accent); text-decoration: none; }
+  .toc a:hover { text-decoration: underline; }
+  .toc li { margin: 4px 0; }
+  @media (max-width: 600px) {
+    .char-header { flex-direction: column; text-align: center; }
+    .team-grid { grid-template-columns: repeat(2, 1fr); }
+    .pros-cons { grid-template-columns: 1fr; }
+    .stat-grid { grid-template-columns: repeat(2, 1fr); }
+    body { padding: 12px; }
+  }
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3857626678274044"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+<article>
+  <h1>【崩壊スターレイル】キャストリス（Castorice）最強ビルドガイド</h1>
+
+  <div class="toc">
+    <strong>📑 目次</strong>
+    <ol style="margin-top:6px;">
+      <li><a href="#overview">キャラ概要</a></li>
+      <li><a href="#skills">スキル解説（全数値）</a></li>
+      <li><a href="#relics">おすすめ遺物（セット比較）</a></li>
+      <li><a href="#lightcones">おすすめ光円錐</a></li>
+      <li><a href="#teams">理想編成（4編成）</a></li>
+      <li><a href="#eidolons">凸数評価</a></li>
+      <li><a href="#synergy">相性の良いキャラ</a></li>
+      <li><a href="#build">ビルドまとめ表</a></li>
+      <li><a href="#faq">よくある質問（FAQ）</a></li>
+      <li><a href="#summary">総評</a></li>
+    </ol>
+  </div>
+
+  <div class="char-header" id="overview">
+    <div class="char-icon">📖</div>
+    <div class="char-info">
+      <div class="name">キャストリス（Castorice / カストリス）</div>
+      <div class="tags">
+        <span class="tag tag-rarity">★5</span>
+        <span class="tag tag-element">虚数属性</span>
+        <span class="tag tag-path">知恵（Erudition）</span>
+        <span class="tag tag-role">メインアタッカー / 殲滅</span>
+      </div>
+      <div style="margin-top:8px;color:var(--sub);font-size:0.9em;">
+        所属：オクヘイマ｜声優：非公開｜入手：限定排出｜実装：Ver.3.2
+      </div>
+    </div>
+  </div>
+
+  <div class="stat-grid">
+    <div class="stat-box"><div class="label">最大HP</div><div class="value">1,105</div></div>
+    <div class="stat-box"><div class="label">攻撃力</div><div class="value">756</div></div>
+    <div class="stat-box"><div class="label">防御力</div><div class="value">396</div></div>
+    <div class="stat-box"><div class="label">速度</div><div class="value">99</div></div>
+    <div class="stat-box"><div class="label">EP（必殺技）</div><div class="value">140</div></div>
+  </div>
+
+  <div class="pros-cons">
+    <div class="pros">
+      <h4>✅ 長所</h4>
+      <ul>
+        <li>記憶状態中は全範囲攻撃で殲滅力が高い</li>
+        <li>知恵キャラ随一の瞬間火力</li>
+        <li>EP獲得量+20%（記憶状態中）で回転率良好</li>
+        <li>虚数属性で撃破後の束縛が強力</li>
+        <li>4凸で味方全体EP供給が可能</li>
+        <li>記憶状態の会心ダメ+30%が強力</li>
+        <li>編成の幅が広い（DoT以外ならどこでも）</li>
+      </ul>
+    </div>
+    <div class="cons">
+      <h4>⚠️ 短所</h4>
+      <ul>
+        <li>記憶状態管理が重要で操作がやや複雑</li>
+        <li>基礎速度が低く速度調整が必要</li>
+        <li>単体火力は純粋な巡狩キャラに劣る</li>
+        <li>EP140と必殺技コストがやや重い</li>
+        <li>CC耐性がなく行動制限に弱い</li>
+        <li>モチーフ光円錐との依存度がやや高い</li>
+      </ul>
+    </div>
+  </div>
+
+  <p>キャストリス（Castorice）は、Ver.3.2で実装された星5虚数属性・知恵の運命を歩むアタッカーキャラクターです。オクヘイマの深遠な知識を司る存在で、記憶領域に干渉する能力を持ちます。</p>
+  <p>キャストリスの最大の特徴は、<strong>必殺技「記憶の深淵」で「記憶状態」に移行し、全スキルが範囲化される</strong>点です。通常時の戦闘スキルは単体&隣接拡散ですが、記憶状態中は全体攻撃に変化。さらに会心ダメージ+30%・EP獲得量+20%のバフを得るため、<strong>記憶状態の維持こそが火力最大化の鍵</strong>です。</p>
+  <p>知恵キャラとしての総合評価は非常に高く、<strong>S〜SSランク</strong>相当。忘却の庭（混沌の記憶）・模擬宇宙・末日の獣など全コンテンツで活躍し、特に2体以上の敵が出てくる高難易度コンテンツで真価を発揮します。</p>
+
+  <h2 id="skills">🔍 スキル解説（全数値）</h2>
+
+  <div class="skill-box">
+    <div class="skill-name">通常攻撃：忘却の一撃 <span class="skill-type">単体攻撃 / エネルギー+20 / 削靭15</span></div>
+    <div class="skill-desc">
+      指定した敵単体にキャストリスの攻撃力<span style="color:var(--accent);">50%〜100%</span>（Lv1〜Lv6）の虚数属性ダメージを与える。<br>
+      記憶状態中：拡散範囲に変更（メインターゲットの隣接敵にも50%ダメージ）。<br>
+      強化優先度：<span class="priority-2">★★☆☆☆</span>
+    </div>
+  </div>
+
+  <div class="skill-box">
+    <div class="skill-name">戦闘スキル：記憶の波動 <span class="skill-type">拡散攻撃 / 消費SP:1 / エネルギー+30</span></div>
+    <div class="skill-desc">
+      指定した敵単体に攻撃力<span style="color:var(--accent);">110%〜220%</span>（Lv1〜Lv12）の虚数ダメージ、隣接する敵に<span style="color:var(--accent);">55%〜110%</span>の虚数ダメージ。<br>
+      記憶状態中：<span style="color:var(--accent);">敵全体に攻撃力の120%〜240%</span>の虚数ダメージ（拡散倍率が全体に変更）。<br>
+      さらに記憶状態中は、このスキルで与えたダメージの<span style="color:var(--red);">15%</span>をHP回復する。<br>
+      強化優先度：<span class="priority-5">★★★★★</span>
+    </div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">キャストリスの主力スキル。記憶状態中は全体攻撃+240%（Lv12）という破格の倍率になり、さらに与ダメの15%をHP回復するため、継戦能力も向上。SP消費1と非常に効率が良く、毎ターン使用可能。最優先でLv10以上を目指そう。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">必殺技：深淵の記憶録（Chronicle of the Abyss） <span class="skill-type">強化状態 / EP:140</span></div>
+    <div class="skill-desc">
+      敵全体に攻撃力<span style="color:var(--accent);">150%〜300%</span>（Lv1〜Lv10）の虚数属性ダメージを与え、<strong>「記憶状態」</strong>に移行する（4ターン継続）。<br><br>
+      <strong>記憶状態中の効果：</strong><br>
+      ① 通常攻撃が拡散範囲に、戦闘スキルが全体攻撃に強化。<br>
+      ② <strong>会心ダメージ+<span style="color:var(--accent);">30%</span></strong>（Lv10時）。<br>
+      ③ <strong>EP獲得量+<span style="color:var(--accent);">20%</span></strong>。<br>
+      ④ 行動制限系デバフの耐性+<span style="color:var(--accent);">35%</span>。<br>
+      ⑤ スキル使用時、与ダメの15%をHP回復。<br>
+      エネルギー回復：<span style="color:var(--accent);">5</span><br>
+      強化優先度：<span class="priority-5">★★★★★</span>
+    </div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">キャストリスの核となる必殺技。記憶状態に移行することで火力・範囲・EP回収・耐久の全てが向上する。4ターン継続で、EP獲得量+20%により次の必殺技までのスパンが短縮されるため、適切なローテーションで常時記憶状態を維持できる。必殺技は最優先でLv10以上。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">天賦：語り継ぐ記憶の断片 <span class="skill-type">常時パッシブ / 攻撃バフ</span></div>
+    <div class="skill-desc">
+      キャストリスの攻撃力が<span style="color:var(--accent);">10%〜28%</span>（Lv1〜Lv10）上昇する。<br>
+      さらに、敵を倒した時、残りの敵1体につき<strong>3エネルギー</strong>回復する（1ターン最大15）。<br>
+      味方が必殺技を使用するたび、キャストリスは<strong>5エネルギー</strong>回復する。<br>
+      強化優先度：<span class="priority-4">★★★★☆</span>
+    </div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">常時発動の攻撃力バフ+EPサポート。敵撃破時のEP回復は殲滅編成で強力。味方の必殺技で5エネルギー獲得も地味に大きく、特にロビンやルアンメェイなど高速回転サポーターと相性が良い。Lv10で攻撃力+28%は光円錐1本分の価値がある。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">秘技：忘却の帳 <span class="skill-type">戦闘前効果</span></div>
+    <div class="skill-desc">秘技使用後、20秒間持続する隠蔽フィールドを展開。この状態で敵に接触して戦闘に入った場合、戦闘開始時にキャストリスが<strong>即座に記憶状態</strong>に入る。さらに最初の行動時にエネルギーを30回復する。</div>
+  </div>
+
+  <h2 id="relics">🏆 おすすめ遺物（セット比較）</h2>
+
+  <h3>最適セット：雪の密林の狩人4セット</h3>
+  <div class="build-box">
+    <div class="label">2セット効果</div>
+    <div class="content">会心ダメージ+25%</div>
+  </div>
+  <div class="build-box">
+    <div class="label">4セット効果</div>
+    <div class="content">装備者が必殺技を発動した後、次の攻撃の与ダメ+25%（最短1ターン）。</div>
+  </div>
+  <p>「雪の密林の狩人（Hunter of Glacial Forest）」は4セット効果が記憶状態中の最初の一撃と非常に相性が良い。会心ダメージ+25%も安定した火力バフを提供する。</p>
+
+  <h3>次点：フリージングの深淵4セット</h3>
+  <div class="build-box">
+    <div class="label">2セット効果</div>
+    <div class="content">氷属性ダメージ+10%</div>
+  </div>
+  <div class="build-box">
+    <div class="label">4セット効果</div>
+    <div class="content">追加攻撃ダメージ+20%、会心ダメージ+20%。※記憶状態の通常攻撃は追加攻撃扱いになる。</div>
+  </div>
+  <p>記憶状態中の強化通常攻撃を追加攻撃とみなす仕様を活かしたビルド。運用がやや限定的だが、特定状況下では最適セットを上回る火力を発揮する。</p>
+
+  <h3>オーナメント</h3>
+  <table>
+    <tr><th>順位</th><th>オーナメント</th><th>効果</th><th>評価</th></tr>
+    <tr><td>🥇</td><td>虚無のステーション</td><td>攻撃力+12%、速度120以上でさらに攻撃力+12%</td><td>火力特化</td></tr>
+    <tr><td>🥈</td><td>奔狼のサルソット</td><td>会心率+8%、必殺技+追撃ダメ+15%</td><td>必殺技火力特化</td></tr>
+    <tr><td>🥉</td><td>老いぬ者の仙舟</td><td>HP+12%、速度120以上で攻撃力+8%</td><td>バランス型</td></tr>
+  </table>
+
+  <h2 id="lightcones">💡 おすすめ光円錐</h2>
+
+  <table>
+    <tr><th>順位</th><th>光円錐名</th><th>レア</th><th>効果</th><th>%差（モチーフ比）</th></tr>
+    <tr><td>🥇</td><td>深淵の記憶録（Chronicle of the Abyss）</td><td>★5</td><td>会心ダメージ+36%。記憶状態中、与ダメ+30%。敵撃破時、EP+10。</td><td>100%</td></tr>
+    <tr><td>🥈</td><td>今日も平和です S5（Geniuses' Greetings）</td><td>★4</td><td>攻撃力+24%。必殺技発動時、会心ダメージ+36%（2ターン）。</td><td>〜80%</td></tr>
+    <tr><td>🥉</td><td>銀河鉄道の夜 S5（Night on the Milky Way）</td><td>★5</td><td>敵1体につき攻撃力+9%（最大5スタック）。弱点撃破時、与ダメ+30%（1ターン）。</td><td>〜76%</td></tr>
+    <tr><td>④</td><td>天才たちの日常 S5（The Day the Cosmos Fell）</td><td>★4</td><td>攻撃力+16%。敵を倒すたび、攻撃力+8%（最大3スタック）。</td><td>〜68%</td></tr>
+  </table>
+
+  <h2 id="teams">👥 理想編成</h2>
+
+  <h3>編成① 知恵ハイパーキャリー型（最安定）</h3>
+  <div class="team-grid">
+    <div class="team-slot"><div class="role">メインDPS</div><div class="char">キャストリス</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">ルアンメェイ</div></div>
+    <div class="team-slot"><div class="role">バッファー</div><div class="char">ティンギュン</div></div>
+    <div class="team-slot"><div class="role">ヒーラー</div><div class="char">フォフォ</div></div>
+  </div>
+  <p>最も汎用性の高い編成。ルアンメェイの耐性貫通+与ダメバフ、ティンギュンの攻撃力+EP供給、フォフォの継続回復と会心率バフでキャストリスを最大限サポートする。</p>
+
+  <h3>編成② 行動前進シナジー型</h3>
+  <div class="team-grid">
+    <div class="team-slot"><div class="role">メインDPS</div><div class="char">キャストリス</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">ロビン</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">ブローニャ</div></div>
+    <div class="team-slot"><div class="role">ヒーラー</div><div class="char">アベンチュリン</div></div>
+  </div>
+  <p>ロビンとブローニャのW行動前進でキャストリスの行動回数を最大化。記憶状態中の攻撃回数が増えるほど、EP回収と総火力が向上する高火力編成。</p>
+
+  <h3>編成③ 殲滅特化型（模擬宇宙向け）</h3>
+  <div class="team-grid">
+    <div class="team-slot"><div class="role">メインDPS</div><div class="char">キャストリス</div></div>
+    <div class="team-slot"><div class="role">サブDPS</div><div class="char">ヘルタ</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">ルアンメェイ</div></div>
+    <div class="team-slot"><div class="role">ヒーラー</div><div class="char">フォフォ</div></div>
+  </div>
+  <p>キャストリス＋ヘルタのW知恵編成。どちらも全体攻撃が得意で、雑魚戦では無類の殲滅力を誇る。模擬宇宙や虚境の対応で圧倒的な効率を発揮する。</p>
+
+  <h3>編成④ 無課金向け</h3>
+  <div class="team-grid">
+    <div class="team-slot"><div class="role">メインDPS</div><div class="char">キャストリス</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">アスター</div></div>
+    <div class="team-slot"><div class="role">バッファー</div><div class="char">ティンギュン</div></div>
+    <div class="team-slot"><div class="role">ヒーラー</div><div class="char">ナターシャ</div></div>
+  </div>
+  <p>無課金・初心者向け編成。アスターの速度+攻撃力バフ、ティンギュンのEP供給、ナターシャの回復でキャストリスをしっかりサポート。星4キャラのみで編成可能。</p>
+
+  <h2 id="eidolons">💎 凸数評価（星魂）</h2>
+
+  <table>
+    <tr><th>凸数</th><th>効果</th><th>火力上昇</th><th>おすすめ度</th></tr>
+    <tr><td>E0</td><td>基本性能。記憶状態の維持が鍵。</td><td>基準</td><td>⭐⭐⭐⭐⭐</td></tr>
+    <tr><td>E1</td><td>記憶状態中、与ダメ+25%。戦技使用時に追加でEP+5。</td><td>+25%</td><td>⭐⭐⭐⭐⭐</td></tr>
+    <tr><td>E2</td><td>会心率+12%、会心ダメージ+20%。記憶状態のターン数+1。</td><td>+20%〜30%</td><td>⭐⭐⭐⭐⭐</td></tr>
+    <tr><td>E3</td><td>戦闘スキルLv+2。天賦Lv+2。</td><td>+10%</td><td>⭐⭐⭐</td></tr>
+    <tr><td>E4</td><td>記憶状態中、味方が必殺技を使用するたびにキャストリスのEP+10（味方全体も+3）。</td><td>サポート↑</td><td>⭐⭐⭐⭐</td></tr>
+    <tr><td>E5</td><td>必殺技Lv+2。通常攻撃Lv+1。</td><td>+12%</td><td>⭐⭐</td></tr>
+    <tr><td>E6</td><td>記憶状態中、通常攻撃と戦技の追加攻撃が2回発生。会心ダメージ+50%。</td><td>+80%〜100%</td><td>⭐⭐⭐⭐⭐</td></tr>
+  </table>
+
+  <div class="note">💡 E1とE2が特に強力。E2で記憶状態のターン+1は管理が格段に楽になる。E6は知恵キャラ史上最強クラスの殲滅力を誇る。</div>
+
+  <h2 id="synergy">🤝 相性の良いキャラ</h2>
+  <h3>⭐ 最適サポーター</h3>
+  <ul>
+    <li><strong>ルアンメェイ</strong>：耐性貫通+与ダメバフ+速度UP。全要素が好相性。</li>
+    <li><strong>ロビン</strong>：全体行動前進+攻撃力バフ。行動回数UPで記憶状態の効果最大化。</li>
+    <li><strong>ティンギュン</strong>：攻撃力+会心ダメ+EP供給。星4最高のサポーター。</li>
+    <li><strong>ブローニャ</strong>：行動前進+攻撃力バフ。記憶状態の価値が向上。</li>
+    <li><strong>フォフォ</strong>：継続回復+会心率バフ。安定感抜群。</li>
+  </ul>
+  <h3>⭐ 相性の良いDPS</h3>
+  <ul>
+    <li><strong>ヘルタ（The Herta）</strong>：W知恵編成で殲滅力が跳ね上がる。</li>
+    <li><strong>銀狼</strong>：弱点埋め込み+デバフ。虚数弱点を一元化できる。</li>
+  </ul>
+
+  <h2 id="build">📋 おすすめビルドまとめ表</h2>
+  <table>
+    <tr><th>項目</th><th>おすすめ</th></tr>
+    <tr><td>光円錐</td><td>深淵の記憶録（★5）＞ 今日も平和ですS5（★4）＞ 銀河鉄道の夜（★5）</td></tr>
+    <tr><td>遺物</td><td>雪の密林の狩人4（最適）＞ フリージングの深淵4</td></tr>
+    <tr><td>オーナメント</td><td>虚無のステーション（最適）＞ 奔狼のサルソット</td></tr>
+    <tr><td>胴体</td><td>会心率% or 会心ダメージ%（バランス）</td></tr>
+    <tr><td>脚</td><td>速度%（100目標）or 攻撃力%</td></tr>
+    <tr><td>オーブ</td><td>虚数属性ダメージ%</td></tr>
+    <tr><td>縄</td><td>攻撃力% or EP回復効率%</td></tr>
+    <tr><td>目標会心率</td><td>70%以上</td></tr>
+    <tr><td>目標会心ダメ</td><td>160%以上（記憶状態中は190%+）</td></tr>
+    <tr><td>目標速度</td><td>100以上</td></tr>
+    <tr><td>目標攻撃力</td><td>3,200以上</td></tr>
+    <tr><td>スキル優先</td><td>戦闘スキル ＞ 必殺技 ＞ 天賦 ＞ 通常攻撃</td></tr>
+  </table>
+
+  <h2 id="faq">❓ よくある質問（FAQ）</h2>
+
+  <div class="faq-item">
+    <div class="q">Q. キャストリスは記憶状態を常時維持できますか？</div>
+    <div class="a">
+      理論上は可能です。記憶状態の持続は4ターンで、必殺技のEPコストは140。以下の条件を満たせば常時維持が現実的です。<br><br>
+      - 記憶状態中はEP獲得量+20%（1.2倍）<br>
+      - 毎ターン戦闘スキル使用で基本30×1.2=36EP獲得<br>
+      - 味方の必殺技使用で天賦の5EP獲得<br>
+      - ティンギュンのEP供給があればさらに安定<br>
+      - 記憶状態中に敵を倒すと追加EP<br><br>
+      理想的なローテーション：<br>
+      必殺技→戦技×3（EP36×3=108）＋天賦発動＋被弾などで140到達→再び必殺技<br>
+      凸を進めるほど（特にE1の戦技+5EP、E2のターン+1）常時維持が容易になります。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. キャストリスとヘルタはどちらが強いですか？</div>
+    <div class="a">
+      両方とも知恵キャラのトップクラスですが、得意分野が異なります。<br><br>
+      <strong>キャストリスの強み：</strong><br>
+      - 記憶状態中の全体攻撃の瞬間火力<br>
+      - スキル構成がシンプルで運用しやすい<br>
+      - 会心+EP+回復の自己完結型<br>
+      - 単体〜複数のバランスが良い<br><br>
+      <strong>ヘルタの強み：</strong><br>
+      - 50%HP以下の敵に対する追撃の殲滅力<br>
+      - 編成自由度が高い（他の知恵キャラとも好相性）<br>
+      - SP効率が非常に良い<br>
+      - 模擬宇宙で無類の強さ<br><br>
+      総評：<strong>キャストリスはボス戦含む高難易度寄り、ヘルタは殲滅・周回寄り</strong>。両方持っていれば状況に応じて使い分けるのがベストです。もしどちらか1人なら、汎用性の高さでヘルタ、瞬間火力の高さでキャストリスがおすすめ。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. キャストリスのおすすめのメインステータス配分を教えてください。</div>
+    <div class="a">
+      <strong>基本的なメインステ配分：</strong><br>
+      胴体：会心率%（会心率が70%以上の場合は会心ダメ%）<br>
+      脚：速度%（最低100目標）or 攻撃力%（速度が足りている場合）<br>
+      オーブ：虚数属性ダメージ%（確定）<br>
+      縄：攻撃力%（EP回復効率%は天賦と記憶状態の+20%で賄える場合は攻撃力%優先）<br><br>
+      EP回復効率%の縄を使う場合は、攻撃力の低下をサブステで補う必要があります。最終的な目標ステータスは攻撃力3,200以上・会心率70%以上・会心ダメ160%以上・速度100以上です。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. キャストリスは追撃編成で使えますか？</div>
+    <div class="a">
+      キャストリスはメインアタッカー型の知恵キャラのため、純粋な追撃編成（トパーズ+飛翔）よりは従来のハイパーキャリー型の方が適性が高いです。<br><br>
+      ただし、記憶状態中の通常攻撃が追加攻撃扱いになる仕様を活かし、ロビンやトパーズの追撃バフと組み合わせることで、一定のシナジーを得られます。「キャストリス＋ロビン＋トパーズ＋フォフォ」のような編成は、キャストリスの火力にロビンの全体バフとトパーズのサブ火力を組み合わせたバランス型として有効です。<br><br>
+      ※追撃編成に特化するなら飛翔の方が明らかに強いですが、キャストリスの知恵キャラとしての殲滅力を活かせる場面は多いです。
+    </div>
+  </div>
+
+  <h2 id="summary">📋 総評</h2>
+  <div class="card">
+    <p>キャストリス（Castorice）は、<strong>崩壊スターレイルの知恵アタッカーとしてトップクラスの範囲火力と記憶状態による自己完結型の戦闘スタイルが魅力的なキャラクター</strong>です。記憶状態中の全スキル範囲化は殲滅戦で圧倒的なアドバンテージをもたらし、会心ダメ+30%・EP獲得量+20%のバフにより火力と回転率の両立を実現しています。</p>
+
+    <h4>ビルドの基本方針</h4>
+    <ul style="margin-top:4px;">
+      <li><strong>光円錐</strong>：深淵の記憶録（★5・モチーフ）＞ 今日も平和ですS5（★4）</li>
+      <li><strong>遺物</strong>：雪の密林の狩人4セット（最適）＞ フリージングの深淵4セット</li>
+      <li><strong>オーナメント</strong>：虚無のステーション（最適）＞ 奔狼のサルソット</li>
+      <li><strong>メインステ</strong>：胴体＝会心率%、脚＝速度%、オーブ＝虚数ダメ%、縄＝攻撃力%</li>
+      <li><strong>目標ステ</strong>：攻撃力3,200+、会心率70%+、会心ダメ160%+、速度100+</li>
+      <li><strong>スキル優先</strong>：戦闘スキル ＞ 必殺技 ＞ 天賦 ＞ 通常攻撃</li>
+      <li><strong>凸優先</strong>：E1（与ダメ+25%）＞ E2（会心+記憶ターン+1）</li>
+    </ul>
+
+    <h4>評価点数（10点満点）</h4>
+    <table style="max-width:400px;">
+      <tr><th>項目</th><th>評価</th></tr>
+      <tr><td>火力性能</td><td><span class="star">★★★★★★★★★★</span> 10/10</td></tr>
+      <tr><td>範囲殲滅力</td><td><span class="star">★★★★★★★★★★</span> 10/10</td></tr>
+      <tr><td>汎用性</td><td><span class="star">★★★★★★★★☆☆</span> 8/10</td></tr>
+      <tr><td>編成自由度</td><td><span class="star">★★★★★★★★☆☆</span> 8/10</td></tr>
+      <tr><td>遺物厳選難易度</td><td><span style="color:#e8c547;">★★★★★★☆☆☆☆</span> 6/10</td></tr>
+      <tr><td>総合評価</td><td><span class="star">★★★★★★★★★☆</span> 9/10</td></tr>
+    </table>
+
+    <h4>こんな人におすすめ</h4>
+    <ul>
+      <li>✅ 範囲殲滅力の高い知恵アタッカーが欲しい</li>
+      <li>✅ 記憶状態の管理を楽しめる戦略的なプレイが好き</li>
+      <li>✅ ルアンメェイやロビンなど強力サポーターを持っている</li>
+      <li>✅ 虚数属性キャラを充実させたい</li>
+    </ul>
+
+    <p style="margin-top:12px;">キャストリスは、崩壊スターレイルの知恵キャラの中でも特に攻撃的な性能を持つアタッカーです。記憶状態による自己強化と範囲攻撃の両立は、正しく運用すればほとんどのコンテンツで活躍できるポテンシャルを秘めています。ぜひこのガイドを参考に、最強のキャストリスを育成してください！</p>
+  </div>
+
+</article>
+
+</body>
+</html>

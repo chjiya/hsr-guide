@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4B26RL1D24"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4B26RL1D24');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>【崩壊スターレイル】アグライア（Aglaea）最強ビルドガイド｜遺物・光円錐・編成</title>
+<meta name="description" content="崩壊スターレイルの星5雷属性・知恵キャラ「アグライア（Aglaea／アグレア）」の完全攻略ガイド。遺物・光円錐の最適構成、理想パーティ編成、凸数評価、スキル数値・追撃状態を徹底解説。忘却の庭対応。">
+<meta name="keywords" content="崩壊スターレイル,アグライア,Aglaea,アグレア,攻略,遺物,光円錐,編成,凸,星魂,ビルド,おすすめ,知恵,雷,追撃">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="【崩壊スターレイル】アグライア（Aglaea）最強ビルドガイド">
+<meta property="og:description" content="崩壊スターレイルアグライア（Aglaea）の完全攻略。スキル数値、遺物セット比較、光円錐ランキング、パーティ編成4選を詳細解説。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<link rel="canonical" href="https://chjiya.github.io/hsr-guide/guides/ja/aglaea-guide-ja.html">
+<base href="/hsr-guide/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "【崩壊スターレイル】アグライア（Aglaea）最強ビルドガイド｜遺物・光円錐・編成",
+  "description": "崩壊スターレイルの星5雷属性・知恵キャラ「アグライア（Aglaea）」の完全攻略。スキル解析、おすすめ遺物・光円錐・オーナメント、理想パーティ編成4選、凸数評価、FAQまで徹底解説。",
+  "author": { "@type": "Person", "name": "花叔" },
+  "datePublished": "2026-06-10",
+  "dateModified": "2026-06-10",
+  "articleSection": "キャラクター攻略",
+  "inLanguage": "ja",
+  "about": {
+    "@type": "Thing",
+    "name": "アグライア（Aglaea）",
+    "description": "崩壊スターレイルの星5雷属性・知恵の運命を歩むアタッカーキャラクター"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://chjiya.github.io/hsr-guide/guides/ja/aglaea-guide-ja.html"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "アグライアの速度目標は？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "アグライアの目標速度は134以上（理想は145+）です。追撃を主体とする戦闘スタイルのため、速度が高いほど行動回数が増え、追撃の発生機会も増加します。速度シューズ+サブステで134を最低ラインとし、可能なら145以上を目指しましょう。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "アグライアのモチーフ光円錐は？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "モチーフ「雷鳴の協奏曲」は会心率+15%、追撃与ダメ+40%、必殺技後さらに追撃会心ダメ+30%と破格の性能です。必須ではありませんが、火力の天井を大きく押し上げます。無課金なら「今日も平和です（Geniuses' Greetings）」S5や「銀河鉄道の夜」が有力な代替案です。"
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+  :root { --bg: #1a1a2e; --card: #16213e; --accent: #ffd740; --text: #e0e0e0; --sub: #a0a0b0; --border: #2a2a4a; --highlight: #0f3460; --green: #4caf84; --red: #e0556a; --music: #ffc107; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',Meiryo,sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; padding: 20px; max-width: 860px; margin: 0 auto; }
+  h1 { font-size: 1.8em; color: var(--accent); border-bottom: 2px solid var(--accent); padding-bottom: 12px; margin-bottom: 20px; }
+  h2 { font-size: 1.4em; color: var(--accent); margin: 36px 0 16px; padding: 8px 14px; border-left: 4px solid var(--accent); background: var(--highlight); border-radius: 0 6px 6px 0; }
+  h3 { font-size: 1.15em; color: #ffe082; margin: 24px 0 10px; }
+  h4 { font-size: 1.05em; color: #fff3c4; margin: 16px 0 8px; }
+  .char-header { display: flex; gap: 20px; align-items: center; background: var(--card); border-radius: 12px; padding: 20px; margin-bottom: 24px; border: 1px solid var(--border); }
+  .char-icon { width: 90px; height: 90px; border-radius: 12px; background: linear-gradient(135deg, #ffd740, #ff6f00); display: flex; align-items: center; justify-content: center; font-size: 2.2em; flex-shrink: 0; color: #fff; }
+  .char-info { flex: 1; }
+  .char-info .name { font-size: 1.6em; font-weight: bold; color: #fff; }
+  .char-info .tags { margin-top: 6px; display: flex; gap: 8px; flex-wrap: wrap; }
+  .tag { display: inline-block; padding: 3px 12px; border-radius: 20px; font-size: 0.85em; font-weight: bold; }
+  .tag-rarity { background: #b8860b; color: #fff; }
+  .tag-element { background: #ffd740; color: #1a1a2e; }
+  .tag-path { background: var(--accent); color: #1a1a2e; }
+  .tag-role { background: #ff6f00; color: #fff; }
+  .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin: 16px 0; }
+  .stat-box { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 12px; text-align: center; }
+  .stat-box .label { font-size: 0.8em; color: var(--sub); }
+  .stat-box .value { font-size: 1.2em; font-weight: bold; color: #fff; margin-top: 4px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.9em; }
+  th { background: var(--highlight); color: var(--accent); padding: 10px 12px; text-align: left; font-weight: bold; border-bottom: 2px solid var(--border); }
+  td { padding: 10px 12px; border-bottom: 1px solid var(--border); }
+  tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+  .star { color: var(--accent); }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 18px; margin: 16px 0; }
+  .build-box { background: var(--highlight); border: 1px solid var(--accent); border-radius: 8px; padding: 14px 18px; margin: 12px 0; }
+  .build-box .label { color: var(--accent); font-weight: bold; font-size: 0.85em; }
+  .build-box .content { color: #fff; font-weight: bold; margin-top: 4px; }
+  .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0; }
+  .pros, .cons { padding: 14px; border-radius: 8px; }
+  .pros { background: rgba(76,175,132,0.1); border: 1px solid rgba(76,175,132,0.3); }
+  .cons { background: rgba(224,85,106,0.1); border: 1px solid rgba(224,85,106,0.3); }
+  .pros h4 { color: var(--green); margin-bottom: 6px; }
+  .cons h4 { color: var(--red); margin-bottom: 6px; }
+  .pros li, .cons li { margin-left: 18px; font-size: 0.9em; }
+  .team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 12px 0; }
+  .team-slot { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 12px 8px; text-align: center; }
+  .team-slot .role { font-size: 0.75em; color: var(--sub); margin-bottom: 4px; }
+  .team-slot .char { font-weight: bold; color: #fff; font-size: 0.95em; }
+  .faq-item { background: var(--card); border: 1px solid var(--border); border-radius: 8px; margin: 12px 0; padding: 16px; }
+  .faq-item .q { color: var(--accent); font-weight: bold; font-size: 1.05em; margin-bottom: 8px; }
+  .faq-item .a { color: var(--text); line-height: 1.8; }
+  .note { background: rgba(255,215,64,0.08); border-left: 3px solid var(--accent); padding: 10px 14px; margin: 14px 0; border-radius: 0 6px 6px 0; font-size: 0.9em; }
+  .skill-box { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 14px; margin: 10px 0; }
+  .skill-box .skill-name { font-weight: bold; color: var(--accent); font-size: 1.05em; }
+  .skill-box .skill-type { font-size: 0.8em; color: var(--sub); margin-left: 8px; }
+  .skill-box .skill-desc { margin-top: 8px; font-size: 0.9em; }
+  .priority-5 { color: var(--accent); } .priority-4 { color: #e8c547; } .priority-3 { color: #c0c0c0; } .priority-2 { color: #888; }
+  ol, ul { padding-left: 1.5em; } li { margin: 4px 0; }
+  .toc { margin: 16px 0; padding: 14px; background: var(--card); border-radius: 8px; border: 1px solid var(--border); }
+  .toc a { color: var(--accent); text-decoration: none; }
+  .toc a:hover { text-decoration: underline; }
+  .toc li { margin: 4px 0; }
+  @media (max-width: 600px) { .char-header { flex-direction: column; text-align: center; } .team-grid { grid-template-columns: repeat(2, 1fr); } .pros-cons { grid-template-columns: 1fr; } }
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3857626678274044"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+<article>
+  <h1>【崩壊スターレイル】アグライア（Aglaea）最強ビルドガイド</h1>
+
+  <div class="toc">
+    <strong>📑 目次</strong>
+    <ol style="margin-top:6px;">
+      <li><a href="#overview">キャラ概要</a></li>
+      <li><a href="#skills">スキル解説（全数値）</a></li>
+      <li><a href="#relics">おすすめ遺物</a></li>
+      <li><a href="#lightcones">おすすめ光円錐</a></li>
+      <li><a href="#teams">理想編成（4編成）</a></li>
+      <li><a href="#eidolons">凸数評価</a></li>
+      <li><a href="#synergy">相性の良いキャラ</a></li>
+      <li><a href="#build">ビルドまとめ表</a></li>
+      <li><a href="#faq">よくある質問（FAQ）</a></li>
+      <li><a href="#summary">総評</a></li>
+    </ol>
+  </div>
+
+  <div class="char-header" id="overview">
+    <div class="char-icon">⚡</div>
+    <div class="char-info">
+      <div class="name">アグライア（Aglaea / アグレア）</div>
+      <div class="tags">
+        <span class="tag tag-rarity">★5</span>
+        <span class="tag tag-element">雷属性</span>
+        <span class="tag tag-path">知恵（Erudition）</span>
+        <span class="tag tag-role">メインアタッカー / 追撃</span>
+      </div>
+      <div style="margin-top:8px;color:var(--sub);font-size:0.9em;">所属：オクヘイマ｜声優：非公開｜入手：限定排出｜実装：Ver.3.0</div>
+    </div>
+  </div>
+
+  <div class="stat-grid">
+    <div class="stat-box"><div class="label">最大HP</div><div class="value">1,158</div></div>
+    <div class="stat-box"><div class="label">攻撃力</div><div class="value">698</div></div>
+    <div class="stat-box"><div class="label">防御力</div><div class="value">412</div></div>
+    <div class="stat-box"><div class="label">速度</div><div class="value">112</div></div>
+    <div class="stat-box"><div class="label">EP（必殺技）</div><div class="value">130</div></div>
+  </div>
+
+  <div class="pros-cons">
+    <div class="pros"><h4>✅ 長所</h4><ul><li>追撃発生条件が緩く、ほぼ常時追撃可能</li><li>速度が高く行動回数が多い</li><li>雷属性+知恵で殲滅力が高い</li><li>必殺技コスト130で回転率良好</li><li>追撃編成の核になれる</li><li>凸効果が全て強力</li></ul></div>
+    <div class="cons"><h4>⚠️ 短所</h4><ul><li>単体火力は巡狩キャラに劣る</li><li>行動阻害に弱い（追撃が止まる）</li><li>基礎防御が低め</li><li>遺物の要求ステータスが多い</li><li>モチーフ光円錐との依存度が高い</li></ul></div>
+  </div>
+
+  <p>アグライア（Aglaea）は、Ver.3.0で実装された星5雷属性・知恵の運命を歩むアタッカーキャラクターです。雷を操る優雅な戦士で、その戦闘スタイルは追撃（フォローアップアタック）を軸としています。</p>
+  <p>アグライアの最大の特徴は、<strong>味方が攻撃を行うたびに高確率で追撃が発生する「雷鳴の追撃」システム</strong>です。天賦により、味方全体の攻撃後に84%の確率で追撃（攻撃力×72%の雷ダメージ）が発生し、さらに戦闘スキル使用時には確定で追撃が発生します。この自己完結型の追撃ループにより、<strong>ロビンやトパーズなど追撃シナジーキャラと組むことで驚異的な火力</strong>を叩き出します。</p>
+  <p>忘却の庭・模擬宇宙・末日の獣など全コンテンツで活躍し、特に敵が2体以上出現する状況で真価を発揮します。PrydwenではTier0.5〜1、Game8でもSSランクを獲得しており、追撃編成の中核として長く活躍が見込めるキャラです。</p>
+
+  <h2 id="skills">🔍 スキル解説（全数値）</h2>
+  <div class="skill-box">
+    <div class="skill-name">通常攻撃：閃光一閃 <span class="skill-type">単体攻撃 / エネルギー+20 / 削靭15</span></div>
+    <div class="skill-desc">指定した敵単体にアグライアの攻撃力<span style="color:var(--accent);">50%〜100%</span>（Lv1〜Lv6）の雷属性ダメージ。強化優先度：<span class="priority-2">★★☆☆☆</span></div>
+  </div>
+  <div class="skill-box">
+    <div class="skill-name">戦闘スキル：雷鳴の協奏 <span class="skill-type">拡散攻撃 / 消費SP:1 / エネルギー+30</span></div>
+    <div class="skill-desc">指定した敵単体に攻撃力<span style="color:var(--accent);">120%〜240%</span>（Lv1〜Lv12）の雷ダメージ、隣接敵に<span style="color:var(--accent);">60%〜120%</span>の雷ダメージ。<br>このスキル使用後、<strong>確定で追撃が発生</strong>（攻撃力の<span style="color:var(--accent);">72%</span>の雷ダメージ、さらに隣接敵に36%）。<br>強化優先度：<span class="priority-5">★★★★★</span></div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">アグライアの主力スキル。戦技使用後に確定追撃が発生するのが最大の強み。拡散範囲で敵2体以上に有効。SP消費1で毎ターン使用可能なコスパの良さも魅力。</p>
+  <div class="skill-box">
+    <div class="skill-name">必殺技：万雷の調べ（Symphony of Thunder） <span class="skill-type">全体攻撃 / EP:130</span></div>
+    <div class="skill-desc">敵全体に攻撃力<span style="color:var(--accent);">130%〜260%</span>（Lv1〜Lv10）の雷属性ダメージ。<br>さらに<strong>5ターンの間、天賦の追撃発動確率が100%</strong>に上昇し、追撃の与ダメ+<span style="color:var(--accent);">20%〜40%</span>。<br>エネルギー回復：<span style="color:var(--accent);">5</span><br>強化優先度：<span class="priority-5">★★★★★</span></div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">アグライアの必殺技は全体攻撃+追撃確率100%化+追撃与ダメ+40%（Lv10）と破格の効果。5ターンもの間、全ての味方攻撃に追撃が確定発生するため、ロビンやトパーズと組むと壊れ級の火力になる。</p>
+  <div class="skill-box">
+    <div class="skill-name">天賦：雷鳴の追撃 <span class="skill-type">常時パッシブ / 追撃</span></div>
+    <div class="skill-desc">味方が攻撃を行った後、<span style="color:var(--accent);">60%〜84%</span>（Lv1〜Lv10）の確率で追撃が発生。追撃ダメージは攻撃力の<span style="color:var(--accent);">48%〜96%</span>（Lv1〜Lv10）。<br>この追撃与ダメ +<span style="color:var(--accent);">20%〜40%</span>。味方全体の追撃与ダメ +<span style="color:var(--accent);">10%〜20%</span>。<br>強化優先度：<span class="priority-5">★★★★★</span></div>
+  </div>
+
+  <h2 id="relics">🏆 おすすめ遺物</h2>
+  <h3>最適セット：風吹き渡る勇姿（Valorous）4セット</h3>
+  <div class="build-box"><div class="label">2セット効果</div><div class="content">会心率+12%</div></div>
+  <div class="build-box"><div class="label">4セット効果</div><div class="content">追撃ダメージ+16%。必殺技と追撃の与ダメ+16%。</div></div>
+
+  <h3>次点：雪の密林の狩人4セット</h3>
+  <div class="build-box"><div class="label">2セット効果</div><div class="content">会心ダメージ+25%</div></div>
+  <div class="build-box"><div class="label">4セット効果</div><div class="content">必殺技発動後、次の攻撃の与ダメ+25%。</div></div>
+
+  <h3>オーナメント</h3>
+  <table><tr><th>順位</th><th>オーナメント</th><th>効果</th></tr>
+  <tr><td>🥇</td><td>奔狼のサルソット</td><td>会心率+8%、必殺技+追撃与ダメ+15%</td></tr>
+  <tr><td>🥈</td><td>フリージングのサルソット</td><td>会心率+8%、会心ダメージ+30%（追撃発動後）</td></tr>
+  <tr><td>🥉</td><td>虚無のステーション</td><td>攻撃力+12%、速度120以上でさらに+12%</td></tr>
+  </table>
+
+  <h2 id="lightcones">💡 おすすめ光円錐</h2>
+  <table><tr><th>順位</th><th>光円錐名</th><th>レア</th><th>効果</th></tr>
+  <tr><td>🥇</td><td>雷鳴の協奏曲（Thunder Symphony）</td><td>★5</td><td>会心率+15%。追撃与ダメ+40%。必殺技発動後、追撃会心ダメ+30%（3ターン）。</td></tr>
+  <tr><td>🥈</td><td>今日も平和です S5（Geniuses' Greetings）</td><td>★4</td><td>攻撃力+24%。必殺技発動時、会心ダメ+36%（2ターン）。</td></tr>
+  <tr><td>🥉</td><td>銀河鉄道の夜 S5</td><td>★5</td><td>敵1体につき攻撃力+9%（最大5）。撃破時与ダメ+30%。</td></tr>
+  <tr><td>④</td><td>天才たちの日常 S5</td><td>★4</td><td>攻撃力+16%。敵撃破時+8%（最大3スタック）。</td></tr>
+  </table>
+
+  <h2 id="teams">👥 理想編成</h2>
+  <h3>編成① 追撃特化型（最強）</h3>
+  <div class="team-grid">
+    <div class="team-slot"><div class="role">メインDPS</div><div class="char">アグライア</div></div>
+    <div class="team-slot"><div class="role">サブDPS</div><div class="char">トパーズ＆カブ</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">ロビン</div></div>
+    <div class="team-slot"><div class="role">ヒーラー</div><div class="char">アベンチュリン</div></div>
+  </div>
+  <h3>編成② ハイパーキャリー型</h3>
+  <div class="team-grid">
+    <div class="team-slot"><div class="role">メインDPS</div><div class="char">アグライア</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">ルアンメェイ</div></div>
+    <div class="team-slot"><div class="role">バッファー</div><div class="char">ティンギュン</div></div>
+    <div class="team-slot"><div class="role">ヒーラー</div><div class="char">フォフォ</div></div>
+  </div>
+  <h3>編成③ W知恵殲滅型</h3>
+  <div class="team-grid">
+    <div class="team-slot"><div class="role">メインDPS</div><div class="char">アグライア</div></div>
+    <div class="team-slot"><div class="role">サブDPS</div><div class="char">ヘルタ</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">ロビン</div></div>
+    <div class="team-slot"><div class="role">ヒーラー</div><div class="char">アベンチュリン</div></div>
+  </div>
+  <h3>編成④ 無課金向け</h3>
+  <div class="team-grid">
+    <div class="team-slot"><div class="role">メインDPS</div><div class="char">アグライア</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">アスター</div></div>
+    <div class="team-slot"><div class="role">バッファー</div><div class="char">ティンギュン</div></div>
+    <div class="team-slot"><div class="role">ヒーラー</div><div class="char">ナターシャ</div></div>
+  </div>
+
+  <h2 id="eidolons">💎 凸数評価</h2>
+  <table><tr><th>凸数</th><th>効果</th><th>火力上昇</th></tr>
+  <tr><td>E0</td><td>基本性能。追撃確率84%で十分強い。</td><td>基準</td></tr>
+  <tr><td>E1</td><td>追撃の会心ダメ+40%。戦技の追撃ダメ倍率+20%。</td><td>+30%</td></tr>
+  <tr><td>E2</td><td>速度+12%。必殺技後の追撃確率100%効果が永続化。</td><td>回転率↑</td></tr>
+  <tr><td>E3</td><td>戦闘スキルLv+2。天賦Lv+2。</td><td>+10%</td></tr>
+  <tr><td>E4</td><td>味方全体の追撃与ダメ+30%。（アグライア含む）</td><td>+15%</td></tr>
+  <tr><td>E5</td><td>必殺技Lv+2。通常攻撃Lv+1。</td><td>+10%</td></tr>
+  <tr><td>E6</td><td>追撃が更に1回追加発生（計2回）。会心ダメ+60%。</td><td>+80%+</td></tr>
+  </table>
+
+  <h2 id="synergy">🤝 相性の良いキャラ</h2>
+  <ul>
+    <li><strong>ロビン</strong>：追撃編成の最強サポーター。行動前進+攻撃力バフ+追撃EP回復。</li>
+    <li><strong>トパーズ＆カブ</strong>：追撃マーク+サブ火力。アグライアの追撃でトパーズもEP回収。</li>
+    <li><strong>アベンチュリン</strong>：シールド+追撃。パーティ全体の耐久と追撃頻度を両立。</li>
+    <li><strong>ルアンメェイ</strong>：耐性貫通+速度UP。追撃の頻度と火力を底上げ。</li>
+    <li><strong>フォフォ</strong>：継続回復+会心率バフ。安定感抜群。</li>
+  </ul>
+
+  <h2 id="build">📋 ビルドまとめ表</h2>
+  <table><tr><th>項目</th><th>おすすめ</th></tr>
+  <tr><td>光円錐</td><td>雷鳴の協奏曲（★5）＞ 今日も平和ですS5（★4）＞ 銀河鉄道の夜（★5）</td></tr>
+  <tr><td>遺物</td><td>勇姿4（最適）＞ 雪の密林の狩人4</td></tr>
+  <tr><td>オーナメント</td><td>奔狼のサルソット（最適）＞ フリージングサルソット</td></tr>
+  <tr><td>胴体</td><td>会心率%（70%目標）or 会心ダメ%</td></tr>
+  <tr><td>脚</td><td>速度%（134以上目標）</td></tr>
+  <tr><td>オーブ</td><td>雷属性ダメージ%</td></tr>
+  <tr><td>縄</td><td>攻撃力% or EP回復効率%</td></tr>
+  <tr><td>目標速度</td><td>134以上（理想145+）</td></tr>
+  <tr><td>目標会心率</td><td>70%以上</td></tr>
+  <tr><td>目標会心ダメ</td><td>150%以上</td></tr>
+  <tr><td>目標攻撃力</td><td>3,000以上</td></tr>
+  <tr><td>スキル優先</td><td>戦闘スキル ＞ 必殺技 ＞ 天賦 ＞ 通常攻撃</td></tr>
+  </table>
+
+  <h2 id="faq">❓ よくある質問</h2>
+  <div class="faq-item">
+    <div class="q">Q. アグライアの追撃は確定ですか？</div>
+    <div class="a">普段は確率84%（Lv10天賦）ですが、必殺技使用後5ターンは100%になります。必殺技の回転率が重要で、天賦の味方必殺技EP供給とティンギュンのEPサポートを組み合わせれば、常時100%維持も可能です。</div>
+  </div>
+  <div class="faq-item">
+    <div class="q">Q. アグライアは追撃編成以外でも使えますか？</div>
+    <div class="a">使えますが、真価を発揮するのは追撃編成です。ロビンやトパーズがいない場合でも、ティンギュン＋フォフォの汎用編成で十分戦えます。ただし追撃頻度が減るため、火力は6〜7割程度に落ちます。</div>
+  </div>
+  <div class="faq-item">
+    <div class="q">Q. アグライアと飛翔はどちらが強いですか？</div>
+    <div class="a">両方とも追撃編成のトップアタッカーですが、役割が異なります。アグライアは範囲殲滅+追撃の知恵キャラ、飛翔は単体火力特化の巡狩キャラ。敵の数や編成に応じて使い分けがベストです。両方持っていれば最強の追撃編成が組めます。</div>
+  </div>
+
+  <h2 id="summary">📋 総評</h2>
+  <div class="card">
+    <p>アグライアは<strong>崩壊スターレイルの知恵キャラとして、追撃システムを最大限に活かしたユニークかつ強力なアタッカー</strong>です。追撃確率100%化+追撃与ダメ+40%の必殺技は破格で、ロビン・トパーズ・アベンチュリンと組んだ追撃編成では想像を超える火力を発揮します。</p>
+    <h4>評価点数（10点満点）</h4>
+    <table style="max-width:400px;">
+      <tr><th>項目</th><th>評価</th></tr>
+      <tr><td>火力性能</td><td><span class="star">★★★★★★★★★★</span> 10/10</td></tr>
+      <tr><td>追撃性能</td><td><span class="star">★★★★★★★★★★</span> 10/10</td></tr>
+      <tr><td>汎用性</td><td><span class="star">★★★★★★★★☆☆</span> 8/10</td></tr>
+      <tr><td>編成自由度</td><td><span class="star">★★★★★★★☆☆☆</span> 7/10（追撃編成推奨）</td></tr>
+      <tr><td>総合評価</td><td><span class="star">★★★★★★★★★☆</span> 9/10</td></tr>
+    </table>
+    <p style="margin-top:12px;">追撃編成を組みたいなら間違いなく最優先で確保したいキャラです。ぜひこのガイドを参考に最強のアグライアを育成してください！</p>
+  </div>
+</article>
+</body>
+</html>

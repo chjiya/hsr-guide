@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4B26RL1D24"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4B26RL1D24');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>【崩壊スターレイル】アナクサ（Anaxa）攻略ガイド｜遺物・光円錐・編成</title>
+<meta name="description" content="崩壊スターレイルの星5炎属性・虚無キャラ「アナクサ（Anaxa／アナクサー）」の完全攻略ガイド。遺物・光円錐の最適構成、理想パーティ編成、凸数評価、スキル数値・燃焼状態を徹底解説。忘却の庭対応。">
+<meta name="keywords" content="崩壊スターレイル,アナクサ,Anaxa,アナクサー,攻略,遺物,光円錐,編成,凸,星魂,ビルド,おすすめ,虚無,炎,燃焼,DoT">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="【崩壊スターレイル】アナクサ（Anaxa）攻略ガイド">
+<meta property="og:description" content="崩壊スターレイルアナクサ（Anaxa）の完全攻略。スキル数値、遺物セット比較、光円錐ランキング、パーティ編成4選を詳細解説。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<link rel="canonical" href="https://chjiya.github.io/hsr-guide/guides/ja/anaxa-guide-ja.html">
+<base href="/hsr-guide/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "【崩壊スターレイル】アナクサ（Anaxa）攻略ガイド｜遺物・光円錐・編成",
+  "description": "崩壊スターレイルの星5炎属性・虚無キャラ「アナクサ（Anaxa）」の完全攻略。スキル解析、おすすめ遺物・光円錐・オーナメント、理想パーティ編成4選、凸数評価、FAQまで徹底解説。",
+  "author": { "@type": "Person", "name": "花叔" },
+  "datePublished": "2026-06-10",
+  "dateModified": "2026-06-10",
+  "articleSection": "キャラクター攻略",
+  "inLanguage": "ja",
+  "about": {
+    "@type": "Thing",
+    "name": "アナクサ（Anaxa）",
+    "description": "崩壊スターレイルの星5炎属性・虚無の運命を歩むサブアタッカーキャラクター"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://chjiya.github.io/hsr-guide/guides/ja/anaxa-guide-ja.html"
+  }
+}
+</script>
+
+<style>
+  :root { --bg: #1a1a2e; --card: #16213e; --accent: #ff7043; --text: #e0e0e0; --sub: #a0a0b0; --border: #2a2a4a; --highlight: #0f3460; --green: #4caf84; --red: #e0556a; --music: #ff5722; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',Meiryo,sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; padding: 20px; max-width: 860px; margin: 0 auto; }
+  h1 { font-size: 1.8em; color: var(--accent); border-bottom: 2px solid var(--accent); padding-bottom: 12px; margin-bottom: 20px; }
+  h2 { font-size: 1.4em; color: var(--accent); margin: 36px 0 16px; padding: 8px 14px; border-left: 4px solid var(--accent); background: var(--highlight); border-radius: 0 6px 6px 0; }
+  h3 { font-size: 1.15em; color: #ffab91; margin: 24px 0 10px; }
+  h4 { font-size: 1.05em; color: #ffccbc; margin: 16px 0 8px; }
+  .char-header { display: flex; gap: 20px; align-items: center; background: var(--card); border-radius: 12px; padding: 20px; margin-bottom: 24px; border: 1px solid var(--border); }
+  .char-icon { width: 90px; height: 90px; border-radius: 12px; background: linear-gradient(135deg, #ff7043, #bf360c); display: flex; align-items: center; justify-content: center; font-size: 2.2em; flex-shrink: 0; color: #fff; }
+  .char-info { flex: 1; } .char-info .name { font-size: 1.6em; font-weight: bold; color: #fff; }
+  .char-info .tags { margin-top: 6px; display: flex; gap: 8px; flex-wrap: wrap; }
+  .tag { display: inline-block; padding: 3px 12px; border-radius: 20px; font-size: 0.85em; font-weight: bold; }
+  .tag-rarity { background: #b8860b; color: #fff; }
+  .tag-element { background: #ff7043; color: #fff; }
+  .tag-path { background: #ff5722; color: #fff; }
+  .tag-role { background: var(--accent); color: #fff; }
+  .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin: 16px 0; }
+  .stat-box { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 12px; text-align: center; }
+  .stat-box .label { font-size: 0.8em; color: var(--sub); }
+  .stat-box .value { font-size: 1.2em; font-weight: bold; color: #fff; margin-top: 4px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.9em; }
+  th { background: var(--highlight); color: var(--accent); padding: 10px 12px; text-align: left; font-weight: bold; border-bottom: 2px solid var(--border); }
+  td { padding: 10px 12px; border-bottom: 1px solid var(--border); }
+  tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+  .star { color: var(--accent); }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 18px; margin: 16px 0; }
+  .build-box { background: var(--highlight); border: 1px solid var(--accent); border-radius: 8px; padding: 14px 18px; margin: 12px 0; }
+  .build-box .label { color: var(--accent); font-weight: bold; font-size: 0.85em; }
+  .build-box .content { color: #fff; font-weight: bold; margin-top: 4px; }
+  .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0; }
+  .pros, .cons { padding: 14px; border-radius: 8px; }
+  .pros { background: rgba(76,175,132,0.1); border: 1px solid rgba(76,175,132,0.3); }
+  .cons { background: rgba(224,85,106,0.1); border: 1px solid rgba(224,85,106,0.3); }
+  .pros h4 { color: var(--green); margin-bottom: 6px; }
+  .cons h4 { color: var(--red); margin-bottom: 6px; }
+  .pros li, .cons li { margin-left: 18px; font-size: 0.9em; }
+  .team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 12px 0; }
+  .team-slot { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 12px 8px; text-align: center; }
+  .team-slot .role { font-size: 0.75em; color: var(--sub); margin-bottom: 4px; }
+  .team-slot .char { font-weight: bold; color: #fff; font-size: 0.95em; }
+  .faq-item { background: var(--card); border: 1px solid var(--border); border-radius: 8px; margin: 12px 0; padding: 16px; }
+  .faq-item .q { color: var(--accent); font-weight: bold; font-size: 1.05em; margin-bottom: 8px; }
+  .faq-item .a { color: var(--text); line-height: 1.8; }
+  .note { background: rgba(255,112,67,0.08); border-left: 3px solid var(--accent); padding: 10px 14px; margin: 14px 0; border-radius: 0 6px 6px 0; font-size: 0.9em; }
+  .skill-box { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 14px; margin: 10px 0; }
+  .skill-box .skill-name { font-weight: bold; color: var(--accent); font-size: 1.05em; }
+  .skill-box .skill-type { font-size: 0.8em; color: var(--sub); margin-left: 8px; }
+  .skill-box .skill-desc { margin-top: 8px; font-size: 0.9em; }
+  .priority-5 { color: var(--accent); } .priority-4 { color: #e8c547; } .priority-3 { color: #c0c0c0; } .priority-2 { color: #888; }
+  ol, ul { padding-left: 1.5em; } li { margin: 4px 0; }
+  .toc { margin: 16px 0; padding: 14px; background: var(--card); border-radius: 8px; border: 1px solid var(--border); }
+  .toc a { color: var(--accent); text-decoration: none; }
+  .toc a:hover { text-decoration: underline; }
+  .toc li { margin: 4px 0; }
+  @media (max-width: 600px) { .char-header { flex-direction: column; text-align: center; } .team-grid { grid-template-columns: repeat(2, 1fr); } .pros-cons { grid-template-columns: 1fr; } }
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3857626678274044"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+<article>
+  <h1>【崩壊スターレイル】アナクサ（Anaxa）攻略ガイド</h1>
+  <div class="toc">
+    <strong>📑 目次</strong>
+    <ol style="margin-top:6px;">
+      <li><a href="#overview">キャラ概要</a></li>
+      <li><a href="#skills">スキル解説（全数値）</a></li>
+      <li><a href="#relics">おすすめ遺物</a></li>
+      <li><a href="#lightcones">おすすめ光円錐</a></li>
+      <li><a href="#teams">理想編成（4編成）</a></li>
+      <li><a href="#eidolons">凸数評価</a></li>
+      <li><a href="#build">ビルドまとめ表</a></li>
+      <li><a href="#faq">よくある質問（FAQ）</a></li>
+      <li><a href="#summary">総評</a></li>
+    </ol>
+  </div>
+
+  <div class="char-header" id="overview">
+    <div class="char-icon">🔥</div>
+    <div class="char-info">
+      <div class="name">アナクサ（Anaxa / アナクサー）</div>
+      <div class="tags">
+        <span class="tag tag-rarity">★5</span>
+        <span class="tag tag-element">炎属性</span>
+        <span class="tag tag-path">虚無（Nihility）</span>
+        <span class="tag tag-role">サブアタッカー / DoT</span>
+      </div>
+      <div style="margin-top:8px;color:var(--sub);font-size:0.9em;">所属：オクヘイマ｜声優：非公開｜入手：限定排出｜実装：Ver.3.2</div>
+    </div>
+  </div>
+
+  <div class="stat-grid">
+    <div class="stat-box"><div class="label">最大HP</div><div class="value">1,102</div></div>
+    <div class="stat-box"><div class="label">攻撃力</div><div class="value">660</div></div>
+    <div class="stat-box"><div class="label">防御力</div><div class="value">396</div></div>
+    <div class="stat-box"><div class="label">速度</div><div class="value">106</div></div>
+    <div class="stat-box"><div class="label">EP（必殺技）</div><div class="value">130</div></div>
+  </div>
+
+  <div class="pros-cons">
+    <div class="pros"><h4>✅ 長所</h4><ul><li>燃焼DoTのダメージ倍率が高い</li><li>炎属性で撃破編成とも好相性</li><li>必殺技の燃焼拡散で範囲殲滅が可能</li><li>カフカとのDoT引爆シナジー</li><li>速度106でまずまずの基礎速度</li><li>戦技のSP効率が良い</li></ul></div>
+    <div class="cons"><h4>⚠️ 短所</h4><ul><li>純粋な火力では巡狩・毀滅に劣る</li><li>効果命中が必要（燃焼用）</li><li>燃焼を切らすと火力が激減</li><li>燃焼耐性の敵には無力</li></ul></div>
+  </div>
+
+  <p>アナクサ（Anaxa）は、Ver.3.2で実装された星5炎属性・虚無の運命を歩むサブアタッカーキャラクターです。オクヘイマの研究者であり、炎を操る特異な能力で敵を焼き尽くします。</p>
+  <p>アナクサの最大の特徴は、<strong>「燃焼」DoTを自在に操る戦闘スタイル</strong>です。戦闘スキルで敵単体に高倍率の燃焼DoTを付与し、必殺技では燃焼状態の敵に追加ダメージを与えつつ、周囲の敵にも燃焼を拡散します。燃焼ダメージはアナクサの攻撃力×240%（Lv10・3ターン）とDoTの中でもトップクラスの倍率を誇ります。</p>
+  <p>カフカと組んだDoT編成でのパフォーマンスが特に高く、炎属性DoTは燃焼弱点の敵に対してさらに追加ダメージが発生。また、ルアンメェイの撃破延長と組み合わせた燃焼撃破編成でも活躍します。</p>
+
+  <h2 id="skills">🔍 スキル解説（全数値）</h2>
+  <div class="skill-box">
+    <div class="skill-name">通常攻撃：火花 <span class="skill-type">単体攻撃 / エネルギー+20</span></div>
+    <div class="skill-desc">攻撃力<span style="color:var(--accent);">50%〜100%</span>の炎属性ダメージ。強化優先度：<span class="priority-2">★★☆☆☆</span></div>
+  </div>
+  <div class="skill-box">
+    <div class="skill-name">戦闘スキル：燃焼付与 <span class="skill-type">DoT付与 / 消費SP:1 / エネルギー+30</span></div>
+    <div class="skill-desc">指定した敵単体に攻撃力<span style="color:var(--accent);">80%〜160%</span>（Lv1〜Lv12）の炎属性ダメージ。<br>
+      さらに<strong>「燃焼」</strong>状態を付与（3ターン）。燃焼ダメージ：攻撃力の<span style="color:var(--accent);">80%〜240%</span>（3ターン総量、Lv1〜Lv12）。<br>
+      燃焼状態の敵はアナクサから受けるダメージ+<span style="color:var(--accent);">15%〜25%</span>。<br>
+      強化優先度：<span class="priority-5">★★★★★</span></div>
+  </div>
+  <div class="skill-box">
+    <div class="skill-name">必殺技：業火の嵐 <span class="skill-type">全体攻撃 / EP:130</span></div>
+    <div class="skill-desc">敵全体に攻撃力<span style="color:var(--accent);">80%〜160%</span>（Lv1〜Lv10）の炎属性ダメージ。<br>
+      燃焼状態の敵には追加で攻撃力<span style="color:var(--accent);">120%〜240%</span>の炎属性ダメージ。<br>
+      さらに燃焼状態の敵の<strong>燃焼が隣接する敵1体に拡散</strong>する。<br>
+      エネルギー回復：<span style="color:var(--accent);">5</span><br>
+      強化優先度：<span class="priority-5">★★★★★</span></div>
+  </div>
+  <div class="skill-box">
+    <div class="skill-name">天賦：燼滅の研究 <span class="skill-type">常時パッシブ</span></div>
+    <div class="skill-desc">効果命中+<span style="color:var(--accent);">10%〜25%</span>（Lv1〜Lv10）。<br>
+      燃焼による与ダメ+<span style="color:var(--accent);">15%〜30%</span>。<br>
+      燃焼状態の敵が倒された時、残りの敵1体につき<strong>5エネルギー</strong>をアナクサが回復（1ターン最大15）。<br>
+      味方全体の炎属性耐性貫通+<span style="color:var(--accent);">6%〜12%</span>。<br>
+      強化優先度：<span class="priority-4">★★★★☆</span></div>
+  </div>
+
+  <h2 id="relics">🏆 おすすめ遺物</h2>
+  <h3>最適：深い牢獄の囚人4セット</h3>
+  <div class="build-box"><div class="label">2セット</div><div class="content">攻撃力+12%</div></div>
+  <div class="build-box"><div class="label">4セット</div><div class="content">DoT状態の敵に対する与ダメ+24%、防御力無視+12%。</div></div>
+
+  <h3>次点：荒瀧の姫君2+囚人2</h3>
+  <div class="build-box"><div class="label">姫君2</div><div class="content">炎属性ダメージ+10%</div></div>
+  <div class="build-box"><div class="label">囚人2</div><div class="content">攻撃力+12%</div></div>
+
+  <h3>オーナメント</h3>
+  <table><tr><th>順位</th><th>オーナメント</th><th>効果</th></tr>
+  <tr><td>🥇</td><td>パン・コマーシャル（Pan Galactic Commercial）</td><td>効果命中+10%。効果命中25%以上で攻撃力+25%。</td></tr>
+  <tr><td>🥈</td><td>虚無のステーション</td><td>攻撃力+12%。速度120以上でさらに+12%。</td></tr>
+  </table>
+
+  <h2 id="lightcones">💡 おすすめ光円錐</h2>
+  <table><tr><th>順位</th><th>光円錐名</th><th>レア</th><th>効果</th></tr>
+  <tr><td>🥇</td><td>炎の研究報告（Pyrology Report）</td><td>★5</td><td>効果命中+24%。燃焼ダメ+40%。戦技使用時、EP+8追加。炎属性耐性貫通+12%。</td></tr>
+  <tr><td>🥈</td><td>閉ざされ-語られ S5</td><td>★4</td><td>効果命中+20%。DoTダメ+24%。攻撃力+16%。</td></tr>
+  <tr><td>🥉</td><td>濾過された夢 S5</td><td>★4</td><td>効果命中+20%。与ダメ+24%。</td></tr>
+  <tr><td>④</td><td>延長戦に入る S5</td><td>★4</td><td>攻撃力+16%。EP回復効率+12%。</td></tr>
+  </table>
+
+  <h2 id="teams">👥 理想編成</h2>
+  <h3>編成① DoT特化型（最適）</h3>
+  <div class="team-grid">
+    <div class="team-slot"><div class="role">DoT引爆</div><div class="char">カフカ</div></div>
+    <div class="team-slot"><div class="role">DoT付与</div><div class="char">アナクサ</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">ルアンメェイ</div></div>
+    <div class="team-slot"><div class="role">ヒーラー</div><div class="char">フォフォ</div></div>
+  </div>
+  <h3>編成② 超撃破編成</h3>
+  <div class="team-grid">
+    <div class="team-slot"><div class="role">メイン</div><div class="char">アナクサ</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">ルアンメェイ</div></div>
+    <div class="team-slot"><div class="role">ヒーラー</div><div class="char">ギャラガー</div></div>
+    <div class="team-slot"><div class="role">サブ</div><div class="char">ルアン</div></div>
+  </div>
+  <h3>編成③ 炎属性染め編成</h3>
+  <div class="team-grid">
+    <div class="team-slot"><div class="role">メインDPS</div><div class="char">姫子</div></div>
+    <div class="team-slot"><div class="role">サブDPS</div><div class="char">アナクサ</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">ルアンメェイ</div></div>
+    <div class="team-slot"><div class="role">ヒーラー</div><div class="char">フォフォ</div></div>
+  </div>
+  <h3>編成④ 無課金向け</h3>
+  <div class="team-grid">
+    <div class="team-slot"><div class="role">DPS</div><div class="char">アナクサ</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">アスター</div></div>
+    <div class="team-slot"><div class="role">サブ</div><div class="char">主人公（炎）</div></div>
+    <div class="team-slot"><div class="role">ヒーラー</div><div class="char">ナターシャ</div></div>
+  </div>
+
+  <h2 id="eidolons">💎 凸数評価</h2>
+  <table><tr><th>凸数</th><th>効果</th><th>おすすめ度</th></tr>
+  <tr><td>E0</td><td>燃焼DoT+拡散で十分強力。</td><td>⭐⭐⭐⭐⭐</td></tr>
+  <tr><td>E1</td><td>燃焼ダメ+40%。燃焼状態の敵への与ダメ+20%。</td><td>⭐⭐⭐⭐⭐</td></tr>
+  <tr><td>E2</td><td>戦技の燃焼ターン数+2（合計5ターン）。燃焼ダメ倍率+60%。</td><td>⭐⭐⭐⭐</td></tr>
+  <tr><td>E3</td><td>戦技Lv+2。天賦Lv+2。</td><td>⭐⭐⭐</td></tr>
+  <tr><td>E4</td><td>必殺技使用時、味方全体の炎属性ダメ+25%（2ターン）。</td><td>⭐⭐⭐⭐</td></tr>
+  <tr><td>E5</td><td>必殺技Lv+2。通常攻撃Lv+1。</td><td>⭐⭐</td></tr>
+  <tr><td>E6</td><td>燃焼状態の敵が受ける全ダメ+20%（チーム全体）。燃焼拡散が敵全体に。会心ダメ+50%。</td><td>⭐⭐⭐⭐⭐</td></tr>
+  </table>
+
+  <h2 id="build">📋 ビルドまとめ表</h2>
+  <table><tr><th>項目</th><th>おすすめ</th></tr>
+  <tr><td>光円錐</td><td>炎の研究報告（★5）＞ 閉ざされ-語られS5（★4）＞ 濾過された夢S5</td></tr>
+  <tr><td>遺物</td><td>深い牢獄の囚人4（最適）＞ 姫君2+囚人2</td></tr>
+  <tr><td>オーナメント</td><td>パン・コマーシャル（最適）＞ 虚無のステーション</td></tr>
+  <tr><td>胴体</td><td>効果命中% or 攻撃力%（効果命中十分なら攻撃力%）</td></tr>
+  <tr><td>脚</td><td>速度%（134目標） or 攻撃力%</td></tr>
+  <tr><td>オーブ</td><td>炎属性ダメージ%</td></tr>
+  <tr><td>縄</td><td>攻撃力% or EP回復効率%</td></tr>
+  <tr><td>目標効果命中</td><td>60%以上（天賦含め85%+）</td></tr>
+  <tr><td>目標速度</td><td>134以上</td></tr>
+  <tr><td>目標攻撃力</td><td>3,200以上</td></tr>
+  <tr><td>スキル優先</td><td>戦技 ＞ 必殺技 ＞ 天賦 ＞ 通常攻撃</td></tr>
+  <tr><td>凸優先</td><td>E1（燃焼強化）＞ E6（完全体）</td></tr>
+  </table>
+
+  <h2 id="faq">❓ よくある質問</h2>
+  <div class="faq-item">
+    <div class="q">Q. アナクサの燃焼DoTはカフカで引爆できますか？</div>
+    <div class="a">はい、完全に引爆できます。アナクサの燃焼DoTはカフカの戦闘スキルで引爆可能で、その際のダメージはアナクサの攻撃力を参照します。カフカ+アナクサ+ルアンメェイ+フォフォの編成は、現環境で最強のDoT編成の一つです。</div>
+  </div>
+  <div class="faq-item">
+    <div class="q">Q. アナクサは姫子の代わりになりますか？</div>
+    <div class="a">役割が異なります。姫子は追撃が主体のメインアタッカーで、アナクサはDoT付与+サブ火力の虚無キャラです。炎属性編成では両方を併用することで、姫子の追撃+アナクサの燃焼DoTで相乗効果を生めます。どちらか1人なら、メインDPSとして使いたいなら姫子、サブ火力として使いたいならアナクサがおすすめです。</div>
+  </div>
+
+  <h2 id="summary">📋 総評</h2>
+  <div class="card">
+    <p>アナクサは<strong>高倍率の燃焼DoTと拡散攻撃を操る、DoT編成に特化した強力な虚無キャラ</strong>です。カフカとの相性が抜群で、炎属性DoT編成の中核として活躍します。また、天賦の炎属性耐性貫通+12％により、純粋な炎属性編成のサブDPSとしても優秀です。</p>
+    <h4>評価点数（10点満点）</h4>
+    <table style="max-width:400px;"><tr><th>項目</th><th>評価</th></tr>
+    <tr><td>DoT火力</td><td><span class="star">★★★★★★★★★★</span> 10/10</td></tr>
+    <tr><td>カフカシナジー</td><td><span class="star">★★★★★★★★★★</span> 10/10</td></tr>
+    <tr><td>汎用性</td><td><span class="star">★★★★★★★☆☆☆</span> 7/10（DoT編成限定）</td></tr>
+    <tr><td>遺物厳選難易度</td><td><span style="color:#e8c547;">★★★★★★☆☆☆☆</span> 6/10（効果命中必須）</td></tr>
+    <tr><td>DoT編成での評価</td><td><span class="star">★★★★★★★★★★</span> 10/10</td></tr>
+    <tr><td>総合評価</td><td><span class="star">★★★★★★★★☆☆</span> 8.5/10</td></tr>
+    </table>
+    <p style="margin-top:12px;">カフカをお持ちでDoT編成を強化したい方、または炎属性のサブアタッカーが欲しい方に強くおすすめできるキャラです。ぜひこのガイドを参考に最強のアナクサを育成してください！</p>
+  </div>
+</article>
+</body>
+</html>

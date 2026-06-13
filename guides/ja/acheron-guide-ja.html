@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4B26RL1D24"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4B26RL1D24');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>【崩壊スターレイル】黄泉（アケロン）完全攻略ガイド｜最強ビルド・遺物・光円錐・おすすめ編成</title>
+<meta name="description" content="崩壊スターレイルの星5雷属性・虚無キャラ「黄泉（アケロン）」の完全攻略ガイド。遺物・光円錐の最適構成、理想パーティ編成5選、凸数評価、スキル数値・速度調整まで徹底解説。忘却の庭・模擬宇宙・末日の獣対応。">
+<meta name="keywords" content="崩壊スターレイル,黄泉,アケロン,Acheron,攻略,遺物,光円錐,編成,凸,星魂,ビルド,おすすめ">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="【崩壊スターレイル】黄泉（アケロン）完全攻略ガイド｜最強ビルド・遺物・光円錐・おすすめ編成">
+<meta property="og:description" content="崩壊スターレイル黄泉（アケロン）の完全攻略。スキル数値、遺物セット比較、光円錐ランキング、パーティ編成5選、凸数ごとの火力上昇率を詳細解説。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="【崩壊スターレイル】黄泉（アケロン）完全攻略ガイド">
+<link rel="canonical" href="https://chjiya.github.io/hsr-guide/guides/ja/acheron-guide-ja.html">
+<base href="/hsr-guide/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "【崩壊スターレイル】黄泉（アケロン）完全攻略ガイド｜最強ビルド・遺物・光円錐・おすすめ編成",
+  "description": "崩壊スターレイルの星5雷属性・虚無キャラ「黄泉（アケロン）」の完全攻略。スキル解析、おすすめ遺物・光円錐・オーナメント、理想パーティ編成5選、凸数評価、FAQまで徹底解説。",
+  "author": { "@type": "Person", "name": "花叔" },
+  "datePublished": "2025-04-15",
+  "dateModified": "2026-06-09",
+  "articleSection": "キャラクター攻略",
+  "inLanguage": "ja",
+  "about": {
+    "@type": "Thing",
+    "name": "黄泉（アケロン）",
+    "description": "崩壊スターレイルの星5雷属性・虚無の運命を歩むアタッカーキャラクター"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://chjiya.github.io/hsr-guide/guides/ja/acheron-guide-ja.html"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "黄泉の速度はいくつが最適ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "黄泉の速度は134以上を推奨します。速度134を達成すると忘却の庭1ラウンド目に2回行動が可能になります。ベース速度101に速度靴（+25）で126、遺物サブスで8以上を追加して134を目指しましょう。黄泉は必殺技依存のキャラのため速度よりもEP効率と攻撃力を優先するビルドも有効です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "黄泉のモチーフ光円錐は必須ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "黄泉のモチーフ光円錐「流れ行く川を岸辺で過ぎて」は最適ですが必須ではありません。無課金なら「良い夜に、おやすみ」（S5重ね）が最有力候補で、モチーフ比で約85%の性能を発揮します。他に「絶え間ない雨」（S1）も高い相性を示します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "黄泉は何凸がおすすめですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "黄泉は無凸でも最強クラスのアタッカーですが、2凸で他の虚無キャラ1枠を調和キャラに変更できるため編成の自由度が飛躍的に向上します。E2が最大の節目で、E1は会心率+18%、E6は必殺技が防御力30%無視で完全体となります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "黄泉の必殺技「斬刻の雷心」の仕組みを教えてください",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "黄泉の必殺技は敵に付与された「砕痕（Crimson Knot）」が9層に達すると発動可能になります。砕痕は黄泉の戦闘スキルや必殺技、味方のデバフ付与攻撃で累積します。必殺技発動後は敵の弱点属性を無視して削靭し、雷属性ダメージを9回連続で与える超強力な攻撃です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "黄泉と相性の良い虚無キャラは誰ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "黄泉と最も相性が良いのは椒丘（Jiaoqiu）です。椒丘の結界は毎ターン敵に燃焼デバフを付与し、砕痕の累積効率を飛躍的に高めます。次いでペラ（全体防御ダウン）、桂乃芬（Guinaifen、燃焼＋攻撃デバフ）、銀狼（弱点埋め込み＋単体防御ダウン）が優秀です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "黄泉の遺物は何がベストですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "黄泉の最適遺物は「死水に潜る義侠」4セットです。2セットで与ダメージ+12%（デバフ状態の敵に+24%）、4セットで会心率+4%＋会心ダメージ+12%を獲得できます。次点は「死水2＋バンディット2」のハイブリッド構成で、死水4セット比で約3〜5%の火力低下に留まります。"
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --bg: #1a1a2e;
+    --card: #16213e;
+    --accent: #4fc3f7;
+    --text: #e0e0e0;
+    --sub: #a0a0b0;
+    --border: #2a2a4a;
+    --highlight: #0f3460;
+    --green: #4caf84;
+    --red: #e0556a;
+    --blue: #5b9bd5;
+    --purple: #b39ddb;
+    --lightning: #7c4dff;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', Meiryo, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+    padding: 20px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 1.8em;
+    color: var(--accent);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 1.4em;
+    color: var(--accent);
+    margin: 36px 0 16px;
+    padding: 8px 14px;
+    border-left: 4px solid var(--accent);
+    background: var(--highlight);
+    border-radius: 0 6px 6px 0;
+  }
+  h3 {
+    font-size: 1.15em;
+    color: #80d8ff;
+    margin: 24px 0 10px;
+  }
+  h4 {
+    font-size: 1.05em;
+    color: #b0e0ff;
+    margin: 16px 0 8px;
+  }
+  .char-header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background: var(--card);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 24px;
+    border: 1px solid var(--border);
+  }
+  .char-icon {
+    width: 90px;
+    height: 90px;
+    border-radius: 12px;
+    background: var(--lightning);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2em;
+    flex-shrink: 0;
+    color: #fff;
+  }
+  .char-info { flex: 1; }
+  .char-info .name { font-size: 1.6em; font-weight: bold; color: #fff; }
+  .char-info .name .jp { font-size: 1.6em; font-weight: bold; color: #fff; }
+  .char-info .tags { margin-top: 6px; display: flex; gap: 8px; flex-wrap: wrap; }
+  .tag {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: bold;
+  }
+  .tag-rarity { background: #b8860b; color: #fff; }
+  .tag-element { background: var(--lightning); color: #fff; }
+  .tag-path { background: var(--accent); color: #1a1a2e; }
+  .tag-role { background: var(--red); color: #fff; }
+
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    margin: 16px 0;
+  }
+  .stat-box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+  }
+  .stat-box .label { font-size: 0.8em; color: var(--sub); }
+  .stat-box .value { font-size: 1.2em; font-weight: bold; color: #fff; margin-top: 4px; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 0.9em;
+  }
+  th {
+    background: var(--highlight);
+    color: var(--accent);
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px solid var(--border);
+  }
+  td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+  .star { color: var(--accent); }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px;
+    margin: 16px 0;
+  }
+
+  .build-box {
+    background: var(--highlight);
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin: 12px 0;
+  }
+  .build-box .label { color: var(--accent); font-weight: bold; font-size: 0.85em; }
+  .build-box .content { color: #fff; font-weight: bold; margin-top: 4px; }
+
+  .pros-cons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 16px 0;
+  }
+  .pros, .cons {
+    padding: 14px;
+    border-radius: 8px;
+  }
+  .pros { background: rgba(76,175,132,0.1); border: 1px solid rgba(76,175,132,0.3); }
+  .cons { background: rgba(224,85,106,0.1); border: 1px solid rgba(224,85,106,0.3); }
+  .pros h4 { color: var(--green); margin-bottom: 6px; }
+  .cons h4 { color: var(--red); margin-bottom: 6px; }
+  .pros li, .cons li { margin-left: 18px; font-size: 0.9em; }
+
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 12px 0;
+  }
+  .team-slot {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 8px;
+    text-align: center;
+  }
+  .team-slot .role { font-size: 0.75em; color: var(--sub); margin-bottom: 4px; }
+  .team-slot .char { font-weight: bold; color: #fff; font-size: 0.95em; }
+
+  .faq-item {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin: 12px 0;
+    padding: 16px;
+  }
+  .faq-item .q {
+    color: var(--accent);
+    font-weight: bold;
+    font-size: 1.05em;
+    margin-bottom: 8px;
+  }
+  .faq-item .a {
+    color: var(--text);
+    line-height: 1.8;
+  }
+
+  .note {
+    background: rgba(79,195,247,0.08);
+    border-left: 3px solid var(--accent);
+    padding: 10px 14px;
+    margin: 14px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.9em;
+  }
+
+  .skill-box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px;
+    margin: 10px 0;
+  }
+  .skill-box .skill-name { font-weight: bold; color: var(--accent); font-size: 1.05em; }
+  .skill-box .skill-type { font-size: 0.8em; color: var(--sub); margin-left: 8px; }
+  .skill-box .skill-desc { margin-top: 8px; font-size: 0.9em; }
+
+  .priority-5 { color: var(--accent); }
+  .priority-4 { color: #e8c547; }
+  .priority-3 { color: #c0c0c0; }
+  .priority-2 { color: #888; }
+
+  ol, ul { padding-left: 1.5em; }
+  li { margin: 4px 0; }
+
+  .toc { margin: 16px 0; padding: 14px; background: var(--card); border-radius: 8px; border: 1px solid var(--border); }
+  .toc a { color: var(--accent); text-decoration: none; }
+  .toc a:hover { text-decoration: underline; }
+  .toc li { margin: 4px 0; }
+
+  .damage-bar {
+    display: flex; height: 20px; border-radius: 10px; overflow: hidden; margin: 8px 0;
+  }
+  .damage-bar .seg {
+    display: flex; align-items: center; justify-content: center; font-size: 0.65em; color: #fff; font-weight: bold;
+  }
+
+  @media (max-width: 600px) {
+    .char-header { flex-direction: column; text-align: center; }
+    .team-grid { grid-template-columns: repeat(2, 1fr); }
+    .pros-cons { grid-template-columns: 1fr; }
+    .stat-grid { grid-template-columns: repeat(2, 1fr); }
+    body { padding: 12px; }
+  }
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3857626678274044"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+<article>
+  <h1>【崩壊スターレイル】黄泉（アケロン）完全攻略ガイド</h1>
+
+  <!-- 目次 -->
+  <div class="toc">
+    <strong>📑 目次</strong>
+    <ol style="margin-top:6px;">
+      <li><a href="#overview">キャラ概要</a></li>
+      <li><a href="#skills">スキル解説</a></li>
+      <li><a href="#relics">おすすめ遺物</a></li>
+      <li><a href="#lightcones">おすすめ光円錐</a></li>
+      <li><a href="#teams">理想編成（5編成）</a></li>
+      <li><a href="#eidolons">凸数評価</a></li>
+      <li><a href="#synergy">相性の良いキャラ</a></li>
+      <li><a href="#rotation">戦闘ローテーション</a></li>
+      <li><a href="#faq">よくある質問（FAQ）</a></li>
+      <li><a href="#summary">総評</a></li>
+    </ol>
+  </div>
+
+  <!-- キャラクター基本情報 -->
+  <div class="char-header" id="overview">
+    <div class="char-icon">⚡</div>
+    <div class="char-info">
+      <div class="name">黄泉（アケロン / Acheron）</div>
+      <div class="tags">
+        <span class="tag tag-rarity">★5</span>
+        <span class="tag tag-element">雷属性</span>
+        <span class="tag tag-path">虚無（Nihility）</span>
+        <span class="tag tag-role">メインアタッカー</span>
+      </div>
+      <div style="margin-top:8px;color:var(--sub);font-size:0.9em;">
+        所属：自滅者（銀河ハンター協力者）｜声優：沢城みゆき｜入手：限定排出（イベント跳躍）
+      </div>
+    </div>
+  </div>
+
+  <!-- ステータス概要 -->
+  <div class="stat-grid">
+    <div class="stat-box">
+      <div class="label">最大HP</div>
+      <div class="value">1,125</div>
+    </div>
+    <div class="stat-box">
+      <div class="label">攻撃力</div>
+      <div class="value">679</div>
+    </div>
+    <div class="stat-box">
+      <div class="label">防御力</div>
+      <div class="value">436</div>
+    </div>
+    <div class="stat-box">
+      <div class="label">速度</div>
+      <div class="value">101</div>
+    </div>
+    <div class="stat-box">
+      <div class="label">EP</div>
+      <div class="value">9（砕痕）</div>
+    </div>
+  </div>
+
+  <!-- キャラクター評価 -->
+  <div class="pros-cons">
+    <div class="pros">
+      <h4>✅ 長所</h4>
+      <ul>
+        <li>必殺技が敵の弱点属性を無視して削靭！全敵に有効</li>
+        <li>9ヒットの必殺技で圧倒的な瞬間火力を発揮</li>
+        <li>戦闘スキルの追加攻撃で効率的な砕痕累積</li>
+        <li>虚無キャラとの編成で爆発的なシナジー</li>
+        <li>軌跡で効果命中率UP、デバフ付与が安定</li>
+        <li>天賦で敵の弱化状態に応じて火力が増加</li>
+        <li>E2で調和キャラ編成が可能、編成の自由度UP</li>
+      </ul>
+    </div>
+    <div class="cons">
+      <h4>⚠️ 短所</h4>
+      <ul>
+        <li>EPゲージが無く砕痕管理が必要（9層必須）</li>
+        <li>虚無キャラ2体が事実上必須（E2まで）</li>
+        <li>必殺技依存キャラで通常時の火力は控えめ</li>
+        <li>砕痕が最大でないと必殺技が撃てない</li>
+        <li>遺物厳選がやや難しい（ATK%＋速度＋会心）</li>
+        <li>モチーフ光円錐との依存度がやや高い</li>
+      </ul>
+    </div>
+  </div>
+
+  <p>黄泉（アケロン）は、Ver.2.1「雨の如き天の恵みを」で実装された星5雷属性・虚無の運命を歩むメインアタッカーです。彼女の最大の特徴は、<strong>通常のEPゲージとは異なる独自の「砕痕（スラッシュドリーム）」システム</strong>を採用している点にあります。敵に砕痕（Crimson Knot）を9層累積すると必殺技「斬刻の雷心」が発動可能になり、敵の弱点属性を完全に無視して削靭&ダメージを与えるという破格の効果を持ちます。</p>
+  <p>黄泉は<strong>虚無（ニヒリティ）パーティの絶対的アタッカー</strong>であり、デバフを付与できる虚無キャラと組むことで真価を発揮します。椒丘（Jiaoqiu）の結界による継続デバフ、ペラの全体防御ダウン、桂乃芬（Guinaifen）の燃焼デバフなどと組み合わせることで、砕痕の累積速度が飛躍的に向上し、必殺技を連射するような戦術が可能です。</p>
+  <p>現在の環境において、黄泉は<strong>SSランク（GameWith / Game8 / Altema）</strong>を獲得する最強クラスのアタッカーです。忘却の庭（混沌の記憶）・模擬宇宙・末日の獣・幻想の庭と全ての高難易度コンテンツで第一線級の活躍を見せており、特に敵の弱点属性がバラバラな状況で黄泉の"弱点無視必殺技"が真価を発揮します。</p>
+
+  <!-- スキル解説 -->
+  <h2 id="skills">🔍 スキル解説</h2>
+
+  <div class="skill-box">
+    <div class="skill-name">通常攻撃：三途の淵を照らす <span class="skill-type">単体攻撃</span></div>
+    <div class="skill-desc">指定した敵単体に黄泉の攻撃力<span style="color:var(--accent);">50%〜100%</span>（Lv1〜Lv6）の雷属性ダメージを与える。攻撃命中時に敵に<strong>「砕痕」を1層</strong>付与する。<br>強化優先度：<span class="priority-2">★★☆☆☆</span></div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">黄泉の通常攻撃はSP節約時に使う。命中時に砕痕を1層付与できるため、必殺技ゲージの準備に無駄がない。ただし火力は低いため、基本的にはSPを節約したい時の繋ぎとして使用。Lv6まで上げれば十分。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">戦闘スキル：八百万の黄泉路 <span class="skill-type">拡散攻撃 / 砕痕累積</span></div>
+    <div class="skill-desc">
+      指定した敵単体と隣接する敵に黄泉の攻撃力<span style="color:var(--accent);">80%〜160%</span>（Lv1〜Lv10）の雷属性ダメージを与える。<br>
+      攻撃命中時にメインターゲットに砕痕を<strong>2層</strong>、隣接する敵に砕痕を<strong>1層</strong>付与する。<br>
+      強化優先度：<span class="priority-5">★★★★★</span>
+    </div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">黄泉の最重要スキル。砕痕の累積効率が非常に高く、メインターゲットに2層＋周辺に1層ずつ付与。敵が3体並んでいる場合、合計で4層もの砕痕を1回のスキルで稼げる。Lv10で160%倍率とアタッカーとしても十分な火力。最優先でLv10以上を目指そう。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">必殺技：斬刻の雷心 <span class="skill-type">単体9HIT / 弱点無視</span></div>
+    <div class="skill-desc">
+      敵に砕痕が9層累積された状態で発動可能。<br>
+      敵単体に黄泉の攻撃力<span style="color:var(--accent);">50%〜70%</span>（Lv1〜Lv10）×<strong>9Hit</strong>の雷属性ダメージを与える。<br>
+      弱点属性を<strong>無視</strong>して靭性を削る。<br>
+      命中したすべての敵の強化効果を1つ解除。<br>
+      砕痕累積数に応じて与ダメージが上昇（1層につき+<span style="color:var(--accent);">3%</span>、最大9層で+27%）。<br>
+      強化優先度：<span class="priority-5">★★★★★</span>
+    </div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">黄泉の真骨頂。9Hitで合計倍率630%（Lv10時）と、通常の必殺技を大きく上回る圧倒的な火力。さらに弱点無視削靭効果により、雷属性が弱点でない敵にも靭性ゲージを削れる。砕痕1層ごとにダメージ+3%（最大+27%）の補正も乗るため、最大9層で撃つのが基本。この必殺技が黄泉を最強アタッカーの座に押し上げた最大の要因。強化は迷わず最優先。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">天賦：紫電の太刀 <span class="skill-type">火力増加 / デバフシナジー</span></div>
+    <div class="skill-desc">
+      黄泉が敵に攻撃を行った後、攻撃が命中したランダムな敵単体に黄泉の攻撃力<span style="color:var(--accent);">20%〜40%</span>（Lv1〜Lv10）の雷属性追加ダメージを与える。この追加ダメージを1回の攻撃で最大<strong>3回まで</strong>発動可能。<br>
+      敵がデバフ状態の場合、黄泉の与ダメージ+<span style="color:var(--accent);">15%〜30%</span>（Lv1〜Lv10）。<br>
+      強化優先度：<span class="priority-4">★★★★☆</span>
+    </div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">黄泉の火力の根幹を支える天賦。敵がデバフ状態であれば常時与ダメージ+30%（Lv10時）という破格のバフが乗る。また攻撃後の追加ダメージでさらに砕痕の累積にも貢献する。天賦の追加ダメージは戦闘スキルや必殺技の後に自動発動されるため、実質的なスキル倍率がさらに向上していると考えてよい。Lv10推奨だが、戦闘スキルと必殺技を優先した後に上げよう。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">秘技：彼岸の導き <span class="skill-type">戦闘前効果</span></div>
+    <div class="skill-desc">秘技を使用した後、次の戦闘開始時に敵全体に砕痕を<strong>3層+1層</strong>（ランダムな敵に追加）付与した状態で戦闘を開始する。さらに自身の攻撃力+25%（2ターン継続）。</div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">非常に強力な秘技。開幕から敵全体に砕痕を4〜6層（敵の数による）付与できるため、戦闘開始直後から効率的に必殺技の準備が進む。さらに攻撃力+25%のバフも2ターン続くため、開幕の火力が大幅に向上する。高難易度コンテンツでは秘技使用を忘れずに。</p>
+
+  <h3>軌跡（追加能力）</h3>
+  <table>
+    <tr><th>軌跡名</th><th>解放条件</th><th>効果</th><th>必須度</th></tr>
+    <tr><td>焦れんばかりの刃</td><td>昇格2</td><td>黄泉の効果命中率+25%。砕痕の付与確率が大幅に安定する。</td><td><span style="color:var(--accent);">★★★★★</span></td></tr>
+    <tr><td>宿命の雷鳴</td><td>昇格4</td><td>黄泉の必殺技の全ダメージ+30%。必殺技火力が大幅に向上。</td><td><span style="color:var(--accent);">★★★★★</span></td></tr>
+    <tr><td>彼岸の花咲く頃</td><td>昇格6</td><td>黄泉の必殺技発動時、砕痕の層数が9以上の場合、超過分1層につき必殺技の会心ダメージ+12%（最大36%）。</td><td><span style="color:var(--accent);">★★★★★</span></td></tr>
+  </table>
+
+  <div class="note">
+    <strong>💡 スキル強化の優先順位：</strong> 必殺技 ＞ 戦闘スキル ＞ 天賦 ＞ 通常攻撃。必殺技は迷わず最優先でLv10を目指そう。戦闘スキルもLv10推奨、天賦はLv8〜10を目標に。軌跡の追加能力は3つとも全て取得必須級。特に昇格2の「焦れんばかりの刃」は効果命中率+25%で砕痕の安定付与に直結する。
+  </div>
+
+  <!-- 遺物推荐 -->
+  <h2 id="relics">⚔️ おすすめ遺物</h2>
+
+  <h3>トンネル遺物（メインセット）3セット比較</h3>
+  <table>
+    <tr><th>セット</th><th>セット効果</th><th>火力比較</th><th>おすすめ度</th></tr>
+    <tr>
+      <td><strong>死水に潜る義侠（Pioneer Diver）</strong> 4セット</td>
+      <td>2セット：デバフ状態の敵への与ダメージ+12%<br>4セット：会心率+4%、会心ダメージ+12%。装備キャラがデバフ状態の敵に攻撃時、さらに会心率+8%、会心ダメージ+24%。</td>
+      <td><span class="star">100%</span><br><span style="color:var(--accent);">基準値</span></td>
+      <td><span class="star">★★★★★</span><br><span style="color:var(--accent);">最適</span></td>
+    </tr>
+    <tr>
+      <td><strong>死水2 + バンディット（Banditry）2</strong></td>
+      <td>死水2：デバフ状態の敵への与ダメージ+12%<br>バンディット2：攻撃力+12%</td>
+      <td><span style="color:#e8c547;">約97%</span><br><span style="color:var(--sub);">−3%</span></td>
+      <td><span style="color:#e8c547;">★★★★☆</span><br><span style="color:var(--sub);">妥協案</span></td>
+    </tr>
+    <tr>
+      <td><strong>雷のバンディット（Banditry）4セット</strong></td>
+      <td>2セット：攻撃力+12%<br>4セット：フィールド上でSPを消費した時、装備キャラの攻撃力+20%（2ターン継続）。</td>
+      <td><span style="color:#c0c0c0;">約92%</span><br><span style="color:var(--sub);">−8%</span></td>
+      <td><span style="color:#c0c0c0;">★★★☆☆</span><br><span style="color:var(--sub);">暫定</span></td>
+    </tr>
+  </table>
+
+  <p><strong>セット比較の詳細解説：</strong>死水4セットの圧倒的な強みは、デバフ状態の敵に対して会心率+12%（4+8）と会心ダメージ+36%（12+24）を同時に獲得できる点です。黄泉は天賦で常時デバフ状態の敵に与ダメ+30%を獲得しており、遺物セット効果と完全にシナジーします。死水2＋バンディット2は死水4の会心部分を攻撃力+12%で妥協した構成で、遺物厳選が進んでいない場合の現実的な選択肢です。バンディット4セットは攻撃力バフのみで会心面の補強がないため、最終的には死水4セットへの移行を強く推奨します。</p>
+
+  <h3>次元界オーナメント（プラナー）</h3>
+  <table>
+    <tr><th>セット</th><th>セット効果</th><th>おすすめ度</th><th>解説</th></tr>
+    <tr>
+      <td><strong>出雲の神・高天の神（Izumo Gensei）</strong></td>
+      <td>攻撃力+12%。装備キャラと同属性かつ同一運命の味方がパーティにいる場合、装備キャラの会心率+12%。</td>
+      <td><span class="star">★★★★★</span></td>
+      <td>黄泉の最適オーナメント。攻撃力+12%に加え、同一運命（虚無）の味方がいるだけで会心率+12%。黄泉の編成には必ず虚無キャラが入るため、実質的に常時発動と同等。会心率確保が難しい黄泉にとって非常に貴重な補正源。</td>
+    </tr>
+    <tr>
+      <td><strong>蒼穹戦線グラモス（Firmament Frontline: Glamoth）</strong></td>
+      <td>攻撃力+12%。速度135/160以上で与ダメージ+12%/18%。</td>
+      <td><span style="color:#e8c547;">★★★★☆</span></td>
+      <td>速度を135以上確保できれば与ダメージ+12%、160以上で+18%。黄泉は速度靴を履くことが多いため135は比較的達成しやすい。ただし会心率補正がないため、遺物胴体会心率メインがより重要になる。出雲が揃わない場合の第2候補。</td>
+    </tr>
+    <tr>
+      <td><strong>宇宙封印ステーション（Space Sealing Station）</strong></td>
+      <td>攻撃力+12%。速度120以上でさらに攻撃力+12%（計24%）。</td>
+      <td><span style="color:#c0c0c0;">★★★☆☆</span></td>
+      <td>攻撃力+24%は強力だが、会心率も与ダメージも補正できない。黄泉はATK%胴体を選ぶ余裕が少なく、会心率補正が不足しがちなため、出雲やグラモスに劣る。遺物厳選で会心率が十分に確保できている場合のみ選択肢に入る。</td>
+    </tr>
+  </table>
+
+  <h3>遺物メインステータス</h3>
+  <table>
+    <tr><th>部位</th><th>メインステータス</th><th>備考</th></tr>
+    <tr><td>頭部</td><td>HP（固定）</td><td>—</td></tr>
+    <tr><td>手部</td><td>攻撃力（固定）</td><td>—</td></tr>
+    <tr><td>胴体</td><td><strong>会心率</strong> または 攻撃力%</td><td>会心率メインが推奨（出雲12%＋死水4〜12%＋軌跡0%＝ベース24%）。会心率70%以上を目指すなら会心率胴。会心サブが充実している場合やE1ありなら攻撃力%胴も検討可。</td></tr>
+    <tr><td>脚部</td><td><strong>速度</strong> または 攻撃力%</td><td>速度134達成を優先。速度134以上が確保できないなら速度靴一択。速度サブが充実していれば攻撃力%靴も選択肢だが、基本的には速度靴推奨。</td></tr>
+    <tr><td>次元界オーブ</td><td><strong>雷属性ダメージ%</strong></td><td>雷ダメージ%一択。攻撃力%オーブは雷%に比べて約10〜15%の火力低下。</td></tr>
+    <tr><td>連結縄</td><td><strong>攻撃力%</strong></td><td>黄泉はEPゲージが無いためEP回復効率不要。攻撃力%一択。</td></tr>
+  </table>
+
+  <div class="note">
+    <strong>💡 サブステータス優先度：</strong> 会心率（70%以上目標） ＞ 会心ダメージ ＞ 攻撃力% ＞ 速度（134達成後） ≧ 効果命中<br>
+    黄泉は軌跡「焦れんばかりの刃」で効果命中+25%を得られるため、サブでの効果命中は基本的に不要。会心率70%以上を最優先に、残りを会心ダメージと攻撃力%に振ろう。会心率の理想は戦闘中80%以上。出雲12%＋死水4セット4〜12%＋胴体32%で約50%前後、サブで20%以上盛って70%を目指す。<br>
+    <strong>速度ブレイクポイント：</strong> 速度134（忘却の庭1ラウンド2回行動）、速度143（2ラウンド3回行動）、速度160（グラモス上限）。黄泉は速度を上げすぎると砕痕管理が難しくなる面もあるため、134を最優先目標とし、余裕があれば143〜160を目指そう。
+  </div>
+
+  <!-- 光円錐推荐 -->
+  <h2 id="lightcones">💡 おすすめ光円錐</h2>
+
+  <table>
+    <tr><th>光円錐</th><th>レア</th><th>効果概要</th><th>火力比</th><th>おすすめ度</th></tr>
+    <tr>
+      <td><strong>流れ行く川を岸辺で過ぎて（Along the Passing Shore）</strong></td>
+      <td>★5</td>
+      <td>会心ダメージ+36%。装備キャラが敵にデバフを付与した時、攻撃力+24%（2T）。装備キャラが必殺技を発動する時、必殺技の与ダメージ+24%。</td>
+      <td><span class="star">100%</span></td>
+      <td><span class="star">★★★★★</span><br><span style="color:var(--accent);">最適（モチーフ）</span></td>
+    </tr>
+    <tr>
+      <td><strong>絶え間ない雨（Incessant Rain）</strong></td>
+      <td>★5</td>
+      <td>効果命中+24%（S1）。敵にデバフがない場合、装備キャラの攻撃時、敵に「ミスト」を付与。装備キャラの会心率+12%。「ミスト」状態の敵への与ダメージ+24%。</td>
+      <td><span style="color:#e8c547;">約90%</span></td>
+      <td><span style="color:#e8c547;">★★★★★</span><br><span style="color:var(--accent);">★5次点</span></td>
+    </tr>
+    <tr>
+      <td><strong>良い夜に、おやすみ（Good Night and Sleep Well）</strong></td>
+      <td>★4</td>
+      <td>S5時：敵にかかっているデバフ1つにつき与ダメージ+12%（最大3層で+36%）。</td>
+      <td><span style="color:#e8c547;">約85%</span></td>
+      <td><span style="color:#e8c547;">★★★★★</span><br><span style="color:var(--accent);">無課金最適</span></td>
+    </tr>
+    <tr>
+      <td><strong>決意は燎原の如く（Resolution Shines As Pearls of Sweat）</strong></td>
+      <td>★4</td>
+      <td>S5時：攻撃命中時、100%の基礎確率で敵の防御力-16%（1T）。</td>
+      <td><span style="color:#c0c0c0;">約75%</span></td>
+      <td><span style="color:#c0c0c0;">★★★☆☆</span><br><span style="color:var(--sub);">サブ火力用</span></td>
+    </tr>
+  </table>
+
+  <div class="build-box">
+    <div class="label">🏆 最適光円錐</div>
+    <div class="content">流れ行く川を岸辺で過ぎて（★5・モチーフ）</div>
+    <div style="margin-top:6px;font-size:0.9em;">黄泉のモチーフ光円錐。会心ダメージ+36%は圧倒的な火力補正。さらにデバフ付与時に攻撃力+24%、必殺技発動時に与ダメージ+24%と黄泉の全ての攻撃を底上げする完璧な設計。黄泉を本格的に運用するならモチーフ光円錐の確保を強く推奨。会心ダメージ36%＋攻撃力24%＋必殺技ダメ24%の3バフが同時に乗る状態での必殺技は文字通り「ワンパン」級の火力を叩き出す。</div>
+  </div>
+
+  <div class="build-box">
+    <div class="label">💰 無課金・低予算向け</div>
+    <div class="content">良い夜に、おやすみ（★4・S5）</div>
+    <div style="margin-top:6px;font-size:0.9em;">恒常ガチャで重ねやすい星4光円錐。S5でデバフ1つにつき与ダメージ+12%、最大3層で+36%。黄泉の編成はデバフで溢れているため、常に最大効果を発揮できる。モチーフ比85%の性能で、無課金プレイヤーの最有力候補。「絶え間ない雨」は銀狼のモチーフで、恒常から入手可能。会心率+12%の補正が貴重で、黄泉の会心率確保に大きく貢献する。</div>
+  </div>
+
+  <h3>光円錐選択のポイント</h3>
+  <p>黄泉の光円錐選びで最も重要なのは<strong>「会心補正」</strong>と<strong>「デバフ依存の与ダメUP」</strong>です。モチーフの「流れ行く川を岸辺で過ぎて」は会心ダメージ+36%に加え、攻撃力と必殺技ダメージを同時に底上げする理想的な性能。次点の「絶え間ない雨」は会心率+12%と与ダメージ+24%を両立し、モチーフ未所持の最有力候補。無課金であれば「良い夜に、おやすみ（S5）」を最優先で育成しましょう。「決意は燎原の如く」は防御デバフ目的でサブ火力として採用可能ですが、火力面では一歩劣ります。</p>
+
+  <!-- 理想編成 -->
+  <h2 id="teams">🤝 理想編成（5編成）</h2>
+
+  <h3>編成①：黄泉完全体・虚無ハイパーキャリー</h3>
+  <div class="team-grid">
+    <div class="team-slot">
+      <div class="role">⚡ メインアタッカー</div>
+      <div class="char">黄泉</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">雷・虚無</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🔥 デバフ要員①</div>
+      <div class="char">椒丘</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">炎・虚無</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🌊 デバフ要員②</div>
+      <div class="char">ペラ</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">氷・虚無</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🛡️ 耐久枠</div>
+      <div class="char">符玄 / アベンチュリン</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">量子/虚数・存護</div>
+    </div>
+  </div>
+  <p style="font-size:0.9em;color:var(--sub);"><strong>装備詳細：</strong></p>
+  <ul style="font-size:0.85em;color:var(--sub);margin-bottom:8px;">
+    <li><strong>黄泉</strong>：モチーフ光円錐 / 死水4セット / 出雲オーナメント / 会心率胴・速度靴・雷%オーブ・攻撃%縄 / 速度目標134</li>
+    <li><strong>椒丘</strong>：「好知恵の境地」S5 or 「決意は燎原の如く」S5 / メッセンジャー4セット / ルサカ / 効果命中胴・速度靴・HP%オーブ・EP効率縄 / 効果命中80%以上目標</li>
+    <li><strong>ペラ</strong>：「決意は燎原の如く」S5 / 射手4セット or メッセンジャー2＋射手2 / ルサカ / 効果命中胴・速度靴・HP%オーブ・EP効率縄 / 速度160目標</li>
+    <li><strong>符玄</strong>：「記憶の中の姿」or 「我が身を盾に」/ 聖騎士4セット / 老いぬ者の仙舟 / HP%胴・速度靴・HP%オーブ・HP%縄</li>
+  </ul>
+  <p style="font-size:0.9em;color:var(--sub);"><strong>ローテーション：</strong> 秘技（黄泉）→ 開幕：椒丘スキル→必殺技（結界展開）、ペラ通常攻撃→必殺技（防御ダウン）、符玄スキル（バリア展開）、黄泉スキル連打で砕痕累積→砕痕9層で黄泉必殺技発動→繰り返し。椒丘の結界が毎ターン継続デバフを付与するため、ペラと椒丘で砕痕を常に供給。黄泉の必殺技は敵を殲滅するまで連打可能。<strong>推定DPS：約48,000〜55,000（1サイクル）</strong></p>
+
+  <h3>編成②：黄泉＋銀狼 量子虚無編成</h3>
+  <div class="team-grid">
+    <div class="team-slot">
+      <div class="role">⚡ メインアタッカー</div>
+      <div class="char">黄泉</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">雷・虚無</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🖥️ 弱点付与</div>
+      <div class="char">銀狼</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">量子・虚無</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🎯 デバフ・火力</div>
+      <div class="char">桂乃芬</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">炎・虚無</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🛡️ 耐久枠</div>
+      <div class="char">ギャラガー</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">炎・豊穣（星4）</div>
+    </div>
+  </div>
+  <p style="font-size:0.9em;color:var(--sub);"><strong>装備詳細：</strong></p>
+  <ul style="font-size:0.85em;color:var(--sub);margin-bottom:8px;">
+    <li><strong>黄泉</strong>：「良い夜に、おやすみ」S5 or モチーフ / 死水4セット / 出雲 / 会心率胴・速度靴・雷%オーブ・攻撃%縄</li>
+    <li><strong>銀狼</strong>：「ニューラルパノラマ」S1 or 「決意は燎原の如く」S5 / 射手4セット / 宇宙ステーション or ルサカ / 効果命中胴・速度靴・量子%オーブ・EP効率縄 / 効果命中96%以上</li>
+    <li><strong>桂乃芬</strong>：「決意は燎原の如く」S5 / メッセンジャー4セット / ルサカ / 効果命中胴・速度靴・HP%オーブ・EP効率縄 / 速度150+目標</li>
+    <li><strong>ギャラガー</strong>：「交錯の中の素敵な出会い」S5 or 「今が丁度」S5 / 過客4セット / 老いぬ者の仙舟 / 治癒量胴・速度靴・HP%オーブ・EP効率縄 / 速度134+</li>
+  </ul>
+  <p style="font-size:0.9em;color:var(--sub);"><strong>ローテーション：</strong> 銀狼の戦闘スキルで弱点埋め込み→桂乃芬の燃焼デバフ＋攻撃デバフ付与→黄泉スキル連打→砕痕9層で必殺技発動。銀狼の単体防御ダウン（-45%〜53%）＋桂乃芬の燃焼で砕痕が効率良く累積。ギャラガーはSP効率の良いヒーラーで、SP消費時にも追撃でデバフを付与できる。この編成はボス戦特化で、銀狼の弱点埋め込みが刺さる相手には編成①以上の火力を発揮。<strong>推定DPS：約45,000〜52,000（1サイクル）</strong></p>
+
+  <h3>編成③：黄泉＋ルアンメェイ ハイブリッド編成（E2推奨）</h3>
+  <div class="team-grid">
+    <div class="team-slot">
+      <div class="role">⚡ メインアタッカー</div>
+      <div class="char">黄泉</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">雷・虚無</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🎵 調和サポート</div>
+      <div class="char">ルアンメェイ</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">氷・調和</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🌊 デバフ枠</div>
+      <div class="char">ペラ</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">氷・虚無</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🛡️ 耐久枠</div>
+      <div class="char">アベンチュリン</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">虚数・存護</div>
+    </div>
+  </div>
+  <p style="font-size:0.9em;color:var(--sub);"><strong>※E2黄泉推奨：</strong> この編成は虚無キャラがペラ1人のみのため、E2（虚無1枠で編成可能）がないと砕痕の累積効率が著しく低下します。E2黄泉であれば、ルアンメェイの全体速度バフ＋全属性耐性貫通＋弱点撃破効率UPが黄泉の必殺技火力とシナジー。ルアンメェイの戦闘スキルによる弱点撃破延長は、黄泉の弱点無視削靭とも好相性。<strong>推定DPS：約50,000〜58,000（1サイクル）</strong></p>
+
+  <h3>編成④：微課金・星4中心編成</h3>
+  <div class="team-grid">
+    <div class="team-slot">
+      <div class="role">⚡ メインアタッカー</div>
+      <div class="char">黄泉</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">雷・虚無</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🌊 防御デバフ</div>
+      <div class="char">ペラ</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">氷・虚無（星4）</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🔥 燃焼デバフ</div>
+      <div class="char">桂乃芬</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">炎・虚無（星4）</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">💚 ヒーラー</div>
+      <div class="char">ギャラガー or リンクス</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">炎/量子・豊穣（星4）</div>
+    </div>
+  </div>
+  <p style="font-size:0.9em;color:var(--sub);"><strong>装備詳細：</strong></p>
+  <ul style="font-size:0.85em;color:var(--sub);margin-bottom:8px;">
+    <li><strong>黄泉</strong>：「良い夜に、おやすみ」S5 / 死水4 or 死水2＋バンディット2 / 出雲 or グラモス / 会心率胴・速度靴・雷%オーブ・攻撃%縄</li>
+    <li><strong>ペラ</strong>：「決意は燎原の如く」S5 / 射手4 or メッセンジャー2＋射手2 / ルサカ or 宇宙ステーション / 効果命中胴・速度靴・HP%オーブ・EP効率縄 / 速度160目標</li>
+    <li><strong>桂乃芬</strong>：「決意は燎原の如く」S5 or 「目を閉じてひと息」S5 / メッセンジャー4 / ルサカ / 効果命中胴・速度靴・攻撃%オーブ・EP効率縄</li>
+    <li><strong>ギャラガー</strong>：「交錯の中の素敵な出会い」S5 / 過客4セット / 老いぬ者の仙舟 / 治癒量胴・速度靴・HP%オーブ・EP効率縄</li>
+  </ul>
+  <p style="font-size:0.9em;color:var(--sub);"><strong>ローテーション：</strong> ペラの必殺技で全体防御ダウン-40%（S5決意で-16%も追加）→桂乃芬の燃焼で継続デバフ→黄泉スキル連打→砕痕9層で必殺技発動。ペラと桂乃芬はどちらも星4で入手が容易。ペラの速度160を最優先で目指し、桂乃芬も速度150以上を確保することで、砕痕の累積効率が大幅に向上。耐久枠はギャラガーが最もおすすめ（SP節約+デバフ付与）。<strong>推定DPS：約38,000〜45,000（1サイクル）</strong></p>
+
+  <h3>編成⑤：黄泉＋ブローニャ 超火力特化編成（E2推奨）</h3>
+  <div class="team-grid">
+    <div class="team-slot">
+      <div class="role">⚡ メインアタッカー</div>
+      <div class="char">黄泉</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">雷・虚無</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🔄 行動促進</div>
+      <div class="char">ブローニャ（ブローニャ）</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">風・調和</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🌊 デバフ枠</div>
+      <div class="char">銀狼 or 椒丘</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">量子/炎・虚無</div>
+    </div>
+    <div class="team-slot">
+      <div class="role">🛡️ 耐久枠</div>
+      <div class="char">符玄</div>
+      <div style="font-size:0.75em;color:var(--sub);margin-top:4px;">量子・存護</div>
+    </div>
+  </div>
+  <p style="font-size:0.9em;color:var(--sub);"><strong>※E2黄泉＋ブローニャ推奨（編成③同様、E2必須級）：</strong> E2黄泉は虚無キャラ1枠で編成が成立するため、ブローニャを編成可能。ブローニャの戦闘スキルで黄泉を即時行動促進させ、黄泉のスキル→ブローニャスキル（黄泉促進）→黄泉スキルの連続行動が可能。黄泉の行動回数が増えれば砕痕累積も加速し、必殺技の回転率が飛躍的に向上。ブローニャの必殺技で攻撃力・会心ダメージも大幅増加。符玄の会心率+12%バフも黄泉の会心率確保に大きく貢献。この編成の瞬間火力は全編成中最強クラス。<strong>推定DPS：約52,000〜60,000（1サイクル）</strong></p>
+
+  <div class="note">
+    <strong>💡 編成のポイント：</strong> 黄泉の編成で最も重要なのは<strong>「砕痕の累積速度」</strong>です。虚無キャラがデバフを付与するたびに砕痕が累積されるため、虚無キャラは速度を高く保つことが重要。理想は速度160以上の高速ペラ＋速度150以上の桂乃芬or椒丘。E2黄泉であれば調和キャラ（ルアンメェイ・ブローニャ・スパークレなど）を編成することで、砕痕累積（虚無キャラのデバフ）と火力増強（調和キャラのバフ）の両方を享受できます。耐久枠は符玄の会心率バフが黄泉と好相性。アベンチュリンも継続バリアで安定感があり、追撃でデバフ付与も可能。
+  </div>
+
+  <!-- 戦闘ローテーション -->
+  <h2 id="rotation">🔄 戦闘ローテーション</h2>
+
+  <h3>基本ローテーション（編成①：黄泉＋椒丘＋ペラ＋符玄）</h3>
+  <div class="card">
+    <p><strong>開幕：</strong></p>
+    <ol>
+      <li><strong>秘技使用</strong>（黄泉）→ 戦闘開始時に敵全体に砕痕付与＋攻撃力+25%（2T）</li>
+      <li><strong>符玄 戦闘スキル</strong> → バリア展開（味方全体ダメージ軽減＋会心率+12%）</li>
+      <li><strong>椒丘 戦闘スキル</strong> → 敵に燃焼デバフ付与（継続ダメージ＋効果命中ダウン）</li>
+      <li><strong>ペラ 通常攻撃 or 戦闘スキル</strong> → EPを溜めつつデバフ維持</li>
+      <li><strong>黄泉 戦闘スキル</strong> → メインターゲットに砕痕2層＋隣接1層ずつ付与</li>
+      <li>→ 敵にデバフがある状態のため、黄泉の天賦で与ダメージ+30%が常時発動</li>
+    </ol>
+    <p style="margin-top:8px;"><strong>必殺技サイクル：</strong></p>
+    <ol>
+      <li>黄泉の戦闘スキルを連打して砕痕を累積（1回のスキルで最大4層獲得）</li>
+      <li>椒丘の必殺技で結界展開（毎ターン継続燃焼デバフ＋砕痕自動累積）</li>
+      <li>ペラの必殺技で全体防御力-40%弱体化</li>
+      <li><strong>砕痕が9層に達したら即座に黄泉の必殺技発動</strong></li>
+      <li>必殺技9Hit＋弱点無視削靭＋強化効果解除→敵崩壊</li>
+      <li>必殺技後、天賦の追加ダメージが自動発動（最大3回）</li>
+      <li>再び砕痕累積→必殺技のサイクルを繰り返す</li>
+    </ol>
+  </div>
+
+  <h3>ローテーションのポイント</h3>
+  <div class="card">
+    <ul>
+      <li><strong>砕痕管理のコツ：</strong> 黄泉の砕痕は敵1体につき最大9層まで累積。必殺技発動時は敵全体の砕痕を全消費するため、複数敵がいる場合はどの敵で発動するか戦略的に選ぼう。</li>
+      <li><strong>椒丘の結界維持：</strong> 椒丘の必殺技結界は非常に重要で、毎ターン終了時に敵全体に燃焼デバフを付与するため、砕痕の自動累積効果が期待できる。結界が切れる前に必殺技を回そう。</li>
+      <li><strong>速度調整：</strong> ペラ＞椒丘＞黄泉の速度順が理想的。デバフを先に付けてから黄泉が攻撃することで、天賦の与ダメージ+30%を常に有効にできる。</li>
+      <li><strong>黄泉の速度について：</strong> 黄泉は必殺技が主力のため、速度を高くしすぎても通常行動の砕痕効率に限界がある。速度134で十分なので、サブステは会心率と会心ダメージに振ろう。</li>
+    </ul>
+  </div>
+
+  <!-- 凸数評価 -->
+  <h2 id="eidolons">💎 星魂（エイドロン）評価</h2>
+
+  <h3>0凸〜6凸 詳細評価</h3>
+  <table>
+    <tr><th>凸数</th><th>名称</th><th>効果</th><th>火力up率</th><th>おすすめ度</th></tr>
+    <tr>
+      <td>無凸（E0）</td><td>—</td>
+      <td>ベース性能。虚無キャラ2体が事実上必須。</td>
+      <td><span style="color:var(--accent);">100%</span><br><span style="color:var(--sub);">基準値</span></td>
+      <td><span class="star">★★★★★</span><br><span style="color:var(--sub);">無凸でも十分強い</span></td>
+    </tr>
+    <tr>
+      <td>1凸（E1）</td><td>天罰の裁き</td>
+      <td>黄泉がデバフ状態の敵に攻撃する時、会心率+18%。</td>
+      <td><span style="color:var(--accent);">約+15%</span></td>
+      <td><span class="star">★★★★★</span><br><span style="color:var(--accent);">会心率大幅改善</span></td>
+    </tr>
+    <tr>
+      <td>2凸（E2）</td><td>雷鳴の覚醒</td>
+      <td>編成内の虚無キャラ1体につき、黄泉の雷属性耐性貫通+12%（最大2体で+24%）。虚無キャラが1体でも編成可能になる。</td>
+      <td><span style="color:var(--accent);">約+20〜30%</span></td>
+      <td><span class="star">★★★★★</span><br><span style="color:var(--accent);">最重要凸！編成の自由度爆上がり</span></td>
+    </tr>
+    <tr>
+      <td>3凸（E3）</td><td>運命の境界</td>
+      <td>必殺技Lv+2（最大15）、戦闘スキルLv+2（最大15）、通常攻撃Lv+1（最大10）。</td>
+      <td><span style="color:#e8c547;">約+5%</span></td>
+      <td><span style="color:#c0c0c0;">★★★☆☆</span><br><span style="color:var(--sub);">スキルレベル上げ</span></td>
+    </tr>
+    <tr>
+      <td>4凸（E4）</td><td>虚無の掌握</td>
+      <td>黄泉の必殺技の与ダメージ+30%。必殺技発動後、敵全体に砕痕を3層付与。</td>
+      <td><span style="color:var(--accent);">約+15〜20%</span></td>
+      <td><span style="color:#e8c547;">★★★★☆</span><br><span style="color:var(--sub);">必殺技火力特化</span></td>
+    </tr>
+    <tr>
+      <td>5凸（E5）</td><td>終焉の黎明</td>
+      <td>天賦Lv+2（最大15）、必殺技Lv+1（最大15）。</td>
+      <td><span style="color:#c0c0c0;">約+3%</span></td>
+      <td><span style="color:#888;">★★☆☆☆</span><br><span style="color:var(--sub);">6凸への通過点</span></td>
+    </tr>
+    <tr>
+      <td>6凸（E6）</td><td>彼岸の終わり</td>
+      <td>黄泉の必殺技が敵の防御力を<strong>30%無視</strong>。さらに必殺技攻撃時、敵の靭性を問わず弱点撃破状態の敵のように靭性ゲージを削る。</td>
+      <td><span style="color:var(--accent);">約+40〜55%</span></td>
+      <td><span class="star">★★★★★</span><br><span style="color:var(--accent);">完全体！圧倒的火力</span></td>
+    </tr>
+  </table>
+
+  <h3>凸のすすめ：詳細解説</h3>
+  <div class="card">
+    <p><strong>無凸（E0）でも最強クラス：</strong> 黄泉は無凸でもSSランクアタッカーとして十分に戦えます。虚無キャラ2体を編成することで砕痕管理が安定し、モチーフ光円錐か「良い夜に、おやすみ」S5があれば十分に高難易度コンテンツを攻略可能です。</p>
+    <p style="margin-top:8px;"><strong>E1（+15%火力）：</strong> デバフ状態の敵への会心率+18%。黄泉は天賦で常時デバフ状態の敵に攻撃するため、実質的に常時会心率+18%。遺物の会心率厳選が大幅に緩和され、攻撃力%胴体の選択も視野に入る。コスパは良好。</p>
+    <p style="margin-top:8px;"><strong>E2（最重要凸！）：</strong> 黄泉の凸の中で<strong>最も価値が高い</strong>のがE2。編成内の虚無キャラ1体につき雷属性耐性貫通+12%（最大+24%）の火力増強に加え、虚無キャラが1体でも編成可能になることで調和キャラ（ルアンメェイ、ブローニャ、スパークレなど）を編成可能に。これにより編成の幅が飛躍的に広がり、火力面でも大きな向上が期待できる。黄泉を本格的に運用するならE2を最優先目標に。</p>
+    <p style="margin-top:8px;"><strong>E4（+15〜20%）：</strong> 必殺技の与ダメージ+30%に加え、必殺技発動後に敵全体に砕痕3層付与。E2で編成の自由度を得た後の火力特化凸。必殺技後の砕痕補充により次の必殺技までの準備時間が短縮される。</p>
+    <p style="margin-top:8px;"><strong>E6（完全体）：</strong> 防御力30%無視＋弱点撃破状態の敵のように靭性削り。防御力無視は最終ダメージに大きく影響し、E6黄泉の必殺技は理論上約40〜55%の火力向上。さらに靭性削りが全敵に対して弱点撃破状態相当になるため、実質的にどんな敵にも最効率で削靭可能。6凸黄泉は崩壊スターレイル全体でもトップクラスの瞬間火力を誇るが、そのコストに見合うかはプレイヤーの判断次第。</p>
+  </div>
+
+  <div class="build-box">
+    <div class="label">🏆 コスパ最優秀凸</div>
+    <div class="content">E2（雷鳴の覚醒）</div>
+    <div style="margin-top:6px;font-size:0.9em;">編成の自由度が劇的に向上し、調和キャラの強力なバフを黄泉に乗せられるようになる。雷属性耐性貫通+24%も非常に強力。E0→E2で総合火力が約35〜45%向上するため、黄泉を主力として運用するならE2は最優先で狙いたい。</div>
+  </div>
+
+  <!-- 相性の良いキャラ -->
+  <h2 id="synergy">🤝 相性の良いキャラ</h2>
+  <table>
+    <tr><th>キャラ</th><th>属性/運命</th><th>相性の理由</th><th>おすすめ度</th></tr>
+    <tr><td>椒丘（Jiaoqiu）</td><td>炎・虚無</td><td>結界で毎ターン継続燃焼デバフを付与し、砕痕累積効率が飛躍的に向上。黄泉のベストパートナー。</td><td><span class="star">★★★★★</span></td></tr>
+    <tr><td>ペラ（Pela）</td><td>氷・虚無（星4）</td><td>全体防御力ダウンが黄泉の必殺技火力を大幅増強。星4で入手容易、速度を爆盛り可能。</td><td><span class="star">★★★★★</span></td></tr>
+    <tr><td>桂乃芬（Guinaifen）</td><td>炎・虚無（星4）</td><td>燃焼デバフ＋攻撃デバフの2種デバフ。継続ダメージで砕痕累積をサポート。星4最強候補。</td><td><span class="star">★★★★★</span></td></tr>
+    <tr><td>銀狼（Silver Wolf）</td><td>量子・虚無</td><td>弱点埋め込み＋単体防御ダウン。単体ボス戦で絶大な威力。E2黄泉とも好相性。</td><td><span style="color:#e8c547;">★★★★★</span></td></tr>
+    <tr><td>ルアンメェイ（Ruan Mei）</td><td>氷・調和</td><td>全属性耐性貫通＋速度バフ＋弱点撃破効率UP。E2黄泉の理想の調和パートナー。</td><td><span style="color:#e8c547;">★★★★★</span></td></tr>
+    <tr><td>ブローニャ（Bronya）</td><td>風・調和</td><td>黄泉の行動促進＋攻撃力＆会心ダメバフ。E2黄泉で超火力編成を実現。</td><td><span style="color:#e8c547;">★★★★☆</span></td></tr>
+    <tr><td>符玄（Fu Xuan）</td><td>量子・存護</td><td>会心率+12%バフ＋ダメージ軽減。黄泉の会心率確保に大きく貢献。</td><td><span style="color:#e8c547;">★★★★★</span></td></tr>
+    <tr><td>アベンチュリン（Aventurine）</td><td>虚数・存護</td><td>継続バリア＋追撃デバフ付与。編成の安定性が格段に向上。</td><td><span style="color:#e8c547;">★★★★☆</span></td></tr>
+    <tr><td>ギャラガー（Gallagher）</td><td>炎・豊穣（星4）</td><td>SP効率の良いヒーラーで低コスト編成の核。攻撃時にデバフ付与可能。</td><td><span style="color:#e8c547;">★★★★☆</span></td></tr>
+    <tr><td>スパークレ（Sparkle）</td><td>量子・調和</td><td>SP供給＋会心ダメバフ＋行動促進。E2黄泉の行動回数増加に貢献。</td><td><span style="color:#e8c547;">★★★★☆</span></td></tr>
+    <tr><td>リンクス（Lynx）</td><td>量子・豊穣（星4）</td><td>無料配布ヒーラー。SP節約しつつ全体回復、低コスト編成に。</td><td><span style="color:#c0c0c0;">★★★☆☆</span></td></tr>
+  </table>
+
+  <div class="note">
+    <strong>💡 相性のポイント：</strong> 黄泉の最大の特徴は「虚無キャラのデバフが砕痕累積に直結する」こと。そのため、<strong>虚無キャラは速度を高くして多くのデバフを付与できるほど黄泉の火力が上がる</strong>という構造になっています。最優先は椒丘で、次いでペラ・桂乃芬（星4でも十分）の順。E2黄泉であればルアンメェイやブローニャなどの強力な調和キャラを編成できるため、編成の幅が大きく広がります。耐久枠は符玄（会心率バフ）かアベンチュリン（継続バリア）が最適で、無課金ならギャラガーかリンクスで代用可能。
+  </div>
+
+  <!-- よくある質問 -->
+  <h2 id="faq">❓ よくある質問（FAQ）</h2>
+
+  <div class="faq-item">
+    <div class="q">Q. 黄泉の速度はいくつが最適ですか？</div>
+    <div class="a">
+      黄泉の速度は<strong>134以上</strong>を推奨します。速度134を達成すると忘却の庭の1ラウンド目に2回行動が可能になります。ベース速度101に速度靴（+25）で126となり、遺物サブステで8以上を追加して134を目指しましょう。ただし黄泉は必殺技依存のキャラクターであるため、速度を過度に追求するよりも<strong>会心率と会心ダメージを優先するビルド</strong>も有効です。グラモス（オーナメント）を使用する場合は速度135以上（与ダメ+12%条件）が目標になります。E2黄泉でルアンメェイと組む場合、ルアンメェイの速度バフがあるため少し速度を抑えても大丈夫です。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 黄泉の遺物は何がベストですか？</div>
+    <div class="a">
+      黄泉の最適遺物は<strong>「死水に潜る義侠（Pioneer Diver of Dead Waters）」4セット</strong>です。デバフ状態の敵に与ダメージ+12%（2セット）に加え、4セットで会心率+4%（攻撃時さらに+8%で計+12%）と会心ダメージ+12%（攻撃時さらに+24%で計+36%）を獲得できます。これは黄泉の天賦「紫電の太刀」（デバフ敵に与ダメ+30%）と完全にシナジーします。死水4セットが揃うまでは「死水2＋バンディット2」で代用可能で、火力は死水4比で約3%低下に留まります。オーナメントは「出雲の神・高天の神」が最適で、会心率+12%の補正が非常に貴重です。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 黄泉は何凸がおすすめですか？</div>
+    <div class="a">
+      黄泉は<strong>無凸でも十分に最強クラスのアタッカー</strong>ですが、凸を進めるなら<strong>E2が最もコストパフォーマンスに優れています</strong>。E2の最大のメリットは「虚無キャラ1体でも編成可能になる」ことで、調和キャラ（ルアンメェイ、ブローニャ、スパークレなど）を編成できるようになります。E2に加えて雷属性耐性貫通+24%（虚無2体時）も非常に強力で、E0→E2で総合火力が約35〜45%向上。E1は会心率+18%で遺物厳選のハードルを大幅に下げます。E4は必殺技ダメ+30%＋砕痕補充、E6は防御力30%無視で完全体となりますが、E2で止めて他のキャラを確保するのも賢い選択です。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 黄泉のモチーフ光円錐は必須ですか？</div>
+    <div class="a">
+      黄泉のモチーフ光円錐「流れ行く川を岸辺で過ぎて」は<strong>最適ですが必須ではありません</strong>。モチーフがない場合の代替候補は以下の通りです：
+      <ol style="margin-top:6px;">
+        <li><strong>★4「良い夜に、おやすみ」S5</strong>：デバフ1つにつき与ダメ+12%、最大+36%。無課金最強候補。モチーフ比約85%。</li>
+        <li><strong>★5「絶え間ない雨」S1</strong>：会心率+12%＋与ダメ+24%。恒常から入手可能。モチーフ比約90%。</li>
+        <li><strong>★4「決意は燎原の如く」S5</strong>：防御力-16%デバフ。サブ火力＋サポート枠として。モチーフ比約75%。</li>
+      </ol>
+      モチーフ光円錐は会心ダメージ+36%、攻撃力+24%、必殺技ダメ+24%の3つのバフを同時に受けられるため、黄泉の火力を最大限に引き出すなら確保推奨です。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 黄泉の必殺技「斬刻の雷心」の仕組みを教えてください</div>
+    <div class="a">
+      黄泉の必殺技は、敵に付与された<strong>「砕痕（Crimson Knot）」が9層に達すると発動可能</strong>になる独自システムです。通常のEPゲージを持たず、代わりに砕痕の累積数で必殺技の発動条件を満たします。砕痕の付与方法は以下の通り：
+      <ul style="margin-top:6px;">
+        <li><strong>黄泉の通常攻撃</strong>：メインターゲットに砕痕1層</li>
+        <li><strong>黄泉の戦闘スキル</strong>：メイン2層＋隣接1層ずつ</li>
+        <li><strong>味方虚無キャラのデバフ付与攻撃</strong>：敵に砕痕1層（攻撃ごと）</li>
+        <li><strong>黄泉秘技</strong>：戦闘開始時に敵全体に砕痕3+α層</li>
+      </ul>
+      必殺技発動時は9Hitの合計630%倍率（Lv10）に加え、弱点無視削靭、強化効果解除、砕痕層数ボーナス（1層+3%、最大+27%）が乗ります。発動後は砕痕が全消費されるため、再度累積が必要です。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 黄泉と相性の良い虚無キャラは誰ですか？</div>
+    <div class="a">
+      黄泉と最も相性が良い虚無キャラは<strong>椒丘（Jiaoqiu）</strong>です。椒丘の必殺技結界は毎ターン終了時に敵全体に燃焼デバフを自動付与するため、砕痕の継続的な累積が可能になります。次いで<strong>ペラ</strong>（全体防御ダウン-40%＋「決意は燎原の如く」で追加防御ダウン-16%）が優秀で、星4ながら入手と凸が容易。火力面では<strong>桂乃芬</strong>（燃焼＋攻撃デバフの2種デバフ）が継続ダメージ枠として優秀です。単体ボス戦では<strong>銀狼</strong>（弱点埋め込み＋防御ダウン）が刺さります。E2黄泉であればこれらの虚無キャラから1人を選び、残りの枠にルアンメェイやブローニャなどの調和キャラを入れるのが理想的です。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 黄泉にとって会心率はどのくらい必要ですか？</div>
+    <div class="a">
+      黄泉の会心率は<strong>戦闘中70%以上</strong>を目標にしましょう。内訳は以下の通り：
+      <ul style="margin-top:6px;">
+        <li><strong>出雲オーナメント</strong>：会心率+12%（同一運命の味方がいる場合）</li>
+        <li><strong>死水4セット</strong>：会心率+4%（攻撃時さらに+8%で計+12%）</li>
+        <li><strong>胴体会心率メイン</strong>：約+32%（Lv15時）</li>
+        <li><strong>符玄がいる場合</strong>：さらに+12%</li>
+        <li><strong>E1の場合</strong>：デバフ敵に+18%</li>
+      </ul>
+      上記のバフを全て乗せると、素の状態からでも約56%（符玄込みで68%）の会心率を確保できます。残りはサブステで補いましょう。E1がある場合は会心率胴体でなく攻撃力%胴体も検討可能です。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. 無課金でも黄泉を活用できますか？</div>
+    <div class="a">
+      無課金でも<strong>十分に活用可能です</strong>。黄泉自身は無凸でも最強クラスのアタッカーであり、相方の虚無キャラにペラと桂乃芬（どちらも星4で入手可能）を編成すれば高い火力を発揮できます。光円錐は「良い夜に、おやすみ」S5（星4）で代用可能で、モチーフ比約85%の性能を発揮します。オーナメントは「宇宙封印ステーション」（攻撃力+24%）または「出雲の神・高天の神」が狙い目。遺物は「死水に潜る義侠」4セットを地道に厳選しましょう。忘却の庭の星3クリアや模擬宇宙の攻略も十分可能で、無課金にとって最もおすすめできる限定アタッカーの一人です。
+    </div>
+  </div>
+
+  <!-- 評価まとめ -->
+  <h2 id="summary">📋 総評</h2>
+  <div class="card">
+    <p>黄泉（アケロン）は、<strong>崩壊スターレイル史上でもトップクラスの汎用性と瞬間火力を兼ね備えた最強アタッカー</strong>です。独自の砕痕システムによる弱点無視必殺技は、敵の弱点属性に左右されずに高火力を叩き出せるという破格の性能で、忘却の庭・模擬宇宙・末日の獣・幻想の庭の全ての高難易度コンテンツで活躍します。</p>
+
+    <h4>ビルドの基本方針</h4>
+    <ul style="margin-top:4px;">
+      <li><strong>光円錐</strong>：流れ行く川を岸辺で過ぎて（★5）＞ 絶え間ない雨（★5）＞ 良い夜に、おやすみS5（★4）</li>
+      <li><strong>遺物</strong>：死水に潜る義侠4セット（最適）＞ 死水2+バンディット2（暫定）</li>
+      <li><strong>オーナメント</strong>：出雲の神・高天の神（最適）＞ 蒼穹戦線グラモス（次点）</li>
+      <li><strong>メインステ</strong>：胴体＝会心率%、脚＝速度%、オーブ＝雷ダメージ%、縄＝攻撃力%</li>
+      <li><strong>目標速度</strong>：134以上（忘却の庭1ラウンド2回行動）</li>
+      <li><strong>目標会心率</strong>：戦闘中70%以上（出雲12%＋死水4〜12%＋符玄12%＋胴体32%）</li>
+      <li><strong>スキル優先</strong>：必殺技 ＞ 戦闘スキル ＞ 天賦 ＞ 通常攻撃</li>
+      <li><strong>凸優先</strong>：E2が最重要節（編成の自由度＋火力大幅UP）</li>
+    </ul>
+
+    <h4>評価点数（10点満点）</h4>
+    <table style="max-width:400px;">
+      <tr><th>項目</th><th>評価</th></tr>
+      <tr><td>瞬間火力</td><td><span class="star">★★★★★★★★★★</span> 10/10</td></tr>
+      <tr><td>継続火力</td><td><span class="star">★★★★★★★★☆☆</span> 8/10</td></tr>
+      <tr><td>汎用性</td><td><span class="star">★★★★★★★★★★</span> 10/10</td></tr>
+      <tr><td>編成難易度</td><td><span style="color:#e8c547;">★★★★★★★☆☆☆</span> 7/10（E2推奨）</td></tr>
+      <tr><td>遺物厳選難易度</td><td><span style="color:#c0c0c0;">★★★★★★☆☆☆☆</span> 6/10</td></tr>
+      <tr><td>総合評価</td><td><span class="star">★★★★★★★★★☆</span> 9.5/10</td></tr>
+    </table>
+
+    <h4>こんな人におすすめ</h4>
+    <ul>
+      <li>✅ 強力なアタッカーを1人持っておきたい</li>
+      <li>✅ 敵の弱点を気にせず戦いたい</li>
+      <li>✅ 虚無キャラを既に育成している（ペラ・桂乃芬など）</li>
+      <li>✅ 忘却の庭や模擬宇宙のタイムアタックを狙いたい</li>
+      <li>✅ かっこいい雷属性キャラが好き（CV：沢城みゆき）</li>
+    </ul>
+
+    <h4>こんな人には向かないかも</h4>
+    <ul>
+      <li>⚠️ 虚無キャラを一切持っていない・育てる気がない</li>
+      <li>⚠️ 必殺技の管理が面倒（砕痕システムが独特）</li>
+      <li>⚠️ 凸やモチーフ光円錐を引く余裕がない（無凸でも戦えるが）</li>
+    </ul>
+
+    <p style="margin-top:12px;">黄泉は無凸からE6までどの凸数でも強力で、<strong>崩壊スターレイルを代表する看板キャラクター</strong>として長く活躍し続けるでしょう。特にE2で調和キャラを編成できるようになると、編成の幅と火力が飛躍的に向上します。ぜひこのガイドを参考に、最強の黄泉を育てて、全てのコンテンツを攻略してください！</p>
+  </div>
+
+</article>
+
+</body>
+</html>

@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4B26RL1D24"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4B26RL1D24');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>【崩壊スターレイル】ミデイ（Mydei）最強ビルドガイド｜遺物・光円錐・編成【Ver.3.2】</title>
+<meta name="description" content="崩壊スターレイルの星5虚数属性・破壊キャラ「ミデイ（Mydei／マイデイ）」の完全攻略ガイド。遺物・光円錐の最適構成、理想パーティ編成、凸数評価、スキル数値・血改状態の仕組みまで徹底解説。忘却の庭・末日の獣対応。">
+<meta name="keywords" content="崩壊スターレイル,ミデイ,Mydei,マイデイ,攻略,遺物,光円錐,編成,凸,星魂,ビルド,おすすめ,破壊,虚数,血改">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="【崩壊スターレイル】ミデイ（Mydei）最強ビルドガイド｜遺物・光円錐・編成">
+<meta property="og:description" content="崩壊スターレイルミデイ（Mydei）の完全攻略。スキル数値、遺物セット比較、光円錐ランキング、パーティ編成5選、凸数ごとの火力上昇率を詳細解説。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="【崩壊スターレイル】ミデイ（Mydei）最強ビルドガイド">
+<link rel="canonical" href="https://chjiya.github.io/hsr-guide/guides/ja/mydei-guide-ja.html">
+<base href="/hsr-guide/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "【崩壊スターレイル】ミデイ（Mydei）最強ビルドガイド｜遺物・光円錐・編成【Ver.3.2】",
+  "description": "崩壊スターレイルの星5虚数属性・破壊キャラ「ミデイ（Mydei）」の完全攻略。スキル解析、おすすめ遺物・光円錐・オーナメント、理想パーティ編成5選、凸数評価、FAQまで徹底解説。",
+  "author": { "@type": "Person", "name": "花叔" },
+  "datePublished": "2026-06-10",
+  "dateModified": "2026-06-10",
+  "articleSection": "キャラクター攻略",
+  "inLanguage": "ja",
+  "about": {
+    "@type": "Thing",
+    "name": "ミデイ（Mydei）",
+    "description": "崩壊スターレイルの星5虚数属性・破壊の運命を歩むアタッカーキャラクター"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://chjiya.github.io/hsr-guide/guides/ja/mydei-guide-ja.html"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "ミデイの速度はいくつが最適ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ミデイの速度は134以上が推奨です。破壊キャラとしては標準的な速度要求で、敵より先に行動して血改状態による大ダメージを叩き込むために必要です。遺物のサブステで速度を確保しつつ、可能なら140以上を目指しましょう。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ミデイのモチーフ光円錐は必須ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "モチーフ光円錐「果てしなき血の挽歌」は非常に強力ですが、必須ではありません。無課金なら「満たされない野望」S5（星4破壊光円錐）や「秘密誓い」S5が有力な代替案です。モチーフは会心率と会心ダメージ、さらに血改状態中の与ダメUPと申し分ない性能ですが、持っていなくても十分に活躍できます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ミデイの血改状態とは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "血改（ケツカイ）状態はミデイの必殺技使用後に発動する強化状態です。効果時間中は通常攻撃が強化され、HP消費量に応じて与ダメージが増加します。また、味方のHP変動に応じてエネルギーを追加獲得できるため、必殺技の回転率が飛躍的に向上します。血改状態中の火力は通常時の約1.5倍〜2倍に達します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ミデイのおすすめ遺物セットは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ミデイの最適遺物は「勇者の凱旋（Hero of Triumphant Song）4セット」です。会心率+12%とHP消費時に追加会心ダメ+20%がミデイの血改状態と非常に好相性。次点で「宝命の鋳者（Longevous Disciple）4セット」もHP変動が激しいミデイと相性が良く、会心率バフを得られます。オーナメントは「奔狼（Salsotto）か「競走者（Rutilant Arena）」の2択です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ミデイは何凸がおすすめですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ミデイは無凸（E0）でも十分強力なアタッカーとして活躍できます。E1で血改状態中の与ダメ+30%と大幅強化。E2で速度+10%と火力と回転率が向上し、被弾時のEP回復量も増加。最優先推奨はE1で、E6はHP消費量上限が増加し壊レベルの火力を叩き出します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ミデイに相性の良いヒーラーは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ミデイはHP消費スキルを持つため、ヒーラーとの相性が非常に重要です。最適はフォフォ（Fu Xuan）またはルアン（Lynx）。フォフォは継続回復と会心率バフ、ルアンはHP上限増加と全体回復でミデイのHP管理を大きくサポートします。アベンチュリンもシールドで安定した耐久を提供でき、SP効率の良い選択肢です。"
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --bg: #1a1a2e;
+    --card: #16213e;
+    --accent: #4fc3f7;
+    --text: #e0e0e0;
+    --sub: #a0a0b0;
+    --border: #2a2a4a;
+    --highlight: #0f3460;
+    --green: #4caf84;
+    --red: #e0556a;
+    --blue: #5b9bd5;
+    --purple: #b39ddb;
+    --music: #e8a838;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', Meiryo, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+    padding: 20px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 1.8em;
+    color: var(--accent);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 1.4em;
+    color: var(--accent);
+    margin: 36px 0 16px;
+    padding: 8px 14px;
+    border-left: 4px solid var(--accent);
+    background: var(--highlight);
+    border-radius: 0 6px 6px 0;
+  }
+  h3 {
+    font-size: 1.15em;
+    color: #80d8ff;
+    margin: 24px 0 10px;
+  }
+  h4 {
+    font-size: 1.05em;
+    color: #b0e0ff;
+    margin: 16px 0 8px;
+  }
+  .char-header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background: var(--card);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 24px;
+    border: 1px solid var(--border);
+  }
+  .char-icon {
+    width: 90px;
+    height: 90px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #c62828, #6a1b1b);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2em;
+    flex-shrink: 0;
+    color: #fff;
+  }
+  .char-info { flex: 1; }
+  .char-info .name { font-size: 1.6em; font-weight: bold; color: #fff; }
+  .char-info .tags { margin-top: 6px; display: flex; gap: 8px; flex-wrap: wrap; }
+  .tag {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: bold;
+  }
+  .tag-rarity { background: #b8860b; color: #fff; }
+  .tag-element { background: #9e9e9e; color: #fff; }
+  .tag-path { background: var(--music); color: #1a1a2e; }
+  .tag-role { background: var(--accent); color: #1a1a2e; }
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    margin: 16px 0;
+  }
+  .stat-box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+  }
+  .stat-box .label { font-size: 0.8em; color: var(--sub); }
+  .stat-box .value { font-size: 1.2em; font-weight: bold; color: #fff; margin-top: 4px; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 0.9em;
+  }
+  th {
+    background: var(--highlight);
+    color: var(--accent);
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px solid var(--border);
+  }
+  td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+  .star { color: var(--accent); }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px;
+    margin: 16px 0;
+  }
+  .build-box {
+    background: var(--highlight);
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin: 12px 0;
+  }
+  .build-box .label { color: var(--accent); font-weight: bold; font-size: 0.85em; }
+  .build-box .content { color: #fff; font-weight: bold; margin-top: 4px; }
+  .pros-cons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 16px 0;
+  }
+  .pros, .cons {
+    padding: 14px;
+    border-radius: 8px;
+  }
+  .pros { background: rgba(76,175,132,0.1); border: 1px solid rgba(76,175,132,0.3); }
+  .cons { background: rgba(224,85,106,0.1); border: 1px solid rgba(224,85,106,0.3); }
+  .pros h4 { color: var(--green); margin-bottom: 6px; }
+  .cons h4 { color: var(--red); margin-bottom: 6px; }
+  .pros li, .cons li { margin-left: 18px; font-size: 0.9em; }
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 12px 0;
+  }
+  .team-slot {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 8px;
+    text-align: center;
+  }
+  .team-slot .role { font-size: 0.75em; color: var(--sub); margin-bottom: 4px; }
+  .team-slot .char { font-weight: bold; color: #fff; font-size: 0.95em; }
+  .faq-item {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin: 12px 0;
+    padding: 16px;
+  }
+  .faq-item .q {
+    color: var(--accent);
+    font-weight: bold;
+    font-size: 1.05em;
+    margin-bottom: 8px;
+  }
+  .faq-item .a {
+    color: var(--text);
+    line-height: 1.8;
+  }
+  .note {
+    background: rgba(79,195,247,0.08);
+    border-left: 3px solid var(--accent);
+    padding: 10px 14px;
+    margin: 14px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.9em;
+  }
+  .skill-box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px;
+    margin: 10px 0;
+  }
+  .skill-box .skill-name { font-weight: bold; color: var(--accent); font-size: 1.05em; }
+  .skill-box .skill-type { font-size: 0.8em; color: var(--sub); margin-left: 8px; }
+  .skill-box .skill-desc { margin-top: 8px; font-size: 0.9em; }
+  .priority-5 { color: var(--accent); }
+  .priority-4 { color: #e8c547; }
+  .priority-3 { color: #c0c0c0; }
+  .priority-2 { color: #888; }
+  ol, ul { padding-left: 1.5em; }
+  li { margin: 4px 0; }
+  .toc { margin: 16px 0; padding: 14px; background: var(--card); border-radius: 8px; border: 1px solid var(--border); }
+  .toc a { color: var(--accent); text-decoration: none; }
+  .toc a:hover { text-decoration: underline; }
+  .toc li { margin: 4px 0; }
+  @media (max-width: 600px) {
+    .char-header { flex-direction: column; text-align: center; }
+    .team-grid { grid-template-columns: repeat(2, 1fr); }
+    .pros-cons { grid-template-columns: 1fr; }
+    .stat-grid { grid-template-columns: repeat(2, 1fr); }
+    body { padding: 12px; }
+  }
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3857626678274044"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+<article>
+  <h1>【崩壊スターレイル】ミデイ（Mydei）最強ビルドガイド【Ver.3.2】</h1>
+
+  <!-- 目次 -->
+  <div class="toc">
+    <strong>📑 目次</strong>
+    <ol style="margin-top:6px;">
+      <li><a href="#overview">キャラ概要</a></li>
+      <li><a href="#skills">スキル解説（全数値）</a></li>
+      <li><a href="#relics">おすすめ遺物（セット比較＋%差）</a></li>
+      <li><a href="#lightcones">おすすめ光円錐（4選択肢＋%差）</a></li>
+      <li><a href="#teams">理想編成（4編成＋ローテーション詳細）</a></li>
+      <li><a href="#eidolons">凸数評価（0-6凸、各%up率）</a></li>
+      <li><a href="#synergy">相性の良いキャラ</a></li>
+      <li><a href="#build">おすすめビルドまとめ表</a></li>
+      <li><a href="#faq">よくある質問（FAQ）</a></li>
+      <li><a href="#summary">総評</a></li>
+    </ol>
+  </div>
+
+  <!-- キャラクター基本情報 -->
+  <div class="char-header" id="overview">
+    <div class="char-icon">⚔️</div>
+    <div class="char-info">
+      <div class="name">ミデイ（Mydei / マイデイ）</div>
+      <div class="tags">
+        <span class="tag tag-rarity">★5</span>
+        <span class="tag tag-element">虚数属性</span>
+        <span class="tag tag-path">破壊（Destruction）</span>
+        <span class="tag tag-role">メインアタッカー</span>
+      </div>
+      <div style="margin-top:8px;color:var(--sub);font-size:0.9em;">
+        所属：オクヘイマ｜声優：非公開｜入手：限定排出（イベント跳躍）｜実装：Ver.3.2
+      </div>
+    </div>
+  </div>
+
+  <!-- ステータス概要 -->
+  <div class="stat-grid">
+    <div class="stat-box">
+      <div class="label">最大HP</div>
+      <div class="value">1,658</div>
+    </div>
+    <div class="stat-box">
+      <div class="label">攻撃力</div>
+      <div class="value">546</div>
+    </div>
+    <div class="stat-box">
+      <div class="label">防御力</div>
+      <div class="value">485</div>
+    </div>
+    <div class="stat-box">
+      <div class="label">速度</div>
+      <div class="value">98</div>
+    </div>
+    <div class="stat-box">
+      <div class="label">EP（必殺技）</div>
+      <div class="value">130</div>
+    </div>
+  </div>
+
+  <!-- キャラクター評価 -->
+  <div class="pros-cons">
+    <div class="pros">
+      <h4>✅ 長所</h4>
+      <ul>
+        <li>血改状態中の火力が圧倒的（通常の1.5〜2倍）</li>
+        <li>HP消費スキルで自身のEP回収が可能</li>
+        <li>虚数属性で広範囲の敵に対応</li>
+        <li>HPが高く耐久力に優れる</li>
+        <li>味方のHP変動でもEP回収可能</li>
+        <li>必殺技コスト130で回転率が良い</li>
+        <li>凸効果がすべて強力で伸びしろが大きい</li>
+        <li>破壊の運命で汎用性高め</li>
+      </ul>
+    </div>
+    <div class="cons">
+      <h4>⚠️ 短所</h4>
+      <ul>
+        <li>HP消費が多いためヒーラーが必須</li>
+        <li>基礎速度98とやや遅い（速度調整が必要）</li>
+        <li>血改状態終了後の火力が落ちる</li>
+        <li>CC（行動制限）に弱い</li>
+        <li>遺物のHP・会心・速度の厳選が難しい</li>
+        <li>無凸でも強いが完全体には凸が必要</li>
+      </ul>
+    </div>
+  </div>
+
+  <p>ミデイ（Mydei）は、Ver.3.2「果てなき血の戦い」で実装された星5虚数属性・破壊の運命を歩むアタッカーキャラクターです。オクヘイマ出身の戦士で、その名の通り「血」をテーマにしたユニークな戦闘スタイルを持ちます。</p>
+  <p>ミデイの最大の特徴は、<strong>必殺技で「血改（血の改造）」状態に入り、HPを消費して火力を爆発的に高める</strong>という点です。HP消費量に応じてダメージ倍率が上昇し、さらに味方全体のHP変動に連動してエネルギーを獲得する仕組みを持ちます。これにより、<strong>ヒーラーと組むことで驚異的な必殺技回転率</strong>を実現します。</p>
+  <p>Ver.4.0環境において、ミデイは<strong>最前線の破壊アタッカー</strong>として位置づけられています。忘却の庭（混沌の記憶）・模擬宇宙・末日の獣・幻想の庭と全てのコンテンツで活躍し、特に長期戦においてその真価を発揮します。</p>
+
+  <!-- スキル解説 -->
+  <h2 id="skills">🔍 スキル解説（全数値）</h2>
+
+  <div class="skill-box">
+    <div class="skill-name">通常攻撃：裂帛の一刀 <span class="skill-type">単体攻撃 / エネルギー+20 / 削靭15</span></div>
+    <div class="skill-desc">
+      指定した敵単体にミデイの攻撃力<span style="color:var(--accent);">50%〜100%</span>（Lv1〜Lv6）の虚数属性ダメージを与える。<br>
+      血改状態中は強化され、追加でHP上限の<span style="color:var(--red);">8%</span>分のダメージを追加する。<br>
+      強化優先度：<span class="priority-3">★★★☆☆</span>
+    </div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">ミデイの通常攻撃はSP節約用。血改状態中はHP参照の追加ダメージが発生するため、SP不足時でも一定の火力を出せる。通常攻撃のレベル上げ優先度は低めだが、血改状態を考慮するとある程度の投資は有効。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">戦闘スキル：血染めの連斬 <span class="skill-type">単体攻撃 / 消費SP:1 / エネルギー+30</span></div>
+    <div class="skill-desc">
+      指定した敵単体にミデイの攻撃力<span style="color:var(--accent);">100%〜200%</span>（Lv1〜Lv12）の虚数属性ダメージを与える。<br>
+      さらにミデイは<strong>現在HPの15%を消費</strong>し、消費HP1%につき与ダメ+<span style="color:var(--accent);">0.5%</span>（最大+50%）。<br>
+      血改状態中はHP消費量が<strong>現在HPの25%</strong>に増加し、与ダメ上限が<strong>+80%</strong>まで上昇。<br>
+      強化優先度：<span class="priority-5">★★★★★</span>
+    </div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">ミデイの主力ダメージソース。HP消費による与ダメUPが大きく、特に血改状態中はHP25%消費で与ダメ+80%と破格の火力を叩き出す。SP消費1と軽いのも魅力で、毎ターン使用できる。HP管理に注意が必要だが、火力と引き換えにする価値は十分にある。最優先でLv10以上を目指そう。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">必殺技：血統の覚醒〈千撃・血改の陣〉 <span class="skill-type">強化状態 / EP:130</span></div>
+    <div class="skill-desc">
+      ミデイが<strong>「血改」状態</strong>に入る（3ターン継続）。<br><br>
+      <strong>血改状態中の効果：</strong><br>
+      ① 通常攻撃・戦闘スキルが強化され、HP消費量が増加する代わりに与ダメUP上限が引き上げられる。<br>
+      ② HP消費時、消費HPの<span style="color:var(--accent);">30%</span>をエネルギーとして獲得する。<br>
+      ③ 味方全体のHP変動（増減合計）の<span style="color:var(--accent);">10%</span>をミデイのエネルギーとして獲得する（1ターン最大30）。<br>
+      ④ 発動時に自身のHPを<strong>最大HPの30%消費</strong>し、消費量に応じて与ダメ+<span style="color:var(--accent);">15%〜45%</span>（3ターン）。<br>
+      強化優先度：<span class="priority-5">★★★★★</span>
+    </div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">ミデイの核となる必殺技。血改状態により火力が飛躍的に向上し、HP消費によるエネルギー獲得で次の必殺技までのサイクルを大幅に短縮できる。味方のHP変動もエネルギー源になるため、ヒーラーとの相性が極めて重要。必殺技は最優先でLv10以上を目指そう。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">天賦：不滅の血戦の誓 <span class="skill-type">常時パッシブ / 火力バフ</span></div>
+    <div class="skill-desc">
+      ミデイの最大HPが<span style="color:var(--accent);">20%〜40%</span>（Lv1〜Lv10）上昇する。<br>
+      さらに、HPが50%以下の時、会心率+<span style="color:var(--accent);">8%〜20%</span>（Lv1〜Lv10）、会心ダメージ+<span style="color:var(--accent);">15%〜30%</span>。<br>
+      HPが25%以下の時、上記効果が2倍になる。<br>
+      強化優先度：<span class="priority-4">★★★★☆</span>
+    </div>
+  </div>
+  <p style="margin-left:14px;font-size:0.85em;color:var(--sub);">ミデイの耐久と火力を両立させる天賦。最大HP+40%は破格の上昇率で、HP参照のダメージにも間接的に寄与する。HP50%以下で会心関連のバフが発動するため、HP管理を50%〜30%の範囲で維持するのが理想的。ヒーラーとの連携でHPを50%以下で安定させられれば、継続的に高火力を維持できる。</p>
+
+  <div class="skill-box">
+    <div class="skill-name">秘技：血の予兆 <span class="skill-type">戦闘前効果</span></div>
+    <div class="skill-desc">秘技を使用すると戦闘開始時に自身のHPを最大HPの50%消費し、即座にエネルギーを40獲得する。さらに最初の行動時に自動的に戦闘スキルを発動する。</div>
+  </div>
+
+  <!-- 遺物解説 -->
+  <h2 id="relics">🏆 おすすめ遺物（セット比較）</h2>
+
+  <h3>最適セット：勇者の凱旋4セット</h3>
+  <div class="build-box">
+    <div class="label">2セット効果</div>
+    <div class="content">会心率+12%</div>
+  </div>
+  <div class="build-box">
+    <div class="label">4セット効果</div>
+    <div class="content">装備者がHPを消費した時、会心ダメージ+20%（2ターン）。HPが50%以下の時、さらに会心ダメージ+20%（重複可能、最大40%）。</div>
+  </div>
+
+  <p>「勇者の凱旋（Hero of Triumphant Song）」はミデイのTier1選択肢。4セット効果がHP消費と完全にシンクロし、血改状態中は常時会心ダメージ+40%を維持できる。会心率+12%もあり、遺物厳選のハードルを下げてくれるのが大きな利点。</p>
+
+  <h3>次点：宝命の鋳者4セット</h3>
+  <div class="build-box">
+    <div class="label">2セット効果</div>
+    <div class="content">最大HP+12%</div>
+  </div>
+  <div class="build-box">
+    <div class="label">4セット効果</div>
+    <div class="content">ダメージを受ける、またはHPを消費した時、会心率+8%（最大2スタック）。</div>
+  </div>
+
+  <p>「宝命の鋳者（Longevous Disciple）」はミデイのサブ最適。最大HP+12%はHP参照ダメージと天賦の会心条件達成に寄与。会心率+16%（2スタック時）で安定したクリティカルを狙える。勇者の凱旋より火力は落ちるが、安定感では優れる。</p>
+
+  <h3>オーナメント</h3>
+  <table>
+    <tr><th>順位</th><th>オーナメント</th><th>効果</th><th>評価</th></tr>
+    <tr><td>🥇</td><td>奔狼のサルソット</td><td>会心率+8%、必殺技・追撃ダメ+15%</td><td>火力特化</td></tr>
+    <tr><td>🥈</td><td>競走者（ルチラント・アリーナ）</td><td>会心率+8%、通常攻撃・戦技ダメ+20%</td><td>戦技主体と好相性</td></tr>
+    <tr><td>🥉</td><td>不老の仙舟</td><td>HP+12%、速度120以上で攻撃力+8%</td><td>耐久特化</td></tr>
+  </table>
+
+  <!-- 光円錐 -->
+  <h2 id="lightcones">💡 おすすめ光円錐</h2>
+
+  <table>
+    <tr><th>順位</th><th>光円錐名</th><th>レア</th><th>効果</th><th>%差（モチーフ比）</th></tr>
+    <tr><td>🥇</td><td>果てしなき血の挽歌（Endless Blood Elegy）</td><td>★5</td><td>会心率+18%。HP消費時、与ダメ+12%（最大3スタック）。血改状態中は与ダメ+24%追加。</td><td>100%</td></tr>
+    <tr><td>🥈</td><td>満たされない野望 S5（Unfulfilled Aspiration）</td><td>★4</td><td>HP+20%。HPが50%以下の時、与ダメ+36%。</td><td>〜82%</td></tr>
+    <tr><td>🥉</td><td>秘密誓い S5（Secret Vow）</td><td>★4</td><td>与ダメ+40%。敵が自分よりHPが多い時さらに+40%。（最大80%）</td><td>〜78%</td></tr>
+    <tr><td>④</td><td>いま、ひとりの時間 S5（Nowhere to Run）</td><td>★4</td><td>攻撃力+24%。敵撃破時HP+12%回復。</td><td>〜70%</td></tr>
+  </table>
+
+  <div class="note">
+    💡 モチーフ光円錐「果てしなき血の挽歌」は血改状態中に追加与ダメ+24%と破格の効果。しかし「満たされない野望」S5でもモチーフの約82%の火力を出せるため、無課金でも十分戦える。
+  </div>
+
+  <!-- 編成 -->
+  <h2 id="teams">👥 理想編成</h2>
+
+  <h3>編成① ハイパーキャリー型（最安定）</h3>
+  <div class="team-grid">
+    <div class="team-slot"><div class="role">メインDPS</div><div class="char">ミデイ</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">ルアンメェイ</div></div>
+    <div class="team-slot"><div class="role">ヒーラー</div><div class="char">フォフォ</div></div>
+    <div class="team-slot"><div class="role">バッファー</div><div class="char">ティンギュン</div></div>
+  </div>
+  <p>最も安定した編成。ルアンメェイの耐性貫通と与ダメバフ、フォフォの継続回復と会心率バフ、ティンギュンの攻撃力・会心ダメバフでミデイの火力を最大限に引き出す。フォフォの継続回復がミデイのHP管理を大きく助け、血改状態の維持が容易。</p>
+
+  <h3>編成② 追撃シナジー型</h3>
+  <div class="team-grid">
+    <div class="team-slot"><div class="role">メインDPS</div><div class="char">ミデイ</div></div>
+    <div class="team-slot"><div class="role">サブDPS</div><div class="char">トパーズ＆カブ</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">ロビン</div></div>
+    <div class="team-slot"><div class="role">ヒーラー</div><div class="char">アベンチュリン</div></div>
+  </div>
+  <p>ロビンの全体行動前進と攻撃力バフでミデイの行動回数を増やす編成。トパーズの追撃マークとアベンチュリンのシールドで耐久力を確保。ロビンの天賦による追撃EP回復もミデイの必殺技回転率に間接的に寄与する。</p>
+
+  <h3>編成③ 撃破編成型</h3>
+  <div class="team-grid">
+    <div class="team-slot"><div class="role">メインDPS</div><div class="char">ミデイ</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">ルアンメェイ</div></div>
+    <div class="team-slot"><div class="role">サブDPS</div><div class="char">丹恒・飲月君</div></div>
+    <div class="team-slot"><div class="role">ヒーラー</div><div class="char">ルアン（Lynx）</div></div>
+  </div>
+  <p>虚数属性を活かした撃破重視の編成。ミデイと飲月君の2枚看板で敵の靭性を素早く削り、撃破状態で追加ダメージを稼ぐ。ルアンメェイの撃破延長がシナジーを産む。</p>
+
+  <h3>編成④ SP効率型（無課金向け）</h3>
+  <div class="team-grid">
+    <div class="team-slot"><div class="role">メインDPS</div><div class="char">ミデイ</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">ブローニャ</div></div>
+    <div class="team-slot"><div class="role">ヒーラー</div><div class="char">ナターシャ</div></div>
+    <div class="team-slot"><div class="role">タンク</div><div class="char">フー・プロトタイプ</div></div>
+  </div>
+  <p>無課金・初心者向けの編成。ブローニャの行動前進と攻撃力バフでミデイの火力を底上げ。ナターシャの全体回復とフーの挑発・シールドでミデイのHP管理をサポート。SP効率が良く、安定した立ち回りが可能。</p>
+
+  <!-- 凸数評価 -->
+  <h2 id="eidolons">💎 凸数評価（星魂）</h2>
+
+  <table>
+    <tr><th>凸数</th><th>効果</th><th>火力上昇</th><th>おすすめ度</th></tr>
+    <tr><td>E0</td><td>基本性能。血改状態+天賦の会心バフで十分戦える。</td><td>基準</td><td>⭐⭐⭐⭐⭐</td></tr>
+    <tr><td>E1</td><td>血改状態中、与ダメ+30%。HP50%以下時、与ダメがさらに+15%。</td><td>+30%〜45%</td><td>⭐⭐⭐⭐⭐</td></tr>
+    <tr><td>E2</td><td>速度+10%。HP消費時のEP獲得量+50%。被弾時のEP回復量+100%。</td><td>回転率↑のみ</td><td>⭐⭐⭐⭐</td></tr>
+    <tr><td>E3</td><td>戦闘スキルLv+2。天賦Lv+2。</td><td>+12%</td><td>⭐⭐⭐</td></tr>
+    <tr><td>E4</td><td>血改状態中、味方全体のHPをターン終了時にミデイの最大HP×5%回復（1ターン最大300）。</td><td>サポート↑</td><td>⭐⭐⭐</td></tr>
+    <tr><td>E5</td><td>必殺技Lv+2。通常攻撃Lv+1。</td><td>+10%</td><td>⭐⭐</td></tr>
+    <tr><td>E6</td><td>血改状態中、HP消費上限+50%。消費HPの200%を追加ダメージとして与える。会心ダメージ+50%。</td><td>+80%〜100%</td><td>⭐⭐⭐⭐⭐</td></tr>
+  </table>
+
+  <div class="note">
+    💡 ミデイはE0でも十分戦えるが、E1で火力が大幅に跳ね上がる。E2で回転率が改善され、E6は完全に別次元の火力になる。コスパ重視ならE1、完全体を目指すならE6がおすすめ。
+  </div>
+
+  <!-- 相性の良いキャラ -->
+  <h2 id="synergy">🤝 相性の良いキャラ</h2>
+
+  <h3>⭐ 最適サポーター</h3>
+  <ul>
+    <li><strong>ルアンメェイ</strong>：耐性貫通+与ダメバフ+速度UP。全ての要素がミデイと好相性。</li>
+    <li><strong>フォフォ（Fu Xuan）</strong>：継続回復+会心率バフ。ミデイのHP管理に最適。</li>
+    <li><strong>ロビン</strong>：全体行動前進+攻撃力バフ。行動回数UPで血改状態の価値が向上。</li>
+    <li><strong>ブローニャ</strong>：行動前進+攻撃力バフ+SP面でのサポート。</li>
+    <li><strong>ティンギュン</strong>：攻撃力+会心ダメバフ+EP供給。星4ながら高性能。</li>
+  </ul>
+
+  <h3>⭐ 最適ヒーラー</h3>
+  <ul>
+    <li><strong>フォフォ</strong>：最高のヒーラー。継続回復+会心率バフ。</li>
+    <li><strong>ルアン（Lynx）</strong>：HP上限増加+全体回復。HP管理に優れる。</li>
+    <li><strong>アベンチュリン</strong>：シールド+追撃。SP効率が良い。</li>
+    <li><strong>ナターシャ</strong>：無課金ヒーラー。HP50%以下の回復量UPが優秀。</li>
+    <li><strong>ギャラガー</strong>：撃破特化ヒーラー。撃破編成で有効。</li>
+  </ul>
+
+  <!-- ビルドまとめ -->
+  <h2 id="build">📋 おすすめビルドまとめ表</h2>
+
+  <table>
+    <tr><th>項目</th><th>おすすめ</th></tr>
+    <tr><td>光円錐</td><td>果てしなき血の挽歌（★5）＞ 満たされない野望S5（★4）＞ 秘密誓いS5（★4）</td></tr>
+    <tr><td>遺物</td><td>勇者の凱旋4セット（最適）＞ 宝命の鋳者4セット</td></tr>
+    <tr><td>オーナメント</td><td>奔狼のサルソット（最適）＞ 競走者（ルチラント・アリーナ）</td></tr>
+    <tr><td>胴体</td><td>会心率% or 会心ダメージ%（天賦の会心バフと相談）</td></tr>
+    <tr><td>脚</td><td>速度% or HP%（速度134到達後はHP%）</td></tr>
+    <tr><td>オーブ</td><td>虚数属性ダメージ%</td></tr>
+    <tr><td>縄</td><td>攻撃力% or HP%（バランス）</td></tr>
+    <tr><td>目標会心率</td><td>70%以上（天賦発動で100%に）</td></tr>
+    <tr><td>目標会心ダメージ</td><td>150%以上</td></tr>
+    <tr><td>目標速度</td><td>134以上</td></tr>
+    <tr><td>目標HP</td><td>6,000以上</td></tr>
+    <tr><td>スキル優先</td><td>戦闘スキル ＞ 必殺技 ＞ 天賦 ＞ 通常攻撃</td></tr>
+    <tr><td>凸優先</td><td>E1（与ダメ+30%）＞ E2（回転率向上）＞ E6（完全体）</td></tr>
+  </table>
+
+  <!-- FAQ -->
+  <h2 id="faq">❓ よくある質問（FAQ）</h2>
+
+  <div class="faq-item">
+    <div class="q">Q. ミデイと丹恒・飲月君はどちらが強いですか？</div>
+    <div class="a">
+      両方とも破壊属性の強力なアタッカーですが、評価が分かれるポイントです。<br><br>
+      <strong>ミデイの強み：</strong>
+      - HP消費による独自の火力乗算システム
+      - 凸が進むほど火力が跳ね上がる（E1, E6が特に強力）
+      - HPの高さから耐久面で優れる
+      - 血改状態中の圧倒的な瞬間火力<br><br>
+      <strong>飲月君の強み：</strong>
+      - SP3消費の強化通常攻撃の絶対火力
+      - 凸効果が全体的に強力
+      - よりシンプルなビルド構成
+      - 虚数属性で靭性削りに優れる<br><br>
+      総合的に見ると、<strong>高難易度コンテンツではミデイがやや優位</strong>です。特に血改状態中の瞬間火力とHP管理による継戦能力のバランスが秀逸。ただし飲月君もSP面で自由度が高く、編成次第ではミデイ以上の火力を出せます。両方持っているなら状況に応じて使い分けるのがベストです。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. ミデイのHP管理のコツを教えてください。</div>
+    <div class="a">
+      ミデイのHP管理は以下のポイントを意識しましょう。<br><br>
+      <strong>理想的なHP範囲：30%〜50%</strong><br>
+      - HP50%以下：天賦の会心率+20%、会心ダメ+30%が発動<br>
+      - HP25%以下：上記効果が2倍（会心率+40%、会心ダメ+60%）になるが、事故リスク大<br>
+      - HP25%未満は敵の攻撃で即死する可能性が高い<br><br>
+      <strong>実戦での立ち回り：</strong><br>
+      - 開幕：秘技使用でHP50%消費→即座に血改状態へ<br>
+      - 序盤：ヒーラーでHPを50%前後に調整<br>
+      - 中盤：戦技でHPを消費→ヒーラーで回復→再度消費のサイクル<br>
+      - 終盤：HP25%以下を狙うなら必殺技ゲージを確認してから<br><br>
+      <strong>推奨ヒーラー別のHP管理：</strong><br>
+      フォフォ：ターン終了時の自動回復で安定維持。HP40%〜60%でキープしやすい。<br>
+      ルアン：スキル回復+HP上限増加。HP50%以下を狙いつつ安全圏を確保。<br>
+      ナターシャ：スキル回復量が高く、HP25%以下の緊急回復に優れる。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. ミデイの遺物サブステの優先順位を教えてください。</div>
+    <div class="a">
+      <strong>サブステ優先順位：</strong><br>
+      1️⃣ 会心率%（天賦で会心ダメは確保できるため、会心率を優先）<br>
+      2️⃣ 会心ダメージ%<br>
+      3️⃣ 速度%（134到達まで）<br>
+      4️⃣ HP%（HP参照ダメージと耐久に直結）<br>
+      5️⃣ 攻撃力%（通常のアタッカーよりは優先度低め）<br>
+      6️⃣ 効果抵抗%（折れた竜骨採用時のみ）<br><br>
+      会心率は遺物のメインorサブで70%以上を確保しましょう。天賦が発動すると会心率+20%（HP50%以下時）or+40%（HP25%以下時）されるため、実質的な会心率は90%〜110%になります。会心率が100%を超える分は無駄になるため、厳選時は会心率と会心ダメのバランスに注意してください。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. ミデイは超撃破編成でも使えますか？</div>
+    <div class="a">
+      ミデイは超撃破編成でも一定の活躍が可能です。<br><br>
+      虚数属性は撃破時に「束縛（行動不能+速度低下）」を与えるため、敵の行動を大幅に制限できます。ミデイ自身は撃破特効を積むビルドよりHP会心ビルドの方が火力が出ますが、ルアンメェイの超撃破バフと組み合わせることで、撃破後の追加ダメージにも期待できます。<br><br>
+      ただし、撃破特化アタッカー（レイシオ、姫子）と比較すると撃破効率で劣るため、<strong>超撃破特化よりHP会心前提の従来型ビルドを推奨</strong>します。撃破編成で使う場合はルアンメェイ＋ギャラガーと組み、ミデイはHP会心ビルドのまま使うのがベストです。
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="q">Q. ミデイの必殺技回転率を最大にするには？</div>
+    <div class="a">
+      ミデイの必殺技（EP130）回転率を最大化するには以下の要素を組み合わせましょう。<br><br>
+      <strong>1. ヒーラー選び</strong><br>
+      フォフォやルアンなど、毎ターン回復を行えるヒーラーがベスト。回復によるHP変動でミデイの天賦EP獲得が発動します。<br><br>
+      <strong>2. 戦技のローテーション</strong><br>
+      毎ターン戦技を使用してHPを消費し、消費HP×30%のEPを獲得。血改状態中は消費量が増えるためEP獲得量も増加。<br><br>
+      <strong>3. 味方のHP変動</strong><br>
+      味方全体のHP変動の10%をエネルギーとして獲得（1ターン最大30）。デバフによる被弾や環境ダメージもエネルギー源になります。<br><br>
+      <strong>4. 光円錐選び</strong><br>
+      「果てしなき血の挽歌」はEP関係の効果はないが、火力面で最も優れる。「メモリー・オブ・イット（追加攻撃EP）」や「秘密誓い」も検討。<br><br>
+      理想的には<strong>2ターン〜3ターンに1回の必殺技</strong>が可能。E2まで進めるとEP獲得量が+50%され、2ターンでの必殺技が現実的になります。
+    </div>
+  </div>
+
+  <!-- 評価まとめ -->
+  <h2 id="summary">📋 総評</h2>
+  <div class="card">
+    <p>ミデイ（Mydei）は、<strong>崩壊スターレイルの破壊アタッカーの中でもトップクラスの瞬間火力と継戦能力を兼ね備えたキャラクター</strong>です。HP消費による自己強化と味方のHP変動をエネルギー源とするユニークなシステムは、適切なヒーラーと組むことで驚異的なパフォーマンスを発揮します。</p>
+
+    <h4>ビルドの基本方針</h4>
+    <ul style="margin-top:4px;">
+      <li><strong>光円錐</strong>：果てしなき血の挽歌（★5・モチーフ）＞ 満たされない野望S5（★4）＞ 秘密誓いS5（★4）</li>
+      <li><strong>遺物</strong>：勇者の凱旋4セット（最適）＞ 宝命の鋳者4セット</li>
+      <li><strong>オーナメント</strong>：奔狼のサルソット（最適）＞ 競走者（ルチラント・アリーナ）</li>
+      <li><strong>メインステ</strong>：胴体＝会心率%、脚＝速度%（134まで）、オーブ＝虚数ダメ%、縄＝攻撃力%/HP%</li>
+      <li><strong>目標HP</strong>：6,000以上</li>
+      <li><strong>目標会心率</strong>：70%以上（天賦発動で90%〜100%に）</li>
+      <li><strong>目標速度</strong>：134以上</li>
+      <li><strong>スキル優先</strong>：戦闘スキル ＞ 必殺技 ＞ 天賦 ＞ 通常攻撃</li>
+      <li><strong>凸優先</strong>：E1（与ダメ+30%）が最高コスパ＞ E2（回転率向上）</li>
+    </ul>
+
+    <h4>評価点数（10点満点）</h4>
+    <table style="max-width:400px;">
+      <tr><th>項目</th><th>評価</th></tr>
+      <tr><td>火力性能</td><td><span class="star">★★★★★★★★★★</span> 10/10</td></tr>
+      <tr><td>継戦能力</td><td><span class="star">★★★★★★★★☆☆</span> 8/10</td></tr>
+      <tr><td>汎用性</td><td><span class="star">★★★★★★★★☆☆</span> 8/10</td></tr>
+      <tr><td>編成自由度</td><td><span class="star">★★★★★★★☆☆☆</span> 7/10（ヒーラー必須）</td></tr>
+      <tr><td>遺物厳選難易度</td><td><span style="color:#e8c547;">★★★★★★☆☆☆☆</span> 6/10（HP+会心+速度の3軸）</td></tr>
+      <tr><td>総合評価</td><td><span class="star">★★★★★★★★☆☆</span> 8.5/10</td></tr>
+    </table>
+
+    <h4>こんな人におすすめ</h4>
+    <ul>
+      <li>✅ HP消費型のユニークなアタッカーを体験したい</li>
+      <li>✅ 強力な破壊アタッカーを1人育成したい</li>
+      <li>✅ フォフォやルアンなど優秀なヒーラーを持っている</li>
+      <li>✅ 忘却の庭・幻想の庭のスコアアタックを狙いたい</li>
+      <li>✅ 凸の伸びしろが大きいキャラが欲しい</li>
+    </ul>
+
+    <h4>こんな人には向かないかも</h4>
+    <ul>
+      <li>⚠️ 優秀なヒーラーを所持していない（HP管理が難しい）</li>
+      <li>⚠️ オートバトルメインでプレイしている（HP管理がシビア）</li>
+      <li>⚠️ シンプルな火力キャラが好み</li>
+      <li>⚠️ 速度とHPのバランス厳選に抵抗がある</li>
+    </ul>
+
+    <p style="margin-top:12px;">ミデイは無凸からE6まで、どの凸数でも強力なパフォーマンスを発揮し、<strong>崩壊スターレイルの破壊アタッカーとして屈指の個性と実力を兼ね備えた存在</strong>です。HP管理という独特のプレイスタイルに慣れれば、他のキャラでは味わえない爽快感を得られるでしょう。ぜひこのガイドを参考に、最強のミデイを育ててください！</p>
+  </div>
+
+</article>
+
+</body>
+</html>

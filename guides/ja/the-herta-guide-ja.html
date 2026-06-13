@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4B26RL1D24"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4B26RL1D24');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>【崩壊スターレイル】ヘルタ（The Herta）知恵ビルドガイド｜遺物・光円錐・編成</title>
+<meta name="description" content="崩壊スターレイルの星5氷属性・知恵キャラ「ヘルタ（The Herta／マダム・ヘルタ）」の完全攻略ガイド。遺物・光円錐の最適構成、理想パーティ編成、凸数評価、スキル数値・追撃システムを徹底解説。模擬宇宙・忘却の庭対応。">
+<meta name="keywords" content="崩壊スターレイル,ヘルタ,The Herta,マダム・ヘルタ,攻略,遺物,光円錐,編成,凸,星魂,ビルド,おすすめ,知恵,氷,追撃">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="【崩壊スターレイル】ヘルタ（The Herta）知恵ビルドガイド">
+<meta property="og:description" content="崩壊スターレイルヘルタ（The Herta）の完全攻略。スキル数値、遺物セット比較、光円錐ランキング、パーティ編成5選を詳細解説。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<link rel="canonical" href="https://chjiya.github.io/hsr-guide/guides/ja/the-herta-guide-ja.html">
+<base href="/hsr-guide/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "【崩壊スターレイル】ヘルタ（The Herta）知恵ビルドガイド｜遺物・光円錐・編成",
+  "description": "崩壊スターレイルの星5氷属性・知恵キャラ「ヘルタ（The Herta）」の完全攻略。スキル解析、おすすめ遺物・光円錐・オーナメント、理想パーティ編成5選、凸数評価、FAQまで徹底解説。",
+  "author": { "@type": "Person", "name": "花叔" },
+  "datePublished": "2026-06-10",
+  "dateModified": "2026-06-10",
+  "articleSection": "キャラクター攻略",
+  "inLanguage": "ja",
+  "about": {
+    "@type": "Thing",
+    "name": "ヘルタ（The Herta）",
+    "description": "崩壊スターレイルの星5氷属性・知恵の運命を歩むアタッカーキャラクター"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://chjiya.github.io/hsr-guide/guides/ja/the-herta-guide-ja.html"
+  }
+}
+</script>
+
+<style>
+  :root { --bg: #1a1a2e; --card: #16213e; --accent: #80d8ff; --text: #e0e0e0; --sub: #a0a0b0; --border: #2a2a4a; --highlight: #0f3460; --green: #4caf84; --red: #e0556a; --music: #4fc3f7; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',Meiryo,sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; padding: 20px; max-width: 860px; margin: 0 auto; }
+  h1 { font-size: 1.8em; color: var(--accent); border-bottom: 2px solid var(--accent); padding-bottom: 12px; margin-bottom: 20px; }
+  h2 { font-size: 1.4em; color: var(--accent); margin: 36px 0 16px; padding: 8px 14px; border-left: 4px solid var(--accent); background: var(--highlight); border-radius: 0 6px 6px 0; }
+  h3 { font-size: 1.15em; color: #b3e5fc; margin: 24px 0 10px; }
+  h4 { font-size: 1.05em; color: #d0f0ff; margin: 16px 0 8px; }
+  .char-header { display: flex; gap: 20px; align-items: center; background: var(--card); border-radius: 12px; padding: 20px; margin-bottom: 24px; border: 1px solid var(--border); }
+  .char-icon { width: 90px; height: 90px; border-radius: 12px; background: linear-gradient(135deg, #4fc3f7, #0288d1); display: flex; align-items: center; justify-content: center; font-size: 2.2em; flex-shrink: 0; color: #fff; }
+  .char-info { flex: 1; } .char-info .name { font-size: 1.6em; font-weight: bold; color: #fff; }
+  .char-info .tags { margin-top: 6px; display: flex; gap: 8px; flex-wrap: wrap; }
+  .tag { display: inline-block; padding: 3px 12px; border-radius: 20px; font-size: 0.85em; font-weight: bold; }
+  .tag-rarity { background: #b8860b; color: #fff; }
+  .tag-element { background: #80d8ff; color: #1a1a2e; }
+  .tag-path { background: var(--accent); color: #1a1a2e; }
+  .tag-role { background: #0288d1; color: #fff; }
+  .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin: 16px 0; }
+  .stat-box { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 12px; text-align: center; }
+  .stat-box .label { font-size: 0.8em; color: var(--sub); }
+  .stat-box .value { font-size: 1.2em; font-weight: bold; color: #fff; margin-top: 4px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.9em; }
+  th { background: var(--highlight); color: var(--accent); padding: 10px 12px; text-align: left; font-weight: bold; border-bottom: 2px solid var(--border); }
+  td { padding: 10px 12px; border-bottom: 1px solid var(--border); }
+  tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+  .star { color: var(--accent); }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 18px; margin: 16px 0; }
+  .build-box { background: var(--highlight); border: 1px solid var(--accent); border-radius: 8px; padding: 14px 18px; margin: 12px 0; }
+  .build-box .label { color: var(--accent); font-weight: bold; font-size: 0.85em; }
+  .build-box .content { color: #fff; font-weight: bold; margin-top: 4px; }
+  .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0; }
+  .pros, .cons { padding: 14px; border-radius: 8px; }
+  .pros { background: rgba(76,175,132,0.1); border: 1px solid rgba(76,175,132,0.3); }
+  .cons { background: rgba(224,85,106,0.1); border: 1px solid rgba(224,85,106,0.3); }
+  .pros h4 { color: var(--green); margin-bottom: 6px; }
+  .cons h4 { color: var(--red); margin-bottom: 6px; }
+  .pros li, .cons li { margin-left: 18px; font-size: 0.9em; }
+  .team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 12px 0; }
+  .team-slot { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 12px 8px; text-align: center; }
+  .team-slot .role { font-size: 0.75em; color: var(--sub); margin-bottom: 4px; }
+  .team-slot .char { font-weight: bold; color: #fff; font-size: 0.95em; }
+  .faq-item { background: var(--card); border: 1px solid var(--border); border-radius: 8px; margin: 12px 0; padding: 16px; }
+  .faq-item .q { color: var(--accent); font-weight: bold; font-size: 1.05em; margin-bottom: 8px; }
+  .faq-item .a { color: var(--text); line-height: 1.8; }
+  .note { background: rgba(79,195,247,0.08); border-left: 3px solid var(--accent); padding: 10px 14px; margin: 14px 0; border-radius: 0 6px 6px 0; font-size: 0.9em; }
+  .skill-box { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 14px; margin: 10px 0; }
+  .skill-box .skill-name { font-weight: bold; color: var(--accent); font-size: 1.05em; }
+  .skill-box .skill-type { font-size: 0.8em; color: var(--sub); margin-left: 8px; }
+  .skill-box .skill-desc { margin-top: 8px; font-size: 0.9em; }
+  .priority-5 { color: var(--accent); } .priority-4 { color: #e8c547; } .priority-3 { color: #c0c0c0; } .priority-2 { color: #888; }
+  ol, ul { padding-left: 1.5em; } li { margin: 4px 0; }
+  .toc { margin: 16px 0; padding: 14px; background: var(--card); border-radius: 8px; border: 1px solid var(--border); }
+  .toc a { color: var(--accent); text-decoration: none; }
+  .toc a:hover { text-decoration: underline; }
+  .toc li { margin: 4px 0; }
+  @media (max-width: 600px) { .char-header { flex-direction: column; text-align: center; } .team-grid { grid-template-columns: repeat(2, 1fr); } .pros-cons { grid-template-columns: 1fr; } }
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3857626678274044"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+<article>
+  <h1>【崩壊スターレイル】ヘルタ（The Herta）知恵ビルドガイド</h1>
+
+  <div class="toc">
+    <strong>📑 目次</strong>
+    <ol style="margin-top:6px;">
+      <li><a href="#overview">キャラ概要</a></li>
+      <li><a href="#skills">スキル解説（全数値）</a></li>
+      <li><a href="#relics">おすすめ遺物</a></li>
+      <li><a href="#lightcones">おすすめ光円錐</a></li>
+      <li><a href="#teams">理想編成（5編成）</a></li>
+      <li><a href="#eidolons">凸数評価</a></li>
+      <li><a href="#synergy">相性の良いキャラ</a></li>
+      <li><a href="#build">ビルドまとめ表</a></li>
+      <li><a href="#faq">よくある質問（FAQ）</a></li>
+      <li><a href="#summary">総評</a></li>
+    </ol>
+  </div>
+
+  <div class="char-header" id="overview">
+    <div class="char-icon">❄️</div>
+    <div class="char-info">
+      <div class="name">ヘルタ（The Herta / マダム・ヘルタ）</div>
+      <div class="tags">
+        <span class="tag tag-rarity">★5</span>
+        <span class="tag tag-element">氷属性</span>
+        <span class="tag tag-path">知恵（Erudition）</span>
+        <span class="tag tag-role">メインアタッカー / 殲滅</span>
+      </div>
+      <div style="margin-top:8px;color:var(--sub);font-size:0.9em;">所属：宇宙ステーション・ヘルタ｜声優：花守ゆみり｜入手：限定排出｜実装：Ver.3.0</div>
+    </div>
+  </div>
+
+  <div class="stat-grid">
+    <div class="stat-box"><div class="label">最大HP</div><div class="value">1,087</div></div>
+    <div class="stat-box"><div class="label">攻撃力</div><div class="value">756</div></div>
+    <div class="stat-box"><div class="label">防御力</div><div class="value">396</div></div>
+    <div class="stat-box"><div class="label">速度</div><div class="value">100</div></div>
+    <div class="stat-box"><div class="label">EP（必殺技）</div><div class="value">110</div></div>
+  </div>
+
+  <div class="pros-cons">
+    <div class="pros"><h4>✅ 長所</h4><ul><li>50%HP以下の敵に対する追撃が圧倒的</li><li>必殺技コスト110で非常に回転率が良い</li><li>氷属性+知恵で広範囲殲滅</li><li>基礎攻撃力756と全知恵キャラ中トップ</li><li>編成自由度が高い</li><li>SP効率が非常に良い</li></ul></div>
+    <div class="cons"><h4>⚠️ 短所</h4><ul><li>単体火力は巡狩キャラに劣る</li><li>追撃が敵HP50%以下に依存</li><li>基礎HPが低く生存面に注意</li><li>高HPボス1体では火力が半減</li></ul></div>
+  </div>
+
+  <p>ヘルタ（The Herta）は、Ver.3.0「銀河の中心、ここにあり」で実装された星5氷属性・知恵の運命を歩むアタッカーキャラクターです。宇宙ステーション・ヘルタの主であり、その名を冠する組織の長として、圧倒的な知識と実力を兼ね備えています。</p>
+  <p>ヘルタの最大の特徴は、<strong>敵のHPが50%以下になった時点で自動発動する追撃システム「ヘルタ・スペシャル」</strong>です。この追撃は敵全体に攻撃力×120%（Lv10）の氷ダメージを与えるだけでなく、さらに追撃発動時に60%の確率でもう一度追撃が発生（最大4回連続）。殲滅戦においては<strong>他の追随を許さない圧倒的な処理速度</strong>を誇ります。</p>
+  <p>忘却の庭・模擬宇宙・虚境など全コンテンツで活躍し、特に模擬宇宙では無類の強さを発揮。Game8でSSランク、PrydwenでもTier0を獲得する最強クラスの知恵キャラです。</p>
+
+  <h2 id="skills">🔍 スキル解説（全数値）</h2>
+  <div class="skill-box">
+    <div class="skill-name">通常攻撃：ちっちゃなお願い <span class="skill-type">単体攻撃 / エネルギー+20 / 削靭10</span></div>
+    <div class="skill-desc">指定した敵単体にヘルタの攻撃力<span style="color:var(--accent);">50%〜100%</span>（Lv1〜Lv6）の氷属性ダメージ。強化優先度：<span class="priority-2">★★☆☆☆</span></div>
+  </div>
+  <div class="skill-box">
+    <div class="skill-name">戦闘スキル：ヘルタ式・全方位凍結 <span class="skill-type">全体攻撃 / 消費SP:1 / エネルギー+30</span></div>
+    <div class="skill-desc">敵全体に攻撃力<span style="color:var(--accent);">60%〜120%</span>（Lv1〜Lv12）の氷属性ダメージ。HP50%以下の敵には追加で攻撃力<span style="color:var(--accent);">40%〜80%</span>の氷ダメージ。<br>強化優先度：<span class="priority-5">★★★★★</span></div>
+  </div>
+  <div class="skill-box">
+    <div class="skill-name">必殺技：ヘルタ・フルパワー <span class="skill-type">全体攻撃 / EP:110</span></div>
+    <div class="skill-desc">敵全体に攻撃力<span style="color:var(--accent);">120%〜240%</span>（Lv1〜Lv10）の氷属性ダメージ。<br>さらに<strong>3ターンの間、天賦の追撃発動条件を「敵のHPが80%以下」に緩和</strong>し、追撃与ダメ+<span style="color:var(--accent);">30%〜50%</span>。<br>エネルギー回復：<span style="color:var(--accent);">5</span><br>強化優先度：<span class="priority-5">★★★★★</span></div>
+  </div>
+  <div class="skill-box">
+    <div class="skill-name">天賦：ヘルタ・スペシャル <span class="skill-type">常時パッシブ / 追撃</span></div>
+    <div class="skill-desc">敵のHPが<strong>50%以下</strong>になった時、敵全体に攻撃力<span style="color:var(--accent);">60%〜120%</span>（Lv1〜Lv10）の氷属性ダメージを与える。<br>さらに<strong>60%の確率でもう一度追撃が発生</strong>（最大4回連続、1回ごとに確率半減: 60%→30%→15%→停止）。<br>味方全体の攻撃力+<span style="color:var(--accent);">10%〜20%</span>。<br>強化優先度：<span class="priority-5">★★★★★</span></div>
+  </div>
+
+  <h2 id="relics">🏆 おすすめ遺物</h2>
+  <h3>最適セット：雪の密林の狩人4セット</h3>
+  <div class="build-box"><div class="label">2セット</div><div class="content">会心ダメージ+25%</div></div>
+  <div class="build-box"><div class="label">4セット</div><div class="content">必殺技後、次の攻撃の与ダメ+25%</div></div>
+
+  <h3>次点：風吹き渡る勇姿4セット</h3>
+  <div class="build-box"><div class="label">2セット</div><div class="content">会心率+12%</div></div>
+  <div class="build-box"><div class="label">4セット</div><div class="content">追撃ダメ+16%、必殺技+追撃与ダメ+16%</div></div>
+
+  <h3>オーナメント</h3>
+  <table><tr><th>順位</th><th>オーナメント</th><th>効果</th></tr>
+  <tr><td>🥇</td><td>奔狼のサルソット</td><td>会心率+8%、必殺技+追撃与ダメ+15%</td></tr>
+  <tr><td>🥈</td><td>虚無のステーション</td><td>攻撃力+12%、速度120以上でさらに+12%</td></tr>
+  </table>
+
+  <h2 id="lightcones">💡 おすすめ光円錐</h2>
+  <table><tr><th>順位</th><th>光円錐名</th><th>レア</th><th>効果</th></tr>
+  <tr><td>🥇</td><td>石造りの海にて（Into the Unreachable Veil）</td><td>★5</td><td>会心ダメ+36%。必殺技後、追撃与ダメ+48%（3ターン）。EP回復効率+12%。</td></tr>
+  <tr><td>🥈</td><td>今日も平和です S5（Geniuses' Greetings）</td><td>★4</td><td>攻撃力+24%。必殺技発動時、会心ダメ+36%（2ターン）。</td></tr>
+  <tr><td>🥉</td><td>銀河鉄道の夜 S5</td><td>★5</td><td>敵1体につき攻撃力+9%。撃破時与ダメ+30%。</td></tr>
+  <tr><td>④</td><td>天才たちの日常 S5</td><td>★4</td><td>攻撃力+16%。敵撃破時+8%（最大3）。</td></tr>
+  </table>
+
+  <h2 id="teams">👥 理想編成</h2>
+  <h3>編成① W知恵殲滅型（最強）</h3>
+  <div class="team-grid">
+    <div class="team-slot"><div class="role">メインDPS</div><div class="char">ヘルタ</div></div>
+    <div class="team-slot"><div class="role">サブDPS</div><div class="char">キャストリス</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">ルアンメェイ</div></div>
+    <div class="team-slot"><div class="role">ヒーラー</div><div class="char">フォフォ</div></div>
+  </div>
+  <h3>編成② ハイパーキャリー型</h3>
+  <div class="team-grid">
+    <div class="team-slot"><div class="role">メインDPS</div><div class="char">ヘルタ</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">ロビン</div></div>
+    <div class="team-slot"><div class="role">バッファー</div><div class="char">ティンギュン</div></div>
+    <div class="team-slot"><div class="role">ヒーラー</div><div class="char">アベンチュリン</div></div>
+  </div>
+  <h3>編成③ 凍結シナジー型</h3>
+  <div class="team-grid">
+    <div class="team-slot"><div class="role">メインDPS</div><div class="char">ヘルタ</div></div>
+    <div class="team-slot"><div class="role">サブDPS</div><div class="char">鏡流</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">ルアンメェイ</div></div>
+    <div class="team-slot"><div class="role">ヒーラー</div><div class="char">フォフォ</div></div>
+  </div>
+  <h3>編成④ トリビー編成</h3>
+  <div class="team-grid">
+    <div class="team-slot"><div class="role">メインDPS</div><div class="char">ヘルタ</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">トリビー</div></div>
+    <div class="team-slot"><div class="role">バッファー</div><div class="char">ティンギュン</div></div>
+    <div class="team-slot"><div class="role">ヒーラー</div><div class="char">フォフォ</div></div>
+  </div>
+  <h3>編成⑤ 無課金向け</h3>
+  <div class="team-grid">
+    <div class="team-slot"><div class="role">メインDPS</div><div class="char">ヘルタ</div></div>
+    <div class="team-slot"><div class="role">サポート</div><div class="char">アスター</div></div>
+    <div class="team-slot"><div class="role">バッファー</div><div class="char">ティンギュン</div></div>
+    <div class="team-slot"><div class="role">ヒーラー</div><div class="char">ナターシャ</div></div>
+  </div>
+
+  <h2 id="eidolons">💎 凸数評価</h2>
+  <table><tr><th>凸数</th><th>効果</th><th>火力上昇</th></tr>
+  <tr><td>E0</td><td>基本性能でも既に最強クラス</td><td>基準</td></tr>
+  <tr><td>E1</td><td>追撃の与ダメ+35%。追撃連続発生確率+20%（初回80%に）。</td><td>+25%</td></tr>
+  <tr><td>E2</td><td>会心率+15%。必殺技後、会心ダメ+30%（3ターン）。</td><td>+20%</td></tr>
+  <tr><td>E3</td><td>戦技Lv+2。天賦Lv+2。</td><td>+10%</td></tr>
+  <tr><td>E4</td><td>追撃発動時、味方全体のEP+5。敵撃破時さらに+5。</td><td>サポート↑</td></tr>
+  <tr><td>E5</td><td>必殺技Lv+2。通常攻撃Lv+1。</td><td>+8%</td></tr>
+  <tr><td>E6</td><td>追撃が確定で2回発生（確率関係なく）。追撃会心ダメ+60%。</td><td>+70%+</td></tr>
+  </table>
+
+  <h2 id="synergy">🤝 相性の良いキャラ</h2>
+  <ul>
+    <li><strong>キャストリス</strong>：W知恵編成の最適パートナー。両方とも全体攻撃+追撃で噛み合う。</li>
+    <li><strong>ルアンメェイ</strong>：耐性貫通+速度UP。ヘルタの全体攻撃を最大限強化。</li>
+    <li><strong>ロビン</strong>：行動前進+攻撃力バフ。追撃頻度をさらに増加。</li>
+    <li><strong>トリビー</strong>：全属性耐性ダウン+防御デバフ。殲滅力を極限まで高める。</li>
+    <li><strong>フォフォ</strong>：会心率バフ+継続回復。追撃の会心率上昇が強力。</li>
+  </ul>
+
+  <h2 id="build">📋 ビルドまとめ表</h2>
+  <table><tr><th>項目</th><th>おすすめ</th></tr>
+  <tr><td>光円錐</td><td>石造りの海にて（★5）＞ 今日も平和ですS5（★4）＞ 銀河鉄道の夜（★5）</td></tr>
+  <tr><td>遺物</td><td>雪の密林の狩人4（最適）＞ 勇姿4</td></tr>
+  <tr><td>オーナメント</td><td>奔狼のサルソット（最適）＞ 虚無のステーション</td></tr>
+  <tr><td>胴体</td><td>会心率% or 会心ダメ%</td></tr>
+  <tr><td>脚</td><td>速度% or 攻撃力%</td></tr>
+  <tr><td>オーブ</td><td>氷属性ダメージ%</td></tr>
+  <tr><td>縄</td><td>攻撃力%（EP110で回転率十分）</td></tr>
+  <tr><td>目標会心率</td><td>70%以上</td></tr>
+  <tr><td>目標会心ダメ</td><td>160%以上</td></tr>
+  <tr><td>目標速度</td><td>121以上</td></tr>
+  <tr><td>目標攻撃力</td><td>3,400以上</td></tr>
+  <tr><td>スキル優先</td><td>戦闘スキル ＞ 必殺技 ＞ 天賦 ＞ 通常攻撃</td></tr>
+  </table>
+
+  <h2 id="faq">❓ よくある質問</h2>
+  <div class="faq-item">
+    <div class="q">Q. ヘルタは星4版とどちらが強いですか？</div>
+    <div class="a">全ての面で星5版（The Herta）が上です。基礎ステータス（攻撃力756 vs 528）、スキル倍率、追撃性能、編成自由度、全てにおいて大幅に強化されています。星4版は代用として使える程度で、メインアタッカーとしての性能は比べ物になりません。</div>
+  </div>
+  <div class="faq-item">
+    <div class="q">Q. ヘルタは初心者におすすめですか？</div>
+    <div class="a">とてもおすすめです。必殺技コスト110で回転率が良く、追撃が自動発生するため操作が簡単。殲滅力が高いのでストーリー・模擬宇宙の攻略が格段に楽になります。遺物も攻撃力+会心のシンプルな構成でOKで、初心者でも扱いやすいキャラです。</div>
+  </div>
+  <div class="faq-item">
+    <div class="q">Q. ヘルタの追撃は最大でどのくらい連続しますか？</div>
+    <div class="a">理論上は最大4回連続です。初回60%→2回目30%→3回目15%→4回目で停止。期待値は約1.2回（初回1回+追加0.2回）ですが、E1で初回確率が80%になり期待値が約1.5回に上昇。E6では確定2回+確率追加で安定した追撃連鎖が可能です。</div>
+  </div>
+
+  <h2 id="summary">📋 総評</h2>
+  <div class="card">
+    <p>ヘルタ（The Herta）は、<strong>崩壊スターレイルの知恵キャラの中でも最高傑作と呼べる圧倒的な殲滅力を誇るアタッカー</strong>です。50%HP以下トリガーの追撃システムは、敵が複数出現するほとんどのコンテンツで無類の強さを発揮します。</p>
+    <h4>評価点数（10点満点）</h4>
+    <table style="max-width:400px;">
+      <tr><th>項目</th><th>評価</th></tr>
+      <tr><td>火力性能</td><td><span class="star">★★★★★★★★★★</span> 10/10</td></tr>
+      <tr><td>殲滅力</td><td><span class="star">★★★★★★★★★★</span> 10/10</td></tr>
+      <tr><td>汎用性</td><td><span class="star">★★★★★★★★★☆</span> 9/10</td></tr>
+      <tr><td>初心者おすすめ度</td><td><span class="star">★★★★★★★★★★</span> 10/10</td></tr>
+      <tr><td>遺物厳選難易度</td><td><span class="star">★★★★★★★★☆☆</span> 8/10</td></tr>
+      <tr><td>総合評価</td><td><span class="star">★★★★★★★★★☆</span> 9.5/10</td></tr>
+    </table>
+    <p style="margin-top:12px;">最強クラスの知恵キャラを1人確保したいなら、ヘルタは間違いなく最優先の選択肢です。ぜひこのガイドを参考に最強のヘルタを育成してください！</p>
+  </div>
+</article>
+</body>
+</html>
